@@ -1,0 +1,45 @@
+.contact_custom_button {
+    background-color: #0091F0 !important;
+    color: #fff;
+    outline: none;
+    border: none !important;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+  }
+
+  .login_button {
+    background-color: #2B3B45 !important;
+    color: #fff;
+    outline: none;
+    border: none !important;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+  }
+
+
+  .mainMarqueeTagHomePage {
+    height: 10rem;
+    background-color: white;
+  }
+  .clients_image_container {
+    height: 6rem;
+    width: 13rem;
+    position: absolute;
+  }  
+  .marqueeHomePage {
+    height: 8rem;
+    width: 13rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    transition: transform 1s;
+    object-fit: contain;
+    opacity: 1;
+    border: none;
+    outline: none;
+    /* box-shadow: 5px 0px 10px #9a999929; */
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }

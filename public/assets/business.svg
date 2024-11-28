@@ -1,0 +1,22 @@
+<svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="57" cy="57" r="57" fill="#0F2531"/>
+<g clip-path="url(#clip0_12602_2359)">
+<mask id="mask0_12602_2359" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="37" y="37" width="40" height="40">
+<path d="M37 37H77V77H37V37Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_12602_2359)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M49.4609 68.3799C50.1077 68.3799 50.6328 68.905 50.6328 69.5518C50.6328 70.1985 50.1077 70.7236 49.4609 70.7236C48.8142 70.7236 48.2891 70.1985 48.2891 69.5518C48.2891 68.905 48.8142 68.3799 49.4609 68.3799Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M54.4844 68.3799C55.1312 68.3799 55.6562 68.905 55.6562 69.5518C55.6562 70.1985 55.1312 70.7236 54.4844 70.7236C53.8377 70.7236 53.3125 70.1985 53.3125 69.5518C53.3125 68.905 53.8377 68.3799 54.4844 68.3799Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M59.5078 68.3804C60.1545 68.3804 60.6797 68.9054 60.6797 69.5522C60.6797 70.199 60.1545 70.7241 59.5078 70.7241C58.861 70.7241 58.3359 70.199 58.3359 69.5522C58.3359 68.9054 58.861 68.3804 59.5078 68.3804Z" fill="white"/>
+<path d="M48.2084 45.7031H45.698C44.3115 45.7031 43.1875 46.8271 43.1875 48.2135V73.3177C43.1875 74.7041 44.3115 75.8281 45.698 75.8281H63.2709C64.6573 75.8281 65.7813 74.7041 65.7813 73.3177V48.2135C65.7813 46.8271 64.6573 45.7031 63.2709 45.7031H60.7605" stroke="white" stroke-width="2.34375" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65.7839 38.1719H53.2318C50.4589 38.1719 48.2109 40.4198 48.2109 43.1927V49.4688H60.763V43.1927C60.763 40.4198 63.0109 38.1719 65.7839 38.1719Z" stroke="white" stroke-width="2.34375" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M70.8073 43.1929C70.8073 40.42 68.5594 38.172 65.7864 38.172C63.0134 38.172 60.7656 40.42 60.7656 43.1929V45.7033H63.276C63.9418 45.7033 64.5804 45.9678 65.0511 46.4386C65.522 46.9094 65.7864 47.5479 65.7864 48.2137V58.2554L68.2968 57.0001L70.8073 58.2554V43.1929Z" stroke="white" stroke-width="2.34375" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 65H61V54H48V65Z" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_12602_2359">
+<rect width="40" height="40" fill="white" transform="translate(37 37)"/>
+</clipPath>
+</defs>
+</svg>
