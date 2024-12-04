@@ -1,5 +1,54 @@
+@font-face {
+    font-family: 'GilroyUlight';
+    src: url('../../public/fonts/gilroy/Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyThin';
+    src: url('../../public/fonts/gilroy/Gilroy-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'GilroySemiBold';
+    src: url('../../public/fonts/gilroy/Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyRegular';
+    src: url('../../public/fonts/gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyMedium';
+    src: url('../../public/fonts/gilroy/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../../public/fonts/gilroy/Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyHeavy';
+    src: url('../../public/fonts/gilroy/Gilroy-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyExtrabold';
+    src: url('../../public/fonts/gilroy/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'GilroyBold';
+    src: url('../../public/fonts/gilroy/Gilroy-Bold.ttf');
+}
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Roy', sans-serif;
+}
+
+body {
+    font-family: GilroyUlight, sans-serif;
+    font-size: 16px;
 }
