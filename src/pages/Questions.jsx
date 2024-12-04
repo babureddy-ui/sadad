@@ -25,6 +25,7 @@ const Questions = ({ FaqTableData, heading }) => {
       <div style={{ margin: "4rem 2rem", display: "flex", gap: "2rem", flexDirection: "column", width: "40rem" }} id="faq-section">
          <div style={{ width: "100%" }}>
             {FaqTableData?.map((ele) => (
+               <div style={{borderRadius:"2rem"}}> 
                <div
                   key={ele?.id}
                   style={{
@@ -32,9 +33,7 @@ const Questions = ({ FaqTableData, heading }) => {
                      ...(showAns?.key === ele?.id && showAns?.status
                         ? {
                              borderLeft: "6px solid #0391f0", 
-                             paddingLeft: "0.5rem", 
                              marginTop: "1.5rem", 
-                             backgroundColor: "#e6f4ff", 
                              borderRadius:"0.5rem"
                           }
                         : {})
@@ -47,6 +46,7 @@ const Questions = ({ FaqTableData, heading }) => {
                         backgroundColor: "#f5f8ff", 
                         boxSizing: "border-box",
                         transition: "background-color 0.3s ease",
+                        borderRadius:"0.5rem"
                      }}
                      onMouseEnter={() => handleMouseEnter(ele?.id)}
                      onMouseLeave={handleMouseLeave}
@@ -58,6 +58,7 @@ const Questions = ({ FaqTableData, heading }) => {
                            gap: "5rem",
                            cursor: "pointer",
                            color: "#101828",
+                           
                         }}
                      >
                         <p
@@ -86,6 +87,7 @@ const Questions = ({ FaqTableData, heading }) => {
                         {showAns?.key === ele?.id && showAns?.status ? ele?.des : ""}
                      </div>
                   </div>
+               </div>
                </div>
             ))}
          </div>

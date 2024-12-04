@@ -1,6 +1,7 @@
+
 import Image from 'next/image';
 import React from 'react';
-import { BlackButton, MarqueeComponentHomePage } from '../Buttons/Button';
+import { BlackButton, BlueButton, MarqueeComponentHomePage } from '../Buttons/Button';
 import styles from "./HomePage.module.css"
 import { HiddenPowers } from '@/pages/HiddenPowers';
 import SwiperComponent from '@/pages/SwiperComponent';
@@ -12,6 +13,8 @@ import SwiperComponent from '@/pages/SwiperComponent';
 // import 'swiper/css/autoplay';
 import TestimonialsSwiper from '@/pages/ClientSwiper';
 import FrequentQuestions from '@/pages/Questions';
+import { CustomiseBy } from '@/pages/CustomiseBy';
+import ClientSwiper from '@/pages/ClientSwiper';
 
 
 export const HomePage = () => {
@@ -161,7 +164,7 @@ export const HomePage = () => {
 
   return (
     <>
-      <div style={{ display: "flex", gap: "20px", margin:"5.4rem "}}>
+      <div style={{ display: "flex", gap: "20px", margin:"4.8rem "}}>
         <div style={{ width: "300px", height: "300px", height: "37rem", }}>
           <div style={{ width: "10rem",  height: "9rem",  position: "absolute", bottom: "4rem", left: "5rem", }}>
             <Image src="/assets/homePage/Ellipse.svg" fill />
@@ -175,7 +178,7 @@ export const HomePage = () => {
             </p>
             <div className={styles.inputSection} >
               <input
-                style={{ border: "none", width: "20rem", padding: "1rem" }}
+                style={{ border: "none", width: "20rem", padding: "1rem", outline:'none' }}
                 type="text"
                 placeholder="Enter phone number/email"
               />
@@ -192,7 +195,7 @@ export const HomePage = () => {
         {BusinessTypes.map((ele, index) => (
           <div
             key={index}
-            style={{display: "flex",alignItems: "center", gap: "15px", padding: "10px", borderRadius: "8px",}} >
+             className={styles.BusinessTypes} >
             <div style={{ width: "100px", height: "100px", position: "relative" }}>
               <Image src={ele.icon} alt={ele.title} fill />
             </div>
@@ -215,12 +218,130 @@ export const HomePage = () => {
                 <MarqueeComponentHomePage ClientsArr={ClientsArr1} />
             </div>
       </div>
+      <div style={{margin:"2rem 8rem 2rem 9rem"}}>
+        <CustomiseBy/>
+      </div>
+
+
+{/* -----------------Features--------- */}
+<div style={{margin:"4rem 8rem 6rem 9rem"}} >
+<div style={{ display: "flex", alignItems: "center",margin:'2rem 0' }}>
+  <p style={{backgroundColor:"#FDF2E4", padding:"0.5rem 2rem", borderRadius:"1rem"}}>Features</p>
+  <div style={{ height: "30px", width: "30px", position: "relative" }}>
+    <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
+  </div>
+</div>
+
+<div >
+    <div style={{display:'flex', gap:'1rem',}}>
+       <div className={styles.card}>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+          <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
+            <Image src="/assets/Loans.svg" fill />
+          </div>
+          <h1>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
+          <p>
+            Seamlessly send money with our POS, ensuring secure transactions and
+            instant transfers for your convenience and peace of mind.
+          </p>
+          </div>
+
+          <div className={styles.topImage}>
+            <Image src="/assets/billing_Top_img.webp" fill />
+          </div>
+          <div className={styles.otherImage}>
+            <Image src="/assets/billing.webp" fill />
+          </div>
+        </div>
+
+
+        <div className={styles.card2}>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+          <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
+            <Image src="/assets/Invt.svg" fill />
+          </div>
+          <h1>  Track and manage <span style={{color:"#0091F0"}}> Inventory </span>  with ease</h1>
+          <p>
+          Efficient inventory management helps you track, organize and optimize stock levels, ensuring smoother business operations.
+          </p>
+          </div>
+
+          <div className={styles.topImage2}>
+            <Image src="/assets/Inventory_Top_img.webp" fill />
+          </div>
+          <div className={styles.otherImage}>
+            <Image src="/assets/Inventory_img.webp" fill />
+          </div>
+        </div>
+    </div>
+    <div style={{display:'flex' , gap:"1rem", margin:'1rem 0rem 0 0'}}>
+      <div>
+      <div className={styles.card3}>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+          <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
+            <Image src="/assets/eStore.svg" fill />
+          </div>
+          <h2> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
+          <p>Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
+          </div>
+
+          <div className={styles.topImage3}>
+            <Image src="/assets/eStore_Top_img.webp" fill />
+          </div>
+          <div className={styles.otherImage3}>
+            <Image src="/assets/eStore.webp" fill />
+          </div>
+        </div>
+      </div>
+      <div>
+      <div className={styles.card4}>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+          <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
+            <Image src="/assets/Reports.svg" fill />
+          </div>
+          <h2> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
+          <p>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
+          </div>
+
+          {/* <div className={styles.topImage4}>
+            <Image src="/assets/Inventory_Top_img.webp" fill />
+          </div> */}
+          <div className={styles.otherImage4}>
+            <Image src="/assets/Reports.webp" fill />
+          </div>
+        </div>
+      </div>
+      <div>
+      <div className={styles.card5}>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+          <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
+            <Image src="/assets/Crm_icon.svg" fill />
+          </div>
+          <h2> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
+          <p> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
+          </div>
+
+          <div className={styles.topImage5}>
+            <Image src="/assets/crm_Top_img.webp" fill />
+          </div>
+          <div className={styles.otherImage3}>
+            <Image src="/assets/crm_img.webp" fill />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+      <div>
+
+
+      </div>
 
       <div>
         <HiddenPowers/>
       </div>
-
-
       <div style={{margin:"4rem 8rem 4rem 9.5rem"}}>
       <div style={{display:"flex",margin: '0 0rem'}}>
             <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem"}}>Dedicated <b>Bank Account</b> for your transaction business</p>
@@ -259,7 +380,22 @@ export const HomePage = () => {
 
       </div>
 
-      <div style={{margin:"8rem 8rem 0 9.5rem",  height:"80rem", }}>
+
+
+      <div className={styles.loan_section}>
+        <div style={{width:"38rem", display:"flex", flexDirection:'column', gap:"1.5rem" ,margin:"2rem 0"}}> 
+         <div style={{position:'relative', width:"4rem", height:'4rem'}}><Image src='/assets/Loans.svg' fill/></div>
+         <div style={{fontSize:"1rem",}}>
+          <h1> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h1> <br />
+          <p>Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
+         </div>
+         <div style={{position:"relative", height:"5rem", width:"8rem"}}><Image src="/assets/playstore.svg" fill/></div>
+         </div>
+         <div style={{position:'relative', height:'25rem', width:"35rem", bottom:0}}> <Image src="/assets/Loan_img.webp" fill/> </div>
+      </div>
+
+
+      <div style={{margin:"-4rem 8rem 0 9.5rem",  height:"80rem", }}>
         <div style={{width:"25rem", position:"relative" , bottom:"-12rem"}}>
             <h1 style={{margin:"2rem 0"}}>Efficient, <span style={{color:"#0391f0"}}>Versatile</span> <br />Reliable</h1>
             <p>Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.</p>
@@ -291,10 +427,33 @@ export const HomePage = () => {
       </div>
 
 
-      <div style={{margin:"5rem 0" }}>
-        <div style={{display:"flex", justifyContent:"center", textAlign:'center'}}><h1>Many business dilemmas, <br />yet only One Solution reigns supreme</h1></div>
+      <div style={{margin:"5rem 8rem" }}>
+
+
+        <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"4rem 0"}}><h1>Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span> reigns supreme</h1></div>
+
+        <div style={{display:"flex", gap:"3rem"}}>
+          <div className={styles.solutionSection} >
+            <div className={styles.headSec}><h2>POS 10Q</h2></div>
+            <div className={styles.content_sec}> 
+              {/* <div className={styles.star1}><Image src='/assets/star1.svg' fill/></div>
+              <div className={styles.star2}><Image src='/assets/star2.svg' fill/></div> */}
+            <p style={{marginTop:"-6rem"}}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.</p>
+              <div className={styles.dev_img}><Image src='/assets/pos.svg' fill/></div>
+              </div >
+            </div>
+            <div className={styles.solutionSection} >
+            <div className={styles.headSec}><h2>POS 10Q</h2></div>
+            <div className={styles.content_sec}> 
+            <p style={{marginTop:"-6rem"}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
+              <div className={styles.dev_img}><Image src='/assets/mf.svg' fill/></div>
+              </div >
+            </div>
+          </div>
+           
+        </div>
         
-      </div>
+      
      <div style={{height:"40rem", width:"100%"}}> 
       <div style={{backgroundColor:"#0F2531", color:"white", height:"35rem"}}>
         {/* margin:"-10rem 0" */}
@@ -308,6 +467,8 @@ export const HomePage = () => {
       </div>
       </div>
 
+      
+
       <div style={{margin:"10rem 0"}}>
       <div style={{ display: "flex", margin: "0 10rem", alignItems: "center", position: "absolute" }}>
       <h1>Our Client’s kind words</h1>
@@ -317,13 +478,15 @@ export const HomePage = () => {
 
       
      </div> <br />
-    <div   >
-     <TestimonialsSwiper/>
+    <div >
+     <ClientSwiper/>
       </div>
       </div>
 
+      
+
       <div style={{margin:"-5rem 9rem", display:"flex" , justifyContent:'space-between'}}>
-        <div style={{position:"relative" , width:"29rem", height:"37rem"}}>
+        <div style={{position:"relative" , width:"34rem", height:"44rem"}}>
           <Image src="/assets/queries.webp" fill/>
         </div>
         <div style={{position:'absolute', left:"40rem"}}>
@@ -342,6 +505,190 @@ export const HomePage = () => {
         </div>
         <div style={{position:'relative', width:"40rem", height:"25rem"}}><Image src="/assets/app-img.webp" fill/></div>
       </div>
+
+
+
+      <div className={styles.business_needs2}>
+      <div className={styles.bt_ele}>
+      <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable POS</h4>
+      <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+          <Image src="/assets/bt_img1.webp" layout="fill" objectFit="cover" />
+      </div>
+      </div>
+       <div className={styles.bt_ele2}>
+        <h4 className={styles.business_text}>Unlock powerful busines insights through detailed reports</h4>
+        <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <Image src="/assets/bt_img2.webp" layout="fill" objectFit="cover" />
+      </div>
+       </div>
+       <div className={styles.bt_ele3}>
+        <h4 className={styles.business_text}>Transform your business go online and reach new customers.</h4>
+        <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <Image src="/assets/bt_img3.webp" layout="fill" objectFit="cover" />
+      </div>
+       </div >
+       <div className={styles.bt_ele4} >
+        <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
+        <div style={{width:"8rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <Image src="/assets/bt_img4.webp" layout="fill" objectFit="cover" />
+      </div>
+       </div>
+      </div>
+
+
+
+      <div style={{display:'flex', margin:"5rem 10rem -1.4rem 0", width:"100%",    }}>
+  <div style={{position:"relative", width:"47rem", height:"50rem"}}>
+    <Image src='/assets/demo_img.webp' fill />
+  </div>
+  
+
+  <div style={{padding: '2rem', display: 'flex', flexDirection: 'column', width: '30rem', padding:"5rem"}}>
+  <div style={{display: "flex", position: "relative", fontSize:"21px", alignItems:"center"}}>
+  <h1>Schedule a free demo</h1>
+
+  <div style={{height: "2rem", width: "2rem", position: 'absolute', right: "0", }}>
+    <Image src='/assets/stars.svg' fill />
+  </div>
+</div>
+ <br />
+    <p>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
+    <form>
+      <div className={styles.input_divs}>
+       
+        <input className={styles.inputs}
+          type="text" 
+          id="fullName" 
+          name="fullName" 
+          placeholder=" Full Name" 
+          required 
+        />
+      </div>
+
+      <div className={styles.input_divs}>
+       
+        <input className={styles.inputs}
+          type="tel" 
+          id="phoneNumber" 
+          name="phoneNumber" 
+          placeholder="Phone Number"
+          
+          required 
+        />
+      </div>
+
+      <div className={styles.input_divs}>
+       
+        <input className={styles.inputs}
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Email Address" 
+          required 
+        />
+      </div>
+
+      <div className={styles.input_divs}>
+        
+        <select className={styles.inputs}
+          id="city" 
+          name="city" 
+          required 
+          // style={{height:'2rem'}}
+        >
+          <option value=""> City</option>
+          <option value="New York">New York</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Chicago">Chicago</option>
+          <option value="San Francisco">San Francisco</option>
+        </select>
+      </div>
+
+      <div  className={styles.input_divs}>
+        
+        <select  className={styles.inputs}
+          id="businessType" 
+          name="businessType" 
+          required 
+          style={{   }}
+        >
+          <option value="">Business Type</option>
+          <option value="Retail">Retail</option>
+          <option value="Technology">Technology</option>
+          <option value="Service">Service</option>
+          <option value="Manufacturing">Manufacturing</option>
+        </select>
+      </div>
+
+      {/* <button type="submit" style={{padding: '0.5rem', backgroundColor: '#0091F0', color: '#fff', border: 'none', borderRadius: '5px'}}>
+        Submit
+      </button> */}
+       <BlackButton text="Kickstart your success" style={{width:"100%", padding:'1rem', height:'3rem'}} />
+    </form>
+  </div>
+</div>
+
+<div className={styles.subscriptionSection}>
+  <div  style={{  position: "absolute",  width: "74rem", height: "35rem"}} >
+    <Image src="/assets/blur.webp" fill style={{ objectFit: "cover" }} />
+  </div>
+  <div className={styles.subscribe}>
+    <div style={{ maxWidth: "51%",  margin: "0 auto",   display: "grid",  height: "auto",  alignItems: "center",  padding: "2rem",  textAlign: "center",  color: "#fff",  }} >
+      <h1>Subscribe to our Newsletter</h1>
+      <p>
+        Doroki streamlines business operations by centralising order, inventory,
+        and transaction management. It offers seamless billing, quick invoice
+        generation, efficient inventory management, and an eStore for online
+        orders.
+      </p>
+      <input
+        type="text"
+        placeholder="    Email Address"
+        style={{
+          width: "100%",
+          border: "none",
+          borderRadius: "0.5rem",
+          padding: "1rem  0",
+          margin: "1rem auto",
+          zIndex:1
+        }}
+      />
+      <BlueButton
+        text="Subscribe now"
+        style={{ width:"100%", padding: "1rem", height: "3rem", }} />
+    </div>
+  </div>
+
+  <div style={{display:'flex', color:"white", gap:'5rem', width:"100%", margin:"5rem 6rem", alignItems:'center'}}>
+     <div style={{display:'flex', flexDirection:'column', gap:"1rem", justifyContent:'center',  }}> 
+    <div style={{display:"flex",gap:'0.5rem' , zIndex:1}}>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/MapPin.svg' fill/></div>
+      <p>176 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos</p>
+    </div>
+    <div style={{display:"flex",gap:'0.5rem'}}>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Phone.svg' fill/></div>
+      <p> +234 (0) 801 234 5678</p>
+    </div>
+    <div style={{display:"flex", gap:'0.5rem'}}>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Mail.svg' fill/></div>
+      <p>support@doroki.com</p>
+    </div>
+    </div>
+    <div style={{display:"flex", gap:'1rem', width:"20rem" , alignItems:'center'}}>
+      <div  className={styles.footerIcon}><Image src='/assets/facebook.svg'fill/></div>
+      <div className={styles.footerIcon}><Image src='/assets/Instagram.svg'fill/></div>
+      <div className={styles.footerIcon}><Image src='/assets/Twitter.svg'fill/></div>
+      <div className={styles.footer_Icon}><Image src='/assets/Linkedin.svg'fill/></div>
+
+    </div>
+    <div style={{display:'flex', flexDirection:'column', gap:"0.5rem", zIndex:1}}>
+      <p>Terms & Conditions</p>
+      <p>privacy Policy</p>
+    </div>
+  </div>
+</div>
+
+
     </>
   );
 };

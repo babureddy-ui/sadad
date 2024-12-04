@@ -5,7 +5,7 @@ import React from 'react'
 export const NavigationBar = () => {
   return (
     <>
-    <div style={{ height: "85px", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.25)", display: "flex",alignItems: "center",backgroundColor: "white",zIndex: 1000, 
+    <div style={{ height: "75px", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.25)", display: "flex",alignItems: "center",backgroundColor: "white",zIndex: 1000, 
 }}
 >
         <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0 3rem" }}>
