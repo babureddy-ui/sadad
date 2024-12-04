@@ -102,13 +102,13 @@ export const HiddenPowers = () => {
                 borderElement.style.borderLeftColor = ele.tagColor;
                 }
             }} >
-            {/* Icon */}
             <div style={{width: "50px", height: "50px",position: "relative",left:"0"}}>
               <Image src={ele.icon} alt={ele.title} fill />
             </div>
             <div
             className="border-element"
-              style={{ borderLeft: `2px solid ${ele.tagColor}`, paddingLeft: "0.5rem",marginTop: "1.5rem", }} >
+              // style={{ borderLeft: `2px solid ${ele.tagColor}`, paddingLeft: "0.5rem",marginTop: "1.5rem", }} 
+              >
               <h6
                 style={{ margin: "10px 0",fontSize: "15px",fontWeight: "600", margin:"1.5rem 0"}} >
                 {ele.title}

@@ -1,6 +1,57 @@
+.headline {
+  margin: 1.5rem 0;
+}
+
+.animated_text {
+  color: #FF6347;
+  position: relative;
+  display: inline-block;
+  height: 1em; 
+  overflow: hidden;
+  font-size: 0.9em;
+  /* text-align: center; */
+  align-items: center;
+}
+
+.text_wrapper {
+  display: inline-block;
+  animation: scrollNames 30s steps(5) infinite;  
+  white-space: nowrap;
+  transform: translateY(0%);  
+  animation-delay: 0s; 
+}
+
+.icon_wrapper {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 6.5rem;
+  right: 8rem;
+}
+
+@keyframes scrollNames {
+  0% {
+    transform: translateY(0%);  
+  }
+  25% {
+    transform: translateY(-100%); 
+  }
+  50% {
+    transform: translateY(-200%);  
+  }
+  75% {
+    transform: translateY(-300%);  
+  }
+  100% {
+    transform: translateY(0%);  
+  }
+}
+
+
 .marquee_section {
     margin-top: 3rem;
   }
+
 
   .section_heading {
     width: fit-content;

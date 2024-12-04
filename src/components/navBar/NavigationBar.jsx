@@ -20,8 +20,8 @@ export const NavigationBar = () => {
           </div>
           <div style={{display:'flex', gap:"2rem"}}>
             
-            <BlueButton text="Contact Us" style={{ padding: "1rem  2rem",  width:"10rem", height:"3.25rem", }}/>
-            <BlackButton text="Login" style={{ padding: "1rem  2.6rem",  width:"10rem", height:"3.25rem"}}/>
+            <BlueButton text="Contact Us" style={{width:"9rem", height:"3rem", }}/>
+            <BlackButton text="Login" style={{width:"9rem", height:"3rem"}}/>
           </div>
         </div>
       </div>

@@ -171,7 +171,19 @@ export const HomePage = () => {
           </div>
           <div style={{ width: "30rem",left: "10rem",bottom: "9rem",position: "absolute",fontSize: "18px", }}>
             <div style={{display:"flex"}}> 
-            <h1 style={{margin:"1rem 0"}}> Drive your <span style={{color:'#FF6347',}}>Restaurant </span>business forward <br />easily with Doroki </h1> <div style={{height:"30px", width:"30px", position:"absolute", top:"6.5rem",right:"8rem"}}><Image src='/assets/stars.svg' fill/></div></div>
+            <h1 className={styles.headline}> Drive your 
+        <span className={styles.animated_text}>
+          <span className={styles.text_wrapper}>
+            Restaurant<br />
+            Grocery <br />
+            Retail<br />
+            Spa & Salon <br />
+            Electronics
+             
+          </span>
+        </span>  business forward <br /> easily with Doroki
+      </h1> <div style={{height:"30px", width:"30px", position:"absolute", top:"6.5rem",right:"8rem"}}>
+              <Image src='/assets/stars.svg' fill/></div></div>
             <p>
               Multi-functional solution tailored uniquely for your business. Manage all your
               Orders, Inventory & Transactions at one place.
