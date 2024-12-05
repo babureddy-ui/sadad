@@ -1,5 +1,8 @@
 .headline {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
+  font-family:'GilroyRegular';
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 .animated_text {
@@ -7,15 +10,53 @@
   position: relative;
   display: inline-block;
   height: 1em; 
+  margin-bottom: -0.5rem;
+  margin-left: 0.5rem;
   overflow: hidden;
   font-size: 0.9em;
-  /* text-align: center; */
   align-items: center;
+  
 }
+.hover_container {
+  position: relative;
+  height: 2rem;
+  width: 5rem;
+   
+  overflow: hidden;
+}
+
+.image_default {
+  margin-left: -1.4rem;
+  position: absolute;
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+.image_hover {
+  position: absolute;
+  opacity: 0;
+  transform: scaleX(0);  
+  transform-origin: left;  
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  width: 100%;
+}
+
+.hover_container:hover .image_default {
+  opacity: 0;
+}
+
+.hover_container:hover .image_hover {
+  opacity: 1;
+  transform: scaleX(1);  
+}
+
+
 
 .text_wrapper {
   display: inline-block;
-  animation: scrollNames 30s steps(5) infinite;  
+  justify-content: center;
+  font-family: 'GilroySemiBold';
+  animation: scrollNames 30s steps(5) infinite;
   white-space: nowrap;
   transform: translateY(0%);  
   animation-delay: 0s; 
@@ -33,19 +74,23 @@
   0% {
     transform: translateY(0%);  
   }
-  25% {
-    transform: translateY(-100%); 
+  20% {
+    transform: translateY(-100%);  
   }
-  50% {
+  40% {
     transform: translateY(-200%);  
   }
-  75% {
+  60% {
     transform: translateY(-300%);  
   }
+  80% {
+    transform: translateY(-400%);  
+  }
   100% {
-    transform: translateY(0%);  
+    transform: translateY(0%); 
   }
 }
+
 
 
 .marquee_section {
@@ -66,7 +111,7 @@
     background-color:#F1F5FF;
     padding: 3rem;
     width: 30rem;
-    height: 20rem;
+    height: 23rem;
     border-radius: 2rem;
   
   }
@@ -87,10 +132,11 @@
     gap: 1rem;
     padding: 0 0.5rem;
     border-radius: 1.5rem;
+    width: 25rem;
     
   }
   .BusinessTypes:hover{
-    background-color: #c9deec;
+    background-color: #e6f4fd;
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
   }
@@ -239,6 +285,8 @@
   .business_text{
     padding: 3rem 2rem;
     color: white;
+    font-family: GilroySemiBold;
+    font-size: 1.2rem;
   
 
      
@@ -310,7 +358,7 @@
   
   .subscriptionSection {
     position: relative;
-    height: 35rem;
+    height: auto;
     margin: 0 auto;  
     margin: 0 8rem 0 8rem;
     border-top-left-radius: 4rem;

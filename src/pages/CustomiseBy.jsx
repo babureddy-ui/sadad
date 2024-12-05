@@ -139,11 +139,11 @@ export const CustomiseBy = () => {
       <div style={{ height: "28.5rem", backgroundColor: "#223037", color: "#ffff", display: 'flex', borderTopRightRadius:"1.8rem",borderTopLeftRadius:"1.8rem"}}>
 
       <div style={{ display: 'flex', position: 'relative', margin: "2rem 0rem", right: "-50rem", zIndex:1}}>
-      <div style={{ display: 'flex', gap: '1rem', position: 'absolute',  right: '-5rem', width: "50rem",alignItems: 'center',}}>
+      <div style={{ display: 'flex', gap: '1rem', position: 'absolute',  right: '-5rem', width: "50rem",alignItems: 'center',fontFamily:"GilroyUlight"}}>
         <p>Customise by</p>
         {Object.keys(categories).map((category) => (
           <button style={{ 
-              borderRadius: '1rem',border: "0.5px solid white", padding: "2px",height: "2rem",  width: '6rem',
+              borderRadius: '1rem',border: "0.5px solid white", padding: "2px",height: "2rem",  width: '6rem',fontFamily:"GilroyUlight",
               backgroundColor: selectedCategory === category ? "white" : "#223037",
               color: selectedCategory === category ? "#223037" : "white",
             }}
@@ -159,8 +159,8 @@ export const CustomiseBy = () => {
         
 
           <div style={{ width: "27.5rem", margin: "8rem 5rem" }}>
-            <h1> Manage your <span style={{ color: currentCategory.image.titleColor }}>{currentCategory.image.title}</span> <br />with streamlined technology</h1> <br />
-            <p>Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.</p><br />
+            <h1 style={{fontFamily:"GilroySemiBold"}}> Manage your <span style={{ color: currentCategory.image.titleColor }}>{currentCategory.image.title}</span> <br />with streamlined technology</h1> <br />
+            <p style={{fontFamily:"GilroyRegular"}}>Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.</p><br />
             <BlueButton text="Get in Touch" style={{width:"10rem" , height:"3rem"}}/>
           </div>
         </div>
@@ -174,7 +174,7 @@ export const CustomiseBy = () => {
              
           <div key={index} style={{backgroundColor: item.bgColor, padding: '1rem',margin:"1rem 0",  borderBottomRightRadius: '2rem',  borderBottomLeftRadius: '2rem',padding:"2rem", width:"20rem"  }}>
             <div style={{width:'4rem', height:'4rem', backgroundColor:item.color, borderRadius:'1rem',margin:"1rem 0"}}></div>
-          <p>{item.txt}</p>
+          <p style={{fontFamily:"GilroyMedium"}}>{item.txt}</p>
           </div>
         ))}
       </div>

@@ -34,7 +34,8 @@ const Questions = ({ FaqTableData, heading }) => {
                         ? {
                              borderLeft: "6px solid #0391f0", 
                              marginTop: "1.5rem", 
-                             borderRadius:"0.5rem"
+                             borderRadius:"0.5rem",
+                              
                           }
                         : {})
                   }}
@@ -46,7 +47,10 @@ const Questions = ({ FaqTableData, heading }) => {
                         backgroundColor: "#f5f8ff", 
                         boxSizing: "border-box",
                         transition: "background-color 0.3s ease",
-                        borderRadius:"0.5rem"
+                        borderRadius:"0.5rem",
+                        fontFamily:"GilroyMedium",
+                        color:"#767676"
+                         
                      }}
                      onMouseEnter={() => handleMouseEnter(ele?.id)}
                      onMouseLeave={handleMouseLeave}
@@ -58,12 +62,14 @@ const Questions = ({ FaqTableData, heading }) => {
                            gap: "5rem",
                            cursor: "pointer",
                            color: "#101828",
+                           fontFamily:"GilroyBold",
+                          fontSize:"1.3rem"
                            
                         }}
                      >
                         <p
                            style={{
-                              color: "#626060",
+                              // color: "#626060",
                               marginBottom: "0",
                            }}
                         >
