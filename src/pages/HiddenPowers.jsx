@@ -73,7 +73,7 @@ export const HiddenPowers = () => {
   return (
     <div style={{ padding: "5rem 8rem",  backgroundColor:"#F5F8FF"}}>
         <div className={styles.header}>
-            <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem"}}>Doroki’s hidden powers</p>
+            <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:"GilroyMedium"}}>Doroki’s hidden powers</p>
             <div style={{height:"30px", width:"30px", position:"absolute", right:"65rem"}}><Image src='/assets/stars.svg' fill/></div>
         </div>
       <div className={styles.mainContainer}
@@ -110,12 +110,12 @@ export const HiddenPowers = () => {
               // style={{ borderLeft: `2px solid ${ele.tagColor}`, paddingLeft: "0.5rem",marginTop: "1.5rem", }} 
               >
               <h6
-                style={{ margin: "10px 0",fontSize: "15px",fontWeight: "600", margin:"1.5rem 0"}} >
+                style={{ margin: "10px 0",fontSize: "15px",fontWeight: "600", margin:"1rem 0", fontFamily:"GilroyBold"}} >
                 {ele.title}
               </h6>
             </div>
             
-            <p style={{  fontSize: "14px", color: "#555" }}>
+            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyMedium", color:"#767676" }}>
               {ele.text}
             </p>
           </div>

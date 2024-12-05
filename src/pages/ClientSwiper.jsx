@@ -87,7 +87,7 @@ const ClientSwiper = () => {
               }}
             >
               <div style={{ padding: '3rem 2rem' }}>
-                <p>{item.text}</p>
+                <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>{item.text}</p>
               </div>
 
               <div
