@@ -127,57 +127,118 @@ export const CustomiseBy = () => {
   };
 
   const [selectedCategory, setSelectedCategory] = useState('restaurant');
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
+    if (category !== selectedCategory) {
+      setIsAnimating(true);  
+      setTimeout(() => {
+        setSelectedCategory(category);
+        setIsAnimating(false);  
+      }, 500);  
+    }
   };
 
   const currentCategory = categories[selectedCategory];
 
   return (
     <div>
-      <div style={{ height: "28.5rem", backgroundColor: "#223037", color: "#ffff", display: 'flex', borderTopRightRadius:"1.8rem",borderTopLeftRadius:"1.8rem"}}>
-
-      <div style={{ display: 'flex', position: 'relative', margin: "2rem 0rem", right: "-50rem", zIndex:1}}>
-      <div style={{ display: 'flex', gap: '1rem', position: 'absolute',  right: '-5rem', width: "50rem",alignItems: 'center',fontFamily:"GilroyUlight"}}>
-        <p>Customise by</p>
-        {Object.keys(categories).map((category) => (
-          <button style={{ 
-              borderRadius: '1rem',border: "0.5px solid white", padding: "2px",height: "2rem",  width: '6rem',fontFamily:"GilroyUlight",
-              backgroundColor: selectedCategory === category ? "white" : "#223037",
-              color: selectedCategory === category ? "#223037" : "white",
-            }}
-            key={category}
-            onClick={() => handleCategoryChange(category)}
-          >
-            {category.charAt(0).toUpperCase() + category.slice(1)}
-          </button>
-        ))}
-      </div>
-    </div>
+      <div
+        style={{
+          height: "28.5rem",
+          backgroundColor: "#223037",
+          color: "#ffff",
+          display: 'flex',
+          borderTopRightRadius: "1.8rem",
+          borderTopLeftRadius: "1.8rem"
+        }}
+      >
+        <div style={{ display: 'flex', position: 'relative', margin: "2rem 0rem", right: "-50rem", zIndex: 1 }}>
+          <div style={{
+            display: 'flex', gap: '1rem', position: 'absolute', right: '-5rem', width: "50rem",
+            alignItems: 'center', fontFamily: "GilroyUlight"
+          }}>
+            <p>Customise by</p>
+            {Object.keys(categories).map((category) => (
+              <button
+                style={{
+                  borderRadius: '1rem',
+                  border: "0.5px solid white",
+                  padding: "2px",
+                  height: "2rem",
+                  width: '6rem',
+                  fontFamily: "GilroyUlight",
+                  backgroundColor: selectedCategory === category ? "white" : "#223037",
+                  color: selectedCategory === category ? "#223037" : "white",
+                }}
+                key={category}
+                onClick={() => handleCategoryChange(category)}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </button>
+            ))}
+          </div>
+        </div>
         <div>
-        
-
           <div style={{ width: "27.5rem", margin: "8rem 5rem" }}>
-            <h1 style={{fontFamily:"GilroySemiBold"}}> Manage your <span style={{ color: currentCategory.image.titleColor }}>{currentCategory.image.title}</span> <br />with streamlined technology</h1> <br />
-            <p style={{fontFamily:"GilroyRegular"}}>Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.</p><br />
-            <BlueButton text="Get in Touch" style={{width:"10rem" , height:"3rem"}}/>
+            <h1 style={{ fontFamily: "GilroySemiBold" }}>
+              Manage your <span style={{ color: currentCategory.image.titleColor }}>{currentCategory.image.title}</span> <br />
+              with streamlined technology
+            </h1>
+            <br />
+            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.6rem" }}>
+              Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.
+            </p>
+            <br />
+            <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem" }} />
           </div>
         </div>
         <div style={{ position: 'relative', width: '50rem' }}>
           <Image src={currentCategory.image.url} alt={currentCategory.image.title} fill />
         </div>
       </div>
-
-      <div style={{ display: "flex", gap: '1rem' }}>
+      <div className={`box-container ${isAnimating ? 'animating' : ''}`}>
         {currentCategory.content.map((item, index) => (
-             
-          <div key={index} style={{backgroundColor: item.bgColor, padding: '1rem',margin:"1rem 0",  borderBottomRightRadius: '2rem',  borderBottomLeftRadius: '2rem',padding:"2rem", width:"20rem"  }}>
-            <div style={{width:'4rem', height:'4rem', backgroundColor:item.color, borderRadius:'1rem',margin:"1rem 0"}}></div>
-          <p style={{fontFamily:"GilroyMedium"}}>{item.txt}</p>
+          <div
+            key={index}
+            className="animated-box"
+            style={{
+              backgroundColor: item.bgColor,
+              padding: '2rem',
+              margin: "1rem 0",
+              borderBottomRightRadius: '2rem',
+              borderBottomLeftRadius: '2rem',
+              width: "20rem"
+            }}
+          >
+            <div
+              style={{
+                width: '4rem',
+                height: '4rem',
+                backgroundColor: item.color,
+                borderRadius: '1rem',
+                margin: "0 0 1rem 0"
+              }}
+            ></div>
+            <p style={{ fontFamily: "GilroyMedium" }}>{item.txt}</p>
           </div>
         ))}
       </div>
+      <style jsx>{`
+        .box-container {
+          display: flex;
+          gap: 1rem;
+          transition: transform 0.5s ease, opacity 0.5s ease;
+        }
+        .box-container.animating {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        .box-container:not(.animating) {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      `}</style>
     </div>
   );
 };

@@ -154,27 +154,34 @@ export const HomePage = () => {
    
    
 ];
+const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
   return (
     <>
+
+    {/* <ModalComponent/> */}
       <div style={{ display: "flex", gap: "20px", margin:"4.8rem", height:"43rem" }}>
-        <div style={{ width: "300px", height: "300px", height: "37rem", }}>
-          <div style={{ width: "10rem",  height: "9rem",  position: "absolute", bottom: "3rem", left: "5rem", }}>
+        <div style={{ position:"relative",width: "20rem", height: "45rem", }}>
+          <div style={{ width: "10rem",  height: "9rem",  position: "absolute", bottom: "7rem", left: "0rem", }}>
             <Image src="/assets/homePage/Ellipse.svg" fill />
           </div>
-          <div style={{ width: "30rem",left: "10rem",bottom: "7rem",position: "absolute", }}>
+          <div style={{ width: "32rem",left: "4rem",bottom: "11rem",position: "absolute", }}>
             <div style={{display:"flex"}}> 
-            <h1 className={styles.headline}> Drive your 
-        <span className={styles.animated_text}>
-          <span className={styles.text_wrapper}>
-            Restaurant<br />
-            Grocery <br />
-            Retail<br />
-            Spa & Salon <br />
-            Electronics
-          </span>
-        </span>  business forward <br /> easily with Doroki</h1>
-       <div style={{height:"3rem", width:"3rem", position:"absolute", top:"9.3rem",right:"3rem"}}> <Image src='/assets/stars.svg' fill/></div></div>
+              
+            <h1 className={styles.headline}>
+              Drive your 
+              <div className={styles.box}>
+              <span className={styles.word} style={{color:"#FF6347"}}>Restaurant</span>
+                <span className={styles.word} style={{color:"#1E92F7"}}>Retail</span>
+                <span className={styles.word} style={{color:"#6ACD6E"}}>Grocery</span>
+                <span className={styles.word} style={{color:"#CA80E9"}}>Spa & Salon</span>
+                <span className={styles.word} style={{color:"#F15542"}}>Electronics</span>
+                
+              </div> <br />
+              business forward <br /> easily with Doroki
+            </h1>
+
+       <div style={{height:"3rem", width:"3rem", position:"absolute", top:"9.3rem",right:"4.5rem"}}> <Image src='/assets/stars.svg' fill/></div></div>
               <p style={{ fontFamily: "GilroyMedium",color:'#767676', lineHeight:"1.8rem" }}>
                 Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.
               </p> <br />
@@ -214,7 +221,7 @@ export const HomePage = () => {
         <div>
             <div style={{justifyContent:'center', textAlign:"center",}}> 
           <h1 style={{margin:"2rem 0",  fontFamily: 'GilroyMedium', fontSize:"3rem"}}>Trusted by top Businesses</h1>
-          <p style={{ fontFamily: "GilroyMedium" }}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
+          <p style={{ fontFamily: "GilroyMedium", lineHeight:"1.6rem" }}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
           </div>
           </div>
           <div className={styles.marquee_section}>
@@ -242,8 +249,8 @@ export const HomePage = () => {
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Loans.svg" fill />
           </div>
-          <h1 style={{fontFamily:"GilroySemiBold"}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
-          <p style={{fontFamily:"GilroyRegular"}}>
+          <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
+          <p style={{fontFamily:"GilroyRegular" ,lineHeight:"1.6rem"}}>
             Seamlessly send money with our POS, ensuring secure transactions and
             instant transfers for your convenience and peace of mind.
           </p>
@@ -263,8 +270,8 @@ export const HomePage = () => {
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Invt.svg" fill />
           </div>
-          <h1 style={{fontFamily:"GilroySemiBold"}}>  Track and manage <span style={{color:"#0091F0"}}> Inventory </span>  with ease</h1>
-          <p style={{fontFamily:"GilroyRegular"}}>
+          <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>  Track and manage <span style={{color:"#0091F0"}}> Inventory </span>  with ease</h1>
+          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.6rem"}}>
           Efficient inventory management helps you track, organize and optimize stock levels, ensuring smoother business operations.
           </p>
           </div>
@@ -284,7 +291,7 @@ export const HomePage = () => {
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/eStore.svg" fill />
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold"}}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
           <p style={{fontFamily:"GilroyRegular"}}>Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
           </div>
 
@@ -302,7 +309,7 @@ export const HomePage = () => {
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Reports.svg" fill />
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold"}}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
           <p style={{fontFamily:"GilroyRegular"}}>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
           </div>
 
@@ -320,7 +327,7 @@ export const HomePage = () => {
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Crm_icon.svg" fill />
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold"}}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
           <p style={{fontFamily:"GilroyRegular"}}> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
           </div>
 
@@ -357,7 +364,7 @@ export const HomePage = () => {
               <div style={{ position: "relative", height: "50px", width: "50px" }}>
                 <Image src="/assets/sweep.svg" fill />
               </div>
-              <h1 style={{ margin: "2rem 0", fontFamily:"GilroySemiBold",}}>
+              <h1 style={{ margin: "2rem 0", fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>
                 Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
               </h1>
               <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>Daily auto-sweep transfers funds effortlessly into your designated account.</p>
@@ -370,7 +377,7 @@ export const HomePage = () => {
               <div style={{ position: "relative", height: "50px", width: "50px" }}>
                 <Image src="/assets/money.svg" fill />
               </div>
-              <h1 style={{ margin: "2rem 0", fontFamily:"GilroySemiBold",}}>
+              <h1 style={{ margin: "2rem 0", fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}>
                 Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
               </h1>
               <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
@@ -386,15 +393,15 @@ export const HomePage = () => {
 
 
       <div className={styles.loan_section}>
-        <div style={{width:"38rem", display:"flex", flexDirection:'column', gap:"1.5rem" ,margin:"2rem 0"}}> 
+        <div style={{width:"38rem", display:"flex", flexDirection:'column', gap:"1.5rem" ,margin:"3rem 0"}}> 
          <div style={{position:'relative', width:"4rem", height:'4rem'}}><Image src='/assets/Loans.svg' fill/></div>
          <div style={{fontSize:"1rem",}}>
-          <h1 style={{fontFamily:"GilroySemiBold",}}> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h1> <br />
+          <h1 style={{fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h1> <br />
           <p style={{fontFamily:"GilroyMedium", color:"#2b3c45"}}>Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
          </div>
          <div style={{position:"relative", height:"5rem", width:"8rem"}}><Image src="/assets/playstore.svg" fill/></div>
          </div>
-         <div style={{position:'relative', height:'25rem', width:"35rem", bottom:0}}> <Image src="/assets/Loan_img.webp" fill/> </div>
+         <div style={{position:'relative', height:'27rem', width:"37rem", bottom:0}}> <Image src="/assets/Loan_img.webp" fill/> </div>
       </div>
 
 
@@ -403,24 +410,24 @@ export const HomePage = () => {
             <h1 style={{margin:"2rem 0", fontFamily:"GilroyBold", fontSize:"3rem"}}>Efficient, <span style={{color:"#0391f0"}}>Versatile</span> <br />Reliable</h1>
             <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.</p>
         </div>
-        <div style={{width:"100%", height:"38rem", position:'relative'}}><Image src="/assets/versatile.webp" fill/></div>
+        <div style={{width:"100%", height:"42rem", position:'relative'}}><Image src="/assets/versatile.webp" fill/></div>
         <div style={{width:"54%", height:"34rem", position:'relative', top:"-25.5rem", left:"41.3rem"}}><Image src="/assets/Transaction.webp" fill/></div>
 
       </div>
 
-      <div style={{margin:"-20rem 0 0 0 "}}>
+      <div style={{margin:"-13rem 0 0 0 "}}>
  
-         <div style={{display:"flex", height:"38rem"}}>
+         <div style={{display:"flex", height:"45rem"}}>
           <div style={{backgroundColor:"#0F2531", padding:"3rem", width:"50%" ,padding:"8rem 0 0 8rem"}}> 
-          <div style={{position:"relative", zIndex:'2', width:"20.5rem", height:"23rem", left:"27rem" , top:"4rem"}}><Image src="/assets/DorokiTableTerminal.webp"fill/></div>
+          <div style={{position:"relative", zIndex:'2', width:"23.5rem", height:"25rem", left:"25rem" , top:"4rem"}}><Image src="/assets/DorokiTableTerminal.webp"fill/></div>
 
            <div style={{width:"20rem",position:"relative", margin:"-20rem 0"}}>
             {/* <div  className={styles.businessTitle}><p>Brought to you by </p><div style={{position:"relative", height:"2rem", width:"4rem"}}><Image src="/assets/PagaLogo_1.svg" fill/></div></div> */}
             <div style={{ color:"#FFFFFF", width:"25rem"}}>
-              <h1 style={{margin:"1rem 0", fontFamily:"GilroySemiBold",fontSize:"2.5rem" }}>Start your Business journey effortlessly with <span style={{backgroundColor:"#f2931d", padding:"0.5rem"}}>Doroki</span> </h1>
-              <p style={{fontFamily:"GilroyMedium"}}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p>
+              <h1 style={{margin:"1rem 0", fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3rem" }}>Start your Business journey effortlessly with <span style={{backgroundColor:"#f2931d", padding:"0.5rem"}}>Doroki</span> </h1> <br />
+              <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem", fontSize:"1.1rem"}}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
             </div>
-            <div style={{position:"relative", height:"5rem", width:"8rem"}}><Image src="/assets/playstore.svg" fill/></div>
+            <div style={{position:"relative", height:"6rem", width:"9rem"}}><Image src="/assets/playstore.svg" fill/></div>
             </div>
            </div>
            <div style={{ backgroundColor: "#0F31", width: "50%" }}>
@@ -433,7 +440,7 @@ export const HomePage = () => {
       <div style={{margin:"5rem 8rem" }}>
 
 
-        <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"4rem 0",  }}><h1 style={{fontFamily:"GilroySemiBold",fontSize:"2.5rem"}}>Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span> reigns supreme</h1></div>
+        <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"4rem 0",  }}><h1 style={{fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3rem"}}>Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span> reigns supreme</h1></div>
 
         <div style={{display:"flex", gap:"3rem"}}>
           <div className={styles.solutionSection} >
@@ -441,14 +448,14 @@ export const HomePage = () => {
             <div className={styles.content_sec}> 
               {/* <div className={styles.star1}><Image src='/assets/star1.svg' fill/></div>
               <div className={styles.star2}><Image src='/assets/star2.svg' fill/></div> */}
-            <p style={{marginTop:"-6rem", fontFamily:"GilroyMedium", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.</p>
+            <p style={{marginTop:"-3rem", fontFamily:"GilroyMedium",lineHeight:"1.5rem", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.</p>
               <div className={styles.dev_img}><Image src='/assets/pos.svg' fill/></div>
               </div >
             </div>
             <div className={styles.solutionSection} >
             <div className={styles.headSec}><h1 style={{fontFamily:"GilroyBold"}}>POS 10Q</h1></div>
             <div className={styles.content_sec}> 
-            <p style={{marginTop:"-6rem",fontFamily:"GilroyMedium",}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
+            <p style={{marginTop:"-3rem",fontFamily:"GilroyMedium",}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
               <div className={styles.dev_img}><Image src='/assets/mf.svg' fill/></div>
               </div >
             </div>
@@ -458,11 +465,11 @@ export const HomePage = () => {
         6
       
      <div style={{height:"40rem", width:"100%"}}> 
-      <div style={{backgroundColor:"#0F2531", color:"white", height:"35rem"}}>
+      <div style={{backgroundColor:"#0F2531", color:"white", height:"36rem"}}>
         {/* margin:"-10rem 0" */}
         <div style={{display:"flex" , position:"relative",justifyContent:"space-between", padding:"5rem  10rem 2rem 10rem",  zIndex:'4' }}>
           <h1 style={{fontFamily:"GilroySemiBold"}}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.3rem 0.8rem"}}>Doroki</span>   <br />exceeds expectations!</h1>
-          <p style={{fontFamily:"GilroyRegular"}}>"Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations."</p>
+          <p style={{fontFamily:"GilroyRegular" , lineHeight:"1.7rem" , wordSpacing:"0.2rem"}}>"Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations."</p>
         </div>
         <div style={{position:"relative", width:"70rem", height:"30rem", left:"10rem"}}><Image src="/assets/video-img.webp" fill/></div>
         <div style={{position:"relative", width:"50rem", height:"30rem",margin:"-45rem 0" }}><Image src="/assets/Doroki-Blurred.webp" fill/></div>
@@ -487,10 +494,10 @@ export const HomePage = () => {
       
 
       <div style={{margin:"-5rem 9rem", display:"flex" , justifyContent:'space-between'}}>
-        <div style={{position:"relative" , width:"34rem", height:"44rem"}}>
+        <div style={{position:"relative" , width:"34rem", height:"49rem"}}>
           <Image src="/assets/queries.webp" fill/>
         </div>
-        <div style={{position:'absolute', left:"40rem"}}>
+        <div style={{position:'absolute', left:"40rem", margin:"4rem 0 0 0"}}>
         <FrequentQuestions FaqTableData={faqs}/>
         </div>
       </div> 
@@ -539,12 +546,12 @@ export const HomePage = () => {
 
 
       <div style={{display:'flex', margin:"5rem 10rem -1.4rem 0", width:"100%",    }}>
-  <div style={{position:"relative", width:"47rem", height:"50rem"}}>
+  <div style={{position:"relative", width:"49rem", height:"50rem"}}>
     <Image src='/assets/demo_img.webp' fill />
   </div>
   
 
-  <div style={{padding: '2rem', display: 'flex', flexDirection: 'column', width: '30rem', padding:"5rem"}}>
+  <div style={{padding: '2rem', display: 'flex', flexDirection: 'column', width: '30rem', padding:"4rem"}}>
   <div style={{display: "flex", position: "relative", fontSize:"21px", alignItems:"center"}}>
   <h1 style={{fontFamily:"GilroySemiBold"}}>Schedule a free demo</h1>
 
@@ -553,7 +560,7 @@ export const HomePage = () => {
   </div>
 </div>
  <br />
-    <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
+    <p style={{fontFamily:"GilroyMedium", color:"#767676", lineHeight:"1.5rem"}}>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
     <form>
       <div className={styles.input_divs}>
        
@@ -630,13 +637,13 @@ export const HomePage = () => {
 </div>
 
 <div className={styles.subscriptionSection}>
-  <div  style={{  position: "absolute",  width: "74rem", height: "35rem"}} >
+  <div  style={{  position: "absolute",  width: "77rem", height: "41.3rem"}} >
     <Image src="/assets/blur.webp" fill style={{ objectFit: "cover" }} />
   </div>
   <div className={styles.subscribe}>
     <div style={{ maxWidth: "51%",  margin: "5rem auto auto auto",   display: "grid",  height: "auto",  alignItems: "center",  padding: "2rem",  textAlign: "center",  color: "#fff",  }} >
       <h1 style={{fontFamily:"GilroySemiBold"}}>Subscribe to our Newsletter</h1> <br />
-      <p style={{fontFamily:"GilroyMedium", fontSize:"0.85rem"}}>
+      <p style={{fontFamily:"GilroyRegular", fontSize:"0.85rem", lineHeight:"1.5rem"}}>
         Doroki streamlines business operations by centralising order, inventory,
         and transaction management. It offers seamless billing, quick invoice
         generation, efficient inventory management, and an eStore for online

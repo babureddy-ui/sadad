@@ -115,7 +115,7 @@ export const HiddenPowers = () => {
               </h6>
             </div>
             
-            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyMedium", color:"#767676" }}>
+            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyRegular", color:"#767676", lineHeight:"1.4rem" }}>
               {ele.text}
             </p>
           </div>

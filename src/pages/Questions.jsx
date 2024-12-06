@@ -32,8 +32,9 @@ const Questions = ({ FaqTableData, heading }) => {
                      marginBottom: "1.5rem",
                      ...(showAns?.key === ele?.id && showAns?.status
                         ? {
-                             borderLeft: "6px solid #0391f0", 
+                             borderLeft: "9px solid #0391f0", 
                              marginTop: "1.5rem", 
+                             lineHeight:"1.5rem",
                              borderRadius:"0.5rem",
                               
                           }

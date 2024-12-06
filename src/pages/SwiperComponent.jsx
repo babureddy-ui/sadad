@@ -27,7 +27,7 @@ const SwiperComponent = () => (
       {BusinessImages.map((item) => (
         <SwiperSlide key={item.company}>
           <div style={{ cursor: 'pointer', display: 'grid', gap: '3rem' }}>
-            <div style={{ height: "38rem", width: "100%" }}>
+            <div style={{ height: "45rem", width: "100%" }}>
               <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                 <Image src={item.link} alt={item.company} fill />
               </div>
