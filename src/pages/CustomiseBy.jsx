@@ -1,6 +1,7 @@
 import { BlueButton } from '@/components/Buttons/Button';
 import Image from 'next/image';
 import React, { useState } from 'react';
+import styles from '../components/homePage/HomePage.module.css'
 
 export const CustomiseBy = () => {
   const categories = {
@@ -160,31 +161,34 @@ export const CustomiseBy = () => {
           }}>
             <p>Customise by</p>
             {Object.keys(categories).map((category) => (
-              <button
-                style={{
-                  borderRadius: '1rem',
-                  border: "0.5px solid white",
-                  padding: "2px",
-                  height: "2rem",
-                  width: '6rem',
-                  fontFamily: "GilroyUlight",
-                  backgroundColor: selectedCategory === category ? "white" : "#223037",
-                  color: selectedCategory === category ? "#223037" : "white",
-                }}
-                key={category}
-                onClick={() => handleCategoryChange(category)}
-              >
-                {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
-            ))}
+          <button
+            style={{
+              borderRadius: '1rem',
+              border: "0.5px solid white",
+              padding: "2px",
+              height: "2rem",
+              width: '6.5rem',
+              fontFamily: "GilroyMedium",
+              backgroundColor: selectedCategory === category ? "white" : "#223037",
+              color: selectedCategory === category ? "#223037" : "white",
+              fontWeight: selectedCategory === category ? "GilroyExtrabold" : "normal",
+                  
+            }}
+            key={category}
+            onClick={() => handleCategoryChange(category)}
+          >
+            {category === "spaSalon" ? "Spa & Salon" : category.charAt(0).toUpperCase() + category.slice(1)}
+            </button>
+        ))}
+
           </div>
         </div>
         <div>
-          <div style={{ width: "27.5rem", margin: "8rem 5rem" }}>
-            <h1 style={{ fontFamily: "GilroySemiBold" }}>
-              Manage your <span style={{ color: currentCategory.image.titleColor }}>{currentCategory.image.title}</span> <br />
-              with streamlined technology
-            </h1>
+          <div style={{ width: "30rem", margin: "8rem 5rem" }}>
+          <h1  style={{  fontFamily: "GilroySemiBold",}}>Manage your {' '}
+            <span className={`${isAnimating ? styles.Out : styles.In}`}style={{color: currentCategory.image.titleColor,display: "inline-block", transition: "all 0.5s ease",}} >
+             {currentCategory.image.title}
+              </span><br /> with streamlined technology</h1>
             <br />
             <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.6rem" }}>
               Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.
@@ -197,18 +201,18 @@ export const CustomiseBy = () => {
           <Image src={currentCategory.image.url} alt={currentCategory.image.title} fill />
         </div>
       </div>
-      <div className={`box-container ${isAnimating ? 'animating' : ''}`}>
+      <div className={`${styles.box_container} ${isAnimating ? styles.animating : ''}`}>
         {currentCategory.content.map((item, index) => (
           <div
             key={index}
-            className="animated-box"
+            className={styles.animated_box}
             style={{
               backgroundColor: item.bgColor,
               padding: '2rem',
               margin: "1rem 0",
               borderBottomRightRadius: '2rem',
               borderBottomLeftRadius: '2rem',
-              width: "20rem"
+              width: "21rem"
             }}
           >
             <div
@@ -224,10 +228,11 @@ export const CustomiseBy = () => {
           </div>
         ))}
       </div>
-      <style jsx>{`
+      {/* <style jsx>{`
         .box-container {
           display: flex;
           gap: 1rem;
+           
           transition: transform 0.5s ease, opacity 0.5s ease;
         }
         .box-container.animating {
@@ -238,7 +243,7 @@ export const CustomiseBy = () => {
           transform: translateY(0);
           opacity: 1;
         }
-      `}</style>
+      `}</style> */}
     </div>
   );
 };
