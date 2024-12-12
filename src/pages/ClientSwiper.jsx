@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { useState } from 'react';
+import styles from '../components/homePage/HomePage.module.css'
 
 const kindwords = [
     { 
@@ -69,7 +70,11 @@ const ClientSwiper = () => {
         slidesPerView={3}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         speed={700}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true,
+          // bulletClass: styles.custom_bullet,
+          // bulletActiveClass: styles.custom_bullet_active,
+         }}
+        
         modules={[Autoplay, Pagination]}
         style={{ paddingBottom: '3rem' }}
         className="custom-testimonial-swiper"
@@ -87,7 +92,7 @@ const ClientSwiper = () => {
               }}
             >
               <div style={{ padding: '3rem 2rem' }}>
-                <p style={{fontFamily:"GilroyMedium", color:"#767676"}}>{item.text}</p>
+                <p style={{fontFamily:"GilroyRegular", color:"#767676" , lineHeight:'1.5rem'}}>{item.text}</p>
               </div>
 
               <div

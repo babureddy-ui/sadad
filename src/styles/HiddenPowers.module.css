@@ -2,17 +2,18 @@
      
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 2rem;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+    /* width: 15rem; */
+    padding: 1.5rem;
      
   }
   
   
   .elements {
     text-align: start;
-    border-radius: 10px;
-    padding: 2rem 2rem;
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
     background-color: "#ffffff", 

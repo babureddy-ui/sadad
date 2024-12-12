@@ -71,10 +71,10 @@ export const HiddenPowers = () => {
   ];
 
   return (
-    <div style={{ padding: "5rem 8rem",  backgroundColor:"#F5F8FF"}}>
+    <div style={{ padding: "5rem 5.5rem 5rem 6rem ",  backgroundColor:"#F5F8FF"}}>
         <div className={styles.header}>
             <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:"GilroyMedium"}}>Doroki’s hidden powers</p>
-            <div style={{height:"30px", width:"30px", position:"absolute", right:"65rem"}}><Image src='/assets/stars.svg' fill/></div>
+            <div style={{height:"30px", width:"30px", position:"relative", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill/></div>
         </div>
       <div className={styles.mainContainer}
        >
@@ -102,7 +102,7 @@ export const HiddenPowers = () => {
                 borderElement.style.borderLeftColor = ele.tagColor;
                 }
             }} >
-            <div style={{width: "50px", height: "50px",position: "relative",left:"0"}}>
+            <div style={{width: "4rem", height: "4rem",position: "relative",left:"0", margin:"0 0 2rem  0"}}>
               <Image src={ele.icon} alt={ele.title} fill />
             </div>
             <div
@@ -110,12 +110,12 @@ export const HiddenPowers = () => {
               // style={{ borderLeft: `2px solid ${ele.tagColor}`, paddingLeft: "0.5rem",marginTop: "1.5rem", }} 
               >
               <h6
-                style={{ margin: "10px 0",fontSize: "15px",fontWeight: "600", margin:"1rem 0", fontFamily:"GilroyBold"}} >
+                style={{ margin: "10px 0",fontSize: "18px",fontWeight: "600", margin:"1rem 0", fontFamily:"GilroySemiBold"}} >
                 {ele.title}
               </h6>
             </div>
             
-            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyMedium", color:"#767676" }}>
+            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyMedium", color:"#767676", lineHeight:"1.4rem" }}>
               {ele.text}
             </p>
           </div>
