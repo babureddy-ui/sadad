@@ -74,7 +74,7 @@ export const HiddenPowers = () => {
     <div style={{ padding: "5rem 5.5rem 5rem 6rem ",  backgroundColor:"#F5F8FF"}}>
         <div className={styles.header}>
             <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:"GilroyMedium"}}>Doroki’s hidden powers</p>
-            <div style={{height:"30px", width:"30px", position:"relative", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill/></div>
+            <div style={{height:"30px", width:"30px", position:"relative", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill alt="stars" /></div>
         </div>
       <div className={styles.mainContainer}
        >

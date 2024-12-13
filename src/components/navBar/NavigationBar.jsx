@@ -78,12 +78,12 @@ export const NavigationBar = () => {
       {contact && (
         <div className={styles.contact_form}>
           <button className={styles.close_button } onClick={() => setContact(false)} >&times; </button>
-          <div style={{position:'relative', height:"35rem", width:"28rem"}}> <Image src='/assets/contact_img.svg' fill /> </div>
+          <div style={{position:'relative', height:"35rem", width:"28rem"}}> <Image src='/assets/contact_img.svg' fill alt="contact img" /> </div>
           <div style={{padding: '2rem', display: 'flex', flexDirection: 'column', width: '29rem', padding:"1rem 2.5rem 1rem 1rem"}}>
           <div style={{display: "flex", position: "relative", fontSize:"1.2rem", alignItems:"center"}}>
           <h1 style={{fontFamily:"GilroySemiBold"}}>Schedule a free demo</h1>
           <div style={{height: "2rem", width: "2rem", position: 'relative',marginLeft:"1rem" }}>
-            <Image src='/assets/stars.svg' fill />
+            <Image src='/assets/stars.svg' fill alt="stars" />
           </div>
           </div>
           <br />
@@ -166,7 +166,7 @@ export const NavigationBar = () => {
     <div style={{display: "flex", position: "relative", fontSize:"18px", alignItems:"center",justifyContent:"center", textAlign:'center'}}>
           <h1 style={{fontFamily:"GilroySemiBold"}}>Thanks!</h1>
           <div style={{height: "2rem", width: "2rem", position: 'relative', right: "-0.5rem", }}>
-            <Image src='/assets/stars.svg' fill />
+            <Image src='/assets/stars.svg' fill alt="stars" />
           </div>
           </div> <br />
       <p style={{ fontFamily: "GilroyRegular", color: "#767676", fontSize: "1rem", lineHeight: "1.5rem" }}>

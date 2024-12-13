@@ -173,7 +173,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div className={styles.Top_heroSection}>
         <div className={styles.text_heroSection}>
           <div style={{ width: "10rem",  height: "9rem",  position: "absolute", bottom: "7rem", left: "-2rem", }}>
-            <Image src="/assets/homePage/Ellipse.svg" fill />
+            <Image src="/assets/homePage/Ellipse.svg" fill alt="ellipse" />
           </div>
           <div style={{ width: "33rem",left: "2.5rem",bottom: "11rem",position: "absolute", }}>
             <div style={{display:"flex"}}> 
@@ -190,7 +190,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
               business forward <br /> easily with Doroki
             </h1>
 
-       <div style={{height:"3rem", width:"3rem", position:"absolute", top:"9.3rem",right:"4.5rem"}}> <Image src='/assets/stars.svg' fill/></div></div>
+       <div style={{height:"3rem", width:"3rem", position:"absolute", top:"9.3rem",right:"4.5rem"}}> <Image src='/assets/stars.svg' fill alt="stars" /></div></div>
               <p className={styles.p_heoText}>
                 Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.
               </p> <br />
@@ -206,7 +206,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
           </div>
         </div>
         <div style={{ width: "47rem",height: "47rem",position: "relative",right: "-18rem", }} >
-          <Image src="/assets/homePage/hero-image.svg" fill />
+          <Image src="/assets/homePage/hero-image.svg" fill alt="hero" />
         </div>
       </div><br /> <br />
 
@@ -258,7 +258,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
        <div className={styles.card}>
       <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-            <Image src="/assets/Loans.svg" fill />
+            <Image src="/assets/Loans.svg" fill alt="loans" />
           </div>
           <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
           <p style={{fontFamily:"GilroyRegular" ,lineHeight:"1.6rem"}}>
@@ -268,10 +268,10 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
           </div>
 
           <div className={styles.topImage}>
-            <Image src="/assets/billing_Top_img.svg" fill />
+            <Image src="/assets/billing_Top_img.svg" fill alt="billing" />
           </div>
           <div className={styles.otherImage}>
-            <Image src="/assets/billing-img.svg" fill />
+            <Image src="/assets/billing-img.svg" fill alt="billing" />
           </div>
         </div>
 
@@ -279,7 +279,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
         <div className={styles.card2}>
       <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-            <Image src="/assets/Invt.svg" fill />
+            <Image src="/assets/Invt.svg" fill alt="invt" />
           </div>
           <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>  Track and manage <span style={{color:"#0091F0"}}> Inventory </span>  with ease</h1>
           <p style={{fontFamily:"GilroyRegular", lineHeight:"1.6rem"}}>
@@ -288,10 +288,10 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
           </div>
 
           <div className={styles.topImage2}>
-            <Image src="/assets/Inventory_Top_img.svg" fill />
+            <Image src="/assets/Inventory_Top_img.svg" fill alt="invt" />
           </div>
           <div className={styles.otherImage}>
-            <Image src="/assets/Inventory_img.svg" fill />
+            <Image src="/assets/Inventory_img.svg" fill alt="invt" />
           </div>
         </div>
     </div>
@@ -301,17 +301,17 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",height:"1rem", border:"0.5rem solid white" , borderTop:"none",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"12rem",top:"-2rem", borderBottomLeftRadius:"1rem",borderBottomRightRadius:"1rem"}}> <p>Coming Soon</p></div>
       <div style={{display:'flex', flexDirection:"column", gap:'2rem', marginTop:"-5rem"}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" , }}>
-            <Image src="/assets/eStore.svg" fill />
+            <Image src="/assets/eStore.svg" fill alt="invt" />
           </div>
           <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
           <p style={{fontFamily:"GilroyRegular"}}>Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
           </div>
 
           <div className={styles.topImage3}>
-            <Image src="/assets/eStore_Top_img.svg" fill />
+            <Image src="/assets/eStore_Top_img.svg" fill alt="estore" />
           </div>
           <div className={styles.otherImage3}>
-            <Image src="/assets/eStore-img.svg" fill />
+            <Image src="/assets/eStore-img.svg" fill alt="estore" />
           </div>
         </div>
       </div>
@@ -319,7 +319,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div className={styles.card4}>
       <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-            <Image src="/assets/Reports.svg" fill />
+            <Image src="/assets/Reports.svg" fill alt="reports"/>
           </div>
           <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
           <p style={{fontFamily:"GilroyRegular"}}>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
@@ -329,7 +329,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
             <Image src="/assets/Inventory_Top_img.webp" fill />
           </div> */}
           <div className={styles.otherImage4}>
-            <Image src="/assets/Reports-img.svg" fill />
+            <Image src="/assets/Reports-img.svg" fill alt="reports" />
           </div>
         </div>
       </div>
@@ -337,18 +337,18 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div className={styles.card5}>
       <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-            <Image src="/assets/Crm_icon.svg" fill />
+            <Image src="/assets/Crm_icon.svg" fill alt="crm" />
           </div>
           <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
           <p style={{fontFamily:"GilroyRegular"}}> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
           </div>
            
           <div className={styles.topImage5}>
-            <Image src="/assets/crm_Top_img.svg" fill />
+            <Image src="/assets/crm_Top_img.svg" fill alt="crm" />
           </div>
         
           <div className={styles.otherImage3}>
-            <Image src="/assets/crm_img.svg" fill />
+            <Image src="/assets/crm_img.svg" fill alt="crm" />
           </div>
         </div>
       </div>
@@ -368,34 +368,34 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div style={{margin:"4rem 7rem 4rem 7.5rem"}}>
       <div style={{display:"flex",margin: '0 0rem'}}>
             <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:'GilroyMedium'}}>Dedicated <b>Bank Account</b> for your transaction business</p>
-            <div style={{height:"30px", width:"30px", position:"absolute", right:"50rem", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill/></div>
+            <div style={{height:"30px", width:"30px", position:"absolute", right:"50rem", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill alt="stars"/></div>
         </div>
 
         <div style={{ display: 'flex', margin: "1rem 0", gap: '1rem', justifyContent: "space-between", flexWrap: "wrap" }}>
   
             <div className={styles.bank_containers} >
               <div style={{ position: "relative", height: "4rem", width: "4rem " }}>
-                <Image src="/assets/sweep.svg" fill />
+                <Image src="/assets/sweep.svg" fill alt="sweep" />
               </div>
               <h1 style={{ margin: "2rem 0 1rem 0", fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>
                 Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
               </h1>
               <p style={{fontFamily:"GilroyMedium", color:"#767676", lineHeight:'1.5'}}>Daily auto-sweep transfers funds effortlessly into your designated account.</p>
               <div className={styles.bank_img}>
-                <Image src="/assets/bank.svg" fill />
+                <Image src="/assets/bank.svg" fill alt="bank" />
               </div>
             </div>
 
             <div className={styles.bank_containers}  >
               <div style={{ position: "relative", height: "4rem", width: "4rem" }}>
-                <Image src="/assets/money.svg" fill />
+                <Image src="/assets/money.svg" fill alt="money" />
               </div>
               <h1 style={{ margin: "2rem 0 1rem 0", fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}>
                 Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
               </h1>
               <p style={{fontFamily:"GilroyMedium", color:"#767676",lineHeight:'1.5'}}>Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
-                <Image src="/assets/sendMoney.svg" fill />
+                <Image src="/assets/sendMoney.svg" fill alt="send money" />
               </div>
             </div>
             
@@ -407,14 +407,14 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
       <div className={styles.loan_section}>
         <div style={{width:"38rem", display:"flex", flexDirection:'column', gap:"1.5rem" ,margin:"3rem 0"}}> 
-         <div style={{position:'relative', width:"4rem", height:'4rem'}}><Image src='/assets/Loans.svg' fill/></div>
+         <div style={{position:'relative', width:"4rem", height:'4rem'}}><Image src='/assets/Loans.svg' fill alt="loans" /></div>
          <div style={{fontSize:"1rem",}}>
           <h1 style={{fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h1> <br />
           <p style={{fontFamily:"GilroyMedium", color:"#2b3c45", lineHeight:"1.5"}}>Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
          </div>
-         <div style={{position:"relative", height:"5rem", width:"10rem"}}><Image src="/assets/playstore.svg" fill/></div>
+         <div style={{position:"relative", height:"5rem", width:"10rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
          </div>
-         <div style={{position:'relative', height:'28rem', width:"42rem", bottom:"0rem"}}> <Image src="/assets/Loan_img.webp" fill/> </div>
+         <div style={{position:'relative', height:'28rem', width:"42rem", bottom:"0rem"}}> <Image src="/assets/Loan_img.webp" fill alt="loan" /> </div>
       </div>
 
 
@@ -423,8 +423,8 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
             <h1 style={{margin:"1rem 0 1rem 0 ", fontFamily:"GilroySemiBold", fontSize:"3rem"}}>Efficient, <span style={{color:"#0391f0"}}>Versatile</span> <br />Reliable</h1>
             <p style={{fontFamily:"GilroyMedium", color:"#767676" ,lineHeight:"1.5"}}>Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.</p>
         </div>
-        <div style={{width:"100%", height:"42rem", position:'relative'}}><Image src="/assets/versatile.webp" fill/></div>
-        <div style={{width:"54%", height:"38.75rem", position:'relative', top:"-31.5rem", left:"41.8rem"}}><Image src="/assets/dashBoard1.svg" fill/></div>
+        <div style={{width:"100%", height:"42rem", position:'relative'}}><Image src="/assets/versatile.webp" fill alt="versatile" /></div>
+        <div style={{width:"54%", height:"38.75rem", position:'relative', top:"-31.5rem", left:"41.8rem"}}><Image src="/assets/dashBoard1.svg" fill alt="dashboard" /></div>
 
       </div>
 
@@ -432,7 +432,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
  
          <div style={{display:"flex", height:"45rem"}}>
           <div style={{backgroundColor:"#0F2531", padding:"3rem", width:"50%" ,padding:"8rem 0 0 8rem"}}> 
-          <div style={{position:"relative", zIndex:'2', width:"23.5rem", height:"25rem", left:"25rem" , top:"4rem"}}><Image src="/assets/DorokiTableTerminal.svg"fill/></div>
+          <div style={{position:"relative", zIndex:'2', width:"23.5rem", height:"25rem", left:"25rem" , top:"4rem"}}><Image src="/assets/DorokiTableTerminal.svg" fill alt="doroki" /></div>
 
           <div style={{width:"20rem",position:"relative", margin:"-22.5rem 0 0 -0.5rem"}}>
             {/* <div  className={styles.businessTitle}><p>Brought to you by </p><div style={{position:"relative", height:"2rem", width:"4rem"}}><Image src="/assets/PagaLogo_1.svg" fill/></div></div> */}
@@ -440,7 +440,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
               <h1 style={{margin:"1rem 0 1.5rem 0", fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3rem" }}>Start your Business journey effortlessly with <span style={{backgroundColor:"#f2931d", padding:"0.2rem 0.8rem 0.1rem 0.8rem"}}>Doroki</span> </h1> 
               <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem", fontSize:"1.1rem"}}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
             </div>
-            <div style={{position:"relative", height:"6rem", width:"10rem", marginTop:"0.6rem"}}><Image src="/assets/playstore.svg" fill/></div>
+            <div style={{position:"relative", height:"6rem", width:"10rem", marginTop:"0.6rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
             </div>
           </div>
            <div style={{ backgroundColor: "#0F31", width: "50%" }}>
@@ -455,7 +455,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
         <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"10rem 0 2rem 0",  }}>
           <h1 style={{position:'relative',fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3.5rem", left:"3rem"}}>Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span> reigns supreme</h1>
-          <div style={{position:'relative', width:"7rem",margin:"0 0rem", left:'4rem', bottom:"1rem"}}><Image src='/assets/message.svg' fill/></div>
+          <div style={{position:'relative', width:"7rem",margin:"0 0rem", left:'4rem', bottom:"1rem"}}><Image src='/assets/message.svg' fill alt="message"/></div>
           </div>
           
         <div style={{display:"flex",   justifyContent:'space-between'}}> 
@@ -463,14 +463,14 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
             <div className={styles.headSec}><h1 style={{fontFamily:"GilroyBold"}}>POS 10Q</h1></div>
             <div className={styles.content_sec}> 
             <p style={{marginTop:"-3rem", fontFamily:"GilroyMedium",lineHeight:"1.5rem", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.</p>
-              <div className={styles.dev_img}><Image src='/assets/pos.svg' fill/></div>
+              <div className={styles.dev_img}><Image src='/assets/pos.svg' fill alt="POS" /></div>
               </div >
             </div>
             <div className={styles.solutionSection} >
             <div className={styles.headSec}><h1 style={{fontFamily:"GilroyBold"}}>MF 960</h1></div>
             <div className={styles.content_sec}> 
             <p style={{marginTop:"-3rem",fontFamily:"GilroyMedium",}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
-              <div className={styles.dev_img}><Image src='/assets/mf.svg' fill/></div>
+              <div className={styles.dev_img}><Image src='/assets/mf.svg' fill alt="mf" /></div>
               </div >
             </div>
           </div>
@@ -482,14 +482,14 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
          
         <div style={{display:"flex" , position:"relative",justifyContent:"space-between", padding:"7rem  10rem 4rem 10rem",  zIndex:'4' }}>
           <h1 style={{fontFamily:"GilroySemiBold"}}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.3rem 0.8rem"}}>Doroki</span>   <br />exceeds expectations!</h1>
-          <p style={{fontFamily:"GilroyRegular" , lineHeight:"1.7rem" , wordSpacing:"0.2rem"}}>"Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations."</p>
+          <p style={{fontFamily:"GilroyRegular" , lineHeight:"1.7rem" , wordSpacing:"0.2rem"}}> &quot;Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations.&quot;</p>
         </div>
         
 
         <div style={{width:'100%', display:"flex",alignItems:'center', justifyContent:'center'}}>
-        <div style={{position:"relative", width:"70rem", height:"30rem",    }}><Image src="/assets/video-img.webp" fill/></div>
+        <div style={{position:"relative", width:"70rem", height:"30rem",    }}><Image src="/assets/video-img.webp" fill alt="video"/></div>
        </div>
-        <div style={{position:"relative", width:"50rem", height:"30rem",margin:"-49rem 0" }}><Image src="/assets/Doroki-Blurred.webp" fill/></div>
+        <div style={{position:"relative", width:"50rem", height:"30rem",margin:"-49rem 0" }}><Image src="/assets/Doroki-Blurred.webp" fill alt="doroki" /></div>
 
       </div>
       </div>  
@@ -511,7 +511,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
       <div style={{margin:"1em 5rem 0rem 7.5rem", height:"50rem",display:"flex" , gap:"1rem",justifyContent:'space-between'}}>
         <div style={{position:"relative" , width:"29rem", height:"46rem"}}>
-          <Image src="/assets/queries-img.webp" fill/>
+          <Image src="/assets/queries-img.webp" fill alt="queries" />
         </div>
         <div style={{position:'relative',}}>
         <FrequentQuestions FaqTableData={faqs}/>
@@ -521,13 +521,13 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div className={styles.business_needs}>
 
         <div style={{width:'31rem', margin:"3rem 0",justifyContent:'center', alignItems:"center" }}>
-          <div style={{display:"flex", fontFamily:"GilroySemiBold"}}><h1>Intuitive and Easy to use App for your Business needs</h1>  <div style={{height:"50px", width:"50px", position:"relative", top:"2rem",right:"6rem"}}><Image src='/assets/stars.svg' fill/></div></div>
+          <div style={{display:"flex", fontFamily:"GilroySemiBold"}}><h1>Intuitive and Easy to use App for your Business needs</h1>  <div style={{height:"50px", width:"50px", position:"relative", top:"2rem",right:"6rem"}}><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
           
           <p style={{margin:"1rem 0", lineHeight:"29px", fontFamily:"GilroyMedium"}}>Seamless billing made easy with our POS system <br />
           efficient payment processing with zero hassle</p>
-          <div style={{position:"relative", height:"5rem", width:"9rem"}}><Image src="/assets/playstore.svg" fill/></div>
+          <div style={{position:"relative", height:"5rem", width:"9rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
         </div>
-        <div style={{position:'relative', width:"39rem", height:"21rem"}}><Image src="/assets/app-img.svg" fill/></div>
+        <div style={{position:'relative', width:"39rem", height:"21rem"}}><Image src="/assets/app-img.svg" fill alt="app" /></div>
       </div>
 
 
@@ -536,26 +536,26 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
       <div className={styles.bt_ele}>
       <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable POS</h4>
       <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
-          <Image src="/assets/bt_img1.webp" layout="fill" objectFit="cover" />
+          <Image src="/assets/bt_img1.webp" layout="fill" objectFit="cover" alt="bt" />
       </div>
       </div>
        <div className={styles.bt_ele2}>
         <h4 className={styles.business_text}>Unlock powerful busines insights through detailed reports</h4>
         <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
-        <Image src="/assets/bt_img2.webp" layout="fill" objectFit="cover" />
+        <Image src="/assets/bt_img2.webp" layout="fill" objectFit="cover" alt="invt" />
       </div>
        </div>
        <div className={styles.bt_ele3}>
         <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"2rem", borderBottomLeftRadius:"0.5rem",borderBottomRightRadius:"0.5rem"}}> <p>Coming Soon</p></div>
         <h4 className={styles.business_text_online}>Transform your business go online and reach new customers.</h4>
         <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
-        <Image src="/assets/bt_img3.webp" layout="fill" objectFit="cover" />
+        <Image src="/assets/bt_img3.webp" layout="fill" objectFit="cover" alt="invt" />
       </div>
        </div >
        <div className={styles.bt_ele4} >
         <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
         <div style={{width:"8rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
-        <Image src="/assets/bt_img4.webp" layout="fill" objectFit="cover" />
+        <Image src="/assets/bt_img4.webp" layout="fill" objectFit="cover" alt="invt" />
       </div>
        </div>
       </div>
@@ -564,7 +564,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
       <div style={{display:'flex', margin:"5rem 10rem -1.4rem 0", width:"100%", }}>
   <div style={{position:"relative", width:"51rem", height:"49.5rem"}}>
-    <Image src='/assets/demo_img.svg' fill />
+    <Image src='/assets/demo_img.svg' fill alt="invt" />
   </div>
    
   
@@ -574,7 +574,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
   <h1 style={{fontFamily:"GilroySemiBold"}}>Schedule a free demo</h1>
 
   <div style={{height: "2rem", width: "2rem", position: 'absolute', right: "0", }}>
-    <Image src='/assets/stars.svg' fill />
+    <Image src='/assets/stars.svg' fill alt="invt" />
   </div>
 </div>
  <br />
@@ -656,7 +656,7 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
 
 <div className={styles.subscriptionSection}>
   <div  style={{  position: "absolute",  width: "77rem", height: "41.3rem"}} >
-    <Image src="/assets/blur.webp" fill style={{ objectFit: "cover" }} />
+    <Image src="/assets/blur.webp" fill style={{ objectFit: "cover" }} alt="invt" />
   </div>
   <div className={styles.subscribe}>
     <div style={{ maxWidth: "51%",  margin: "5rem auto auto auto",   display: "grid",  height: "auto",  alignItems: "center",  padding: "2rem",  textAlign: "center",  color: "#fff",  }} >
@@ -693,23 +693,23 @@ const words = ['Retail', 'Restaurant', 'Electronics', 'Spa&Salon', 'Grocery'];
   <div style={{display:'flex', color:"white", gap:'5rem', width:"100%", margin:"5rem 6rem", alignItems:'center',fontFamily:"GilroyThin", fontSize:"0.8rem"}}>
      <div style={{display:'flex', flexDirection:'column', gap:"1rem", justifyContent:'center',  }}> 
     <div style={{display:"flex",gap:'0.5rem' , zIndex:1}}>
-      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/MapPin.svg' fill/></div>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/MapPin.svg' fill alt="invt" /></div>
       <p>176 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos</p>
     </div>
     <div style={{display:"flex",gap:'0.5rem'}}>
-      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Phone.svg' fill/></div>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Phone.svg' fill alt="invt" /></div>
       <p> +234 (0) 801 234 5678</p>
     </div>
     <div style={{display:"flex", gap:'0.5rem'}}>
-      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Mail.svg' fill/></div>
+      <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Mail.svg' fill alt="invt" /></div>
       <p>support@doroki.com</p>
     </div>
     </div>
     <div style={{display:"flex", gap:'1rem', width:"20rem" , alignItems:'center'}}>
-      <div  className={styles.footerIcon}><Image src='/assets/facebook.svg'fill/></div>
-      <div className={styles.footerIcon}><Image src='/assets/Instagram.svg'fill/></div>
-      <div className={styles.footerIcon}><Image src='/assets/Twitter.svg'fill/></div>
-      <div className={styles.footer_Icon}><Image src='/assets/Linkedin.svg'fill/></div>
+      <div  className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
+      <div className={styles.footerIcon}><Image src='/assets/Instagram.svg' fill alt="insta" /></div>
+      <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
+      <div className={styles.footer_Icon}><Image src='/assets/Linkedin.svg' fill alt="linkedin" /></div>
 
     </div>
     <div style={{display:'flex', flexDirection:'column', gap:"0.5rem", zIndex:1}}>
