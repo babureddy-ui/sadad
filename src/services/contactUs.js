@@ -11,3 +11,5 @@ const contactUs = async (userData) => {
       console.error(error);
     }
   };
+
+export default contactUs;

@@ -3,10 +3,10 @@ import Image from 'next/image';
 import React from 'react';
 import { BlackButton, BlueButton, MarqueeComponentHomePage } from '../Buttons/Button';
 import styles from "./HomePage.module.css"
-import { HiddenPowers } from '@/pages/HiddenPowers';
+import HiddenPowers from '@/pages/HiddenPowers';
 import SwiperComponent from '@/pages/SwiperComponent';
 import FrequentQuestions from '@/pages/Questions';
-import { CustomiseBy } from '@/pages/CustomiseBy';
+import CustomiseBy from '@/pages/CustomiseBy';
 import ClientSwiper from '@/pages/ClientSwiper';
 
 
