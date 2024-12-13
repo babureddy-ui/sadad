@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import styles from '../components/homePage/HomePage.module.css'
 
-export const CustomiseBy = () => {
+const CustomiseBy = () => {
   const categories = {
     restaurant: {
       image: {
@@ -247,3 +247,5 @@ export const CustomiseBy = () => {
     </div>
   );
 };
+
+export default CustomiseBy;

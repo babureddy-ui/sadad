@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import styles from '../styles/HiddenPowers.module.css'
 
-export const HiddenPowers = () => {
+const HiddenPowers = () => {
   const Powers = [
     {
       icon: "/assets/icon1.svg",
@@ -125,3 +125,4 @@ export const HiddenPowers = () => {
   );
 };
 
+export default HiddenPowers;
