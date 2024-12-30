@@ -23,19 +23,19 @@ const Questions = ({ FaqTableData, heading }) => {
    };
 
    return (
-      <div style={{ margin: "1rem 2rem", display: "flex", gap: "2rem", flexDirection: "column", width: "44rem" }} id="faq-section">
-         <div style={{ width: "100%" }}>
+      <div style={{ margin: "1rem 2rem",width: "45rem", height:"45rem" ,  }}  >
+         <div style={{ width: "100%",   }}>
             {FaqTableData?.map((ele) => (
-               <div style={{borderRadius:"2rem"}} key={ele?.id}>
+               <div style={{borderRadius:"2rem", }} key={ele?.id}>
                   <div
                      style={{
-                        marginBottom: "1.5rem",
+                        marginBottom: "1rem",
                         ...(showAns?.key === ele?.id && showAns?.status
                            ? {
                                 borderLeft: "9px solid #0391f0", 
-                              //   marginTop: "1.5rem", 
-                                transition: 'translateY 0.5s',
+                                transition: 'translateY 0.10s',
                                 lineHeight: "1.5rem",
+                                 
                                 borderRadius: "0.5rem",
                              }
                            : {})
@@ -43,14 +43,15 @@ const Questions = ({ FaqTableData, heading }) => {
                   >
                      <div
                         style={{
-                           padding: "2rem 1rem 1rem 1rem",
-                           borderBottom: "1px solid #ececec",
+                           padding: "2rem 2rem 1rem 2rem",
                            backgroundColor: "#f5f8ff", 
                            boxSizing: "border-box",
                            transition: "background-color 0.3s ease",
                            borderRadius: "0.5rem",
+                            
+                           // padding:"1rem 1rem 1rem 1rem",
                            fontFamily: "GilroyMedium",
-                           color: "#767676"
+                           color: "#767676",
                         }}
                         onClick={() => handleClick(ele?.id)}  
                      >
@@ -58,17 +59,16 @@ const Questions = ({ FaqTableData, heading }) => {
                            style={{
                               display: "flex",
                               justifyContent: "space-between",
-                              gap: "5rem",
+                              gap: "6rem",
+                               
                               cursor: "pointer",
                               color: "#101828",
                               fontFamily: "GilroyBold",
                               fontSize: "1.3rem"
                            }}
                         >
-                           <p style={{ marginBottom: "0" }}>
-                              {ele?.para}
-                           </p>
-                           <span style={{ color: "#0391f0", fontSize: "1.8rem" }}>
+                           <p>{ele?.para} </p>
+                           <span style={{ color: "black", fontSize: "1.8rem" }}>
                               {showAns?.key === ele?.id && showAns?.status ? <IoIosArrowUp /> : <IoIosArrowDown />}
                            </span>
                         </div>
@@ -76,7 +76,7 @@ const Questions = ({ FaqTableData, heading }) => {
                            style={{
                               color: "#475467",
                               maxHeight: showAns?.key === ele?.id && showAns?.status ? "50rem" : "0rem",
-                              transition: "max-height 0.5s ease-out, padding-top 0.5s ease-out",
+                              transition: "max-height 0.10s ease-out, padding-top 0.10s ease-out",
                               paddingTop: showAns?.key === ele?.id && showAns?.status ? "1rem" : "0rem",
                               marginRight: "3rem",
                               overflow: "hidden", 

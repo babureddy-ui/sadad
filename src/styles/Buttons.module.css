@@ -98,3 +98,20 @@
     display: flex;
     align-items: center;
   }
+  .marqueeHomePageMobile {
+    height: 8rem;
+    width: 13.5rem;
+    padding: 0rem;
+    border-radius: 10px;
+    margin-right: 0.5rem;
+    transition: transform 1s;
+    object-fit: contain;
+    opacity: 1;
+    border: none;
+    outline: none;
+    /* box-shadow: 5px 0px 10px #9a999929; */
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }

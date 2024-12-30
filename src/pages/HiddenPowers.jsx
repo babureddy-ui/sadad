@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '../styles/HiddenPowers.module.css'
+import styles from '../styles/HiddenPowers.module.css';
 
 const HiddenPowers = () => {
   const Powers = [
@@ -38,11 +38,11 @@ const HiddenPowers = () => {
     },
     {
       icon: "/assets/icon5.svg",
-      tagColor: "#004878", 
+      tagColor: "#004878",
       title: "Vendor Management",
       text: "Unlock gaming euphoria with jaw-dropping discounts, where thrills meet unbeatable prices",
-      hoverCol: "#004878", 
-      hoverTextCol: "#DCF0FD", 
+      hoverCol: "#004878",
+      hoverTextCol: "#DCF0FD",
     },
     {
       icon: "/assets/icon6.svg",
@@ -71,53 +71,41 @@ const HiddenPowers = () => {
   ];
 
   return (
-    <div style={{ padding: "5rem 5.5rem 5rem 6rem ",  backgroundColor:"#F5F8FF"}}>
-        <div className={styles.header}>
-            <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:"GilroyMedium"}}>Doroki’s hidden powers</p>
-            <div style={{height:"30px", width:"30px", position:"relative", margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill alt="stars" /></div>
+    <div className={styles.container}>
+      <div className={styles.header}>
+        <p className={styles.headerText}>Doroki’s hidden powers</p>
+        <div className={styles.starIcon}>
+          <Image src="/assets/stars.svg" alt="Stars" fill />
         </div>
-      <div className={styles.mainContainer}
-       >
+      </div>
+      <div className={styles.mainContainer}>
         {Powers.map((ele, index) => (
-          <div  key={index} className={styles.elements} style={{backgroundColor: "#ffffff",}}
+          <div
+            key={index}
+            className={styles.elements}
+            style={{ backgroundColor: "white" , flex: "1 1 calc(25% - 20px)",}}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = ele.hoverCol;
+               e.currentTarget.style.backgroundColor = ele.hoverCol;
               e.currentTarget.style.color = ele.hoverTextCol;
-              e.currentTarget.querySelector("h6").style.color = ele.hoverTextCol;
-              e.currentTarget.querySelector("p").style.color = ele.hoverTextCol;
-              e.currentTarget.querySelector("div").style.borderColor = ele.hoverTextCol;
-              const borderElement = e.currentTarget.querySelector(".border-element");
-                if (borderElement) {
-                borderElement.style.borderLeftColor = ele.hoverTextCol;
-                }
+              e.currentTarget.querySelector(`.${styles.title}`).style.color = ele.hoverTextCol;
+              e.currentTarget.querySelector(`.${styles.text}`).style.color = ele.hoverTextCol;
+              e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.hoverTextCol;
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "#ffffff";
+              e.currentTarget.style.backgroundColor = "white";
               e.currentTarget.style.color = "#555";
-              e.currentTarget.querySelector("h6").style.color = "#000";
-              e.currentTarget.querySelector("p").style.color = "#555";
-              e.currentTarget.querySelector("div").style.borderColor = "#ffffff";
-              const borderElement = e.currentTarget.querySelector(".border-element");
-                if (borderElement) {
-                borderElement.style.borderLeftColor = ele.tagColor;
-                }
-            }} >
-            <div style={{width: "4rem", height: "4rem",position: "relative",left:"0", margin:"0 0 2rem  0"}}>
+              e.currentTarget.querySelector(`.${styles.title}`).style.color = "#0000";
+              e.currentTarget.querySelector(`.${styles.text}`).style.color = "#555";
+              e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.tagColor;
+            }}
+          >
+            <div className={styles.iconContainer}>
               <Image src={ele.icon} alt={ele.title} fill />
             </div>
-            <div
-            className="border-element"
-              // style={{ borderLeft: `2px solid ${ele.tagColor}`, paddingLeft: "0.5rem",marginTop: "1.5rem", }} 
-              >
-              <h6
-                style={{ margin: "10px 0",fontSize: "18px",fontWeight: "600", margin:"1rem 0", fontFamily:"GilroySemiBold"}} >
-                {ele.title}
-              </h6>
+            <div className={`${styles.borderElement}`} style={{ borderLeftColor: ele.tagColor }}>
+              <h6 className={styles.title}>{ele.title}</h6>
             </div>
-            
-            <p style={{  fontSize: "14px", color: "#555", fontFamily:"GilroyMedium", color:"#767676", lineHeight:"1.4rem" }}>
-              {ele.text}
-            </p>
+            <p className={styles.text}>{ele.text}</p>
           </div>
         ))}
       </div>
