@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
-import Image from 'next/image'; // Assuming you're using Next.js
+import Image from 'next/image';  
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';

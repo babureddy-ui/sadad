@@ -40,29 +40,31 @@ export const NavigationBar = () => {
   };
   return (
     <>
-    <div style={{ height: "64px", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"16px",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,  }}>
-        <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0 5rem 0 2rem" }}>
-          <Image  src="/assets/NavigationBar/Doroki-logo.svg"  alt="Doroki logo" fill />
+      <div style={{ height: "4.3rem", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"16px",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,justifyContent:"space-between"  }}>
+          <div className={styles.nav_bar}>
+            {/* <div>  */}
+          <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem" }}>
+          <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill />
         </div>
-        <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,  alignItems:"center", padding:"0rem 2rem"}}>
-          <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", padding:"1rem 0", height:"100px"}}>
+        <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,  alignItems:"", padding:"0rem 2rem"}}>
+          <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"1rem"  }}>
               <a>Home</a>
               <a>Privacy Policy</a>
               <a>Terms of Service</a>
               <div className={styles.hover_container}>
-      <Image
-        src="/assets/NavigationBar/Playstore.svg"
-        alt="Playstore"
-         fill
-        className={styles.image_default}
-      />
-      <Image
-        src="/assets/NavigationBar/Playstore2.svg"
-        alt="Playstore Hover"
-        layout="fill"
-        className= {styles.image_hover}
-      />
-    </div>
+                <Image
+                  src="/assets/NavigationBar/Playstore.svg"
+                  alt="Playstore"
+                  fill
+                  className={styles.image_default}
+                />
+                <Image
+                  src="/assets/NavigationBar/Playstore2.svg"
+                  alt="Playstore Hover"
+                  fill
+                  className= {styles.image_hover}
+                />
+              </div>
           </div>
           <div style={{display:'flex', gap:"1rem", fontFamily:"Gilroymedium",paddingRight:"1.8rem"}}>
             
@@ -73,6 +75,8 @@ export const NavigationBar = () => {
             <BlackButton text="Login" style={{width:"9rem", height:"2.5rem"}}/>
           </div>
         </div>
+        </div>
+          {/* </div> */}
       </div>
       
       {contact && (
@@ -182,7 +186,9 @@ export const NavigationBar = () => {
       />
     </div>
   </div>
+  
 )}
+ 
     </>
   )
 }

@@ -69,6 +69,36 @@ const BlackButton = (props) => {
       </div>
    );
 };
+ 
+const MarqueeComponentMobilePage = (props) => {
+   return (
+      <div>
+         <Marquee
+            gradient={false}
+            pauseOnHover="true"
+            direction={props.direction ? props.direction : "left"}
+            className={styles.mainMarqueeTagHomePage}
+            style={{ ...props.style }}
+         >
+            {props?.ClientsArr?.map((item) => {
+               return (
+                  <div key={item?.altText} className={styles.marqueeHomePageMobile} style={{ backgroundColor: props?.style?.backgroundColor && props?.style?.backgroundColor }}>
+                     <div className={styles.clients_image_container} style={{ height: item?.height, width: item?.width }}>
+                        <Image
+                           src={item?.imgSrc}
+                           style={{ ...props.logoStyle }}
+                           alt={item?.altText}
+                           fill
+                        />
+                     </div>
+                  </div>
+               );
+            })}
+         </Marquee>
+      </div>
+   );
+};
 
 
-export  {BlueButton, BlackButton, MarqueeComponentHomePage}
+
+export  {BlueButton, BlackButton, MarqueeComponentHomePage,MarqueeComponentMobilePage}

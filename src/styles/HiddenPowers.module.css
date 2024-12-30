@@ -4,11 +4,23 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1.5rem;
-    /* width: 15rem; */
+   
     padding: 1.5rem;
+  
      
   }
-  
+
+.container{
+  background-color:  #F5F8FF;
+  padding: 4rem 6rem;
+}
+  .headerText{
+    background-color:#FFEDD6 ;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-family: GilroyRegular;
+    
+  }
   
   .elements {
     text-align: start;
@@ -16,7 +28,6 @@
     padding: 3rem 2rem;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
-    background-color: "#ffffff", 
   }
   
   .header{
@@ -25,3 +36,45 @@
     
 
   }
+
+.iconContainer{
+  width: 4rem;
+  height:4rem;
+  position: relative
+}
+.starIcon{
+  width: 1rem ;
+  position: relative;
+}
+
+.title{
+  font-size: 1rem;
+  font-family: GilroySemiBold;
+  margin: 1rem 0;
+}
+.text{
+  font-family: GilroyMedium;
+  color: #767676;
+}
+  /* -----------------MobileHiddenPowers----------------- */
+  .Card_elements {
+    position: relative;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    will-change: transform, opacity;  
+  }
+  
+  .Card_elements.right {
+    transform: translateX(-100%);   
+    opacity: 0;
+  }
+  
+  .Card_elements.left {
+    transform: translateX(-100%);  
+    opacity: 0;
+  }
+  
+  .Card_elements.visible {
+    transform: translateX(0);    
+    opacity: 1;
+  }
+  

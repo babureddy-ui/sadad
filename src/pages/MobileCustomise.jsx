@@ -1,13 +1,13 @@
 import { BlueButton } from '@/components/Buttons/Button';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import styles from '../components/homePage/HomePage.module.css'
+import styles from '../components/MobilePages/Mobile.module.css'
 
-const CustomiseBy = () => {
+const MobileCustomise = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/Reastaurant_img.webp",
+        url: "/assets/MobileView/Restaurant.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -31,7 +31,7 @@ const CustomiseBy = () => {
     },
     retail: {
       image: {
-        url: "/assets/Retail-img.webp",
+        url: "/assets/MobileView/Retail-img.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -55,7 +55,7 @@ const CustomiseBy = () => {
     },
     grocery: {
       image: {
-        url: "/assets/Grocery_img.webp",
+        url: "/assets/MobileView/Grocery_img.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -79,7 +79,7 @@ const CustomiseBy = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/SpaSalon_img.webp",
+        url: "/assets/MobileView/SpaSalon_img.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -103,7 +103,7 @@ const CustomiseBy = () => {
     },
     electronics: {
       image: {
-        url: "/assets/Electronics_img.webp",
+        url: "/assets/MobileView/Electronics_img.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
@@ -144,45 +144,30 @@ const CustomiseBy = () => {
 
   return (
     <div>
-      <div
-        style={{
-          height: "28.8rem",
-          // height:"30rem",
-          backgroundColor: "#223037",
-          color: "#ffff",
-          display: 'flex',
-           
-          borderTopRightRadius: '2rem',
-          borderTopLeftRadius: "2rem"
-        }}
-      >
-        <div style={{   position: 'relative', margin: "2rem 0rem", right: "-50rem", zIndex: 1 }}>
-          <div style={{
-            display: 'flex', gap: '0.5rem', position: 'absolute', right: '-5rem', width: "50rem",
-            alignItems: 'center', fontFamily: "GilroyUlight"
-          }}>
-            <p>Customise by</p>
-            {Object.keys(categories).map((category) => (
-          <button className={styles.customise_btns}
-            style={{
-              backgroundColor: selectedCategory === category ? "white" : "#223037",
-              color: selectedCategory === category ? "#223037" : "white",
-              fontWeight: selectedCategory === category ? "GilroyExtrabold" : "normal",
-                  
-            }}
-            key={category}
-            onClick={() => handleCategoryChange(category)}
-          >
-            {category === "spaSalon" ? "Spa & Salon" : category.charAt(0).toUpperCase() + category.slice(1)}
-            </button>
-        ))}
+      <div  className={styles.customise_section}>
+                <div style={{ position: 'absolute',  left: '0', zIndex: 1, width: '88%',margin:"1rem 2rem", overflowX: 'hidden',   }}>
+            <div style={{display: 'flex',gap: '0.5rem',position: 'relative',  width: '100%', overflowX: 'auto',  alignItems: 'center',fontFamily: 'GilroyUlight', whiteSpace: 'nowrap',scrollbarWidth: 'none', }}>
+                {Object.keys(categories).map((category) => (
+                <button className={styles.customise_btns}
+                    style={{ 
+                    backgroundColor: selectedCategory === category ? 'white' : '#223037',
+                    color: selectedCategory === category ? '#223037' : 'white',
+                    fontWeight: selectedCategory === category ? 'GilroyExtrabold' : 'normal',
+                    flexShrink: 0,  
+                    }}
+                    key={category}
+                    onClick={() => handleCategoryChange(category)}
+                >
+                    {category === 'spaSalon' ? 'Spa & Salon' : category.charAt(0).toUpperCase() + category.slice(1)}
+                </button>
+                ))}
+            </div>
+            </div>
 
-          </div>
-        </div>  
         
-        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' , }}>
-          <div style={{ width: "30rem", marginTop: "4rem",marginLeft: "5rem",  }}>
-            <h1 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em" }}>
+        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"40rem" }}>
+          <div className={styles.customise_title}>
+            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em",  }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -196,55 +181,85 @@ const CustomiseBy = () => {
               </span>
               <br />
               with streamlined technology
-            </h1>
-            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.6rem", margin: "1rem 0" }}>
-              Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.
-            </p>
-            <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem" }} />
+            </h2>
+             
           </div>
 
-          <div style={{ position: 'relative', width: '32rem', height:"28.8rem",  }}>
+          <div className={styles.customise_img}>
             <Image 
               src={currentCategory.image.url} 
               alt={currentCategory.image.title} 
               fill
             />
+             
           </div>
+          <BlueButton text="Get in Touch" style={{ width: "12rem", height: "4rem",position:"absloute",bottom:"1rem", borderRadius:"2rem",  left:"25%",  transform: "translateX(-25%)" }} />
+          
         </div>
 
       </div>
-      <div className={`${styles.box_container} ${isAnimating ? styles.animating : ''}`}>
-        {currentCategory.content.map((item, index) => (
-          <div
-            key={index}
-            className={styles.animated_box}
-            style={{
-              backgroundColor: item.bgColor,
-              padding: '2rem',
-              margin: "1rem 0",
-              borderBottomRightRadius: '2rem',
-              borderBottomLeftRadius: '2rem',
-              width: "40%",
-              height:"12rem"
+      <div 
+  className={`${styles.box_container} ${isAnimating ? styles.animating : ''}`} 
+  style={{ 
+    display: 'flex', 
+    overflowX: 'auto',  
+    gap: '1rem',
+    padding: "1rem", 
+    whiteSpace: 'normal',  
+    scrollbarWidth: 'none',
+    
+  }}
+>
+  {currentCategory.content.map((item, index) => (
+    <div
+      key={index}
+      className={styles.animated_box}
+      style={{
+        backgroundColor: item.bgColor,
+        padding: '1.5rem',  
+        margin: "1rem 0",
+        borderRadius: '2rem',
+        width: "90%",  
+        minWidth: "70%",  
+        height: "auto",  
+        flexShrink: 0,  
+        boxSizing: 'border-box',  
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+          
+      }}
+    >
+      <div
+        style={{
+          width: '4rem',
+          height: '4rem',
+          backgroundColor: item.color,
+          borderRadius: '1rem',
+          marginBottom: "1rem",
+        }}
+      ></div>
+      <p 
+        style={{ 
+          fontFamily: "GilroyMedium", 
+          margin: 0,  
+          wordBreak: 'break-word',  
+          lineHeight: '1.5',  
+          overflow: 'hidden',  
+        }}
+      >
+        {item.txt}
+      </p>
+    </div>
+  ))}
+</div>
 
-            }}
-          >
-            <div
-              style={{
-                width: '4rem',
-                height: '4rem',
-                backgroundColor: item.color,
-                borderRadius: '1rem',
-                margin: "0 0 1rem 0"
-              }}
-            ></div>
-            <p style={{ fontFamily: "GilroyMedium" }}>{item.txt}</p>
-          </div>
-        ))}
-      </div>
+
       
     </div>
   );
 };
 
-export default CustomiseBy;
+export default MobileCustomise;
+
+ 
