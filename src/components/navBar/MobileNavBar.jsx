@@ -19,10 +19,10 @@ const MobileNavBar = () => {
 
       <div
         style={{
-          height: "2.7rem",
-          width: "11rem",
+          height: "2.3rem",
+          width: "9rem",
           position: "relative",
-          margin: "0rem 8rem 0 0rem",
+          margin: "0rem 10rem 0 0rem",
         }}
       >
         <Image

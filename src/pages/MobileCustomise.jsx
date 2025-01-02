@@ -13,17 +13,20 @@ const MobileCustomise = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Reastaurant1.svg",
+          txt: "Streamline reservations, optimize seating, & manage orders seamlessly for efficient table operations in your restaurant.",
           color: "#f1c1be",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Reastaurant2.svg",
+          txt: "Seamlessly print KOTs for quick and accurate order management, enhancing efficiency & customer satisfaction",
           color: "#f1c1be",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+            icon:"/assets/Reastaurant3.svg",
+            txt: "Integrate delivery partners effortlessly, streamline orders, & enhance your restaurant's reach.",
             color: "#f1c1be",
             bgColor: "#EBEAF1",
           },
@@ -37,17 +40,20 @@ const MobileCustomise = () => {
       },
       content: [
         {
-          txt: "Boost sales, track inventory, and improve customer experience.",
+          icon:"/assets/Retail1.svg",
+          txt: "Scanning items enhances speed and accuracy, optimizing stock management and minimizing mistakes.",
           color: "#a4c7ea",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Enhance operational efficiency and grow your retail business.",
+          icon:"/assets/Retail2.svg",
+          txt: "Customize receipts to add personal touch, improve clarity, and reinforce brand identity.",
           color: "#a4c7ea",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Streamline operations, enhance customer satisfaction, and optimize resources.",
+          icon:"/assets/Retail3.svg",
+            txt: "Manage your store seamlessly offline with manual processes for inventory and transactions.",
             color: "#a4c7ea",
             bgColor: "#EBEAF1",
           },
@@ -61,17 +67,20 @@ const MobileCustomise = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Grocery1.svg",
+          txt: "Rapid checkout boosts efficiency, cuts delays, and enhances the overall customer experience.",
           color: "#bbd8c1",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Grocery2.svg",
+          txt: "Launch your online store to offer convenience, increase revenue, and grow your brand.",
           color: "#bbd8c1",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Grocery3.svg",
+            txt: "Offer promotions and discounts to attract customers, increase sales, and build brand loyalty.",
             color: "#bbd8c1",
             bgColor: "#EBEAF1",
           },
@@ -85,17 +94,20 @@ const MobileCustomise = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon1.svg",
+          txt: "Simplify appointment scheduling, enhance client management, & create a seamless experience for your spa and salon.",
           color: "#cfb8dd",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon2.svg",
+          txt: "Effortlessly assign staff to clients, ensuring personalized service & smooth operations in your spa and salon.",
           color: "#cfb8dd",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon3.svg",
+            txt: "A well-managed waitlist increases customer retention and enhances the overall spa experience.",
             color: "#cfb8dd",
             bgColor: "#EBEAF1",
           },
@@ -109,17 +121,20 @@ const MobileCustomise = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic1.svg",
+          txt: "Monitor sales in real time to enhance decision-making, efficiency, and business growth.",
           color: "#e3acb0",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic2.svg",
+          txt: "Oversee multiple stores effortlessly, enhancing consistency, & operational efficiency across locations.",
           color: "#e3acb0",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic3.svg",
+            txt: "Get timely stock alerts to manage inventory effectively and avoid product stockouts.",
             color: "#e3acb0",
             bgColor: "#EBEAF1",
           },
@@ -165,7 +180,7 @@ const MobileCustomise = () => {
             </div>
 
         
-        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"40rem" }}>
+        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"42rem" }}>
           <div className={styles.customise_title}>
             <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em",  }}>
               Manage your{' '}
@@ -237,8 +252,9 @@ const MobileCustomise = () => {
           backgroundColor: item.color,
           borderRadius: '1rem',
           marginBottom: "1rem",
+          position:"relative"
         }}
-      ></div>
+      > <Image  src={item.icon} fill/></div>
       <p 
         style={{ 
           fontFamily: "GilroyMedium", 

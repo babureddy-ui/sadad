@@ -40,14 +40,14 @@ export const NavigationBar = () => {
   };
   return (
     <>
-      <div style={{ height: "4.3rem", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"16px",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,justifyContent:"space-between"  }}>
+      <div style={{ height: "4.3rem", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"1rem",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,justifyContent:"space-between"  }}>
           <div className={styles.nav_bar}>
             {/* <div>  */}
           <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem" }}>
           <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill />
         </div>
-        <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,  alignItems:"", padding:"0rem 2rem"}}>
-          <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"1rem"  }}>
+        <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,   padding:"0rem 2rem"}}>
+          <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"0.9rem"  }}>
               <a>Home</a>
               <a>Privacy Policy</a>
               <a>Terms of Service</a>
@@ -68,11 +68,11 @@ export const NavigationBar = () => {
           </div>
           <div style={{display:'flex', gap:"1rem", fontFamily:"Gilroymedium",paddingRight:"1.8rem"}}>
             
-            <BlueButton text="Contact Us" style={{width:"9rem", height:"2.5rem", }}
+            <BlueButton text="Get Free Demo" style={{width:"9rem", height:"2.5rem",fontSize:"0.8rem" }}
             onClick={ContactForm}
             
             />
-            <BlackButton text="Login" style={{width:"9rem", height:"2.5rem"}}/>
+            <BlackButton text="Login" style={{width:"9rem", height:"2.5rem",fontSize:"0.8rem"}}/>
           </div>
         </div>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/HiddenPowers.module.css";
+import Image from "next/image";
 
 const MobileHiddenPowers = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -11,7 +12,7 @@ const MobileHiddenPowers = () => {
       icon: "/assets/icon1.svg",
       color: "#FEF4F4",
       title: "Versatile Payments",
-      text: "Unlock gaming euphoria with jaw-dropping discounts, where thrills meet unbeatable prices",
+      text: "Unlock gaming euphoria with jaw dropping discounts, where thrills meet unbeatable prices,Unlock gaming euphoria with jaw dropping discounts, where thrills meet.Unlock gaming euphoria with jaw dropping discounts, where thrills",
       hoverCol: "#c55652",
      
     },
@@ -32,9 +33,9 @@ const MobileHiddenPowers = () => {
        
     },
     {
-      icon: "/assets/icon4.svg",
-      color: "",
-      title: "Reports",
+      icon: "/assets/offline.svg",
+      color: "#F1FDF7",
+      title: "Offline Mode",
       text: "Unlock gaming euphoria with jaw-dropping discounts, where thrills meet unbeatable prices",
       hoverCol: "#02875c",
        
@@ -112,28 +113,33 @@ const MobileHiddenPowers = () => {
         style={{
           backgroundColor: Powers[activeIndex].color,
            
-          padding: "3rem",
-          borderRadius: "1rem",
+          padding: "0rem 0rem 3rem 3rem",
+          borderRadius: "1.5rem",
           margin: "2rem 0",
-           
+           position:"relative",
           textAlign: "start",
         }}
       >
+        <div style={{display:"flex",justifyContent:"space-between" , alignItems:"center"  }}> 
         <div
           style={{
-            width: "4rem",
-            height: "4rem",
+            width: "6rem",
+            height: "6rem",
             position: "relative",
             left: "0",
+            top:'1.2rem',
             marginBottom: "2rem",
           }}
         >
-          <img src={Powers[activeIndex].icon} alt={Powers[activeIndex].title} style={{ width: "100%" }} />
+          <Image src={Powers[activeIndex].icon} alt={Powers[activeIndex].title} fill />
         </div>
+        <div style={{width:"16rem", height:"11rem", position:"relative",  bottom:"10%"}}><Image src='/assets/HiddenPowers_blurImg.webp' fill/></div>
+        </div>
+        <div style={{padding: "0rem 3rem 0rem 0rem",}}> 
         <h6
           style={{
             margin: "10px 0",
-            fontSize: "18px",
+            fontSize: "1.5rem",
             fontWeight: "600",
             fontFamily: "GilroySemiBold",
             color: Powers[activeIndex].hoverCol,
@@ -143,13 +149,16 @@ const MobileHiddenPowers = () => {
         </h6>
         <p
           style={{
-            fontSize: "14px",
-            fontFamily: "GilroyMedium",
-            lineHeight: "1.4rem",
+            fontSize: "1.1rem",
+            fontFamily: "GilroyRegular",
+            lineHeight: "1.7rem",
+            color:"#000000",
+            
           }}
         >
           {Powers[activeIndex].text}
         </p>
+        </div>
       </div>
     </div>
   );

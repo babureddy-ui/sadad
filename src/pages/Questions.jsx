@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import styles from '../components/homePage/HomePage.module.css'
 
 const Questions = ({ FaqTableData, heading }) => {
    const [showAns, setShowAns] = useState({ key: "", status: false });
@@ -23,35 +24,27 @@ const Questions = ({ FaqTableData, heading }) => {
    };
 
    return (
-      <div style={{ margin: "1rem 2rem",width: "45rem", height:"45rem" ,  }}  >
-         <div style={{ width: "100%",   }}>
+      <div className={styles.Questions_sec}  >
+         <div style={{ width: "100%" }}>
             {FaqTableData?.map((ele) => (
                <div style={{borderRadius:"2rem", }} key={ele?.id}>
-                  <div
-                     style={{
-                        marginBottom: "1rem",
-                        ...(showAns?.key === ele?.id && showAns?.status
-                           ? {
-                                borderLeft: "9px solid #0391f0", 
-                                transition: 'translateY 0.10s',
-                                lineHeight: "1.5rem",
-                                 
-                                borderRadius: "0.5rem",
-                             }
-                           : {})
-                     }}
-                  >
+                  <div>
                      <div
                         style={{
-                           padding: "2rem 2rem 1rem 2rem",
+                           padding: "2rem",
+                           alignItems: "center",
                            backgroundColor: "#f5f8ff", 
                            boxSizing: "border-box",
                            transition: "background-color 0.3s ease",
-                           borderRadius: "0.5rem",
-                            
-                           // padding:"1rem 1rem 1rem 1rem",
+                           borderRadius: "0.6rem",
                            fontFamily: "GilroyMedium",
                            color: "#767676",
+                           marginBottom: "1rem",
+                           borderLeft: showAns?.key === ele?.id && showAns?.status ? "9px solid #0391f0" : "9px solid transparent",  
+                           transition: 'border-left 0.5s ease, translateY 0.10s',
+                           lineHeight: "1.5rem",
+                           // borderRadius: "0.5rem",
+                           justifyConten:"center"
                         }}
                         onClick={() => handleClick(ele?.id)}  
                      >
@@ -68,7 +61,7 @@ const Questions = ({ FaqTableData, heading }) => {
                            }}
                         >
                            <p>{ele?.para} </p>
-                           <span style={{ color: "black", fontSize: "1.8rem" }}>
+                           <span style={{ color: "black", fontSize: "1.5rem", marginTop:"-0.4rem"  }}>
                               {showAns?.key === ele?.id && showAns?.status ? <IoIosArrowUp /> : <IoIosArrowDown />}
                            </span>
                         </div>

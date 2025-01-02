@@ -64,9 +64,9 @@ const ClientSwiper = () => {
   };
 
   return (
-    <div style={{ marginTop: '5rem' }}>
+    <div style={{ marginTop: '0rem' }}>
       <Swiper
-        spaceBetween={10}
+        spaceBetween={0}
         slidesPerView={3}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         speed={700}
@@ -76,9 +76,10 @@ const ClientSwiper = () => {
          }}
         
         modules={[Autoplay, Pagination]}
-        style={{ paddingBottom: '3rem' }}
+        style={{ paddingBottom: '3rem',paddingRight:"5rem", paddingLeft:"5rem" }}
         className="custom-testimonial-swiper"
-        onSlideChange={handleSlideChange}  
+        onSlideChange={handleSlideChange} 
+         
       >
         {kindwords.map((item, index) => (
           <SwiperSlide key={index}>
@@ -86,9 +87,10 @@ const ClientSwiper = () => {
               style={{
                 cursor: 'pointer',
                 borderRadius: '1rem',
-                width: '26rem',
+                width: '25.5rem',
                 backgroundColor: "#F5F8FF",
-                marginLeft: index === 0 && isFirstSlide ? '5rem':'4rem', 
+                 // Add right margin
+                  
               }}
             >
               <div style={{ padding: '3rem 2rem' }}>
