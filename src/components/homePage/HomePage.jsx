@@ -17,16 +17,22 @@ import { NavigationBar } from '../navBar/NavigationBar';
       icon: "/assets/business.svg",
       title: "Business Solution",
       text: "Platform that simplifies and streamlines your business operations",
+      width:"10rem",
+      height:"7rem"
     },
     {
       icon: "/assets/versatile.svg",
       title: "Versatile Payment Options",
       text: "Get payment solutions such as bank transfers, USSD, and mobile payments",
+      width:"10rem",
+      height:"7rem"
     },
     {
       icon: "/assets/designed.svg",
       title: "Designed for SMEs",
       text: "Doroki provides a powerful suite of tools at a competitive price",
+      width:"10rem",
+      height:"7rem"
     },
   ];
    const ClientsArr1 = [
@@ -184,21 +190,21 @@ import { NavigationBar } from '../navBar/NavigationBar';
                 Drive your
                   <div className={styles.box}>
                     <span className={styles.word} style={{color: "#FF6347"}}>Restaurant</span>
-                    <span className={styles.word} style={{color: "#1E92F7"}}>Retail</span>
-                    <span className={styles.word} style={{color: "#6ACD6E"}}>Grocery</span>
-                    <span className={styles.word} style={{color: "#CA80E9"}}>Spa & Salon</span>
-                    <span className={styles.word} style={{color: "#F15542"}}>Electronics</span>
+                    <span className={styles.word} style={{color: "#0074D9"}}>Retail</span>
+                    <span className={styles.word} style={{color: "#4CAF50"}}>Grocery</span>
+                    <span className={styles.word} style={{color: "#8E44AD"}}>Spa & Salon</span>
+                    <span className={styles.word} style={{color: "#CF1A1A"}}>Electronics</span>
                   </div><br />
                 business forward <br /> easily with Doroki
                 </h1>
 
-                <div style={{height: "3rem", width: "3rem", position: "relative", top: "7rem", right: "27%"}}>
+                <div style={{height: "2.8rem", width: "2.8rem", position: "relative", top: "8.5rem", right: "24%"}}>
                   <Image src='/assets/stars.svg' fill alt="stars" />
                 </div>
                 </div>
 
                 <p className={styles.p_heroText}>
-                  Multi-functional solution tailored uniquely for your business. Manage all your Orders, Inventory & Transactions at one place.
+                  Multi-functional solution tailored uniquely for your business. <br /> Manage all your Orders, Inventory & Transactions at one place.
                 </p> <br />
 
               <div className={styles.inputSection} >
@@ -207,7 +213,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
                   type="text"
                   placeholder="Enter phone number/email"
                 />
-                <BlackButton text="Contact Me" style={{padding: "1rem  1.8rem", width: "10rem", height: "3rem",fontSize: "0.9rem",fontFamily: "GilroyRegular",}}/>
+                <BlackButton text="Contact Me" style={{padding: "1rem  1.8rem", width: "10rem", height: "3rem",fontSize: "0.9rem",fontFamily: "GilroyMedium",}}/>
               </div>
             </div>
           </div>
@@ -227,12 +233,12 @@ import { NavigationBar } from '../navBar/NavigationBar';
           key={index}
           className={styles.BusinessTypes}
         >
-          <div className={styles.imageContainer}>
+          <div className={styles.imageContainer} style={{ width: ele.width, height: ele.height }}>
             <Image src={ele.icon} alt={ele.title} fill />
           </div>
-          <div>
+          <div style={{padding: "0 0.2rem 0 0"}}>
             <h3 className={styles.business_title}>{ele.title}</h3> 
-            <p style={{ fontFamily: "GilroyUlight", color: '#767676' , fontSize:"0.9rem"}}>{ele.text}</p>
+            <p style={{ fontFamily: "GilroyUlight", color: '#767676' , fontSize:"0.9rem", lineHeight:"1.2rem"}}>{ele.text}</p>
           </div>
         </div>
         
@@ -242,17 +248,18 @@ import { NavigationBar } from '../navBar/NavigationBar';
       <div style={{margin:'10rem 0 '}}>
         <div>
             <div style={{justifyContent:'center', textAlign:"center",  }}> 
-          <h1 style={{margin:"2rem 0",  fontFamily: 'GilroyMedium', fontSize:"3rem"}}>Trusted by top Businesses</h1>
-          <p style={{ fontFamily: "GilroyMedium", lineHeight:"1.6rem" }}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
+          <h1 style={{margin:"2rem 0",  fontFamily: 'GilroyRegular', fontSize:"3rem"}}>Trusted by top Businesses</h1>
+          <p style={{ fontFamily: "GilroyRegular", lineHeight:"1.6rem" }}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
           </div>
           </div>
           <div className={styles.marquee_section}>
-                <MarqueeComponentHomePage ClientsArr={ClientsArr1} />
+                <MarqueeComponentHomePage ClientsArr={ClientsArr1}  speed={130}  direction="left"   />
             </div>
       </div>
 
 
       <div style={{margin:"2rem 7rem 10rem 7.5rem"}}>
+        
         <CustomiseBy/>
       </div>
 
@@ -269,12 +276,12 @@ import { NavigationBar } from '../navBar/NavigationBar';
       <div >
     <div style={{display:'flex', gap:'1.5rem',}}>
        <div className={styles.card}>
-      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+      <div style={{display:'flex', flexDirection:"column", gap:'1.5rem', marginTop:'0.5rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-            <Image src="/assets/Loans.svg" fill alt="loans" />
+            <Image src="/assets/Loans1.svg" fill alt="loans" />
           </div>
-          <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
-          <p style={{fontFamily:"GilroyRegular" ,lineHeight:"1.6rem"}}>
+          <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem",}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h1>
+          <p style={{fontFamily:"GilroyRegular" ,lineHeight:"1.6rem" , marginTop:"-0.5rem"}}>
             Seamlessly send money with our POS, ensuring secure transactions and
             instant transfers for your convenience and peace of mind.
           </p>
@@ -292,12 +299,12 @@ import { NavigationBar } from '../navBar/NavigationBar';
 
 
         <div className={styles.card2}>
-      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+      <div style={{display:'flex', flexDirection:"column", gap:'1.5rem', marginTop:'0.5rem'}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Invt.svg" fill alt="invt" />
           </div>
           <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}> Track and manage <span style={{color:"#0091F0"}}> Inventory </span>  with ease</h1>
-          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.6rem"}}>
+          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.6rem" ,marginTop:"-0.5rem"}}>
           Efficient inventory management helps you track, organize and optimize stock levels, ensuring smoother business operations.
           </p>
           </div>
@@ -310,16 +317,16 @@ import { NavigationBar } from '../navBar/NavigationBar';
           </div>
         </div>
     </div>
-    <div style={{display:'flex' , gap:"1.5rem", justifyContent:"space-between" , margin:"1.5rem 0"}}>
-      <div>
+    <div style={{display:'flex' , gap:"1.5rem", justifyContent:"space-between" , margin:"1.5rem 0",}}>
+      <div style={{width:"35%"}}>
       <div className={styles.card3}>
-      <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",height:"1rem", border:"0.5rem solid white" , borderTop:"none",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"63%",top:"-2rem", borderBottomLeftRadius:"1rem",borderBottomRightRadius:"1rem"}}> <p>Coming Soon</p></div>
-      <div style={{display:'flex', flexDirection:"column", gap:'2rem', marginTop:"-5rem"}}> 
+      <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",height:"1rem", border:"0.5rem solid white" , borderTop:"none",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"63%",top:"-2rem", borderBottomLeftRadius:"1rem",borderBottomRightRadius:"1rem",textAlign:"center", display:"flex", justifyContent:"center"}}> <p>Coming Soon</p></div>
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem', marginTop:"-8rem"}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" , }}>
             <Image src="/assets/eStore.svg" fill alt="invt" />
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
-          <p style={{fontFamily:"GilroyRegular"}}>Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem",fontSize:"1.6rem"}}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
+          <p style={{fontFamily:"GilroyRegular",lineHeight:"1.5rem", marginTop:"-0.8rem"}}>Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
           </div>
 
           <div className={styles.topImage3}>
@@ -330,14 +337,14 @@ import { NavigationBar } from '../navBar/NavigationBar';
           </div>
         </div>
       </div>
-      <div>
+      <div style={{width:"35%"}}>
       <div className={styles.card4}>
-      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem', marginTop:"0.62rem"}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Reports.svg" fill alt="reports"/>
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
-          <p style={{fontFamily:"GilroyRegular"}}>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem", fontSize:"1.6rem"}}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
+          <p style={{fontFamily:"GilroyRegular",lineHeight:"1.5rem", marginTop:"-0.8rem"}}>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
           </div>
 
           
@@ -346,14 +353,14 @@ import { NavigationBar } from '../navBar/NavigationBar';
           </div>
         </div>
       </div>
-      <div>
+      <div style={{width:"35%"}}>
       <div className={styles.card5}>
-      <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
+      <div style={{display:'flex', flexDirection:"column", gap:'2rem', marginTop:"0.62rem"}}> 
           <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
             <Image src="/assets/Crm_icon.svg" fill alt="crm" />
           </div>
-          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem"}}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
-          <p style={{fontFamily:"GilroyRegular"}}> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
+          <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem",fontSize:"1.6rem"}}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
+          <p style={{fontFamily:"GilroyRegular",lineHeight:"1.5rem", marginTop:"-0.8rem"}}> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
           </div>
            
           <div className={styles.topImage5}>
@@ -380,8 +387,8 @@ import { NavigationBar } from '../navBar/NavigationBar';
       </div>
       <div style={{margin:"4rem 7rem 4rem 7.5rem"}}>
       <div style={{display:"flex",margin: '0 0rem'}}>
-            <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:'GilroyMedium'}}>Dedicated <b>Bank Account</b> for your transaction business</p>
-            <div style={{height:"30px", width:"30px", position:'relative', margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill alt="stars"/></div>
+            <p style={{backgroundColor:"#ffedd6", padding:"0.5rem 1.5rem", borderRadius:"2rem", fontFamily:'GilroyRegular'}}>Dedicated <b>Bank Account</b> for your transaction business</p>
+            <div style={{height:"2rem", width:"2rem", position:'relative', margin:"0.2rem 0 0 0.5rem"}}><Image src='/assets/stars.svg' fill alt="stars"/></div>
         </div>
 
         <div style={{ display: 'flex', margin: "1rem 0", gap: '1rem', justifyContent: "space-between",  }}>
@@ -393,7 +400,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
               <h1 style={{ margin: "2rem 0 1rem 0", fontFamily:"GilroySemiBold", lineHeight:"2.6rem"}}>
                 Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
               </h1>
-              <p style={{fontFamily:"GilroyMedium", color:"#767676", lineHeight:'1.5'}}>Daily auto-sweep transfers funds effortlessly into your designated account.</p>
+              <p style={{fontFamily:"GilroyRegular", color:"#767676", lineHeight:'1.8'}}>Daily auto-sweep transfers funds effortlessly into your designated account.</p>
               <div className={styles.bank_img}>
                 <Image src="/assets/bank.svg" fill alt="bank" />
               </div>
@@ -406,7 +413,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
               <h1 style={{ margin: "2rem 0 1rem 0", fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}>
                 Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
               </h1>
-              <p style={{fontFamily:"GilroyMedium", color:"#767676",lineHeight:'1.5'}}>Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
+              <p style={{fontFamily:"GilroyRegular", color:"#767676",lineHeight:'1.6'}}>Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
                 <Image src="/assets/sendMoney.svg" fill alt="send money" />
               </div>
@@ -422,28 +429,30 @@ import { NavigationBar } from '../navBar/NavigationBar';
         <div style={{width:"38rem", display:"flex", flexDirection:'column', gap:"1.5rem" ,margin:"3rem 0"}}> 
          <div style={{position:'relative', width:"4rem", height:'4rem'}}><Image src='/assets/Loans.svg' fill alt="loans" /></div>
          <div style={{fontSize:"1rem",}}>
-          <h1 style={{fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h1> <br />
-          <p style={{fontFamily:"GilroyMedium", color:"#2b3c45", lineHeight:"1.5"}}>Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
+          <h1 style={{fontFamily:"GilroySemiBold",lineHeight:"2.6rem"}}> Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your <br />business from our partner banks</h1> <br />
+          <p style={{fontFamily:"GilroyRegular", color:"#2b3c45", lineHeight:"1.7"}}>Scale your business with affordable, transparent loans provided <br />by trusted banking partners, hassle-free and reliable</p>
          </div>
          <div style={{position:"relative", height:"5rem", width:"10rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
          </div>
-         <div style={{position:'relative', height:'28rem', width:"42rem",  }}> <Image src="/assets/Loan_img.webp" fill alt="loan" /> </div>
+         <div className={styles.Loan_img}> 
+         <div style={{position:'relative', height:'100%', width:"100%",  }}> <Image src="/assets/Loan_img.webp" fill alt="loan" /> </div>
+         </div>
       </div> <br />
 
  
 
       <div>
         <div style={{margin:"-4rem 7rem 0 7.5rem",position:"relative" }}>
-        <div style={{width:"29vw", position:"relative" , bottom:"-16rem", }}>
+        <div style={{width:"29vw", position:"relative" , bottom:"-14rem", }}>
             <h1 style={{margin:"1rem 0 1rem 0 ", fontFamily:"GilroySemiBold", fontSize:"3rem"}}>Efficient, <span style={{color:"#0391f0"}}>Versatile</span> <br />Reliable</h1>
-            <p style={{fontFamily:"GilroyMedium", color:"#767676" ,lineHeight:"1.5"}}>Multi-functional solution tailored uniquely for your <br />business. Manage all your Orders, Inventory & <br /> Transactions at one place.</p>
+            <p style={{fontFamily:"GilroyRegular", color:"#767676" ,lineHeight:"1.5"}}>Multi-functional solution tailored uniquely for your <br />business. Manage all your Orders, Inventory & <br /> Transactions at one place.</p>
         </div>
         <div className={styles.versatile_img}><Image src="/assets/versatile.webp" fill alt="versatile" /></div>
           
         </div>
         <div style={{width:"100%"}}>
-        <div style={{  width: "45rem",height: "38.25rem", float: "right",right:"0rem", position: "relative",marginTop: "-30rem",}}>
-            <Image src="/assets/dashBoard1.webp" fill alt="dashboard" />
+        <div style={{  width: "40rem",height: "35.5rem", float: "right",right:"0rem", position: "relative",marginTop: "-28rem",}}>
+            <Image src="/assets/d3.webp" fill alt="dashboard" />
         </div>
 
 
@@ -454,13 +463,13 @@ import { NavigationBar } from '../navBar/NavigationBar';
       <div style={{margin:"15rem 0 0 0 ",clear: "both", height:"45rem"}}>
  
          <div style={{display:"flex", height:"45rem"}}>
-          <div style={{backgroundColor:"#0F2531", padding:"3rem", width:"50%" ,padding:"8rem 0 0 8rem"}}> 
-          <div style={{position:"absolute", zIndex:'2', width:"23rem", height:"25rem", left: "50%",transform: "translateX(-50%)" ,  }}><Image src="/assets/DorokiTableTerminal.svg" fill alt="doroki" /></div>
+          <div style={{backgroundColor:"#0F2531", padding:"3rem", width:"50%" ,padding:"9rem 0 0 8rem"}}> 
+          <div style={{position:"absolute", zIndex:'2', width:"25rem", height:"27rem", left: "50%",transform: "translateX(-50%)"  }}><Image src="/assets/DorokiTableTerminal.svg" fill alt="doroki" /></div>
 
-          <div style={{width:"20rem",position:"relative", margin:" 0 0 0 -0.5rem"}}>           
+          <div style={{width:"20rem",position:"relative", margin:" -1rem 0 0 -0.5rem"}}>           
              <div style={{ color:"#FFFFFF", width:"25rem"}}>
-              <h1 style={{margin:"1rem 0 1.5rem 0", fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3rem" }}>Start your Business journey effortlessly with <span style={{backgroundColor:"#f2931d", padding:"0.2rem 0.8rem 0.1rem 0.8rem"}}>Doroki</span> </h1> 
-              <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem", fontSize:"1.1rem"}}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
+              <h1 style={{margin:"1rem 0 1.5rem 0", fontFamily:"GilroySemiBold",fontSize:"2.4rem", lineHeight:"3rem" }}>Start your Business journey effortlessly with <span style={{backgroundColor:"#f2931d", padding:"0.2rem 0.8rem 0.1rem 0.8rem"}}>Doroki</span> </h1> 
+              <p style={{fontFamily:"GilroyRegular", lineHeight:"1.8rem", fontSize:"1.1rem"}}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
             </div>
             <div style={{position:"relative", height:"6rem", width:"10rem", marginTop:"0.6rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
             </div>
@@ -475,7 +484,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
       <div style={{margin:"5rem 6.5rem 7rem 7.5rem" ,  }}>
 
 
-        <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"10rem 0 0rem 0",  }}>
+        <div style={{display:"flex", justifyContent:"center", textAlign:'center', margin:"10rem 0 -3rem 0",  }}>
           <h1 style={{position:'relative',fontFamily:"GilroySemiBold",fontSize:"2.5rem", lineHeight:"3.5rem", left:"3rem"}}>Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span> reigns supreme</h1>
           <div style={{position:'relative', width:"7rem",margin:"0 0rem", left:'4rem', bottom:"1rem"}}><Image src='/assets/message.svg' fill alt="message"/></div>
           </div>
@@ -488,9 +497,9 @@ import { NavigationBar } from '../navBar/NavigationBar';
           <div className={styles.animation_star2}>
             <Image src='/assets/animations_stars2.svg' fill alt="Star 2" />
           </div>
-            <div className={styles.headSec}><h1 style={{fontFamily:"GilroyBold"}}>POS 10Q</h1></div>
+            <div className={styles.headSec}><h1 style={{fontFamily:"GilroySemibold", fontSize:"2rem"}}>POS 10Q</h1></div>
             <div className={styles.content_sec}> 
-            <p style={{ fontFamily:"GilroyMedium",lineHeight:"1.5rem", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.</p>
+            <p style={{ fontFamily:"GilroyRegular",lineHeight:"1.5rem", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients <br />to choose whatever payment option.</p>
               <div className={styles.dev_img1}><Image src='/assets/pos.webp' fill alt="POS" /></div>
               </div >
             </div>
@@ -501,9 +510,9 @@ import { NavigationBar } from '../navBar/NavigationBar';
           <div className={styles.animation_star2}>
             <Image src='/assets/animations_stars2.svg' fill alt="Star 2" />
           </div>
-            <div className={styles.headSec}><h1 style={{fontFamily:"GilroyBold"}}>MF 960</h1></div>
+            <div className={styles.headSec}><h1 style={{fontFamily:"GilroySemibold", fontSize:"2rem"}}>MF 960</h1></div>
             <div className={styles.content_sec}> 
-            <p style={{fontFamily:"GilroyMedium",}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
+            <p style={{fontFamily:"GilroyRegular",}}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
               <div className={styles.dev_img2}><Image src='/assets/mf.webp' fill alt="mf" /></div>
               </div >
             </div>
@@ -515,7 +524,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
           <div style={{backgroundColor:"#0F2531", color:"white", height:"40rem"}}>
             
             <div style={{display:"flex" , position:"relative",justifyContent:"space-between", padding:"7rem  10rem 4rem 10rem",  zIndex:'4' }}>
-              <h1 style={{fontFamily:"GilroySemiBold"}}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.3rem 0.8rem"}}>Doroki</span>   <br />exceeds expectations!</h1>
+              <h1 style={{fontFamily:"GilroySemiBold", lineHeight:"3rem", fontSize:"2.4rem"}}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.3rem 0.8rem"}}>Doroki</span>   <br />exceeds expectations!</h1>
               <p style={{fontFamily:"GilroyRegular" , lineHeight:"1.7rem" , wordSpacing:"0.2rem"}}> &quot;Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations.&quot;</p>
             </div>
             
@@ -530,7 +539,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
         
 
     
-        <div style={{margin:"15rem 0 8rem 0 "}}>
+        <div style={{margin:"19rem 0 8rem 0 "}}>
         <div style={{ display: "flex", margin: " 0 0 -2rem 7.5rem ", alignItems: "center", position: "relative" , gap:'1rem'}}>
         <h1 style={{fontFamily:"GilroySemiBold", fontSize:"2.4rem"}}>Our Client’s kind words</h1>
         <div style={{ height: "35px", width: "35px", position: "relative", left: "0rem" }}>
@@ -540,17 +549,21 @@ import { NavigationBar } from '../navBar/NavigationBar';
         
       </div> 
       <div >
+      <div style={{position:'relative', width:"12rem", height:"4rem", bottom:"0rem", left:"84%", }}><Image src='/assets/valued_option_arrow.webp' fill/></div>
+
       <ClientSwiper/>
         </div>
         </div>
 
       
 
-        <div style={{margin:"1em 5rem 0rem 7.5rem", height:"45rem",display:"flex" , gap:"0.5rem",justifyContent:'space-between'}}>
-          <div style={{position:"relative" , width:"35rem", height:"44rem"}}>
+        <div style={{margin:"1em 5rem 0rem 7.5rem", height:"45rem",display:"flex" , gap:"1rem",justifyContent:'space-between'}}>
+          <div  className={styles.queries_img}>
             <Image src="/assets/queries-img1.webp" fill alt="queries" />
           </div>
           <div >
+      <div style={{position:'relative', width:"15rem", height:"4rem",  left:"73%",marginTop:"-3.5rem" }}><Image src='/assets/Queries_arrow.webp' fill/></div>
+
           <FrequentQuestions FaqTableData={faqs}/>
           </div>
         </div> 
@@ -558,13 +571,13 @@ import { NavigationBar } from '../navBar/NavigationBar';
        <div className={styles.business_needs}>
 
         <div style={{width:'31rem', margin:"3rem 0",justifyContent:'center', alignItems:"center" }}>
-          <div style={{display:"flex", fontFamily:"GilroySemiBold"}}><h1>Intuitive and Easy to use App for your Business needs</h1>  <div style={{height:"50px", width:"50px", position:"relative", top:"2rem",right:"6rem"}}><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
+          <div style={{display:"flex", fontFamily:"GilroySemiBold" ,marginTop:"1rem", lineHeight:"2.5rem"}}><h1>Intuitive and Easy to use App for your Business needs</h1>  <div style={{height:"50px", width:"50px", position:"relative", top:"2.2rem",right:"6.5rem"}}><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
           
-          <p style={{margin:"1rem 0", lineHeight:"29px", fontFamily:"GilroyMedium"}}>Seamless billing made easy with our POS system <br />
+          <p style={{margin:"1rem 0", lineHeight:"29px", fontFamily:"GilroyRegular"}}>Seamless billing made easy with our POS system <br />
           efficient payment processing with zero hassle</p>
           <div style={{position:"relative", height:"5rem", width:"9rem"}}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
         </div>
-        <div style={{position:'relative', width:"39rem", height:"21rem"}}><Image src="/assets/app-img1.webp" fill alt="app" /></div>
+        <div style={{position:'relative', width:"39rem", height:"23rem",marginRight:"0.5rem"}}><Image src="/assets/app-img1.webp" fill alt="app" /></div>
       </div>
 
 
@@ -572,26 +585,26 @@ import { NavigationBar } from '../navBar/NavigationBar';
       <div className={styles.business_needs2}>
       <div className={styles.bt_ele}>
       <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable POS</h4>
-      <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+      <div style={{width:"14rem", height:"10rem", position:"absolute", bottom: "0", right: "0"}}>
           <Image src="/assets/bt_img1.webp" fill  alt="bt" />
       </div>
       </div>
        <div className={styles.bt_ele2}>
         <h4 className={styles.business_text}>Unlock powerful busines insights through detailed reports</h4>
-        <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <div style={{width:"14rem", height:"10rem", position:"absolute", bottom: "0", right: "0"}}>
         <Image src="/assets/bt_img2.webp"  fill alt="invt" />
       </div>
        </div>
        <div className={styles.bt_ele3}>
-        <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"2rem", borderBottomLeftRadius:"0.5rem",borderBottomRightRadius:"0.5rem"}}> <p>Coming Soon</p></div>
+        <div style={{backgroundColor:"#339B35", color:"white",width:"5.5rem",padding:"0.5rem", fontSize:"12px", fontFamily:"GilroyBold" , position:"relative",left:"2rem", borderBottomLeftRadius:"0.5rem",borderBottomRightRadius:"0.5rem", textAlign:"center", display:"flex", justifyContent:"center"}}> <p>Coming Soon</p></div>
         <h4 className={styles.business_text_online}>Transform your business go online and reach new customers.</h4>
-        <div style={{width:"12rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <div style={{width:"14rem", height:"10rem", position:"absolute", bottom: "0", right: "0"}}>
         <Image src="/assets/bt_img3.webp" fill alt="invt" />
       </div>
        </div >
        <div className={styles.bt_ele4} >
         <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
-        <div style={{width:"8rem", height:"8rem", position:"absolute", bottom: "0", right: "0"}}>
+        <div style={{width:"10rem", height:"10rem", position:"absolute", bottom: "0", right: "0"}}>
         <Image src="/assets/bt_img4.webp" fill alt="invt" />
       </div>
        </div>
@@ -615,7 +628,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
         </div>
       </div>
       <br />
-          <p style={{fontFamily:"GilroyMedium", color:"#767676", lineHeight:"1.5rem"}}>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
+          <p style={{fontFamily:"GilroyRegular", color:"#767676", lineHeight:"1.5rem"}}>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
           <form>
             <div className={styles.input_divs}>
             
@@ -684,14 +697,19 @@ import { NavigationBar } from '../navBar/NavigationBar';
             </div>
 
           
-            <BlackButton text="Kickstart your success" style={{width:"100%", padding:'1rem', height:'3rem'}} />
+            <BlackButton text="Kickstart your success" style={{width:"100%", padding:'1rem', height:'4rem'}} />
           </form>
         </div>
       </div>
 
       <div className={styles.subscriptionSection}>
-        <div  style={{  position: "absolute",  width: "78rem", height: "41.3rem"}} >
-          <Image src="/assets/blur.webp" fill style={{ objectFit: "cover" }} alt="invt" />
+        <div style={{display:"flex", justifyContent:"space-between"}}> 
+        <div  style={{  position: "absolute",  width: "27rem", height: "49.3rem",left:0 }} >
+          <Image src="/assets/footer_backgroundimg1.webp" fill  alt="invt" />
+        </div>
+        <div  style={{  position: "absolute",  width: "21rem", height: "42.3rem",right:0, bottom:0}} >
+          <Image src="/assets/footer_backgroundimg3.webp" fill  alt="invt" />
+        </div>
         </div>
         <div className={styles.subscribe}>
           <div style={{ maxWidth: "51%",  margin: "5rem auto auto auto",   display: "grid",  height: "auto",  alignItems: "center",  padding: "2rem",  textAlign: "center",  color: "#fff",  }} >
@@ -706,51 +724,66 @@ import { NavigationBar } from '../navBar/NavigationBar';
               type="text"
               placeholder="Email Address"
               style={{
-                width: "100%",
+                width: "96%",
+                 
                 border: "none",
                 borderRadius: "0.5rem",
                 padding: "1rem  0",
                 margin: "1rem auto",
                 zIndex:1,
                 outline:"none",
-                paddingLeft:"1rem",
-                width:"40rem",
+                paddingLeft:"1.5rem",
+                
+                 height: "1.5rem"
 
               }}
             />
             <BlueButton
               text="Subscribe now"
-              style={{ width:"100%", padding: "1rem", height: "3rem", }} />
+              style={{ width:"100%", padding: "1rem", height: "3.5rem", }} />
           </div>
         </div>
+         
 
-        <div style={{display:'flex', color:"white", gap:'5rem', width:"100%", margin:"5rem 6rem", alignItems:'center',fontFamily:"GilroyThin", fontSize:"0.8rem"}}>
+        <div style={{display:'flex', color:"white", gap:'5rem',  margin:"5rem 0 5rem -8rem", width:"61rem",  alignItems:'center',fontFamily:"GilroyRegular", fontSize:"0.8rem", justifyContent:"space-between",  }}>
           <div style={{display:'flex', flexDirection:'column', gap:"1rem", justifyContent:'center',  }}> 
-          <div style={{display:"flex",gap:'0.5rem' , zIndex:1}}>
+          <div style={{display:"flex",gap:'0.5rem' ,zIndex:1}}>
             <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/MapPin.svg' fill alt="invt" /></div>
             <p>176 Herbert Macaulay Wy, Yaba, Lagos 101245, Lagos</p>
           </div>
-          <div style={{display:"flex",gap:'0.5rem'}}>
+          <div style={{display:"flex",gap:'0.5rem',zIndex:1}}>
             <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Phone.svg' fill alt="invt" /></div>
             <p> +234 (0) 801 234 5678</p>
           </div>
-          <div style={{display:"flex", gap:'0.5rem'}}>
+          <div style={{display:"flex", gap:'0.5rem',zIndex:1}}>
             <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Mail.svg' fill alt="invt" /></div>
             <p>support@doroki.com</p>
           </div>
           </div>
-          <div style={{display:"flex", gap:'1rem', width:"20rem" , alignItems:'center'}}>
+          <div style={{display:"flex", gap:'1.5rem', width:"20rem" , alignItems:'center',  }}>
             <div  className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
             <div className={styles.footerIcon}><Image src='/assets/Instagram.svg' fill alt="insta" /></div>
             <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
             <div className={styles.footer_Icon}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div>
 
           </div>
-          <div style={{display:'flex', flexDirection:'column', gap:"0.5rem", zIndex:1}}>
+          <div style={{display:'flex', flexDirection:'column', gap:"0.5rem", zIndex:1 ,textAlign:'start',}}>
             <p>Terms & Conditions</p>
             <p>privacy Policy</p>
           </div>
+          
         </div>
+        <div style={{color:"#cccc", margin:"-3rem  0 1.5rem 0", fontFamily:"GilroyRegular"}}>
+        <p style={{ zIndex:1, color:"#cccc", fontSize:"0.8rem"}}>Powered by</p>
+
+        <div style={{display:"flex", height:"4rem", margin:"0rem  0 2rem -0rem", overflow:"hidden", justifyContent:"center", alignItems:"center"}}>
+          <div style={{position:"relative", width:'5rem', height:"4rem"}}><Image src='/assets/footer_paga_logo.svg' fill/></div>
+          <div style={{ borderLeft: "1px solid #ccc", height: "2rem", margin:'0  1rem 0 0.6rem'}}></div>
+          <div style={{position:"relative", width:'8rem', height:"4rem"}}><Image src='/assets/footer_qb_logo.svg' fill/></div>
+        </div> <br />
+        <p style={{fontSize:"0.8rem", color:"white"}}>© 2024 Doroki All rights reserved.</p>  
+        </div>
+        
       </div>
       </div>
 

@@ -30,15 +30,7 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                    <div
                       style={{
                          marginBottom: "1rem",
-                         ...(showAns?.key === ele?.id && showAns?.status
-                            ? {
-                                 borderLeft: "9px solid #0391f0", 
-                                 transition: 'translateY 0.10s',
-                                 lineHeight: "1.5rem",
-                                  
-                                 borderRadius: "0.5rem",
-                              }
-                            : {})
+                          
                       }}
                    >
                       <div
@@ -49,7 +41,11 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                             transition: "background-color 0.3s ease",
                             borderRadius: "0.5rem",
                             fontFamily: "GilroyMedium",
+                           borderLeft: showAns?.key === ele?.id && showAns?.status ? "9px solid #0391f0" : "9px solid transparent",  
                             color: "#767676",
+                            transition: 'border-left 0.5s ease, translateY 0.5s',
+                           lineHeight: "1.5rem",
+                           borderRadius: "0.5rem",
                          }}
                          onClick={() => handleClick(ele?.id)}  
                       >
@@ -79,6 +75,7 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                                marginRight: "3rem",
                                overflow: "hidden", 
                                display: "block",
+                               
                             }}
                          >
                             {showAns?.key === ele?.id && showAns?.status ? ele?.des : ""}

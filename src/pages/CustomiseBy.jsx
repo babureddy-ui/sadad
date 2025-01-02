@@ -13,17 +13,20 @@ const CustomiseBy = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Reastaurant1.svg",
+          txt: "Streamline reservations, optimize seating, & manage orders seamlessly for efficient table operations in your restaurant.",
           color: "#f1c1be",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Reastaurant2.svg",
+          txt: "Seamlessly print KOTs for quick and accurate order management, enhancing efficiency & customer satisfaction",
           color: "#f1c1be",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+            icon:"/assets/Reastaurant3.svg",
+            txt: "Integrate delivery partners effortlessly, streamline orders, & enhance your restaurant's reach.",
             color: "#f1c1be",
             bgColor: "#EBEAF1",
           },
@@ -37,17 +40,20 @@ const CustomiseBy = () => {
       },
       content: [
         {
-          txt: "Boost sales, track inventory, and improve customer experience.",
+          icon:"/assets/Retail1.svg",
+          txt: "Scanning items enhances speed and accuracy, optimizing stock management and minimizing mistakes.",
           color: "#a4c7ea",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Enhance operational efficiency and grow your retail business.",
+          icon:"/assets/Retail2.svg",
+          txt: "Customize receipts to add personal touch, improve clarity, and reinforce brand identity.",
           color: "#a4c7ea",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Streamline operations, enhance customer satisfaction, and optimize resources.",
+          icon:"/assets/Retail3.svg",
+            txt: "Manage your store seamlessly offline with manual processes for inventory and transactions.",
             color: "#a4c7ea",
             bgColor: "#EBEAF1",
           },
@@ -61,17 +67,20 @@ const CustomiseBy = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Grocery1.svg",
+          txt: "Rapid checkout boosts efficiency, cuts delays, and enhances the overall customer experience.",
           color: "#bbd8c1",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Grocery2.svg",
+          txt: "Launch your online store to offer convenience, increase revenue, and grow your brand.",
           color: "#bbd8c1",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+           icon:"/assets/Grocery3.svg",
+            txt: "Offer promotions and discounts to attract customers, increase sales, and build brand loyalty.",
             color: "#bbd8c1",
             bgColor: "#EBEAF1",
           },
@@ -85,17 +94,20 @@ const CustomiseBy = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon1.svg",
+          txt: "Simplify appointment scheduling, enhance client management, & create a seamless experience for your spa and salon.",
           color: "#cfb8dd",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon2.svg",
+          txt: "Effortlessly assign staff to clients, ensuring personalized service & smooth operations in your spa and salon.",
           color: "#cfb8dd",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Spa&Salon3.svg",
+            txt: "A well-managed waitlist increases customer retention and enhances the overall spa experience.",
             color: "#cfb8dd",
             bgColor: "#EBEAF1",
           },
@@ -109,17 +121,20 @@ const CustomiseBy = () => {
       },
       content: [
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic1.svg",
+          txt: "Monitor sales in real time to enhance decision-making, efficiency, and business growth.",
           color: "#e3acb0",
           bgColor: "#EBEAF1",
         },
         {
-          txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic2.svg",
+          txt: "Oversee multiple stores effortlessly, enhancing consistency, & operational efficiency across locations.",
           color: "#e3acb0",
           bgColor: "#EBEAF1",
         },
         {
-            txt: "Manage your entire restaurant business process like table/menu management, raw material monitoring.",
+          icon:"/assets/Electronic3.svg",
+            txt: "Get timely stock alerts to manage inventory effectively and avoid product stockouts.",
             color: "#e3acb0",
             bgColor: "#EBEAF1",
           },
@@ -158,22 +173,23 @@ const CustomiseBy = () => {
       >
         <div style={{   position: 'relative', margin: "2rem 0rem", right: "-50rem", zIndex: 1 }}>
           <div style={{
-            display: 'flex', gap: '0.5rem', position: 'absolute', right: '-5rem', width: "50rem",
-            alignItems: 'center', fontFamily: "GilroyUlight"
+            display: 'flex', gap: '0.6rem', position: 'absolute', right: '-5rem', width: "50rem",
+            alignItems: 'center', fontFamily: "GilroyUlight" , fontSize:"0.8rem"
           }}>
-            <p>Customise by</p>
+            <p style={{marginRight:'1.3rem'}}>Customise by </p> 
             {Object.keys(categories).map((category) => (
           <button className={styles.customise_btns}
-            style={{
+            style={{ fontSize:"0.8rem",
               backgroundColor: selectedCategory === category ? "white" : "#223037",
               color: selectedCategory === category ? "#223037" : "white",
-              fontWeight: selectedCategory === category ? "GilroyExtrabold" : "normal",
+              fontFamily: selectedCategory === category ? "GilroySemiBold" : "GilroyRegular",
+               
                   
             }}
             key={category}
             onClick={() => handleCategoryChange(category)}
           >
-            {category === "spaSalon" ? "Spa & Salon" : category.charAt(0).toUpperCase() + category.slice(1)}
+            <p> {category === "spaSalon" ? "Spa & Salon" : category.charAt(0).toUpperCase() + category.slice(1)}</p>
             </button>
         ))}
 
@@ -181,8 +197,8 @@ const CustomiseBy = () => {
         </div>  
         
         <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' , }}>
-          <div style={{ width: "30rem", marginTop: "4rem",marginLeft: "5rem",  }}>
-            <h1 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em" }}>
+          <div style={{ width: "30rem", marginTop: "2rem",marginLeft: "5rem",  }}>
+            <h1 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.4em" }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -197,17 +213,18 @@ const CustomiseBy = () => {
               <br />
               with streamlined technology
             </h1>
-            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.6rem", margin: "1rem 0" }}>
+            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", margin: "0.5rem 0" }}>
               Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.
             </p>
-            <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem" }} />
+            <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem", marginTop:"1.5rem" }} />
           </div>
 
-          <div style={{ position: 'relative', width: '32rem', height:"28.8rem",  }}>
+          <div className={styles.Customise_img}>
             <Image 
               src={currentCategory.image.url} 
               alt={currentCategory.image.title} 
               fill
+              
             />
           </div>
         </div>
@@ -220,25 +237,27 @@ const CustomiseBy = () => {
             className={styles.animated_box}
             style={{
               backgroundColor: item.bgColor,
-              padding: '2rem',
+              padding: '2rem 1rem 2rem 2rem',
               margin: "1rem 0",
-              borderBottomRightRadius: '2rem',
-              borderBottomLeftRadius: '2rem',
+               
+              borderBottomRightRadius: '1.6rem',
+              borderBottomLeftRadius: '1.5rem',
               width: "40%",
-              height:"12rem"
+              height:"10.5rem"
 
             }}
           >
             <div
               style={{
                 width: '4rem',
+                position:"relative",
                 height: '4rem',
-                backgroundColor: item.color,
+                 
                 borderRadius: '1rem',
                 margin: "0 0 1rem 0"
               }}
-            ></div>
-            <p style={{ fontFamily: "GilroyMedium" }}>{item.txt}</p>
+            > <Image src={item.icon} fill/></div>
+            <p style={{ fontFamily: "GilroyMedium" , fontSize:"1.1rem", lineHeight:"1.7rem", color:"#283740", fontSize:"1rem",letterSpacing:"0px",}}>{item.txt}</p>
           </div>
         ))}
       </div>

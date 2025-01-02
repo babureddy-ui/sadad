@@ -6,6 +6,7 @@
     gap: 1.5rem;
    
     padding: 1.5rem;
+    
   
      
   }
@@ -25,7 +26,7 @@
   .elements {
     text-align: start;
     border-radius: 1.5rem;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem 3rem 2rem;
     transition: background-color 0.3s, color 0.3s;
     cursor: pointer;
   }
@@ -40,21 +41,26 @@
 .iconContainer{
   width: 4rem;
   height:4rem;
+  
   position: relative
 }
 .starIcon{
-  width: 1rem ;
+  width: 2rem ;
   position: relative;
+  margin-left:"1rem "
+  
 }
 
 .title{
-  font-size: 1rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
   font-family: GilroySemiBold;
-  margin: 1rem 0;
+  margin: 1.5rem 0 0.8rem 0;
 }
 .text{
-  font-family: GilroyMedium;
+  font-family: GilroyRegular;
   color: #767676;
+  line-height: 1.5rem;
 }
   /* -----------------MobileHiddenPowers----------------- */
   .Card_elements {

@@ -29,9 +29,9 @@ const HiddenPowers = () => {
       hoverTextCol: "#FEF1B3",
     },
     {
-      icon: "/assets/icon4.svg",
+      icon: "/assets/offline.svg",
       tagColor: "#02875c",
-      title: "Reports",
+      title: "Offline Mode",
       text: "Unlock gaming euphoria with jaw-dropping discounts, where thrills meet unbeatable prices",
       hoverCol: "#02875c",
       hoverTextCol: "#E3FCEF",
@@ -74,7 +74,7 @@ const HiddenPowers = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <p className={styles.headerText}>Doroki’s hidden powers</p>
-        <div className={styles.starIcon}>
+        <div className={styles.starIcon} style={{marginLeft:"0.5rem"}}>
           <Image src="/assets/stars.svg" alt="Stars" fill />
         </div>
       </div>
@@ -87,14 +87,14 @@ const HiddenPowers = () => {
             onMouseEnter={(e) => {
                e.currentTarget.style.backgroundColor = ele.hoverCol;
               e.currentTarget.style.color = ele.hoverTextCol;
-              e.currentTarget.querySelector(`.${styles.title}`).style.color = ele.hoverTextCol;
-              e.currentTarget.querySelector(`.${styles.text}`).style.color = ele.hoverTextCol;
+              e.currentTarget.querySelector(`.${styles.title}`).style.color = "white";
+              e.currentTarget.querySelector(`.${styles.text}`).style.color = "white";
               e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.hoverTextCol;
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = "white";
               e.currentTarget.style.color = "#555";
-              e.currentTarget.querySelector(`.${styles.title}`).style.color = "#0000";
+              e.currentTarget.querySelector(`.${styles.title}`).style.color = "#212B36";
               e.currentTarget.querySelector(`.${styles.text}`).style.color = "#555";
               e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.tagColor;
             }}

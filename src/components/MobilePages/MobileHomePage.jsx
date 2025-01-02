@@ -178,7 +178,7 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
         <div>
             <div className={styles.heroimg}><Image src="/assets/MobileView/heroImg-mobile.webp" fill/></div>
 
-            <div style={{margin:'3rem 1rem 2rem 1rem', width:"94vw"}}>
+            <div style={{margin:' 2rem 1rem',}}>
                 <div style={{display:"flex"}}> 
                 <h1 className={styles.headline}>
               Drive your 
@@ -194,9 +194,9 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
             </h1>
             <div className={styles.stars}> <Image src='/assets/stars.svg' fill alt="stars" /></div>
             </div>
-               <div style={{display:"flex", flexDirection:"column", margin:"2rem 0", width:"94vw"}}>
-                <input  className={styles.input}type="text" placeholder='Phone Number/Email' /> <br />
-                <BlackButton text="contact me" style={{padding:"1rem", height:"auto"}} />
+               <div style={{display:"flex", flexDirection:"column", margin:"2rem 0rem",  }}>
+                <input  className={styles.input} style={{fontFamily:"GilroyRegular", color:"#818181"}} type="text" placeholder='Phone Number/Email' /> <br />
+                <BlackButton text="contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem'}} />
                </div>
 
             </div>
@@ -216,7 +216,7 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
           </div>
           <div style={{margin:"0 1rem 0 0"}}>
             <h3 className={styles.business_title}>{ele.title}</h3> 
-            <p style={{ fontFamily: "GilroyUlight", color: '#767676' , fontSize:"0.9rem"}}>{ele.text}</p>
+            <p style={{ fontFamily: "GilroyUlight", color: '#767676' , fontSize:"0.9rem", lineHeight:"1.2rem"}}>{ele.text}</p>
           </div>
         </div>
         
@@ -227,8 +227,8 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
         <div style={{margin:'5rem 0 '}}>
         <div>
             <div style={{justifyContent:'center', textAlign:"center", margin:"1rem" }}> 
-          <h1 style={{margin:"2rem 0",  fontFamily: 'GilroyMedium', fontSize:"1.7rem"}}>Trusted by top Businesses</h1>
-          <p style={{ fontFamily: "GilroyMedium", lineHeight:"1.3rem", fontSize:"0.9rem"}}> <b>Doroki</b> is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
+          <h1 style={{margin:"1rem 0",  fontFamily: 'GilroySemiBold', fontSize:"1.7rem"}}>Trusted by top Businesses</h1>
+          <p style={{ fontFamily: "GilroyMedium", lineHeight:"1.3rem", fontSize:"0.9rem"}}> <span style={{fontFamily:"GilroyBold"}}>Doroki</span>  is trusted by countless businesses, offering seamless, reliable solutions  that drive <br />growth across multiple industries</p>
           </div>
           </div>
           <div className={styles.marquee_section}>
@@ -238,7 +238,7 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
         <div style={{marhin:"3rem"}}>
           <MobileCustomise/>
         </div>
-
+  
 
         <div style={{margin:"1rem 1rem"}}>
 
@@ -249,16 +249,12 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
           </div>
         </div>
 
-  {/* -------------------------------MobileHiddenPowers---------------- */}
-        <div>
-          <MobileHiddenPowers/>
-          
-        </div>
+  
         <div style={{display:'grid', gap:'1.5rem',}}>
         <div className={styles.card}>
         <div style={{display:'flex', flexDirection:"column", gap:'2rem'}}> 
             <div style={{ position: "relative", width: "4rem", height: "4rem" }}>
-              <Image src="/assets/Loans.svg" fill alt="loans" />
+              <Image src="/assets/Loans1.svg" fill alt="loans" />
             </div>
             <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2.3rem"}}>Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h2>
             <p style={{fontFamily:"GilroyRegular" ,lineHeight:"1.6rem"}}>
@@ -355,6 +351,19 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
         </div>
        </div>
 
+        </div>
+
+        {/* -------------------------------MobileHiddenPowers---------------- */}
+        
+       <div style={{margin:'4rem 1rem'}}>
+
+       <div  className={styles.features}>
+          <p className={styles.feature_title}>Doroki’s Hidden Powers</p>
+          <div style={{ height: "30px", width: "30px", position: "relative", margin:'0 0.5rem' }}>
+            <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
+          </div>
+        </div> <br />
+          <MobileHiddenPowers/>
         </div>
         
           <div style={{margin:"3rem 1rem"}}>

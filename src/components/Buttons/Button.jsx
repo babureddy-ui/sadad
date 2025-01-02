@@ -47,9 +47,10 @@ const BlackButton = (props) => {
          <Marquee
             gradient={false}
             pauseOnHover="true"
-            direction={props.direction ? props.direction : "left"}
+            direction={props.direction ? props.direction : "right"}
             className={styles.mainMarqueeTagHomePage}
             style={{ ...props.style }}
+            speed={props.speed || 50}
          >
             {props?.ClientsArr?.map((item) => {
                return (
