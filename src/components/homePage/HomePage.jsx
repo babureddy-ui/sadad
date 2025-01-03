@@ -756,7 +756,7 @@ import { NavigationBar } from '../navBar/NavigationBar';
             <p> +234 (0) 801 234 5678</p>
           </div>
           <div style={{display:"flex", gap:'0.5rem',zIndex:1}}>
-            <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/Mail.svg' fill alt="invt" /></div>
+            <div style={{position:"relative", width:'1rem', height:"1rem"}}><Image src='/assets/mail.svg' fill alt="invt" /></div>
             <p>support@doroki.com</p>
           </div>
           </div>
