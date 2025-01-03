@@ -72,7 +72,8 @@ export const NavigationBar = () => {
             onClick={ContactForm}
             
             />
-            <BlackButton text="Login" style={{width:"9rem", height:"2.5rem",fontSize:"0.8rem"}}/>
+            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }}  onClick={() => window.open("https://qa.doroki.com/", "_blank")}/>
+
           </div>
         </div>
         </div>
