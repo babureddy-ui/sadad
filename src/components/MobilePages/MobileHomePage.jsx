@@ -368,7 +368,7 @@ import MobileClientSwiper from '@/pages/MobileClientSwiper';
         
           <div style={{margin:"3rem 1rem"}}>
             <div style={{fontFamily:"GilroyMedium", display:"flex",flexDirection:"column", margin:"2rem 0", lineHeight:"1.9rem",}}>
-            <div style={{display:"flex",justifyContent:'center'  }}> <h2>Dedicated </h2><div style={{position:"relative", width:"1.5rem", height:"1.5rem", margin:"0 0.5rem"}}><Image src="/assets/MobileView/Moneybag.svg" fill/></div> <h2>Bank Account</h2></div>
+            <div style={{display:"flex",justifyContent:'center'  }}> <h2>Dedicated </h2><div style={{position:"relative", width:"1.5rem", height:"1.5rem", margin:"0 0.5rem"}}><Image src="/assets/MobileView/Moneybag.svg" fill alt='Moneybag'/></div> <h2>Bank Account</h2></div>
             <h2 style={{display:"flex",justifyContent:'center'}}>for your transaction business </h2> 
               </div>
             <div ><TransactionSwiper/></div>
