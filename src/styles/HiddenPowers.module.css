@@ -66,21 +66,24 @@
   .Card_elements {
     position: relative;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    will-change: transform, opacity;  
-  }
-  
-  .Card_elements.right {
-    transform: translateX(-100%);   
-    opacity: 0;
+    will-change: transform, opacity;
+    width: 78%;
+    margin: 0 0 0 1.88rem;
   }
   
   .Card_elements.left {
-    transform: translateX(-100%);  
+    transform: translateX(100%);  
     opacity: 0;
   }
   
   .Card_elements.visible {
-    transform: translateX(0);    
+    transform: translateX(0);
     opacity: 1;
   }
+  
+  .Card_elements.right {
+    transform: translateX(-100%);  
+    opacity: 0;
+  }
+  
   

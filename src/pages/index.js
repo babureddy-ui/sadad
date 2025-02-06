@@ -19,9 +19,11 @@ import React from 'react';
 
 const DynamicDesktop = dynamic(() => import('@/components/homePage/HomePage'), {
   loading: () => <p>Loading...</p>,
+  ssr: false
 });
 const DynamicMobile = dynamic(() => import('@/components/MobilePages/MobileHomePage'), {
   loading: () => <p>Loading...</p>,
+  ssr: false
 });
 
 const Index = ({ mobileView }) => {

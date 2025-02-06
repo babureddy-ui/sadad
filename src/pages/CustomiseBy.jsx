@@ -7,7 +7,7 @@ const CustomiseBy = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/Reastaurant_img.webp",
+        url: "/assets/Reastaurant_img1.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const CustomiseBy = () => {
     },
     retail: {
       image: {
-        url: "/assets/Retail-img.webp",
+        url: "/assets/Retail-img1.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const CustomiseBy = () => {
     },
     grocery: {
       image: {
-        url: "/assets/Grocery_img.webp",
+        url: "/assets/Grocery_img1.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const CustomiseBy = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/SpaSalon_img.webp",
+        url: "/assets/SpaSalon_img1.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const CustomiseBy = () => {
     },
     electronics: {
       image: {
-        url: "/assets/Electronics_img.webp",
+        url: "/assets/Electronics_img1.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
@@ -144,10 +144,12 @@ const CustomiseBy = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('restaurant');
   const [isAnimating, setIsAnimating] = useState(false);
+  const [isbtnAnimating, setBtnIsAnimating] = useState(false);
 
   const handleCategoryChange = (category) => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
+     
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false);  
@@ -214,7 +216,7 @@ const CustomiseBy = () => {
               with streamlined technology
             </h1>
             <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", margin: "0.5rem 0" }}>
-              Take control of your restaurant operations effortlessly, streamlining everything from orders to inventory management.
+            Take control of your Business operations effortlessly, streamlining everything from orders to inventory management.
             </p>
             <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem", marginTop:"1.5rem" }} />
           </div>
@@ -224,7 +226,7 @@ const CustomiseBy = () => {
               src={currentCategory.image.url} 
               alt={currentCategory.image.title} 
               fill
-              
+              className={isAnimating ? styles.imageOut : styles.imageIn}
             />
           </div>
         </div>

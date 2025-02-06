@@ -54,44 +54,48 @@
 
 
  
- 
-
-@media only screen and (min-width: 2400px) and (max-width: 2600px) {
+@media only screen and (min-width: 2900px) and (max-width: 5800px) {
    html {
-      font-size: 112%;
+      font-size: 125%;
+   }
+}
+
+@media only screen and (min-width: 2400px) and (max-width: 2900px) {
+   html {
+      font-size: 130%;
    }
 }
 
 @media only screen and (min-width: 2200px) and (max-width: 2400px) {
    html {
-      font-size: 100%;
+      font-size: 135%;
    }
 }
 
 @media only screen and (min-width: 2000px) and (max-width: 2200px) {
    html {
-      font-size: 100%;
+      font-size: 132%;
    }
 }
 
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
    html {
-      font-size: 100%;
+      font-size: 130%;
    }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1800px) {
    html {
-      font-size: 115%;
+      font-size: 126%;
    }
 }
 @media only screen and (min-width: 1500px) and (max-width: 1600px) {
    html {
-      font-size: 100%;
+      font-size: 108%;
    }
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
    html {
       font-size: 100%;
    }
@@ -102,10 +106,14 @@
       font-size: 90%;
    }
 }
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
    html {
-      font-size: 74%;
+      font-size: 79%;
+   }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1100px) {
+   html {
+      font-size: 76%;
    }
 }
 
@@ -117,11 +125,11 @@
 
 @media only screen and (min-width: 700px) and (max-width: 800px) {
    html {
-      font-size: 54%;
+      font-size: 52%;
    }
 }
 
-@media only screen and (min-width: 630px) and (max-width: 730px) {
+@media only screen and (min-width: 630px) and (max-width: 700px) {
    html {
       font-size: 50%;
    }
@@ -143,7 +151,19 @@
       font-size: 74%;
    }
 }
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+   html {
+      font-size: 80%;
+   }
+}
 
  
 
+/* .select-style {
+   color: red;
+ }
  
+ .select-style option {
+   color: red; 
+ }
+  */

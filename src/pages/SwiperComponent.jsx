@@ -6,11 +6,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
 const BusinessImages = [
-  { link: '/assets/restaurant.webp', company: 'Restaurant' },
-  { link: '/assets/retail.webp', company: 'Retail' },
-  { link: '/assets/grocery.webp', company: 'Grocery' },
-  { link: '/assets/spa_salon.webp', company: 'Spa & Salon' },
-  { link: '/assets/electronics.webp', company: 'Electronics' },
+  { link: '/assets/Restaurant1.webp', company: 'Restaurant' },
+  { link: '/assets/Retail1.webp', company: 'Retail' },
+  { link: '/assets/Grocery1.webp', company: 'Grocery' },
+  { link: '/assets/Spa_Salon1.webp', company: 'Spa & Salon' },
+  { link: '/assets/Electronics1.webp', company: 'Electronics' },
 ];
 
 const SwiperComponent = () => (

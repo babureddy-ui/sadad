@@ -84,14 +84,7 @@ const ClientSwiper = () => {
         {kindwords.map((item, index) => (
           <SwiperSlide key={index}>
             <div
-              style={{
-                cursor: 'pointer',
-                borderRadius: '1rem',
-                width: '25.5rem',
-                backgroundColor: "#F5F8FF",
-                 // Add right margin
-                  
-              }}
+               className={styles.swiperslide_card}
             >
               <div style={{ padding: '3rem 2rem' }}>
                 <p style={{fontFamily:"GilroyRegular", color:"#767676" , lineHeight:'1.5rem'}}>{item.text}</p>
