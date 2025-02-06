@@ -636,7 +636,7 @@ margin-top: 4.3rem;
   align-items: center;
   justify-content: center;
   width: 90%;
-  max-width: 400px;
+  max-width: 25rem;
   text-align: center;
   gap: 1rem;
 }
@@ -645,7 +645,7 @@ margin-top: 4.3rem;
   position: fixed;
   top: 52%;
   left: 50%;
-  width:75vw ;
+  width:68rem ;
   gap: 2rem;
   transform: translate(-50%, -50%);
   z-index: 1001;
