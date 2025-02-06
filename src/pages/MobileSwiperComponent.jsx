@@ -28,8 +28,8 @@ const MobileSwiperComponent = () => (
       >
         {MobileBusinessImages.map((item) => (
           <SwiperSlide key={item.company}>
-            <div style={{ cursor: 'pointer', display: 'grid', gap: '3rem' }}>
-              <div style={{ height: "24rem", width: "100%" , borderRadius:"2rem"}}>
+            <div style={{ cursor: 'pointer', display: 'flex', gap: '3rem', justifyContent:"center" }}>
+              <div style={{ height: "24rem", width: "88%" , borderRadius:"2rem"}}>
                 <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                   <Image src={item.link} alt={item.company} fill />
                 </div>

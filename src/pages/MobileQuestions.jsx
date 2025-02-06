@@ -23,7 +23,7 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
     };
  
     return (
-       <div style={{ margin: "1rem 0rem",width: "100%", height:"42rem" ,  }}  >
+       <div style={{ margin: "2rem 0 3rem 0",width: "100%",   maxHeight:"52rem"  }}  >
           <div style={{ width: "100%",   }}>
              {FaqTableData?.map((ele) => (
                 <div style={{borderRadius:"2rem", }} key={ele?.id}>
@@ -35,17 +35,17 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                    >
                       <div
                          style={{
-                            padding: "1.5rem",
+                            padding: "1rem 1rem 1rem 1.5rem",
                             backgroundColor: "#f5f8ff", 
                             boxSizing: "border-box",
                             transition: "background-color 0.3s ease",
                             borderRadius: "0.5rem",
                             fontFamily: "GilroyMedium",
-                           borderLeft: showAns?.key === ele?.id && showAns?.status ? "9px solid #0391f0" : "9px solid transparent",  
+                           borderLeft: showAns?.key === ele?.id && showAns?.status ? "6px solid #0391f0" : "6px solid transparent",  
                             color: "#767676",
                             transition: 'border-left 0.5s ease, translateY 0.5s',
-                           lineHeight: "1.5rem",
-                           borderRadius: "0.5rem",
+                           lineHeight: "1.4rem",
+                           borderRadius: "0.4rem",
                          }}
                          onClick={() => handleClick(ele?.id)}  
                       >
@@ -53,16 +53,17 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                             style={{
                                display: "flex",
                                justifyContent: "space-between",
-                               // gap: "6rem",
+                               gap: "1rem",
                                 
                                cursor: "pointer",
                                color: "#101828",
-                               fontFamily: "GilroyBold",
-                               fontSize: "1rem"
+                               fontFamily: "GilroySemiBold",
+                               fontSize: "1rem",
+                               paddingTop:"0.2rem"
                             }}
                          >
                             <p>{ele?.para} </p>
-                            <span style={{ color: "black", fontSize: "1rem" }}>
+                            <span style={{ color: "black", fontSize: "1.1rem" }}>
                                {showAns?.key === ele?.id && showAns?.status ? <IoIosArrowUp /> : <IoIosArrowDown />}
                             </span>
                          </div>
@@ -72,9 +73,12 @@ const MobileQuestions = ({ FaqTableData, heading }) => {
                                maxHeight: showAns?.key === ele?.id && showAns?.status ? "50rem" : "0rem",
                                transition: "max-height 0.10s ease-out, padding-top 0.10s ease-out",
                                paddingTop: showAns?.key === ele?.id && showAns?.status ? "1rem" : "0rem",
-                               marginRight: "3rem",
+                              //  marginRight: "3rem",
                                overflow: "hidden", 
                                display: "block",
+                               fontFamily:"GilroyRegular",
+                               fontSize:"0.9rem",
+                               paddingBottom:showAns?.key === ele?.id && showAns?.status ? "1rem" : "0rem",
                                
                             }}
                          >

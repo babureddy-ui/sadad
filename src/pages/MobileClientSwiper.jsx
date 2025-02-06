@@ -9,7 +9,7 @@ import styles from '../components/homePage/HomePage.module.css'
 
 const kindwords = [
     { 
-      text:"“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English adsczscaf“",
+      text:<>“It is a long established fact that a reader will be tracked distracted by <br />the readable content of a page is when looking at its layout. The point <br />of using Lorem of distribution it look <br /> like readable English adsczscaf“</> ,
       img: '/assets/client.webp',
       reviews:"/assets/Reviews.svg",
       name:"James Williams",
@@ -17,7 +17,7 @@ const kindwords = [
       icon:"/assets/Icon.svg",
      },
      { 
-      text:"“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English adsczscaf“",
+      text:<>“It is a long established fact that a reader will be tracked distracted by <br />the readable content of a page is when looking at its layout. The point <br />of using Lorem of distribution it look <br /> like readable English adsczscaf“</>,
       img: '/assets/client.webp',
       reviews:"/assets/Reviews.svg",
       name:"James Williams",
@@ -25,7 +25,7 @@ const kindwords = [
       icon:"/assets/Icon.svg",
      },
      { 
-      text:"“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English adsczscaf“",
+      text:<>“It is a long established fact that a reader will be tracked distracted by <br />the readable content of a page is when looking at its layout. The point <br />of using Lorem of distribution it look <br /> like readable English adsczscaf“</>,
       img: '/assets/client.webp',
       reviews:"/assets/Reviews.svg",
       name:"James Williams",
@@ -33,7 +33,7 @@ const kindwords = [
       icon:"/assets/Icon.svg",
      },
      { 
-      text:"“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English adsczscaf“",
+      text:<>“It is a long established fact that a reader will be tracked distracted by <br />the readable content of a page is when looking at its layout. The point <br />of using Lorem of distribution it look <br /> like readable English adsczscaf“</>,
       img: '/assets/client.webp',
       reviews:"/assets/Reviews.svg",
       name:"James Williams",
@@ -41,7 +41,7 @@ const kindwords = [
       icon:"/assets/Icon.svg",
      },
      { 
-      text:"“ It is a long established fact that a reader will be tracked distracted by the readable content of a page is when looking at its layout. The point of using Lorem of distribution it look like readable English adsczscaf“",
+      text:<>“It is a long established fact that a reader will be tracked distracted by <br />the readable content of a page is when looking at its layout. The point <br />of using Lorem of distribution it look <br /> like readable English adsczscaf“</>,
       img: '/assets/client.webp',
       reviews:"/assets/Reviews.svg",
       name:"James Williams",
@@ -63,10 +63,10 @@ const MobileClientSwiper = () => {
     return (
       <div style={{ marginTop: '5rem', marginBottom:"5rem" }}>
         <Swiper
-          spaceBetween={0}
-          slidesPerView={1.2}
+          spaceBetween={5}
+          slidesPerView={1.1}
           autoplay={{ delay: 4000, disableOnInteraction: false }}
-          speed={700}
+          speed={100}
           pagination={{ clickable: true,
             // bulletClass: styles.custom_bullet,
             // bulletActiveClass: styles.custom_bullet_active,
@@ -74,7 +74,7 @@ const MobileClientSwiper = () => {
            }}
           
           modules={[Autoplay, Pagination]}
-          style={{ paddingBottom: '5rem',  }}
+          style={{ paddingBottom: '5rem', padding:"0rem 1rem 5rem 1rem" }}
           className="custom-testimonial-swiper"
           onSlideChange={handleSlideChange}  
         >
@@ -84,14 +84,14 @@ const MobileClientSwiper = () => {
                 style={{
                   cursor: 'pointer',
                   borderRadius: '1rem',
-                  // width: '23rem',
+                  width: '96%',
                   margin:"0 1rem",
                   backgroundColor: "#F5F8FF",
                   // marginLeft: index === 0 && isFirstSlide ? '2rem':'1rem', 
                 }}
               >
-                <div style={{ padding: '2rem 1rem' }}>
-                  <p style={{fontFamily:"GilroyRegular", color:"#767676" , lineHeight:'1.5rem'}}>{item.text}</p>
+                <div style={{ padding: '2rem 1rem 2rem 1.5rem' }}>
+                  <p style={{fontFamily:"GilroyRegular", color:"#767676" , lineHeight:'1.6rem'}}>{item.text}</p>
                 </div>
   
                 <div
@@ -115,7 +115,7 @@ const MobileClientSwiper = () => {
                         <Image src={item.reviews} alt="Review Stars" fill style={{ objectFit: "contain" }} />
                       </div>
                       <h4 style={{ margin: 0, color: "#ffff", fontFamily: "'Playfair Display', serif" }}>{item.name}</h4>
-                      <p style={{ margin: 0, fontSize: '0.9rem', color: '#ffff' }}>{item.city}</p>
+                      <p style={{ margin: 0, fontSize: '0.9rem', color: '#ffff', lineHeight:"" }}>{item.city}</p>
                     </div>
                   </div>
                   <div style={{ position: "relative", width: "30px", height: "30px" }}>

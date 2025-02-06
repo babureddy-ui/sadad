@@ -7,7 +7,7 @@ const MobileCustomise = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/MobileView/Restaurant.webp",
+        url: "/assets/MobileView/Restaurant1.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const MobileCustomise = () => {
     },
     retail: {
       image: {
-        url: "/assets/MobileView/Retail-img.webp",
+        url: "/assets/MobileView/Retail-img1.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const MobileCustomise = () => {
     },
     grocery: {
       image: {
-        url: "/assets/MobileView/Grocery_img.webp",
+        url: "/assets/MobileView/Grocery1.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const MobileCustomise = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/MobileView/SpaSalon_img.webp",
+        url: "/assets/MobileView/Spa&salon1.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const MobileCustomise = () => {
     },
     electronics: {
       image: {
-        url: "/assets/MobileView/Electronics_img.webp",
+        url: "/assets/MobileView/electronics11.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
@@ -160,14 +160,14 @@ const MobileCustomise = () => {
   return (
     <div>
       <div  className={styles.customise_section}>
-                <div style={{ position: 'absolute',  left: '0', zIndex: 1, width: '88%',margin:"1rem 2rem", overflowX: 'hidden',   }}>
-            <div style={{display: 'flex',gap: '0.5rem',position: 'relative',  width: '100%', overflowX: 'auto',  alignItems: 'center',fontFamily: 'GilroyUlight', whiteSpace: 'nowrap',scrollbarWidth: 'none', }}>
+                <div className={styles.button_container}>
+            <div style={{display: 'flex',gap: '0.5rem',position: 'relative',   overflowX: 'auto',  alignItems: 'center',fontFamily: 'GilroyUlight', whiteSpace: 'nowrap',scrollbarWidth: 'none',padding:"0rem 1rem 0 1rem" }}>
                 {Object.keys(categories).map((category) => (
                 <button className={styles.customise_btns}
                     style={{ 
-                    backgroundColor: selectedCategory === category ? 'white' : '#223037',
+                    backgroundColor: selectedCategory === category ? 'white' : '#30434D',
                     color: selectedCategory === category ? '#223037' : 'white',
-                    fontWeight: selectedCategory === category ? 'GilroyExtrabold' : 'normal',
+                    fontFamily: selectedCategory === category ? 'GilroySemiBold' : 'GilroyRegular',
                     flexShrink: 0,  
                     }}
                     key={category}
@@ -180,9 +180,9 @@ const MobileCustomise = () => {
             </div>
 
         
-        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"42rem" }}>
+        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"39rem" , marginTop:"0.6rem"}}>
           <div className={styles.customise_title}>
-            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em",  }}>
+            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem" }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -201,15 +201,17 @@ const MobileCustomise = () => {
           </div>
 
           <div className={styles.customise_img}>
-            <Image 
-              src={currentCategory.image.url} 
-              alt={currentCategory.image.title} 
-              fill
-            />
-             
+          <Image
+            src={currentCategory.image.url}
+            alt={currentCategory.image.title}
+            fill
+            className={isAnimating ? styles.imageOut : styles.imageIn}
+          />
+        </div>
+
+          <div className={styles.Customise_GetInTouch_Btn}> 
+          <BlueButton text="Get in Touch" style={{ width: "12rem", height: "3.5rem",position:"absloute",bottom:"1rem", borderRadius:"2rem",  left:"18%",  transform: "translateX(-25%)" }} />
           </div>
-          <BlueButton text="Get in Touch" style={{ width: "12rem", height: "4rem",position:"absloute",bottom:"1rem", borderRadius:"2rem",  left:"25%",  transform: "translateX(-25%)" }} />
-          
         </div>
 
       </div>
@@ -222,21 +224,25 @@ const MobileCustomise = () => {
     padding: "1rem", 
     whiteSpace: 'normal',  
     scrollbarWidth: 'none',
+    padding:"2rem 1.8rem"
+     
     
   }}
 >
   {currentCategory.content.map((item, index) => (
+    
     <div
       key={index}
       className={styles.animated_box}
       style={{
         backgroundColor: item.bgColor,
         padding: '1.5rem',  
-        margin: "1rem 0",
-        borderRadius: '2rem',
-        width: "90%",  
+        margin: "-0.3rem 0",
+        
+        borderRadius: '1rem',
+        width: "95%",  
         minWidth: "70%",  
-        height: "auto",  
+        height: " 13rem",  
         flexShrink: 0,  
         boxSizing: 'border-box',  
         display: 'flex',
@@ -247,8 +253,8 @@ const MobileCustomise = () => {
     >
       <div
         style={{
-          width: '4rem',
-          height: '4rem',
+          width: '3.4rem',
+          height: '3.4rem',
           backgroundColor: item.color,
           borderRadius: '1rem',
           marginBottom: "1rem",
@@ -261,7 +267,8 @@ const MobileCustomise = () => {
           margin: 0,  
           wordBreak: 'break-word',  
           lineHeight: '1.5',  
-          overflow: 'hidden',  
+          overflow: 'hidden', 
+          color:"#767676" 
         }}
       >
         {item.txt}

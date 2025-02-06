@@ -9,13 +9,24 @@ import styles from '../components/MobilePages/Mobile.module.css';
 const oneSolution = [
   {
     hedsec: "POS 10Q",
-    img: "/assets/MobileView/pos.webp",
-    text: "Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.",
+    img: "/assets/MobileView/pos12.webp",
+    width:"17.5rem",
+    height:"37rem",
+    left:"15%",
+    top: "58%",
+    text: <>
+    Good for both out-door and in-store   <br /> use cases, integrated with MSR, EMV chip <br /> & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi <br /> Bluetooth connectivities, enable clients to choose whatever payment option.
+    </>
+     ,
   },
   {
     hedsec: "MF 960",
-    img: "/assets/mf.webp",
-    text: "Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.",
+    img: "/assets/MobileView/mf11.webp",
+    width:"19rem",
+    height:"35rem",
+    left:"13%",
+    top: "56%",
+    text: <>Equips with Linux or Android system <br /> based on your choice. lt’s a win-win <br />solution not only improving classic POS <br /> performance but also reducing cost of <br />smart POS.</>,
   },
 ];
 
@@ -37,20 +48,19 @@ const OneSolution = () => {
       >
         {oneSolution.map((item, index) => (
           <SwiperSlide key={index}>
-            <div style={{ marginBottom: "4rem" }}>
+            <div style={{ marginBottom: "0rem" }}>
               <div
                 className={styles.solutionSection}
                 onClick={toggleActive}
               >
                 <div className={styles.content_sec}>
-                  <div className={styles.dev_img1}>
+                <div className={styles.dev_img1} style={{ width: `${item.width}`, height: `${item.height}`, left:`${item.left}`,top:`${item.top}` }}>
                     <Image src={item.img} fill alt="POS" />
-                  </div>
-                  <p className={`${styles.content_text}`}>{item.text}</p>
                 </div>
-
+                <p className={styles.content_text}>{item.text}</p>
+              </div>
                 <div className={styles.headSec}>
-                  <h2 style={{ fontFamily: "GilroyBold" }}>{item.hedsec}</h2>
+                  <h2 style={{ fontFamily: "GilroySemiBold",fontSize:"1.2rem"}}>{item.hedsec}</h2>
                 </div>
 
                 <div className={styles.animation_star1}>
@@ -77,12 +87,12 @@ const OneSolution = () => {
         style={{
           position: "relative",
           width: "10rem",
-          height: "4.5rem",
+          height: "3.5rem",
           left: "55%",
           top: "-5.5rem",
         }}
       >
-        <Image src="/assets/MobileView/arrow.webp" fill alt="Arrow" />
+        <Image src="/assets/MobileView/tap_to_explore.webp" fill alt="Arrow" />
       </div>
     </div>
   );
