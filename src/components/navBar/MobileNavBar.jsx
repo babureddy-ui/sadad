@@ -351,7 +351,7 @@ const MobileNavBar = () => {
 
               <BlackButton
                 text="Kickstart your success"
-                style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }}
+                style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }} 
               />
               {errorMessage && <p className={styles.error}>{errorMessage}</p>}
             </form>  <br />
@@ -388,7 +388,7 @@ const MobileNavBar = () => {
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",  
             }}
           >
-            <div style={{ position: "relative", width: "25.4rem", height: "16rem" }}>
+            <div style={{ position: "relative", width: "24.4rem", height: "16rem" }}>
               <Image src="/assets/Thankyou_form.webp" fill alt="Thank You" />
             </div>
             <div style={{ textAlign: "center", padding: "1rem" }}>

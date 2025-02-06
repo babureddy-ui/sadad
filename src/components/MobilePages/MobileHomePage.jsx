@@ -289,7 +289,7 @@ import axios from "axios";
                   placeholder="Enter phone number/email"
                   value={formData.email}
                 />
-                <BlackButton text="Contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem' ,width:"100%", marginTop:"1rem"}}/>
+                <BlackButton text="Contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem' ,width:"100%", marginTop:"1rem"}} />
 
                 </form>
                </div>
@@ -303,7 +303,7 @@ import axios from "axios";
         {thanks && (
         <div className={styles.thankyou_form_section}>
           <div  className={styles.thankyou_form} >
-            <div style={{ position: "relative", width: "25.4rem", height: "16rem" }}>
+            <div style={{ position: "relative", width: "23.4rem", height: "16rem" }}>
               <Image src="/assets/Thankyou_form.webp" fill alt="Thank You" />
             </div>
             <div style={{ textAlign: "center", padding: "1rem" }}>
