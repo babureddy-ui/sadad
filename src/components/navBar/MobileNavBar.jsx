@@ -157,7 +157,7 @@ const MobileNavBar = () => {
             <div style={{display:"flex", flexDirection:"column", gap:"0.8rem", margin:"4rem 0 0 0 "}}> 
             <BlueButton text="Get Free Demo" style={{ height: "3.4rem", width:"100%",fontSize:"1.1rem" }}  onClick={setGetFreeDemo} />
           
-            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} />
+            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={() => (window.location.href="https://qa.doroki.com/")}/>
             </div>
           
         </div>
