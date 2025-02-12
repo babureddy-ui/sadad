@@ -14,74 +14,14 @@ import animationData from '../../../public/assets/Animation.json';
 import Lottie from 'react-lottie';
 import states, { Busineeses } from '@/services/states';
 import axios from "axios";
+import MobileFooter from '../footerComponents/MobileFooter';
 
 
-   const MobileHomePage = () => {
-  const [thanks, setThanks] = useState(false);
+const MobileHomePage = () => {
+      const [thanks, setThanks] = useState(false);
 
-  
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    phoneNumber: "",
-    email: "",
-    businessName: "",
-    businessType: "",
-    state: "",
-    city: "",
-  
-  
-  });
-  const [state, setState] = useState("IDLE");
-  const [validate, setValidate] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-   
-  
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrorMessage(null);
-  
-  };
-  
-  const handleBusinessTypeChange = (selectedOption) => {
-    setFormData((prevData) => ({ ...prevData, businessType: selectedOption?.value || "" }));
-  };
-  const handleStateChange = (selectedOption) => {
-    setFormData((prevData) => ({ ...prevData, state: selectedOption?.value || "" }));
-  };
-  const validateForm = () => {
-    if (!formData.businessType && !formData.state) {
-       setValidate(true);
-       setErrorMessage("Please fill in all required fields.");
-       return false;
-    }
-    else if(!formData.state){
-      setValidate(true);
-      setErrorMessage("Please select state");
-      return false;
-    }
-    else if(!formData.businessType){
-      setValidate(true);
-      setErrorMessage("Please select BusinessType");
-      return false;
-    }
-    return true;
-  };
-  
-  const freeDemoSubscribe = async (e) => {
-    e.preventDefault();
-    setState("LOADING");
-     setValidate(true);
-     setErrorMessage("");
-  
-     if (!validateForm()) return;
-  
-    try {
-      await axios.post("/api/newsletter", formData);
       
-      setState("SUCCESS");
-       setThanks(true)
-      setFormData({
+      const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
         phoneNumber: "",
@@ -90,35 +30,96 @@ import axios from "axios";
         businessType: "",
         state: "",
         city: "",
-      });
-  
-    } catch (e) {
-      setErrorMessage(e.response?.data?.error || "An error occurred");
-      setState("ERROR");
-    }
-  };
-  
-  const subscribe = async (e) => {
-    e.preventDefault();
-    setState("LOADING");
-     setValidate(true);
-     setErrorMessage("");
-  
-    try {
-      await axios.post("/api/newsletter", formData);
       
-      setState("SUCCESS");
-       setThanks(true)
-      setFormData({
-        email: "",
+      
       });
-  
-    } catch (e) {
-      setErrorMessage(e.response?.data?.error || "An error occurred");
-      setState("ERROR");
-    
-    }
-  };
+      const [state, setState] = useState("IDLE");
+      const [validate, setValidate] = useState(false);
+      const [errorMessage, setErrorMessage] = useState("");
+      
+      
+      const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setErrorMessage(null);
+      
+      };
+      
+      const handleBusinessTypeChange = (selectedOption) => {
+        setFormData((prevData) => ({ ...prevData, businessType: selectedOption?.value || "" }));
+      };
+      const handleStateChange = (selectedOption) => {
+        setFormData((prevData) => ({ ...prevData, state: selectedOption?.value || "" }));
+      };
+      const validateForm = () => {
+        if (!formData.businessType && !formData.state) {
+          setValidate(true);
+          setErrorMessage("Please fill in all required fields.");
+          return false;
+        }
+        else if(!formData.state){
+          setValidate(true);
+          setErrorMessage("Please select state");
+          return false;
+        }
+        else if(!formData.businessType){
+          setValidate(true);
+          setErrorMessage("Please select BusinessType");
+          return false;
+        }
+        return true;
+      };
+      
+      const freeDemoSubscribe = async (e) => {
+        e.preventDefault();
+        setState("LOADING");
+        setValidate(true);
+        setErrorMessage("");
+      
+        if (!validateForm()) return;
+      
+        try {
+          await axios.post("/api/newsletter", formData);
+          
+          setState("SUCCESS");
+          setThanks(true)
+          setFormData({
+            firstName: "",
+            lastName: "",
+            phoneNumber: "",
+            email: "",
+            businessName: "",
+            businessType: "",
+            state: "",
+            city: "",
+          });
+      
+        } catch (e) {
+          setErrorMessage(e.response?.data?.error || "An error occurred");
+          setState("ERROR");
+        }
+      };
+      
+      const subscribe = async (e) => {
+        e.preventDefault();
+        setState("LOADING");
+        setValidate(true);
+        setErrorMessage("");
+      
+        try {
+          await axios.post("/api/newsletter", formData);
+          
+          setState("SUCCESS");
+          setThanks(true)
+          setFormData({
+            email: "",
+          });
+      
+        } catch (e) {
+          setErrorMessage(e.response?.data?.error || "An error occurred");
+          setState("ERROR");
+        
+        }
+      };
     const BusinessTypes = [
       {
         icon: "/assets/business.svg",
@@ -259,7 +260,7 @@ import axios from "axios";
      <div><MobileNavBar/></div><br />
      <div className={styles.mobileView}>
         <div>
-            <div className={styles.heroimg}><Image src="/assets/MobileView/heroImg-mobile1.webp" fill/></div>
+            <div className={styles.heroimg}><Image src="/assets/MobileView/heroImg-mobile1.webp" fill alt='heroImg-mobile1'/></div>
 
             <div style={{margin:' 1.3rem 1.8rem',}}>
                 <div style={{display:"flex"}}> 
@@ -362,7 +363,7 @@ import axios from "axios";
                 <MarqueeComponentMobilePage ClientsArr={ClientsArr1}  speed={130}  direction="left"/>
             </div>
         </div>
-        <div  >
+        <div>
           <MobileCustomise/>
         </div>
   
@@ -585,7 +586,7 @@ import axios from "axios";
       </div> 
 
       <div>
-        <div className={styles.valued_opinions} ><Image src='/assets/MobileView/valued_opinions.webp' fill/></div>
+        <div className={styles.valued_opinions} ><Image src='/assets/MobileView/valued_opinions.webp' fill alt='valued_opinions'/></div>
       <MobileClientSwiper/>
       </div>
 
@@ -597,7 +598,7 @@ import axios from "axios";
               <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
             </div>
           </div>
-          <div  className={styles.Questions_img}><Image src="/assets/MobileView/faq-img1.webp" fill/></div> <br />
+          <div  className={styles.Questions_img}><Image src="/assets/MobileView/faq-img1.webp" fill alt='faq-img1'/></div> <br />
           <div>
           <MobileQuestions FaqTableData={faqs}/>
           </div>
@@ -703,10 +704,10 @@ import axios from "axios";
               <div className={styles.input_divs_opts}> 
                 <DropDownInput
                   styles={{
-                    height: "3rem",
+                    height: "4rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
-                    // padding: "0 0.8rem",
+                    padding: "0 0.8rem",
                     color: "#5A5A5A",
                     fontWeight: "300",
                     border: "none",
@@ -730,10 +731,10 @@ import axios from "axios";
               <div className={styles.input_divs_opts}> 
                 <DropDownInput
                   styles={{
-                    height: "3rem",
+                    height: "4rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
-                    // padding: "0 0.8rem ",
+                    padding: "0 0.8rem ",
                     color: "#5A5A5A",
                     fontWeight: "300",
                     width: "100%",
@@ -774,11 +775,17 @@ import axios from "axios";
               {errorMessage && <p className={styles.error}>{errorMessage}</p>}
             </form>
             </div>
+
+            <div>
+                 
+                 
+            <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill alt='demo'/></div>
+            </div>
           
 
+<MobileFooter/>
 
-
-          <div style={{margin:"4rem 1rem 0rem 1rem"}}>
+          {/* <div style={{margin:"4rem 1rem 0rem 1rem"}}>
           <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill/></div>
        <div className={styles.subscriptionSection}> 
           <div  style={{  position: "absolute",  width: "100vw", height: "46rem"}} >
@@ -806,8 +813,12 @@ import axios from "axios";
 
             <div className={styles.footer_conatctIcon}>
               <div  className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
+              <a href="https://www.instagram.com/doroki.commerce/" target="" rel="noopener noreferrer">
               <div className={styles.footerIcon}><Image src='/assets/Instagram.svg' fill alt="insta" /></div>
+              </a>
+              <a href="https://x.com/doroki_ng" target="" rel="noopener noreferrer">
               <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
+              </a>
               <div className={styles.footer_Icon} style={{marginBottom:"-0.4rem"}}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div>
 
             </div>
@@ -830,10 +841,11 @@ import axios from "axios";
               <p>support@doroki.com</p>
             </div>
             </div>
-            <p style={{fontFamily:"GilroyRegular", margin:"1rem 0"}}>© 2024 Doroki All rights reserved.</p>
+            <p className={styles.all_rights}>© {new Date().getFullYear()} Doroki All rights reserved.</p>
+        
            </div>
           </div>
-         </div>
+         </div> */}
        </div>
     </>
   )

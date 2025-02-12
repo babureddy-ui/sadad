@@ -258,7 +258,7 @@ const CustomiseBy = () => {
                 borderRadius: '1rem',
                 margin: "0 0 1rem 0"
               }}
-            > <Image src={item.icon} fill/></div>
+            > <Image src={item.icon} fill alt='icon'/></div>
             <p style={{ fontFamily: "GilroyMedium" , fontSize:"1.1rem", lineHeight:"1.7rem", color:"#283740", fontSize:"1rem",letterSpacing:"0px",}}>{item.txt}</p>
           </div>
         ))}

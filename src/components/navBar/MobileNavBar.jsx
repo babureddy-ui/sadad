@@ -5,6 +5,7 @@ import { BlackButton, BlueButton, DropDownInput } from '../Buttons/Button';
 import contactUs from '@/services/contactUs';
 import states, { Busineeses } from '@/services/states';
 import axios from "axios";
+import Link from 'next/link';
 
 const MobileNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -109,7 +110,7 @@ const MobileNavBar = () => {
           )}
         </div>
 
-      <div
+        <Link href="/"><div
         style={{
           height: "2.3rem",
           width: "9rem",
@@ -122,7 +123,7 @@ const MobileNavBar = () => {
           alt="Doroki logo"
           fill
         />
-      </div>
+      </div></Link>
 
       {isMenuOpen && (
         <div className={styles.menu}>

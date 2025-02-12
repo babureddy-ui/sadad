@@ -260,7 +260,7 @@ const MobileCustomise = () => {
           marginBottom: "1rem",
           position:"relative"
         }}
-      > <Image  src={item.icon} fill/></div>
+      > <Image  src={item.icon} fill alt='icon'/></div>
       <p 
         style={{ 
           fontFamily: "GilroyMedium", 
