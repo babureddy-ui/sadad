@@ -139,7 +139,7 @@ const MobileHiddenPowers = () => {
         >
           <Image src={Powers[activeIndex].icon} alt={Powers[activeIndex].title} fill />
         </div>
-        <div style={{width:"13rem", height:"8rem", position:"relative",  bottom:"10%"}}><Image src='/assets/HiddenPowers_blurImg.webp' fill/></div>
+        <div style={{width:"13rem", height:"8rem", position:"relative",  bottom:"10%"}}><Image src='/assets/HiddenPowers_blurImg.webp' alt="blurImg" fill/></div>
         </div>
         <div style={{padding: "0rem 3rem 0rem 0rem",}}> 
         <h6

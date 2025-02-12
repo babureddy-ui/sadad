@@ -387,7 +387,7 @@
   .box_container {
     display: flex;
     gap: 1rem;
-    height: 33vh;
+    height: 15rem;
      
            
     white-space: nowrap;
@@ -601,7 +601,7 @@ margin-top:0.6rem;
   position: relative;
   width: 9.5rem;
   height: 9.5rem;
-  top: -1rem;
+  top: -1.5rem;
   left: 6rem;
   z-index: 1;
   transition: transform 0.3s ease;
@@ -1147,7 +1147,7 @@ width: 96vw;
 }
 
 .input_divs_opts {
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  /* padding: 0.5rem 0.5rem 0.5rem 1rem; */
   border-radius: 0.5rem;
     background-color: #F6F8FA;
     margin: 1rem 0;
@@ -1184,6 +1184,7 @@ width: 96vw;
   width: 100%;
   height: 26rem;
   margin: 1rem 0rem -0.9rem 0rem;
+  z-index:0;
 }
 
 .subscriptionSection {
@@ -1205,7 +1206,11 @@ width: 96vw;
 }
 
 
-
+.all_rights {
+  font-size: 0.8rem;
+  color: white;
+  font-family: GilroyRegular;
+}
 .subscribe {
   display: grid;
   justify-content: center;
@@ -1513,7 +1518,66 @@ width: 96vw;
   width: 1rem;
   height: 1rem;
 }
+.footerContent_titile{
+  color: #F2931E;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-family: "GilroySemibold";
+  text-align: start;
+  text-decoration: none;
 
+}
+.footerContent{
+  color: #ffff;
+  font-family: GilroyRegular;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  margin-top: 0.4rem;
+  text-align: start;
+  cursor: pointer;
+  
+}
+.footer_navigations {
+   z-index: 0;
+  color: white;
+  margin: 1rem;
+}
+.footer_navigations>div a{
+  text-decoration: none;
+}
+.footerContent_titile>a{
+  text-decoration: none; 
+}
+.poweredby {
+  z-index: 1;
+  color: #cccc;
+  font-size: 0.8rem;
+  font-family: GilroyRegular;
+}
+.poweredby_logo_section {
+  display: flex;
+  height: 4rem;
+  margin: 0rem 0 0rem 0rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.footer_paga_logo {
+  position: relative;
+  width: 4.5rem;
+  height: 3.5rem;
+}
+.footer_qb_logo {
+  position: relative;
+  width: 7.5rem;
+  height: 3.5rem;
+}
+.footer_CenterLine {
+  border-left: 1px solid #ccc;
+  height: 2rem;
+  margin: 0 1rem 0 0.6rem;
+}
 
 @media only screen and (min-width: 350px) and (max-width: 380px) {
   .box {
@@ -1564,12 +1628,12 @@ width: 96vw;
   position: relative;
   left: 26%;
 }
-.dev_img1 {
+/* .dev_img1 {
   top: 57%;
   left: 15%;
   transform: translateY(-50%);
   transition: transform 0.3s ease-in-out;
-}
+} */
 .animation_star1 {
   bottom: 2rem;
   left: 23%;
@@ -1648,12 +1712,12 @@ width: 96vw;
      
      
   }
-  .dev_img1 {
+  /* .dev_img1 {
     top: 57%;
     left: 12%;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
-  }
+  } */
   .animation_star2 {
     bottom: 4rem;
     left: 68%;

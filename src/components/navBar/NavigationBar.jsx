@@ -6,11 +6,17 @@ import Image from 'next/image'
 import contactUs from '@/services/contactUs';
 import states, { Busineeses } from '@/services/states';
 import axios from "axios";
-
+import Link from 'next/link';
+// import doc  from "../../pages/termsOfService/DOROKICOMMERCETERMSOFUSE"
 
 export const NavigationBar = () => {
   const [contact, setContact] = useState(false);
   const [thanks, setThanks] = useState(false);
+  const [aboutUs, setAboutUs] = useState(false)
+  const dropdownRef = useRef(null);
+  const [state, setState] = useState("IDLE");
+  const [validate, setValidate] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
   const ThanksForm=(eve)=>{
     eve.preventDefault();  
       setContact(false); 
@@ -19,7 +25,6 @@ export const NavigationBar = () => {
   const ContactForm = () => {
     setContact(!contact)  
   }
-  const [aboutUs, setAboutUs] = useState(false)
 
 
 
@@ -35,10 +40,6 @@ const [formData, setFormData] = useState({
 
 
 });
-const [state, setState] = useState("IDLE");
-const [validate, setValidate] = useState(false);
-const [errorMessage, setErrorMessage] = useState("");
- 
 
 const handleChange = (e) => {
   setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -107,6 +108,16 @@ const toggleAboutUs = () => {
   setAboutUs((prev) => !prev);
 };
 
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setAboutUs(false);  
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
 
   return (
@@ -114,34 +125,37 @@ const toggleAboutUs = () => {
       <div style={{ height: "4.3rem", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"1rem",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,justifyContent:"space-between"  }}>
           <div className={styles.nav_bar}>
             {/* <div>  */}
-          <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem" }}>
-          <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill />
+            <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem" }}>
+         <Link href="/"> <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill /> </Link>
         </div>
         <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,   padding:"0rem 2rem"}}>
           <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"0.9rem",   }}>
               <a href="#" className={styles.menuItem}>Consumer</a>
               <a href="#" className={styles.menuItem}>Enterprise</a>
-              <a   className={styles.menuItem} onClick={toggleAboutUs}>
-                    Company
-                  </a>
+              
+                <a className={styles.menuItem} onClick={toggleAboutUs}>
+                  Company
+                </a>
 
-                  { aboutUs && (
-                    <div className={styles.dropdownMenu}>
+                {aboutUs && (
+                  <div className={styles.dropdownMenu} ref={dropdownRef}>
                     <div>
                       <p className={styles.comapnt_title}>About Us</p>
-                      <p className={styles.comapnt_item}>About Paga Group</p>
-                      <p className={styles.comapnt_item}>Leaders</p>
-                      <p className={styles.comapnt_item}>Meet our Board</p>
+                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>About Paga Group</p></a>
+                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>Leaders</p></a>
+                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>Meet our Board</p></a>
                     </div>
                     <div>
                       <p className={styles.comapnt_title}>Resources</p>
-                      <p className={styles.comapnt_item}>Careers</p>
-                      <p className={styles.comapnt_item}>Media Kit</p>
+                      <a href="https://www.wearepaga.com/"><p className={styles.comapnt_item}>Careers</p> </a>
+                      <a href="https://paga.frontify.com/auth?referer=%2F"><p className={styles.comapnt_item}>Media Kit</p></a>
                       <p className={styles.comapnt_item}>Blog</p>
-                      <p className={styles.comapnt_item}>Terms of Service</p>
+                      <Link href="/terms-of-service"><p className={styles.comapnt_item}>Terms of Service</p></Link>
                     </div>
-                  </div>)}
-
+                  </div>
+                )}
+    
+  
 
 
               <div className={styles.hover_container}>
