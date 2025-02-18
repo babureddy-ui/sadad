@@ -612,7 +612,7 @@ const HomePage = () => {
 
         </div>
 
-        <div className={styles.clientsrave_section} >
+        {/* <div className={styles.clientsrave_section} >
           <div className={styles.clientsrave_conatiner} >
 
             <div className={styles.clientsrave_txt_conatiner} >
@@ -627,12 +627,12 @@ const HomePage = () => {
             <div className={styles.clientsrave_Doroki_Blurred}><Image src="/assets/Doroki-Blurred.webp" fill alt="doroki" /></div>
 
           </div>
-        </div>
+        </div> */}
 
 
 
         <div style={{ margin: "19rem 0 8rem 0 " }}>
-          <div className={styles.clients_section}>
+          {/* <div className={styles.clients_section}>
             <h1 className={styles.clients_section_title}>Our Client’s kind words</h1>
             <div className={styles.clients_img_stars} >
               <Image src="/assets/stars.svg" alt="Stars" fill />
@@ -642,7 +642,7 @@ const HomePage = () => {
             <div className={styles.valued_option_arrow} ><Image src='/assets/valued_option_arrow.webp' fill alt='arrow' /></div>
 
             <ClientSwiper />
-          </div>
+          </div> */}
         </div>
 
 
