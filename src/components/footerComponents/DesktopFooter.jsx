@@ -38,7 +38,7 @@ const DesktopFooter = () => {
   
       
   return (
-    <div>
+    <div className={styles.pagaLanding}>
       <div className={styles.subscriptionSection}>
         <div style={{display:"flex", justifyContent:"space-between"}}> 
         <div  style={{  position: "absolute",  width: "27rem", height: "49.3rem",left:0 }} >

@@ -3,11 +3,12 @@ import MobileFooter from '@/components/footerComponents/MobileFooter'
 import MobileNavBar from '@/components/navBar/MobileNavBar'
 import { NavigationBar } from '@/components/navBar/NavigationBar'
 import React from 'react'
+import styles from './TermsOfService.module.css'
 
 const TermsOfService = ({ mobileView }) => {
   return (
     <>
-      <div >
+      <div className={styles.pagaLanding} >
         <div className="WordSection1">
           <p align="center" style={{ textAlign: "center" }}>
             <a name="page1" />
@@ -48,30 +49,37 @@ const TermsOfService = ({ mobileView }) => {
 
             style={{
               marginLeft: "57.0pt",
-              //  
+
               textJustify: "inter-ideograph",
               textIndent: "-28.45pt",
-              lineHeight: "113%",
-              fontSize: "12.0pt"
+              lineHeight: "113%"
             }}
+            className={styles.termsOfService}
           >
+            
+              <span
+                style={{
+                  fontSize: "1rem",
+                  lineHeight: "1.2rem",
+                  fontFamily: "GilroyMedium"
+                }}
+                className={styles.termsOfService}
+              >
+                1.1
+              </span>
+            
+            <b>
+              <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
+            </b>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
-              1.1
-            </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "113%" }}>​</span>
-            <span
-              style={{
-
-                fontFamily: "Gilroymedium"
-              }}
-            >
-              &nbsp;&nbsp; Doroki is owned and provided by Doroki Commerce
+              &nbsp;&nbsp;&nbsp; Doroki is owned and provided by Doroki Commerce
               Limited (the “Company”); a company duly registered under the laws of the
               Federal Republic of Nigeria with RC 1818624. Doroki (“Doroki”, “We”,
               “Us”, “Our”) is an e-commerce platform consisting of a website and
@@ -97,19 +105,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               1.2
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "113%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "113%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp; You must read and understand these terms of use (the
@@ -128,24 +136,24 @@ const TermsOfService = ({ mobileView }) => {
               textJustify: "inter-ideograph",
               textIndent: "-28.45pt",
               lineHeight: "113%",
-              fontSize: "12.0pt"
+              fontSize: "1rem"
             }}
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               1.3
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp; By opening a Doroki Account or using any of the
@@ -182,22 +190,22 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "103%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               1.4
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "103%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "103%" }}>​</span>
             <span style={{ fontSize: "10.0pt", lineHeight: "103%" }}>
               &nbsp;&nbsp;&nbsp;
             </span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "103%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#212121"
               }}
             >
@@ -248,19 +256,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "113%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "113%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp; A User may access any of the following activities via
@@ -284,19 +292,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -318,19 +326,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.2
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -352,19 +360,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.3
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -389,19 +397,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.4
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -434,19 +442,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.5
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -470,19 +478,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.6
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -506,19 +514,19 @@ const TermsOfService = ({ mobileView }) => {
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.2.7
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -542,22 +550,22 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               2.3
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span style={{ fontSize: "10.0pt", lineHeight: "102%" }}>
               &nbsp;&nbsp;&nbsp;
             </span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               Our Services may from time to time enable you access or provide you with
@@ -604,19 +612,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
-              style={{
-                fontSize: "12.0pt",
-                lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+               style={{
+                fontSize: "1rem",
+                lineHeight: "1.2rem",
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -646,19 +654,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -682,25 +690,25 @@ style={{
               lineHeight: "102%"
             }}
           >
-            <b>
+            
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "1.2rem",
-                  fontFamily: "Gilroymedium"
+                  fontFamily: "GilroyMedium"
                 }}
               >
                 3.3.
               </span>
-            </b>
+            
             <b>
-              <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+              <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             </b>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -731,19 +739,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -766,19 +774,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -805,9 +813,9 @@ style={{
             <a name="page3" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               Store Owner in connection with the Service. You agree that you shall be
@@ -831,19 +839,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -868,19 +876,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -906,19 +914,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -941,19 +949,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.9.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -977,9 +985,9 @@ style={{
           }}>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.10.
@@ -987,9 +995,9 @@ style={{
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               {" "}
               Your Doroki Store can only be associated with one Store Owner.
@@ -1010,20 +1018,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.11.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               You acknowledge that Doroki will use the email address you provide on
@@ -1050,19 +1059,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.12.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1086,19 +1095,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.13.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1121,19 +1130,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.14.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1157,19 +1166,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.15.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1195,19 +1204,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.16.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1238,20 +1247,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               3.17.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               If you are a parent or guardian and become aware that Your child or ward
@@ -1261,9 +1271,9 @@ style={{
             <a href="mailto:privacy@doroki.com">
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "104%",
-                  fontFamily: "Gilroymedium",
+                  fontFamily: "GilroyMedium",
                   color: "blue"
                 }}
               >
@@ -1272,9 +1282,9 @@ style={{
             </a>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "black"
               }}
             >
@@ -1323,20 +1333,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               Your use of the Doroki Account shall not be for any illegal or
@@ -1362,19 +1373,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1401,19 +1412,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1437,19 +1448,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1475,20 +1486,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               All the provisions of these Terms shall be binding upon and inure to the
@@ -1516,19 +1528,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1551,20 +1563,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               By using the Platform and providing user Information to Us, you
@@ -1614,19 +1627,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1651,19 +1664,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1686,19 +1699,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1724,19 +1737,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1760,20 +1773,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               use any “robot”, “spider” or other automatic device, program, script,
@@ -1803,19 +1817,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1839,19 +1853,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1877,19 +1891,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1914,19 +1928,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.9.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1952,19 +1966,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.10.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -1991,9 +2005,9 @@ style={{
             <a name="page6" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               or any other systems or networks connected to the Services, by hacking,
@@ -2015,19 +2029,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.11.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2050,20 +2064,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.12.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               upload to the Doroki Services and/or your Store or otherwise use them to
@@ -2090,20 +2105,22 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               4.8.13.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               take any action that imposes an unreasonable or disproportionately large
@@ -2132,19 +2149,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.14.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2169,19 +2186,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.15.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2205,19 +2222,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.16.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2243,19 +2260,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               4.8.17.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2299,19 +2316,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2336,19 +2353,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2371,19 +2388,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2404,9 +2421,9 @@ style={{
             <a name="page7" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               Store, or the Materials uploaded or posted to a Store, violate these
@@ -2428,19 +2445,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2464,19 +2481,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2500,19 +2517,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2539,19 +2556,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               5.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2595,20 +2612,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               6.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               Each Party shall keep confidential, any information concerning the other
@@ -2643,20 +2661,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               6.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               Each party agrees to use the other party’s Confidential Information
@@ -2672,7 +2691,7 @@ style={{
               and who are each subject to obligations of confidentiality to such party
               that are at least as stringent as those contained herein; or (ii) as
               required by any law,
-            </span>
+            {/* </span>
           </p>
         </div>
         <span style={{ fontSize: "11.0pt", fontFamily: '"Times New Roman",serif' }}>
@@ -2691,11 +2710,11 @@ style={{
             <a name="page8" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
-            >
+            > */}
               regulation, or order of any court of proper jurisdiction over the
               parties and the subject matter contained in these Terms, provided that,
               if legally permitted, the receiving party shall give the disclosing
@@ -2751,19 +2770,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2790,20 +2809,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               To the extent permitted by applicable laws, in no event shall Doroki or
@@ -2836,19 +2856,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2872,19 +2892,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2913,19 +2933,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2951,19 +2971,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -2989,19 +3009,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -3032,21 +3052,22 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#011B33"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               IN NO EVENT WILL DOROKI OR ITS AFFILIATES BE LIABLE FOR (A) ANY
@@ -3077,21 +3098,22 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               7.9.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#011B33"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR
@@ -3145,22 +3167,22 @@ style={{
             <b>
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "1.2rem",
-                  fontFamily: "Gilroymedium"
+                  fontFamily: "GilroyMedium"
                 }}
               >
                 8.1.
               </span>
             </b>
             <b>
-              <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+              <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             </b>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -3188,20 +3210,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               8.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               You shall own all intellectual property pertaining to all Materials
@@ -3237,20 +3260,21 @@ style={{
             <a name="page10" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               8.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               All rights, title and interest in and to the Services and Platform,
@@ -3284,20 +3308,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               8.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              
             >
               {" "}
               These Terms do not convey any right or interest in or to Doroki’s
@@ -3322,20 +3347,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               8.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               Should you provide us with any recommendations, suggestions, comments or
@@ -3387,19 +3413,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -3425,19 +3451,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -3463,20 +3489,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               All Fees shall be deemed to be in Naira, except as specifically stated
@@ -3490,32 +3517,7 @@ style={{
               Fees payable by you, and whether or not such Taxes were added and
               collected from you for previous transactions, such Taxes may be added to
               the payment of any outstanding Fees and will be reflected in the Invoice
-              for such transaction. We
-            </span>
-          </p>
-        </div>
-        <span style={{ fontSize: "11.0pt", fontFamily: '"Times New Roman",serif' }}>
-          <br clear="all" style={{ pageBreakBefore: "always" }} />
-        </span>
-        <div className="WordSection11">
-          <p
-
-            style={{
-              marginLeft: "57.0pt",
-
-              textJustify: "inter-ideograph",
-              lineHeight: "103%"
-            }}
-          >
-            <a name="page11" />
-            <span
-              style={{
-                fontSize: "12.0pt",
-                lineHeight: "103%",
-                fontFamily: "Gilroymedium"
-              }}
-            >
-              recommend that you verify the existence of any additional fees you may
+              for such transaction. We recommend that you verify the existence of any additional fees you may
               be charged by third parties in connection with the purchase of the Paid
               Services or in connection with the renewal thereof (such as
               international transaction fees, currency exchange fees or fees due to
@@ -3538,20 +3540,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               As part of registering or submitting information to receive Paid
@@ -3582,20 +3585,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               You must keep a payment card stored with Us to pay for your Paid
@@ -3613,15 +3617,15 @@ style={{
             textIndent: "-28.45pt",
             lineHeight: "104%"
           }}>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
+            <span style={{ fontSize: "1.2rem",  }}>
               9.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span style={{ fontSize: "10.0pt" }}>&nbsp;&nbsp;&nbsp;&nbsp; </span>
             <span style={{
-              fontSize: "12.0pt",
+              fontSize: "1rem",
               lineHeight: "104%",
-              fontFamily: "Gilroymedium"
+              fontFamily: "GilroyMedium"
             }}>
               You hereby acknowledge that Doroki does not provide refunds.
             </span>
@@ -3643,23 +3647,23 @@ style={{
             <b>
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "120%",
-                  fontFamily: "Gilroymedium"
+                  fontFamily: "GilroyMedium"
                 }}
               >
                 9.
               </span>
             </b>
             <b>
-              <span style={{ fontSize: "12.0pt", lineHeight: "120%" }}>​</span>
+              <span style={{ fontSize: "1rem", lineHeight: "120%" }}>​</span>
             </b>
             <b>
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "120%",
-                  fontFamily: "Gilroymedium"
+                  fontFamily: "GilroyMedium"
                 }}
               >
                 &nbsp;&nbsp;&nbsp;&nbsp; SUSPENSION, RESTRICTION TERMINATION
@@ -3682,19 +3686,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "106%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "106%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp; You may cancel your Account and terminate these Terms
@@ -3703,9 +3707,9 @@ style={{
             <a href="mailto:Privacy@doroki.com">
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "106%",
-                  fontFamily: "Gilroymedium",
+                  fontFamily: "GilroyMedium",
                   color: "blue"
                 }}
               >
@@ -3713,9 +3717,9 @@ style={{
               </span>
               <span
                 style={{
-                  fontSize: "12.0pt",
+                  fontSize: "1rem",
                   lineHeight: "106%",
-                  fontFamily: "Gilroymedium",
+                  fontFamily: "GilroyMedium",
                   color: "windowtext"
                 }}
               >
@@ -3724,9 +3728,9 @@ style={{
             </a>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               and then following the specific instructions indicated to you in
@@ -3751,19 +3755,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -3781,17 +3785,17 @@ style={{
               lineHeight: "113%"
             }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               9.2.1.
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               &nbsp;&nbsp;&nbsp; issue a warning to you;
             </span>
@@ -3805,17 +3809,17 @@ style={{
               lineHeight: "113%"
             }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               9.2.2.
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               &nbsp; &nbsp; temporarily or permanently remove any
               Materials;
@@ -3830,17 +3834,17 @@ style={{
               lineHeight: "113%"
             }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               9.2.3.
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               &nbsp;&nbsp;&nbsp; temporarily or permanently restrict or suspend
               your right to use the Service;
@@ -3855,9 +3859,9 @@ style={{
               lineHeight: "113%"
             }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               9.2.4.
             </span>
@@ -3866,9 +3870,9 @@ style={{
               &nbsp;&nbsp;&nbsp;&nbsp;
             </span>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               block computers Using your IP address from accessing Our Services;
             </span>
@@ -3886,19 +3890,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.2.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "113%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "113%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp; contact any or all of your internet service
@@ -3923,19 +3927,19 @@ style={{
             <a name="page12" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.2.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "106%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "106%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp; institute legal proceedings against you for
@@ -3954,9 +3958,9 @@ style={{
             lineHeight: "106%"
           }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               9.2.7.
             </span>
@@ -3965,9 +3969,9 @@ style={{
               &nbsp;&nbsp;&nbsp;
             </span>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               take further legal action against you;
             </span>
@@ -3987,19 +3991,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.2.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "113%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "113%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp; disclose such information to law
@@ -4023,19 +4027,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4061,19 +4065,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.1.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We will cease to provide you with the
@@ -4092,12 +4096,20 @@ style={{
               textIndent: "-41.95pt"
             }}
           >
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}>
               9.1.2
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unless otherwise provided in these Terms,
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}  >
+              &nbsp;&nbsp;&nbsp; unless otherwise provided in these Terms,
               you will not be entitled to any refunds of any Fees, pro rata or
               otherwise;
             </span>
@@ -4112,12 +4124,20 @@ style={{
               lineHeight: "104%"
             }}
           >
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}>
               9.1.3
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; any outstanding balance owed to Doroki
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}>
+              &nbsp;&nbsp;&nbsp;&nbsp; any outstanding balance owed to Doroki
               for your use of the Services through the effective date of such
               termination will immediately become due and payable in full; and
             </span>
@@ -4129,14 +4149,22 @@ style={{
             textIndent: "-41.95pt",
             lineHeight: "104%"
           }}>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}>
               9.1.3
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span style={{ fontSize: "10.0pt" }}>
               &nbsp;&nbsp;&nbsp;
             </span>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroyMedium" }}>
+            <span style={{
+                fontSize: "1rem",
+                lineHeight: "104%",
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}>
               your Store website will be taken offline.
             </span>
           </p>
@@ -4155,19 +4183,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4191,19 +4219,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4229,19 +4257,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               9.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4287,20 +4315,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               10.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               While using the Doroki, you may be exposed to other user’s platforms,
@@ -4328,20 +4356,20 @@ style={{
             <a name="page13" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               10.2
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               Where you reasonably believe a user or any third-party services have
@@ -4393,19 +4421,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               11.1
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4431,19 +4459,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               11.2
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4493,10 +4521,10 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               Unless otherwise provided in these Terms, only Doroki and its
               affiliates, a Doroki Store Owner or anyone accessing Our Services
@@ -4544,20 +4572,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               You acknowledge that we (you and Us) shall each act as joint data
@@ -4581,19 +4609,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4620,19 +4648,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4660,20 +4688,21 @@ style={{
             <a name="page14" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.4.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "100%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "100%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "100%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               You must comply with and must ensure that your personnel and other
@@ -4704,20 +4733,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               You must promptly (and in any event within twenty-four (24) hours of
@@ -4749,19 +4779,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4785,20 +4815,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.7.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               You shall procure that any other person you authorise to process the
@@ -4826,19 +4856,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4865,19 +4895,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.9.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               {" "}
@@ -4901,19 +4931,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.10.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               You shall indemnify and keep Doroki indemnified in respect of all
@@ -4937,19 +4967,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               13.11.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "1.2rem" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "1.2rem" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               The terms, “personal data”, “processor”, “sub-processor”, “personal data
@@ -4996,20 +5026,21 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.1.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
+              className={styles.termsOfService}
             >
               {" "}
               Our Services may from time to time enable you access or provide you with
@@ -5047,20 +5078,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.2.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               Through the Platform a Store Owner can accept payments for goods and
@@ -5083,20 +5114,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.3.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               By using Doroki’s services, you consent to the automatic creation of an
               account with Paga (and any of Doroki’s payment solution partners as may
@@ -5109,11 +5140,15 @@ style={{
             <span style={{ fontSize: "10.0pt" }}>&nbsp;</span>
           </p>
           <p style={{ marginLeft: "29.0pt" }}>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroySemibold" }}>
+            <span  style={{
+                fontSize: "1rem",
+                lineHeight: "1.2rem",
+                fontFamily: "GilroyMedium"
+              }}>
               14.4.
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
-            <span style={{ fontSize: "1.2rem", fontFamily: "GilroySemibold" }}>
+            <span  className={styles.termsOfService}>
               By accepting these Terms of Service, you also agree to Paga’s Terms of
               Service and
             </span>
@@ -5127,9 +5162,9 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               Privacy Policy, which can be accessed at
@@ -5151,20 +5186,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.5.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               Doroki does not process payments or manage accounts directly. All
               payment-related services, including debit and credit transactions,
@@ -5189,20 +5224,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.6.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               You acknowledge and agree that Doroki retains the explicit right to
               initiate debits or credits to the Paga account associated with your
@@ -5221,17 +5256,17 @@ style={{
               lineHeight: "104%"
             }}>
             <span style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               14.7.
             </span>
             <span style={{ fontSize: "12.0pt" }}>​</span>
             <span  style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}>
               {" "}
               A Store Owner will be able to move out their funds manually or set up
@@ -5253,20 +5288,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.8.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               You will also be able to access alternative means of payment collection
@@ -5290,20 +5325,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.9.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "101%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "101%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               {" "}
               You hereby acknowledge and agree that regardless of the manner in which
@@ -5314,8 +5349,8 @@ style={{
               between you and such Third Party/Third Party Services, and does not in
               any way endorse any such Third Party Services, or shall be in any way
               responsible or liable with respect your use of the same. Doroki will not
-              be a party to, or
-            </span>
+              be a party to, or {" "}
+            {/* </span>
           </p>
         </div>
         <span style={{ fontSize: "11.0pt", fontFamily: '"Times New Roman",serif' }}>
@@ -5329,11 +5364,11 @@ style={{
             <a name="page16" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
-            >
+            > */}
               in any way be responsible for monitoring, any interaction or transaction
               between you and any Third-Party Services.
             </span>
@@ -5353,19 +5388,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.10.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               Any and all use of such Third-Party Services shall be done solely at
@@ -5389,20 +5424,20 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.11.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               Doroki reserves the right, at its sole discretion, to suspend, disable
               access to, or emove from your Account or Platform any Third-Party
@@ -5425,19 +5460,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.12.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "104%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "104%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "104%",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               If you use Third Parties Services, software or goods while using our
@@ -5460,19 +5495,19 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               14.13.
             </span>
-            <span style={{ fontSize: "12.0pt", lineHeight: "102%" }}>​</span>
+            <span style={{ fontSize: "1rem", lineHeight: "102%" }}>​</span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
+                fontFamily: "GilroyMedium"
               }}
             >
               You acknowledge and agree that at any time and in Our sole discretion,
@@ -5518,10 +5553,10 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "1.2rem",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               In our sole discretion, We may provide you with notices in any of the
               following methods: (1) via the Doroki Platform, including by a banner or
@@ -5571,10 +5606,10 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "106%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               These Terms, and your use of Our Services, do not, and shall not be
               construed to create any partnership, joint venture, employer-employee,
@@ -5616,10 +5651,10 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "103%",
-                fontFamily: "Gilroymedium"
-              }}
+                fontFamily: "GilroyMedium"
+              }}  className={styles.termsOfService}
             >
               If any provision of these Terms is deemed by a court of competent
               jurisdiction to be invalid, unlawful, void, or for any reason
@@ -5667,11 +5702,11 @@ style={{
             <a name="page17" />
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "113%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#222222"
-              }}
+              }}  className={styles.termsOfService}
             >
               The validity, construction and performance of this Agreement shall be
               governed by the laws of the Federal Republic of Nigeria.
@@ -5691,11 +5726,11 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#222222"
-              }}
+              }}  className={styles.termsOfService}
             >
               You agree to use your best endeavour to amicably settle any dispute or
               difference of opinion arising from or in connection with this Agreement
@@ -5705,11 +5740,11 @@ style={{
             </span>
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "101%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "black"
-              }}
+              }}  className={styles.termsOfService}
             >
               {" "}
               shall be settled before a Sole Arbitrator to be appointed by the mutual
@@ -5738,12 +5773,12 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "103%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#222222"
-              }}
-            >
+              }}  className={styles.termsOfService}
+            > 
               Any and all proceedings to resolve claims will be conducted only on an
               individual basis and not in a class, consolidated, or representative
               action or proceeding. The arbitrator may award relief (including
@@ -5767,11 +5802,11 @@ style={{
           >
             <span
               style={{
-                fontSize: "12.0pt",
+                fontSize: "1rem",
                 lineHeight: "103%",
-                fontFamily: "Gilroymedium",
+                fontFamily: "GilroyMedium",
                 color: "#222222"
-              }}
+              }}  className={styles.termsOfService}
             >
               Each party will be individually responsible for all costs and fees
               incurred in connection with any mediation or arbitration, including

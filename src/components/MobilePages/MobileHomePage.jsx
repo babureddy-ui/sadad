@@ -569,7 +569,7 @@ const MobileHomePage = () => {
           </div>
 
 
-        <div className={styles.Clients_rave_section}> 
+        {/* <div className={styles.Clients_rave_section}> 
       <div className={styles.Clients_rave_txtSection}>
          
         <div className={styles.Clients_rave_txt} >
@@ -583,12 +583,12 @@ const MobileHomePage = () => {
         <div className={styles.Doroki_Blurred_img} ><Image src="/assets/Doroki-Blurred.webp" fill alt="doroki" /></div>
 
       </div>
-      </div> 
+      </div>  */}
 
-      <div>
+      {/* <div>
         <div className={styles.valued_opinions} ><Image src='/assets/MobileView/valued_opinions.webp' fill alt='valued_opinions'/></div>
       <MobileClientSwiper/>
-      </div>
+      </div> */}
 
      
      <div style={{margin:"1rem 1.8rem",position:"relative",}}>
