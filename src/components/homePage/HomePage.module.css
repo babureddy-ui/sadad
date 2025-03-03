@@ -501,10 +501,10 @@
   left: 84%;
 }
 .faq_section {
-  margin: 1em 5rem 0rem 7.5rem;
-  height: 45rem;
+  margin: 1rem 5rem 0rem 7.5rem;
+  height: 53rem;
   display: flex;
-  gap: 1rem;
+  gap: 0rem;
   justify-content: space-between;
 }
 .Queries_arrow {
@@ -772,8 +772,8 @@ margin-top: 4.3rem;
 
 .hover_container {
   position: relative;
-  height: 2rem;
-  width: 5rem;
+  height: 2.5rem;
+  width: 6rem;
   overflow: hidden;
 }
 
@@ -1647,12 +1647,12 @@ margin-top: 4.3rem;
 
 .queries_img {
   position: relative;
-  width: 28rem;
-  height: 44rem;
+  width: 29rem;
+  height: 46rem;
 }
 .Questions_sec {
   margin: -0.5rem 2rem;
-  width: 49vw;
+  width: 51vw;
   height: 90vh;
 }
 
@@ -1888,11 +1888,11 @@ margin-top: 4.3rem;
   .animation_star2 {
     left: 72%;
   } 
-  .Questions_sec {
+  /* .Questions_sec {
     margin: 0rem 2rem;
     width: 54vw;
     height: 90vh;
-  }
+  } */
   /* .queries_img {
     position: relative;
     width: 30rem;
@@ -1929,11 +1929,11 @@ margin-top: 4.3rem;
     position: relative;
      
   }
-  .Questions_sec {
+  /* .Questions_sec {
     margin: 0rem 2rem;
     width: 43vw;
     height: 90vh;
-  }
+  } */
   /* .queries_img {
     position: relative;
     width: 35rem;
@@ -1946,11 +1946,11 @@ margin-top: 4.3rem;
     width: 32vw;
     height: 36.7rem;
   }
-  .Questions_sec {
+  /* .Questions_sec {
     
     width: 49vw;
     
-  }
+  } */
    
 }
 @media only screen and (min-width: 1900px) and (max-width:  2000px) {
@@ -1975,11 +1975,11 @@ margin-top: 4.3rem;
     position: relative;
      
   }
-  .Questions_sec {
+  /* .Questions_sec {
     margin: 0rem 2rem;
     width: 45vw;
     height: 90vh;
-  }
+  } */
    
   .demo_form {
     
@@ -1988,11 +1988,11 @@ margin-top: 4.3rem;
     width: 34vw;
     height: 36.7rem;
   }
-  .Questions_sec {
+  /* .Questions_sec {
     
     width: 50vw;
     
-  }
+  } */
 }
 
 @media only screen and (min-width: 2000px) and (max-width:  2500px) {
@@ -2002,11 +2002,11 @@ margin-top: 4.3rem;
     max-height: 28rem;
     width: 38rem !important;
   }
-  .Questions_sec {
+  /* .Questions_sec {
     margin: 0rem 2rem;
     width: 40vw;
     height: 90vh;
-  }
+  } */
   .demo_form {
     padding: 2rem 2rem 5rem 0rem;
     display: flex;
@@ -2036,9 +2036,9 @@ margin-top: 4.3rem;
     width: 38rem !important;
   }
   .Questions_sec {
-    margin: 0rem 2rem;
-    width: 29.9vw;
-    height: 90vh;
+    
+    width: 35vw;
+    
   }
   .demo_form {
     padding: 2rem 2rem 5rem 0rem;
@@ -2054,11 +2054,11 @@ margin-top: 4.3rem;
   .animation_star2 {
     left: 27.5rem;
   } 
-  .Questions_sec {
+  /* .Questions_sec {
     
     width: 35vw;
     
-  }
+  } */
   
 }
 .dropdown {

@@ -31,7 +31,7 @@ const Questions = ({ FaqTableData, heading }) => {
                   <div>
                      <div
                         style={{
-                           padding: "2rem",
+                           padding: "1.5rem",
                            alignItems: "center",
                            backgroundColor: "#f5f8ff", 
                            boxSizing: "border-box",
@@ -39,7 +39,7 @@ const Questions = ({ FaqTableData, heading }) => {
                            borderRadius: "0.6rem",
                            fontFamily: "GilroyMedium",
                            color: "#767676",
-                           marginBottom: "1rem",
+                           marginBottom: "1.2rem",
                            borderLeft: showAns?.key === ele?.id && showAns?.status ? "9px solid #0391f0" : "9px solid transparent",  
                            transition: 'border-left 0.5s ease, translateY 0.10s',
                            lineHeight: "1.5rem",
@@ -52,16 +52,16 @@ const Questions = ({ FaqTableData, heading }) => {
                            style={{
                               display: "flex",
                               justifyContent: "space-between",
-                              gap: "6rem",
+                              gap: "2rem",
                                
                               cursor: "pointer",
                               color: "#101828",
-                              fontFamily: "GilroyBold",
-                              fontSize: "1.3rem"
+                              fontFamily: "GilroySemiBold",
+                              fontSize: "1.2rem"
                            }}
                         >
                            <p>{ele?.para} </p>
-                           <span style={{ color: "black", fontSize: "1.5rem", marginTop:"-0.4rem"  }}>
+                           <span style={{ color: "black", fontSize: "1.5rem", marginTop:"rem"  }}>
                               {showAns?.key === ele?.id && showAns?.status ? <IoIosArrowUp /> : <IoIosArrowDown />}
                            </span>
                         </div>

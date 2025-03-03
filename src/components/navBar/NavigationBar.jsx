@@ -17,6 +17,7 @@ export const NavigationBar = () => {
   const [state, setState] = useState("IDLE");
   const [validate, setValidate] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [comingSoon, setComingSoon] = useState(false)
   const ThanksForm=(eve)=>{
     eve.preventDefault();  
       setContact(false); 
@@ -129,13 +130,13 @@ const toggleAboutUs = () => {
          <Link href="/"> <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill /> </Link>
         </div>
         <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,   padding:"0rem 2rem"}}>
-          <div style={{display:'flex', width:"30rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"0.9rem",   }}>
+          <div style={{display:'flex', width:"23rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"0.9rem",   }}>
               <a href="#" className={styles.menuItem}>Consumer</a>
               <a href="#" className={styles.menuItem}>Enterprise</a>
               
-                <a className={styles.menuItem} onClick={toggleAboutUs}>
+                {/* <a className={styles.menuItem} onClick={toggleAboutUs}>
                   Company
-                </a>
+                </a> */}
 
                 {aboutUs && (
                   <div className={styles.dropdownMenu} ref={dropdownRef}>
@@ -158,7 +159,7 @@ const toggleAboutUs = () => {
   
 
 
-              <div className={styles.hover_container}>
+              <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">  <div className={styles.hover_container}>
                 {/* <Image
                   src="/assets/NavigationBar/Playstore.svg"
                   alt="Playstore"
@@ -171,7 +172,7 @@ const toggleAboutUs = () => {
                   fill
                   // className= {styles.image_hover}
                 />
-              </div>
+              </div></a>
           </div>
           <div style={{display:'flex', gap:"1rem", fontFamily:"Gilroymedium",paddingRight:"1.8rem"}}>
             
@@ -179,13 +180,43 @@ const toggleAboutUs = () => {
             onClick={ContactForm}
             
             />
-            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }}  onClick={() => (window.location.href="https://qa.doroki.com/")}/>
-
+            {/* <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }}  onClick={() => (window.location.href="https://qa.doroki.com/")}/> */}
+            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={()=>setComingSoon(true)}/>
+              
           </div>
         </div>
         </div>
           {/* </div> */}
       </div>
+      {comingSoon && (
+        <div style={{
+          position: "fixed",  
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh",
+          zIndex: 1000,
+          backgroundColor: "rgba(0, 0, 0, 0.7)",  
+          // backdropFilter: "blur(10px)",  
+        }}>
+          <div style={{position:"relative",display:"grid", justifyContent:"center", alignItems:'center',top:"14%" }}>
+          <div style={{ position:"relative", width:"28rem", height:"33rem", backgroundColor:"#ffff", padding:"2rem", display:"flex",alignItems:"center", flexDirection:"column", borderRadius:"1.5rem",textAlign:"center",  justifyContent:"space-between"}}>
+ 
+          <div style={{position:'relative', width:"20rem", height:"13rem", margin:"2rem 0 1rem 0"}}> <Image  src='/assets/coming_soon.webp' fill alt='coming soon'/></div>
+          <div style={{ display:"grid",gap:"1rem"}}> 
+          <h2 style={{fontFamily:"GilroyBold", lineHeight:"2.1rem"}}>Dashboard launching soon <br />stay tuned!</h2>
+          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Doroki dashboard, arriving to transform your business soon!</p>
+          </div>
+
+          <BlackButton text='Excitement awaits—coming soon!' style={{height:"3rem", padding:"1rem", margin:"2rem 0 0 0" ,width:"100%"}}  onClick={()=>setComingSoon(false)}/>
+          </div>
+             
+
+          </div>
+
+
+        </div>
+      )}
       
       {contact && (
 

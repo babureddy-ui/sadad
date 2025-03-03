@@ -144,69 +144,92 @@ const MobileHomePage = () => {
       },
     ];
     const faqs = [
-        {
-            para: (
-                <span style={{ width: "90%" }}>
-                    What is Doroki?
-                </span>
-            ),
-            des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-            id: 1,
-            activeIndex: 1,
-        },
-        {
-            para: (
-                <span style={{ width: "90%" }}>
-                How can I manage my inventory with Doroki?
-                </span>
-            ),
-            des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-            id: 2,
-            activeIndex: 0,
-        },
-        {
-            para: (
-                <span style={{ width: "90%" }}>
-                   Does Doroki support credit sales?
-    
-                </span>
-            ),
-            des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-            id: 3,
-            activeIndex: 0,
-        },
-        {
-            para: (
-                <span style={{ width: "90%" }}>
-                   Does Doroki support versatile payment modes?
-                </span>
-            ),
-            des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-            id: 4,
-            activeIndex: 0,
-        },
-        {
-            para: (
-                <span style={{ width: "90%" }}>
-                   What is Doroki?
-                </span>
-            ),
-            des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-            id: 5,
-            activeIndex: 0,
-        },
-        {
-          para: (
-              <span style={{ width: "90%" }}>
-                 How does Doroki help with billing?
-              </span>
-          ),
-          des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
-          id: 6,
-          activeIndex: 0,
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+            What is Doroki?
+          </span>
+        ),
+        des: "Doroki is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Doroki helps businesses digitize their operations and streamline their payment solutions.",
+        id: 1,
+        activeIndex: 1,
       },
-       
-       
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+            How does Doroki help my business?
+          </span>
+        ),
+        des: "Doroki is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Doroki will also offers value-added services like business loans and multiple location support—all at an affordable price.",
+        id: 2,
+        
+      },
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+            What features does Doroki offer?
+  
+          </span>
+        ),
+        des: <div>
+        Doroki includes features like:
+        <ul>
+          <li>Inventory Management</li>
+          <li>Product Catalog</li>
+          <li>Customer Relationship Management (CRM)</li>
+          <li>Promotions & Discounts</li>
+          <li>Customer Invoices</li>
+          <li>Business Loans(Coming Soon)</li>
+          <li>Multiple Location Management</li>
+          <li>Digital Payment Solutions (including Bank Transfer, USSD, Scan to Pay, etc.)</li>
+        </ul>
+        </div>,
+  
+        id: 3,
+        
+      },
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+           How do I get started with Doroki?
+          </span>
+        ),
+        des: "Getting started with Doroki is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
+        id: 4,
+        
+      },
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+           How Doroki place itself as a All-In-One business suite ?
+          </span>
+        ),
+        des: "Our All-In-One business suite manages SKU-level catalogs, inventory,billing, multiple payment methods, bulk uploads, role permissions, promotions, reports, cloud backup, multi-location operations, and loyalty/membership programs.",
+        id: 5,
+        
+      },
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+           How many industries are covered by Doroki?
+          </span>
+        ),
+        des: "Doroki is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
+        id: 6,
+        
+      },
+      {
+        para: (
+          <span style={{ width: "90%" }}>
+           Does Doroki supports versatile payment options?
+          </span>
+        ),
+        des: "Doroki is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, paga, scan-to-pay, bank USSD and more",
+        id: 7,
+        
+      },
+  
+  
     ];
     const ClientsArr1 = [
         {
@@ -517,7 +540,7 @@ const MobileHomePage = () => {
           <h2 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h2>  
           <p className={styles.loan_section_txt} >Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
      
-         <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
+         <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
          
          <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Affordableloans1.webp" fill alt="loan" /> </div>
         </div>
@@ -610,7 +633,7 @@ const MobileHomePage = () => {
           <div className={styles.business_needs_txtSection} >
             <div className={styles.business_needs_title}><h2>Intuitive and Easy <br />to use Application for <br /><span style={{color:'#F8B53C'}}>All Business</span>  needs</h2>  
             </div>
-            <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_appImg} ><Image src="/assets/MobileView/app-img1.webp" fill alt="app" /></div>
             </div>
