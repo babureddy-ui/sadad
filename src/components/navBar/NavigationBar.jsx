@@ -181,7 +181,12 @@ const toggleAboutUs = () => {
             
             />
             {/* <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }}  onClick={() => (window.location.href="https://qa.doroki.com/")}/> */}
-            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={()=>setComingSoon(true)}/>
+
+
+            <div style={{position:"relative"}}>
+             <div style={{position:'absolute', height:"1rem", width:'2rem', zIndex:2,right:"0.5rem"}}>  <Image src="/assets/Vector-img.svg" alt='vector' fill/></div>
+              <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={()=>setComingSoon(true)}/></div>
+             
               
           </div>
         </div>
