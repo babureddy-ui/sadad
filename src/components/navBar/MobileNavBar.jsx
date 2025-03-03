@@ -11,6 +11,7 @@ const MobileNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const[getFreeDemo, setGetFreeDemo] = useState(false);
   const [thanks, setThanks] = useState(false);
+  const [comingSoon, setComingSoon] = useState(false)
    
 
   const toggleMenu = () => {
@@ -157,11 +158,44 @@ const MobileNavBar = () => {
             <div style={{display:"flex", flexDirection:"column", gap:"0.8rem", margin:"4rem 0 0 0 "}}> 
             <BlueButton text="Get Free Demo" style={{ height: "3.4rem", width:"100%",fontSize:"1.1rem" }}  onClick={setGetFreeDemo} />
           
-            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={() => (window.location.href="https://qa.doroki.com/")}/>
+            {/* <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={() => (window.location.href="https://qa.doroki.com/")}/> */}
+            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={()=>setComingSoon(true)}/>
             </div>
           
         </div>
       )}
+
+       {comingSoon && (
+              <div style={{
+                position: "fixed",  
+                top: 0,
+                left: 0,
+                width: "100vw",
+                height: "100vh",
+                zIndex: 1000,
+                backgroundColor: "rgba(0, 0, 0, 0.7)",  
+                // backdropFilter: "blur(10px)",  
+              }}>
+                <div style={{position:"relative",display:"flex", justifyContent:"center", alignItems:'center',top:"20%" }}>
+                <div style={{ position:"relative", width:"20rem", height:"29rem", backgroundColor:"#ffff", padding:"2rem", display:"flex",alignItems:"center", flexDirection:"column",justifyContent:"space-between", borderRadius:"1.5rem",textAlign:"center", gap:"1rem"}}>
+       
+                <div style={{position:'relative', width:"15rem", height:"10rem", margin:"1rem 0 0 0.5rem"}}> <Image  src='/assets/coming_soon.webp' fill alt='coming soon'/></div>
+                 <div style={{ display:"grid",gap:"1rem", marginTop:"1rem"}}> 
+                <h2 style={{fontFamily:"GilroyBold",lineHeight:"2rem"}}>Dashboard launching soon <br />stay tuned!</h2>
+                <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Doroki dashboard, arriving to transform your business soon!</p>
+                </div>
+      
+                <BlackButton text='Coming Soon' style={{height:"3.4rem",   margin:"2rem 0 0 0" ,width:"100%"}}  onClick={()=>setComingSoon(false)}/>
+                </div>
+                   
+      
+                </div>
+      
+      
+              </div>
+            )}
+
+
       { getFreeDemo && (
         <div style={{zIndex:"1001", display:"flex", flexDirection:'column', justifyContent:"flex-start", backgroundColor:"white", marginTop:"-2rem", position:"absolute", left:0, top:'2rem'}}>
 

@@ -180,60 +180,83 @@ const HomePage = () => {
           What is Doroki?
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: "Doroki is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Doroki helps businesses digitize their operations and streamline their payment solutions.",
       id: 1,
       activeIndex: 1,
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          How can I manage my inventory with Doroki?
+          How does Doroki help my business?
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: "Doroki is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Doroki will also offers value-added services like business loans and multiple location support—all at an affordable price.",
       id: 2,
-      activeIndex: 0,
+      
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          Does Doroki support credit sales?
+          What features does Doroki offer?
 
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: <div>
+      Doroki includes features like:
+      <ul>
+        <li>Inventory Management</li>
+        <li>Product Catalog</li>
+        <li>Customer Relationship Management (CRM)</li>
+        <li>Promotions & Discounts</li>
+        <li>Customer Invoices</li>
+        <li>Business Loans(Coming Soon)</li>
+        <li>Multiple Location Management</li>
+        <li>Digital Payment Solutions (including Bank Transfer, USSD, Scan to Pay, etc.)</li>
+      </ul>
+      </div>,
+
       id: 3,
-      activeIndex: 0,
+      
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          Does Doroki support versatile payment modes?
+         How do I get started with Doroki?
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: "Getting started with Doroki is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
       id: 4,
-      activeIndex: 0,
+      
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          What is Doroki?
+         How Doroki place itself as a All-In-One business suite ?
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: "Our All-In-One business suite manages SKU-level catalogs, inventory,billing, multiple payment methods, bulk uploads, role permissions, promotions, reports, cloud backup, multi-location operations, and loyalty/membership programs.",
       id: 5,
-      activeIndex: 0,
+      
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          How does Doroki help with billing?
+         How many industries are covered by Doroki?
         </span>
       ),
-      des: "Doroki is a comprehensive, multi-functional solution designed to streamline your business operations by managing orders, inventory, and transactions all in one place.",
+      des: "Doroki is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
       id: 6,
-      activeIndex: 0,
+      
+    },
+    {
+      para: (
+        <span style={{ width: "90%" }}>
+         Does Doroki supports versatile payment options?
+        </span>
+      ),
+      des: "Doroki is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, paga, scan-to-pay, bank USSD and more",
+      id: 7,
+      
     },
 
 
@@ -528,7 +551,7 @@ const HomePage = () => {
               <h1 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h1> <br />
               <p className={styles.loan_section_txt}>Scale your business with affordable, transparent loans provided<br /> by trusted banking partners, hassle-free and reliable</p>
             </div>
-            <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
+           <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.Loan_img}>
             <div className={styles.loan_section_img}> <Image src="/assets/Loan_img1.webp" fill alt="loan" /> </div>
@@ -563,7 +586,7 @@ const HomePage = () => {
                   <h1 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h1>
                   <p className={styles.business_journey_txt}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
                 </div>
-                <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
+               <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
               </div>
             </div>
             <div style={{ width: "50%", height: "45rem" }}>
@@ -573,7 +596,7 @@ const HomePage = () => {
         </div>
 
 
-        <div style={{ margin: "5rem 6.5rem 7rem 7.5rem", }}>
+        <div style={{ margin: "0rem 6.5rem 7rem 7.5rem", }}>
 
 
           <div className={styles.business_dilemmas_section}>
@@ -631,7 +654,7 @@ const HomePage = () => {
 
 
 
-        <div style={{ margin: "19rem 0 8rem 0 " }}>
+        <div style={{ margin: "10rem 0 8rem 0 " }}>
           {/* <div className={styles.clients_section}>
             <h1 className={styles.clients_section_title}>Our Client’s kind words</h1>
             <div className={styles.clients_img_stars} >
@@ -664,7 +687,7 @@ const HomePage = () => {
             <div className={styles.business_needs_title} ><h1>Intuitive and Easy to use App for your Business needs</h1>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
             <p className={styles.business_needs_txt} >Seamless billing made easy with our POS system <br />efficient payment processing with zero hassle</p>
-            <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div>
+            <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
         </div>
