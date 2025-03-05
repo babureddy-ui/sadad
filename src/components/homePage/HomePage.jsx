@@ -144,31 +144,31 @@ const HomePage = () => {
   ];
   const ClientsArr1 = [
     {
-      imgSrc: "/assets/GUO.webp",
+      imgSrc: "/assets/GUO1.webp",
       altText: "Hindustan Unilever limited",
     },
     {
-      imgSrc: "/assets/whispering.webp",
+      imgSrc: "/assets/whispering1.webp",
       altText: "Heineken",
     },
     {
-      imgSrc: "/assets/compagne.webp",
+      imgSrc: "/assets/campagne1.webp",
       altText: "BRIDGESTONE",
     },
     {
-      imgSrc: "/assets/fitness.webp",
+      imgSrc: "/assets/fitness1.webp",
       altText: "ITC Limited",
     },
     {
-      imgSrc: "/assets/lifeback.webp",
+      imgSrc: "/assets/lifeback1.webp",
       altText: "IRCTC",
     },
     {
-      imgSrc: "/assets/vestar.webp",
+      imgSrc: "/assets/vestar1.webp",
       altText: "Taj sats",
     },
     {
-      imgSrc: "/assets/ane.webp",
+      imgSrc: "/assets/ane1.webp",
       altText: "Taj sats",
     },
   ];

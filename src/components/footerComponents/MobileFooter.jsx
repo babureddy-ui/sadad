@@ -116,7 +116,7 @@ const MobileFooter = () => {
               <div style={{ display: 'flex', gap: '4rem', margin: "1rem 0" }}>
                 <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>Links</p>
-                  <a href="https://donate.ng/"  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a>
+                  {/* <a href="https://donate.ng/"  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a> */}
                   {/* <p className={styles.footerContent}>Paga Blog</p> */}
                   {/* <p className={styles.footerContent}>Pricing</p> */}
                   {/* <p className={styles.footerContent}>Remittances</p> */}
