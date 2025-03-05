@@ -233,43 +233,43 @@ const MobileHomePage = () => {
     ];
     const ClientsArr1 = [
         {
-          imgSrc: "/assets/GUO.webp",
+          imgSrc: "/assets/GUO1.webp",
           altText: "Hindustan Unilever limited",
           width:"13rem",
           height:"6rem",
         },
         {
-          imgSrc: "/assets/whispering.webp",
+          imgSrc: "/assets/whispering1.webp",
           altText: "Heineken",
           width:"13rem",
           height:"6rem",
         },
           {
-            imgSrc: "/assets/compagne.webp",
+            imgSrc: "/assets/campagne1.webp",
             altText: "Heineken",
             width:"13rem",
             height:"6rem",
           },
           {
-            imgSrc: "/assets/fitness.webp",
+            imgSrc: "/assets/fitness1.webp",
             altText: "Hindustan Unilever limited",
             width:"13rem",
             height:"6rem",
           },
           {
-            imgSrc: "/assets/lifeback.webp",
+            imgSrc: "/assets/lifeback1.webp",
             altText: "Heineken",
             width:"13rem",
             height:"6rem",
           },
           {
-            imgSrc: "/assets/vestar.webp",
+            imgSrc: "/assets/vestar1.webp",
             altText: "Hindustan Unilever limited",
             width:"13rem",
             height:"6rem",
           },
           {
-            imgSrc: "/assets/ane.webp",
+            imgSrc: "/assets/ane1.webp",
             altText: "Hindustan Unilever limited",
             width:"13rem",
             height:"6rem",

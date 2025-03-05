@@ -137,7 +137,7 @@ const DesktopFooter = () => {
         </div>
         <div>
           <p className={styles.footerContent_titile}>Links</p>
-          <a href="https://donate.ng/"  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a>
+          {/* <a href="https://donate.ng/"  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a> */}
           
           {/* <p className={styles.footerContent}>Paga Blog</p> */}
           {/* <p className={styles.footerContent}>Pricing</p> */}
