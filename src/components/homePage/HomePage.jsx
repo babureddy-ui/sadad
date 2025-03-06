@@ -551,7 +551,7 @@ const HomePage = () => {
               <h1 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h1> <br />
               <p className={styles.loan_section_txt}>Scale your business with affordable, transparent loans provided<br /> by trusted banking partners, hassle-free and reliable</p>
             </div>
-           <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+           <a href="https://play.google.com/store/apps/" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.Loan_img}>
             <div className={styles.loan_section_img}> <Image src="/assets/Loan_img1.webp" fill alt="loan" /> </div>
@@ -586,7 +586,7 @@ const HomePage = () => {
                   <h1 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h1>
                   <p className={styles.business_journey_txt}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
                 </div>
-               <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+               <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
               </div>
             </div>
             <div style={{ width: "50%", height: "45rem" }}>
@@ -687,7 +687,7 @@ const HomePage = () => {
             <div className={styles.business_needs_title} ><h1>Intuitive and Easy to use App for your Business needs</h1>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
             <p className={styles.business_needs_txt} >Seamless billing made easy with our POS system <br />efficient payment processing with zero hassle</p>
-            <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
         </div>
