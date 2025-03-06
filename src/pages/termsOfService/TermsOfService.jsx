@@ -4,6 +4,7 @@ import MobileNavBar from '@/components/navBar/MobileNavBar'
 import { NavigationBar } from '@/components/navBar/NavigationBar'
 import React from 'react'
 import styles from './TermsOfService.module.css'
+import Link from 'next/link'
 
 const TermsOfService = ({ mobileView }) => {
   return (
@@ -167,8 +168,9 @@ const TermsOfService = ({ mobileView }) => {
               <span style={{ color: "black" }}>
                 electronic/offline indication of acceptance that we provide to you,
                 you agree to comply with and to be bound by these Terms, together with
-                Doroki’s Privacy Policy (Accessible
-                at https://doroki.com/Legal/Privacy) and all rules, guidelines,
+                Doroki’s Privacy Policy
+                (Accessible at  <Link style={{textDecoration:"none"}} href="https://doroki.com/privacyPolicy">Privacy Policy</Link>)
+                and all rules, guidelines,
                 policies, terms, and conditions applicable to such Services, and they
                 shall be deemed to be incorporated into this Terms of Use and shall be
                 considered as part of these Terms.
@@ -4664,7 +4666,8 @@ style={{
               }}
             >
               {" "}
-              Doroki’s privacy notice (accessible at https://doroki.com/Legal/Privacy)
+              Doroki’s privacy notice 
+             (Accessible at  <Link style={{textDecoration:"none"}} href="https://doroki.com/privacyPolicy">Privacy Policy</Link>)
               sets out the categories of personal data and other data Doroki collects,
               how it is used, processed, disclosed and retained, as well as how you or
               your customers can exercise their rights as data subjects.
