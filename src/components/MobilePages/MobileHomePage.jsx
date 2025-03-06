@@ -540,7 +540,7 @@ const MobileHomePage = () => {
           <h2 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h2>  
           <p className={styles.loan_section_txt} >Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
      
-         <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+         <a href="https://play.google.com/store/apps/" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
          
          <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Affordableloans1.webp" fill alt="loan" /> </div>
         </div>
@@ -633,7 +633,7 @@ const MobileHomePage = () => {
           <div className={styles.business_needs_txtSection} >
             <div className={styles.business_needs_title}><h2>Intuitive and Easy <br />to use Application for <br /><span style={{color:'#F8B53C'}}>All Business</span>  needs</h2>  
             </div>
-            <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_appImg} ><Image src="/assets/MobileView/app-img1.webp" fill alt="app" /></div>
             </div>

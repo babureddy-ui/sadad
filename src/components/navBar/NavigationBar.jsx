@@ -159,7 +159,7 @@ const toggleAboutUs = () => {
   
 
 
-              <a href="https://play.google.com/store/apps/details?id=YOUR_APP_ID" target="_blank">  <div className={styles.hover_container}>
+              <a href="https://play.google.com/store/apps/" target="_blank">  <div className={styles.hover_container}>
                 {/* <Image
                   src="/assets/NavigationBar/Playstore.svg"
                   alt="Playstore"
@@ -180,13 +180,13 @@ const toggleAboutUs = () => {
             onClick={ContactForm}
             
             />
-            {/* <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }}  onClick={() => (window.location.href="https://qa.doroki.com/")}/> */}
+            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={() => (window.location.href="https://admin.doroki.com/")}/>
 
 
-            <div style={{position:"relative"}}>
+            {/* <div style={{position:"relative"}}>
              <div style={{position:'absolute', height:"1rem", width:'2rem', zIndex:2,right:"0.5rem"}}>  <Image src="/assets/Vector-img.svg" alt='vector' fill/></div>
               <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={()=>setComingSoon(true)}/></div>
-             
+              */}
               
           </div>
         </div>
