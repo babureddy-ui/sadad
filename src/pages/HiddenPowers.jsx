@@ -85,11 +85,12 @@ const HiddenPowers = () => {
             className={styles.elements}
             style={{ backgroundColor: "white" , flex: "1 1 calc(25% - 20px)",}}
             onMouseEnter={(e) => {
-               e.currentTarget.style.backgroundColor = ele.hoverCol;
+              e.currentTarget.style.backgroundColor = ele.hoverCol;
               e.currentTarget.style.color = ele.hoverTextCol;
               e.currentTarget.querySelector(`.${styles.title}`).style.color = "white";
               e.currentTarget.querySelector(`.${styles.text}`).style.color = "white";
               e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.hoverTextCol;
+              e.currentTarget.querySelector(`.${styles.text}`).style.fontFamily = 'GilroyMedium';
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = "white";
@@ -97,6 +98,7 @@ const HiddenPowers = () => {
               e.currentTarget.querySelector(`.${styles.title}`).style.color = "#212B36";
               e.currentTarget.querySelector(`.${styles.text}`).style.color = "#555";
               e.currentTarget.querySelector(`.${styles.borderElement}`).style.borderColor = ele.tagColor;
+              e.currentTarget.querySelector(`.${styles.text}`).style.fontFamily = 'GilroyRegular';
             }}
           >
             <div className={styles.iconContainer}>

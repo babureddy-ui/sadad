@@ -145,7 +145,7 @@ const CustomiseBy = () => {
   const [selectedCategory, setSelectedCategory] = useState('restaurant');
   const [isAnimating, setIsAnimating] = useState(false);
   const [isbtnAnimating, setBtnIsAnimating] = useState(false);
-
+  const [buttonCategory, setButtonCategory] = useState('restaurant');
   const handleCategoryChange = (category) => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
@@ -153,8 +153,12 @@ const CustomiseBy = () => {
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false);  
-      }, 500);  
+      }, 600);  
     }
+  };
+
+  const handleButtonBackgroundChange = (category) => {
+    setButtonCategory(category);
   };
 
   const currentCategory = categories[selectedCategory];
@@ -181,18 +185,22 @@ const CustomiseBy = () => {
             <p style={{marginRight:'1.3rem'}}>Customise by </p> 
             {Object.keys(categories).map((category) => (
           <button className={styles.customise_btns}
-            style={{ fontSize:"0.8rem",
-              backgroundColor: selectedCategory === category ? "white" : "#223037",
-              color: selectedCategory === category ? "#223037" : "white",
-              fontFamily: selectedCategory === category ? "GilroySemiBold" : "GilroyRegular",
-               
-                  
+            style={{ 
+              fontSize: "0.8rem",
+              backgroundColor: buttonCategory === category ? "white" : "#223037",
+              color: buttonCategory === category ? "#223037" : "white",
+              fontFamily: buttonCategory === category ? "GilroySemiBold" : "GilroyRegular",
+              transition: "background-color 200ms ease",   
+              cursor:"pointer"
             }}
             key={category}
-            onClick={() => handleCategoryChange(category)}
+            onClick={() => {
+              handleButtonBackgroundChange(category);
+              handleCategoryChange(category);
+            }}
           >
             <p> {category === "spaSalon" ? "Spa & Salon" : category.charAt(0).toUpperCase() + category.slice(1)}</p>
-            </button>
+          </button>
         ))}
 
           </div>
@@ -214,11 +222,11 @@ const CustomiseBy = () => {
               </span>
               <br />
               with streamlined technology
-            </h1>
-            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", margin: "0.5rem 0" }}>
+            </h1> 
+            <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", margin: "1rem 0" }}>
             Take control of your Business operations effortlessly, streamlining everything from orders to inventory management.
             </p>
-            <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem", marginTop:"1.5rem" }} />
+            {/* <BlueButton text="Get in Touch" style={{ width: "10rem", height: "3rem", marginTop:"1.5rem" }} /> */}
           </div>
 
           <div className={styles.Customise_img}>

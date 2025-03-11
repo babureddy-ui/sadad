@@ -972,12 +972,14 @@ margin-top:0.6rem;
  
 
 .solutionSection.active .dev_img1 {
-  transform: translateY(-10%);
+  transform: translate(-4%, -10%); 
 }
 
 .solutionSection.active .content_text {
   top: 10%;
   opacity: 1;
+  margin: 0 2rem 0 2rem;
+  width: 85%;
 }
 
 
@@ -1666,13 +1668,13 @@ width: 96vw;
     margin-top: 4rem;
     margin-left: 0rem;
   }
-  .customise_section {
+  /* .customise_section {
     height: 42rem;
     background-color: #223037;
     color: #ffff;
     border-radius: 1rem;
     margin: 1rem;
-  }
+  } */
  .customise_btns {
   border-radius: 1rem;
   border: 0.5px solid white;

@@ -106,6 +106,13 @@ const MobileFooter = () => {
                   <a href="https://paga.frontify.com/auth?referer=%2F"> <p className={styles.footerContent}>Media Kit</p></a>
                 </div> */}
                 <div style={{ width: "7rem" }}>
+                  <p className={styles.footerContent_titile}>Products</p>
+                  <a href="https://www.mypaga.com/home/" target='_blank'><p className={styles.footerContent}>Personal</p></a>
+                  {/* <p className={styles.footerContent}>Agent</p> */}
+                  {/* <p className={styles.footerContent}>Business</p> */}
+                  <a href="https://developer.paga.com/?_gl=1*1kxbc0i*_gcl_au*MjgxMTk5NDg1LjE3NDA0Njk2ODQ." target='_blank'><p className={styles.footerContent}>Developer</p></a>
+                </div>
+                <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>Support</p>
                   <a href="https://mypaga.freshdesk.com/support/home" target='_blank'>  <p className={styles.footerContent}>FAQ</p></a>
                   <a href='https://api.whatsapp.com/send/?phone=%2B2348099227242&text&type=phone_number&app_absent=0' target='_blank'>  <p className={styles.footerContent}>Help Desk</p></a>
@@ -125,13 +132,13 @@ const MobileFooter = () => {
                   </Link>
                   {/* <p className={styles.footerContent}>Security</p> */}
                 </div>
-                <div style={{ width: "7rem" }}>
+                {/* <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>Products</p>
-                  <a href="https://www.mypaga.com/home/" target='_blank'><p className={styles.footerContent}>Personal</p></a>
+                  <a href="https://www.mypaga.com/home/" target='_blank'><p className={styles.footerContent}>Personal</p></a> */}
                   {/* <p className={styles.footerContent}>Agent</p> */}
                   {/* <p className={styles.footerContent}>Business</p> */}
-                  <a href="https://developer.paga.com/?_gl=1*1kxbc0i*_gcl_au*MjgxMTk5NDg1LjE3NDA0Njk2ODQ." target='_blank'><p className={styles.footerContent}>Developer</p></a>
-                </div>
+                  {/* <a href="https://developer.paga.com/?_gl=1*1kxbc0i*_gcl_au*MjgxMTk5NDg1LjE3NDA0Njk2ODQ." target='_blank'><p className={styles.footerContent}>Developer</p></a> */}
+                {/* </div> */}
               </div>
             </div>
             {/* <div  className={styles.Conditions}>

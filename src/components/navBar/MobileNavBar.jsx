@@ -119,6 +119,7 @@ const MobileNavBar = () => {
           margin: "0rem 10rem 0 0rem",
         }}
       >
+    
         <Image
           src="/assets/NavigationBar/Doroki-logo1.svg"
           alt="Doroki logo"

@@ -113,15 +113,15 @@ const MobileHiddenPowers = () => {
           </button>
         ))}
       </div>
-        <div style={{ margin:"2rem 0",   overflow:"hidden"}}> 
+        <div style={{ margin:"2rem 0",   overflow:"hidden",}}> 
       <div
         className={`${styles.Card_elements} ${styles[direction]}`}  
         style={{
           backgroundColor: Powers[activeIndex].color,
            
-          padding: "0rem 0rem 2rem 2.5rem",
+          padding: "2rem 0rem 4rem 2.5rem",
           borderRadius: "1.5rem",
-          
+         
            position:"relative",
           textAlign: "start",
         }}
@@ -134,14 +134,14 @@ const MobileHiddenPowers = () => {
             position: "relative",
             left: "0",
             top:'0.5rem',
-            marginBottom: "1rem",
+            marginBottom: "3rem",
           }}
         >
           <Image src={Powers[activeIndex].icon} alt={Powers[activeIndex].title} fill />
         </div>
-        <div style={{width:"13rem", height:"8rem", position:"relative",  bottom:"10%"}}><Image src='/assets/HiddenPowers_blurImg.webp' alt="blurImg" fill/></div>
+        <div style={{width:"13rem", height:"10rem", position:'absolute',  right:"0", top:"0"}}><Image src='/assets/HiddenPowers_blurImg.webp' alt="blurImg" fill/></div>
         </div>
-        <div style={{padding: "0rem 3rem 0rem 0rem",}}> 
+        <div style={{padding: "1rem 3rem 0rem 0rem",}}> 
         <h6
           style={{
             margin: "  0  0 1rem  0",
