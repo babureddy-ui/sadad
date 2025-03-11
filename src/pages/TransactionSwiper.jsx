@@ -20,7 +20,7 @@ const BankTransactionSwiper=[
       title:"Seamlessly ",
       titleWord:"Send Money",
       title2:"through our secure POS",
-      dec:"Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
+      dec:"Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
       img:"/assets/sendMoney.svg"
     },
   ]

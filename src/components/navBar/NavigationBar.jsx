@@ -126,7 +126,7 @@ const toggleAboutUs = () => {
       <div style={{ height: "4.3rem", width: "100%", position: "fixed", top: 0, boxShadow: "0px 4px 6px 0px rgba(0, 0, 0, 0.10)", display: "flex",alignItems: "center",fontSize:"1rem",backgroundColor: "white",fontFamily:"GilroyMedium",zIndex: 1000,justifyContent:"space-between"  }}>
           <div className={styles.nav_bar}>
             {/* <div>  */}
-            <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem" }}>
+            <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem", cursor:"pointer" }}>
          <Link href="/"> <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill /> </Link>
         </div>
         <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,   padding:"0rem 2rem"}}>

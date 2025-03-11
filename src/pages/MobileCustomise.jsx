@@ -144,7 +144,7 @@ const MobileCustomise = () => {
 
   const [selectedCategory, setSelectedCategory] = useState('restaurant');
   const [isAnimating, setIsAnimating] = useState(false);
-
+  const [buttonCategory, setButtonCategory] = useState('restaurant');
   const handleCategoryChange = (category) => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
@@ -153,6 +153,10 @@ const MobileCustomise = () => {
         setIsAnimating(false);  
       }, 500);  
     }
+  };
+
+  const handleButtonBackgroundChange = (category) => {
+    setButtonCategory(category);
   };
 
   const currentCategory = categories[selectedCategory];
@@ -165,13 +169,15 @@ const MobileCustomise = () => {
                 {Object.keys(categories).map((category) => (
                 <button className={styles.customise_btns}
                     style={{ 
-                    backgroundColor: selectedCategory === category ? 'white' : '#30434D',
-                    color: selectedCategory === category ? '#223037' : 'white',
-                    fontFamily: selectedCategory === category ? 'GilroySemiBold' : 'GilroyRegular',
+                    backgroundColor: buttonCategory === category ? 'white' : '#30434D',
+                    color: buttonCategory === category ? '#223037' : 'white',
+                    fontFamily: buttonCategory === category ? 'GilroySemiBold' : 'GilroyRegular',
                     flexShrink: 0,  
                     }}
                     key={category}
-                    onClick={() => handleCategoryChange(category)}
+                    onClick={() =>{
+                      handleButtonBackgroundChange(category)
+                       handleCategoryChange(category)}}
                 >
                     {category === 'spaSalon' ? 'Spa & Salon' : category.charAt(0).toUpperCase() + category.slice(1)}
                 </button>
@@ -182,7 +188,7 @@ const MobileCustomise = () => {
         
         <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"39rem" , marginTop:"0.6rem"}}>
           <div className={styles.customise_title}>
-            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem" }}>
+            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem", margin:"0 0 0 0.5rem"  }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -210,7 +216,7 @@ const MobileCustomise = () => {
         </div>
 
           <div className={styles.Customise_GetInTouch_Btn}> 
-          <BlueButton text="Get in Touch" style={{ width: "12rem", height: "3.5rem",position:"absloute",bottom:"1rem", borderRadius:"2rem",  left:"18%",  transform: "translateX(-25%)" }} />
+          {/* <BlueButton text="Get in Touch" style={{ width: "12rem", height: "3.5rem",position:"absloute",bottom:"1rem", borderRadius:"2rem",  left:"18%",  transform: "translateX(-25%)" }} /> */}
           </div>
         </div>
 
@@ -237,7 +243,7 @@ const MobileCustomise = () => {
       style={{
         backgroundColor: item.bgColor,
         padding: '1.5rem',  
-        margin: "-0.3rem 0",
+        margin: "-2rem 0",
         
         borderRadius: '1rem',
         width: "95%",  

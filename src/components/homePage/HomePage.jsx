@@ -316,7 +316,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className={styles.hero_image}>
-            <div style={{ width: "100%", height: "100vh", right: '0rem' }} >
+            <div style={{ width: "100%", height: "100vh",}} >
               <Image src="/assets/HeroImage.webp" fill alt="hero" />
             </div>
           </div>
@@ -383,7 +383,7 @@ const HomePage = () => {
         </div>
 
 
-        <div style={{ margin: "-3rem 7rem 10rem 7.5rem" }}>
+        <div style={{ margin: "0rem 7rem 10rem 7.5rem" }}>
           <CustomiseBy />
         </div>
 
@@ -406,7 +406,7 @@ const HomePage = () => {
                   </div>
                   <h1 className={styles.billing_card_title} >Seamlessly manage  <span style={{ color: "#0091F0" }}> Billing</span> operations with precision</h1>
                   <p className={styles.billing_card_txt}>
-                    Seamlessly send money with our POS, ensuring secure transactions and
+                    Seamlessly send money with Doroki, ensuring secure transactions and
                     instant transfers for your convenience and peace of mind.
                   </p>
                 </div>
@@ -519,7 +519,10 @@ const HomePage = () => {
               <h1 className={styles.bank_container_title}>
                 Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
               </h1>
-              <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your designated account.</p>
+              {/* <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your designated account.</p> */}
+              <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your
+                designated account, ensuring smooth cash flow and
+                financial convenience.</p>
               <div className={styles.bank_img}>
                 <Image src="/assets/bank.svg" fill alt="bank" />
               </div>
@@ -532,7 +535,7 @@ const HomePage = () => {
               <h1 className={styles.bank_container_title}>
                 Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
               </h1>
-              <p className={styles.bank_container_txt} >Seamlessly send money with our POS, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
+              <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
                 <Image src="/assets/sendMoney.svg" fill alt="send money" />
               </div>
@@ -570,7 +573,7 @@ const HomePage = () => {
 
           </div>
           <div className={styles.TransactionMockp}>
-            <Image src="/assets/TransactionMockp.webp" fill alt="dashboard" />
+            <Image src="/assets/TransactionMockp33.webp" fill alt="dashboard" />
           </div>
         </div>
 
@@ -614,7 +617,7 @@ const HomePage = () => {
               </div>
               <div className={styles.headSec}><h1 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>POS 10Q</h1></div>
               <div className={styles.content_sec}>
-                <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.5rem", }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients <br />to choose whatever payment option.</p>
+                <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem",marginTop:"-2rem" }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients  to choose whatever payment option.</p>
                 <div className={styles.dev_img1}><Image src='/assets/pos1.webp' fill alt="POS" /></div>
               </div >
             </div>
@@ -627,7 +630,7 @@ const HomePage = () => {
               </div>
               <div className={styles.headSec}><h1 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>MF 960</h1></div>
               <div className={styles.content_sec}>
-                <p style={{ fontFamily: "GilroyRegular", }}>Equips with Linux or Android system based on your choice. lt’s a win-win solution not only improving classic POS performance but also reducing cost of smart POS.</p>
+                <p style={{ fontFamily: "GilroyRegular",lineHeight: "1.7rem", marginTop:"-2.5rem"}}>Equips with Linux or Android system based on your choice. lt’s a <br /> win-win solution not only improving overall business performance <br /> but also reducing overall application cost</p>
                 <div className={styles.dev_img2}><Image src='/assets/mf1.webp' fill alt="mf" /></div>
               </div >
             </div>
@@ -686,7 +689,7 @@ const HomePage = () => {
           <div className={styles.business_needs_content_section}  >
             <div className={styles.business_needs_title} ><h1>Intuitive and Easy to use App for your Business needs</h1>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
-            <p className={styles.business_needs_txt} >Seamless billing made easy with our POS system <br />efficient payment processing with zero hassle</p>
+            <p className={styles.business_needs_txt} >Experience fast, secure, and hassle-free billing with <br /> <span style={{fontFamily:"GilroySemiBold"}}>Doroki</span>—your ultimate all-in-one business suite platform</p>
             <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
@@ -696,7 +699,7 @@ const HomePage = () => {
 
         <div className={styles.business_needs2}>
           <div className={styles.bt_ele}>
-            <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable POS</h4>
+            <h4 className={styles.business_text}>Efficiently manage your stock levels with our application</h4>
             <div className={styles.bt_img} >
               <Image src="/assets/bt_img11.webp" fill alt="bt" />
             </div>
@@ -740,7 +743,7 @@ const HomePage = () => {
               </div>
             </div>
             <br />
-            <p className={styles.demo_form_txt} >Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
+            <p className={styles.demo_form_txt} >Discover how Doroki transforms your business—schedule a demo today and experience effortless management first hand</p> <br />
             <form onSubmit={freeDemoSubscribe}>
               <fieldset className={styles.input_divs}>
                 <input
@@ -784,7 +787,7 @@ const HomePage = () => {
               <div className={styles.input_divs_opts}>
                 <DropDownInput
                   styles={{
-                    height: "4rem",
+                    height: "3.8rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
                     padding: "0 0.8rem",
@@ -811,7 +814,7 @@ const HomePage = () => {
               <div className={styles.input_divs_opts}>
                 <DropDownInput
                   styles={{
-                    height: "4rem",
+                    height: "3.8rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
                     padding: "0 0.8rem",
@@ -851,7 +854,7 @@ const HomePage = () => {
 
               <BlackButton
                 text="Kickstart your success"
-                style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }}
+                style={{ width: "100%", padding: "1rem", height: "3.8rem", zIndex: 0,margin:"0.5rem 0 0 0" }}
               />
               {errorMessage && <p className={styles.error}>{errorMessage}</p>}
             </form>

@@ -12,21 +12,23 @@ const oneSolution = [
     img: "/assets/MobileView/pos12.webp",
     width:"17.5rem",
     height:"37rem",
-    left:"15%",
+    left:"16%",
     top: "58%",
     text: <>
-    Good for both out-door and in-store   <br /> use cases, integrated with MSR, EMV chip <br /> & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi <br /> Bluetooth connectivities, enable clients to choose whatever payment option.
+    Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients to choose whatever payment option.
     </>
-     ,
   },
   {
     hedsec: "MF 960",
     img: "/assets/MobileView/mf11.webp",
     width:"19rem",
     height:"35rem",
-    left:"13%",
+    left:"15%",
     top: "56%",
-    text: <>Equips with Linux or Android system <br /> based on your choice. lt’s a win-win <br />solution not only improving classic POS <br /> performance but also reducing cost of <br />smart POS.</>,
+    text: <>Equips with Linux or Android system based on your choice. lt’s a
+      win-win solution not only improving overall business performance
+     but also reducing overall application cost
+    </>,
   },
 ];
 

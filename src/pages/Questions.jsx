@@ -53,7 +53,7 @@ const Questions = ({ FaqTableData, heading }) => {
                               display: "flex",
                               justifyContent: "space-between",
                               gap: "2rem",
-                               
+                              alignItems:"center",
                               cursor: "pointer",
                               color: "#101828",
                               fontFamily: "GilroySemiBold",
@@ -61,7 +61,7 @@ const Questions = ({ FaqTableData, heading }) => {
                            }}
                         >
                            <p>{ele?.para} </p>
-                           <span style={{ color: "black", fontSize: "1.5rem", marginTop:"rem"  }}>
+                           <span style={{ color: "black", fontSize: "1.5rem",    }}>
                               {showAns?.key === ele?.id && showAns?.status ? <IoIosArrowUp /> : <IoIosArrowDown />}
                            </span>
                         </div>

@@ -383,10 +383,10 @@ const MobileHomePage = () => {
           </div>
           </div>
           <div className={styles.marquee_section}>
-                <MarqueeComponentMobilePage ClientsArr={ClientsArr1}  speed={130}  direction="left"/>
+                <MarqueeComponentMobilePage ClientsArr={ClientsArr1}  speed={100}  direction="left"/>
             </div>
         </div>
-        <div>
+        <div style={{margin:'-1rem 0'}}>
           <MobileCustomise/>
         </div>
   
@@ -409,8 +409,7 @@ const MobileHomePage = () => {
             </div>
             <h2  className={styles.Loan_card_title} >Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h2>
             <p className={styles.Loan_card_txt} >
-              Seamlessly send money with our POS, ensuring secure transactions and
-              instant transfers for your convenience and peace of mind.
+            Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.
             </p>
             </div>
 
@@ -642,7 +641,7 @@ const MobileHomePage = () => {
             <div className={styles.business_needs2}>
               <div style={{display:"flex" , margin:"0.5rem 0"}}> 
               <div className={styles.bt_ele}>
-              <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable POS</h4>
+              <h4 className={styles.business_text}>Efficiently manage your stock levels with our application</h4>
               <div className={styles.bt_img1}  >
                   <Image src="/assets/MobileView/bt_img1.webp" layout="fill" objectFit="cover" alt="bt" />
               </div>
@@ -793,7 +792,7 @@ const MobileHomePage = () => {
 
               <BlackButton
                 text="Kickstart your success"
-                style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }}
+                style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0, marginTop:"0.4rem" }}
               />
               {errorMessage && <p className={styles.error}>{errorMessage}</p>}
             </form>

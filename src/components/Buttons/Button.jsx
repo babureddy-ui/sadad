@@ -151,6 +151,12 @@ export const DropDownInput = (props) => {
          width: "100%",
          paddingTop: 0,
          paddingBottom: 0,
+         color: "#5B5B58",
+         fontWeight: 40,  
+         fontSize: "0.2rem",  
+         "&:hover": {
+            color: "#5B5B58", 
+         },
       }),
       clearIndicator: (base) => ({
          ...base,
