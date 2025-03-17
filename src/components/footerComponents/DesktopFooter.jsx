@@ -7,35 +7,35 @@ import Link from 'next/link';
 
 const DesktopFooter = () => {
   const [thanks, setThanks] = useState(false);
-  const [formData, setFormData] = useState({ email: "",});
+  const [formData, setFormData] = useState({ email: "" });
   const [state, setState] = useState("IDLE");
-  const [validate, setValidate] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrorMessage(null);
+    setErrorMessage(""); 
   };
   const subscribe = async (e) => {
     e.preventDefault();
-     setState("LOADING");
-     setValidate(true);
-     setErrorMessage("");
+    setState("LOADING");
+    setErrorMessage("");
+
     try {
       await axios.post("/api/newsletter", formData);
       
       setState("SUCCESS");
-       setThanks(true)
-      setFormData({
-        email: "",
-      });
-  
+      setThanks(true);
+      setFormData({ email: "" }); 
+
     } catch (e) {
-      setErrorMessage(e.response?.data?.error || "An error occurred");
+      const errorResponse = e.response?.data?.error;
+      setErrorMessage(errorResponse === "Member Exists"
+        ? "You are already subscribed to our newsletter."
+        : errorResponse || "An error occurred"
+      );
       setState("ERROR");
-    
     }
   };
-  
+
       
   return (
     <div className={styles.pagaLanding}>
@@ -113,7 +113,7 @@ const DesktopFooter = () => {
 
           <p className={styles.footerContent}>Call : 02013444300</p>
           <a href="https://x.com/doroki_ng" target="" rel="noopener noreferrer"> 
-          <p className={styles.footerContent}>Twitter : @mypagacare</p>
+          <p className={styles.footerContent}>X : @doroki_ng</p>
           </a>
           <p className={styles.footerContent}>Facebook : @mypaga</p>
           <p className={styles.footerContent}>WhatsApp : 08099227242</p>

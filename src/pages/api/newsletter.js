@@ -48,6 +48,13 @@ export default async (req, res) => {
     return res.status(201).json({ message: "Successfully subscribed" });
   } catch (error) {
     console.error("Mailchimp API Error:", error.response?.data || error.message);
-    return res.status(400).json({ error: error.response?.data?.detail || "Oops, something went wrong. Try again later." });
+
+    let errorMessage = "Oops, something went wrong. Try again later.";
+
+    if (error.response?.data?.title === "Member Exists") {
+      errorMessage = "Member Exists";
+    }
+
+    return res.status(400).json({ error: errorMessage });
   }
 };

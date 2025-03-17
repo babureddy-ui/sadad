@@ -30,7 +30,13 @@ const MobileFooter = () => {
       });
 
     } catch (e) {
-      setErrorMessage(e.response?.data?.error || "An error occurred");
+      const errorResponse = e.response?.data?.error;
+
+      if (errorResponse === "Member Exists") {
+        setErrorMessage("You are already subscribed to our newsletter.");
+      } else {
+        setErrorMessage(errorResponse || "An error occurred");
+      }
       setState("ERROR");
 
     }
@@ -90,7 +96,7 @@ const MobileFooter = () => {
 
                 <p className={styles.footerContent}>Call : 02013444300</p>
                 <a href="https://x.com/doroki_ng" target="" rel="noopener noreferrer">
-                  <p className={styles.footerContent}>Twitter : @mypagacare</p>
+                  <p className={styles.footerContent}>X : @doroki_ng</p>
                 </a>
                 <p className={styles.footerContent}>Facebook : @mypaga</p>
                 <p className={styles.footerContent}>WhatsApp : 08099227242</p>
