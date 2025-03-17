@@ -1730,7 +1730,15 @@ width: 96vw;
   font-size: 0.6rem;
   margin-top: 0.3rem;
   color: red;
-  position:absolute
+  /* position:absolute */
+  }
+.errorNav{
+  font-family: "GilroyLight";
+  position: absolute;
+  bottom: 4%;
+  font-size: 0.6rem;
+  margin-top: 0.3rem;
+  color: red;
   }
 
 

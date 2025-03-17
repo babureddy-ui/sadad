@@ -18,11 +18,8 @@ export const NavigationBar = () => {
   const [validate, setValidate] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [comingSoon, setComingSoon] = useState(false)
-  const ThanksForm=(eve)=>{
-    eve.preventDefault();  
-      setContact(false); 
-      setThanks(true);  
-  }
+  const [demoErrorMessage, setDemoErrorMessage] = useState("");
+
   const ContactForm = () => {
     setContact(!contact)  
   }
@@ -99,7 +96,12 @@ const freeDemoSubscribe = async (e) => {
     });
 
   } catch (e) {
-    setErrorMessage(e.response?.data?.error || "An error occurred");
+    const errorResponse = e.response?.data?.error;
+    if (errorResponse === "Member Exists") {
+      setDemoErrorMessage("You are already scheduled for a demo. We will reach out to you soon.");
+    } else {
+      setDemoErrorMessage(errorResponse || "An error occurred");
+    }
     setState("ERROR");
   }
 };
@@ -360,7 +362,7 @@ const toggleAboutUs = () => {
                 text="Kickstart your success"
                 style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }}
               />
-              {errorMessage && <p className={styles.error}>{errorMessage}</p>}
+              {demoErrorMessage && <p className={styles.error}>{demoErrorMessage}</p>}
             </form>
 
         </div>
@@ -401,7 +403,10 @@ const toggleAboutUs = () => {
             <BlackButton 
               text="Okay!" 
               style={{ width: "100%", padding: "1rem", height: "3rem" }} 
-              onClick={() => setThanks(false)}  
+              onClick={() => {
+                setThanks(false);
+                window.location.reload();  
+              }}
             />
           </div>
         </div>

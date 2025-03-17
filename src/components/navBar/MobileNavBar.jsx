@@ -12,7 +12,7 @@ const MobileNavBar = () => {
   const[getFreeDemo, setGetFreeDemo] = useState(false);
   const [thanks, setThanks] = useState(false);
   const [comingSoon, setComingSoon] = useState(false)
-   
+  const [demoErrorMessage, setDemoErrorMessage] = useState("");
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -92,7 +92,12 @@ const MobileNavBar = () => {
       });
   
     } catch (e) {
-      setErrorMessage(e.response?.data?.error || "An error occurred");
+      const errorResponse = e.response?.data?.error;
+      if (errorResponse === "Member Exists") {
+        setDemoErrorMessage("You are already scheduled for a demo. We will reach out to you soon.");
+      } else {
+        setDemoErrorMessage(errorResponse || "An error occurred");
+      }
       setState("ERROR");
     }
   };
@@ -272,7 +277,7 @@ const MobileNavBar = () => {
                     </div>
                      
                   </div>
-                  <div style={{ backgroundColor: "#FF6A6A",minHeight: "0.4rem",  width: "3.5rem",borderRadius:"5px"}}></div> <br />
+                  <div style={{ backgroundColor: "#FF6A6A",minHeight: "0.4rem",  width: "3.5rem",borderRadius:"5px", position:"relative"}}></div> <br />
 
                    
                    
@@ -321,10 +326,10 @@ const MobileNavBar = () => {
               <div className={styles.input_divs_opts}> 
                 <DropDownInput
                   styles={{
-                    height: "3rem",
+                    height: "4rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
-                    // padding: "0 0.8rem",
+                    padding: "0 0 0 0.8rem",
                     color: "#5A5A5A",
                     fontWeight: "300",
                     border: "none",
@@ -348,10 +353,10 @@ const MobileNavBar = () => {
               <div className={styles.input_divs_opts}> 
                 <DropDownInput
                   styles={{
-                    height: "3rem",
+                    height: "4rem",
                     borderRadius: "0.4rem",
                     fontFamily: "GilroyRegular",
-                    // padding: "0 0.8rem ",
+                    padding: "0 0 0 0.8rem ",
                     color: "#5A5A5A",
                     fontWeight: "300",
                     width: "100%",
@@ -389,11 +394,12 @@ const MobileNavBar = () => {
                 text="Kickstart your success"
                 style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0 }} 
               />
-              {errorMessage && <p className={styles.error}>{errorMessage}</p>}
-            </form>  <br />
+              {/* {demoErrorMessage && <p className={styles.error}>{demoErrorMessage}</p>} */}
+            </form> 
+            {demoErrorMessage && <p className={styles.errorNav}>{demoErrorMessage}</p>} <br />
                 </div>
               </div>
-
+              {/* {demoErrorMessage && <p className={styles.error}>{demoErrorMessage}</p>}  */}
         </div>
       )}
 
@@ -467,7 +473,10 @@ const MobileNavBar = () => {
               <BlackButton 
                 text="Okay!" 
                 style={{ padding: "1rem", height: "3rem", width: "100%" }} 
-                onClick={() => setThanks(false)}  
+                onClick={() => {
+                  setThanks(false);
+                  window.location.reload();  
+                }} 
               />
             </div>
           </div>

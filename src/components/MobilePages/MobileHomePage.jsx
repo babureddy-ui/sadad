@@ -19,8 +19,9 @@ import MobileFooter from '../footerComponents/MobileFooter';
 
 const MobileHomePage = () => {
       const [thanks, setThanks] = useState(false);
-
-      
+      const [subscribeEmail, setSubscribeEmail] = useState("");
+      const [subscribeErrorMessage, setSubscribeErrorMessage] = useState("");
+      const [demoErrorMessage, setDemoErrorMessage] = useState("");
       const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -39,9 +40,13 @@ const MobileHomePage = () => {
       
       
       const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-        setErrorMessage(null);
-      
+        const { name, value } = e.target;
+    
+        if (name === "subscribeEmail") {
+          setSubscribeEmail(value);
+        } else {
+          setFormData({ ...formData, [name]: value });
+        }
       };
       
       const handleBusinessTypeChange = (selectedOption) => {
@@ -94,7 +99,13 @@ const MobileHomePage = () => {
           });
       
         } catch (e) {
-          setErrorMessage(e.response?.data?.error || "An error occurred");
+          const errorResponse = e.response?.data?.error;
+
+      if (errorResponse === "Member Exists") {
+        setDemoErrorMessage("You are already scheduled for a demo. We will reach out to you soon.");
+      } else {
+        setDemoErrorMessage(errorResponse || "An error occurred");
+      }
           setState("ERROR");
         }
       };
@@ -103,21 +114,29 @@ const MobileHomePage = () => {
         e.preventDefault();
         setState("LOADING");
         setValidate(true);
-        setErrorMessage("");
-      
-        try {
-          await axios.post("/api/newsletter", formData);
-          
-          setState("SUCCESS");
-          setThanks(true)
-          setFormData({
-            email: "",
-          });
-      
-        } catch (e) {
-          setErrorMessage(e.response?.data?.error || "An error occurred");
+        setSubscribeErrorMessage("");
+        if (!subscribeEmail) {
+          setSubscribeErrorMessage("Email is required.");
           setState("ERROR");
-        
+          return;
+        }
+    
+        try {
+          await axios.post("/api/newsletter", { email: subscribeEmail });
+    
+          setState("SUCCESS");
+          setThanks(true);
+          setSubscribeEmail("");
+    
+        } catch (e) {
+          const errorResponse = e.response?.data?.error;
+    
+          if (errorResponse === "Member Exists") {
+            setSubscribeErrorMessage("This email is already registered. Please use a different email or update your contact details.");
+          } else {
+            setSubscribeErrorMessage(errorResponse || "An error occurred");
+          }
+          setState("ERROR");
         }
       };
     const BusinessTypes = [
@@ -306,16 +325,18 @@ const MobileHomePage = () => {
                 <input
                   className={styles.input}
                   style={{fontFamily:"GilroyRegular", color:"#818181"}}
-                  type="email"
-                  name="email"
+                  type="text"
+                  name="subscribeEmail"
                   onChange={handleChange}
-                  required
+                  // required
                   placeholder="Enter phone number/email"
-                  value={formData.email}
+                  value={subscribeEmail}
                 />
                 <BlackButton text="Contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem' ,width:"100%", marginTop:"1rem"}} />
 
                 </form>
+                {subscribeErrorMessage && <p className={styles.error}>{subscribeErrorMessage}</p>}
+
                </div>
 
             </div>
@@ -347,7 +368,10 @@ const MobileHomePage = () => {
               <BlackButton 
                 text="Okay!" 
                 style={{ padding: "1rem", height: "3rem", width: "100%" }} 
-                onClick={() => setThanks(false)}  
+                onClick={() => {
+                  setThanks(false);
+                  window.location.reload();  
+                }}   
               />
             </div>
           </div>
@@ -794,7 +818,7 @@ const MobileHomePage = () => {
                 text="Kickstart your success"
                 style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0, marginTop:"0.4rem" }}
               />
-              {errorMessage && <p className={styles.error}>{errorMessage}</p>}
+              {demoErrorMessage && <p className={styles.error}>{demoErrorMessage}</p>}
             </form>
             </div>
 
