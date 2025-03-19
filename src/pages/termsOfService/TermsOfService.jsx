@@ -169,7 +169,7 @@ const TermsOfService = ({ mobileView }) => {
                 electronic/offline indication of acceptance that we provide to you,
                 you agree to comply with and to be bound by these Terms, together with
                 Doroki’s Privacy Policy
-                (Accessible at  <Link style={{textDecoration:"none"}} href="https://doroki.com/privacyPolicy">Privacy Policy</Link>)
+                (Accessible at  <Link style={{ color:"#1515f0",textDecoration:"none"}} href="https://doroki.com/privacyPolicy">Privacy Policy</Link>)
                 and all rules, guidelines,
                 policies, terms, and conditions applicable to such Services, and they
                 shall be deemed to be incorporated into this Terms of Use and shall be
@@ -1270,14 +1270,14 @@ style={{
               has provided Us with any information without Your consent, please
               contact Us immediately at{" "}
             </span>
-            <a href="mailto:privacy@doroki.com">
+            <a href="mailto:privacy@doroki.com" style={{ color:"#1515f0",textDecoration:"none"}}>
               <span
                 style={{
                   fontSize: "1rem",
                   lineHeight: "104%",
                   fontFamily: "GilroyMedium",
-                  color: "blue"
                 }}
+                
               >
                 privacy@doroki.com
               </span>
@@ -3706,7 +3706,7 @@ style={{
               &nbsp;&nbsp; You may cancel your Account and terminate these Terms
               at any time by contacting<span style={{ color: "blue" }}> </span>
             </span>
-            <a href="mailto:Privacy@doroki.com">
+            <a href="mailto:Privacy@doroki.com" style={{ color:"#1515f0",textDecoration:"none"}}>
               <span
                 style={{
                   fontSize: "1rem",
@@ -5163,6 +5163,7 @@ style={{
 
             style={{ marginLeft: ".75in", lineHeight: "102%" }}
           >
+             
             <span
               style={{
                 fontSize: "1rem",
@@ -5170,9 +5171,18 @@ style={{
                 fontFamily: "GilroyMedium"
               }}
             >
-              Privacy Policy, which can be accessed at
-              https://www.mypaga.com/paga-web/pc/terms.paga
+              Privacy Policy, which can be accessed at {" "}
+              <a
+                href="https://www.mypaga.com/paga-web/pc/terms.paga"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#1515f0", textDecoration: "none" }}
+              >
+                <span>https://www.mypaga.com/paga-web/pc/terms.paga</span>
+              </a>
+
             </span>
+            
           </p>
           <p style={{ lineHeight: "11.05pt" }}>
             <span style={{ fontSize: "10.0pt" }}>&nbsp;</span>

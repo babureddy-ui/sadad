@@ -94,7 +94,7 @@ const PrivacyPolicy = () => {
             </span>
             Doroki Commerce Limited (“We”, “Us”, “Our”, “Doroki”)<b> </b>is the
             operator of an e-commerce platform consisting of a website (
-            <span  > <a href="http://www.doroki.com">www.doroki.com</a>(“Website”) and mobile </span>
+            <span  > <a href="http://www.doroki.com" style={{ color:"#1515f0",textDecoration:"none"}}>www.doroki.com</a>(“Website”) and mobile </span>
             application (together the “Platform”span ) which provides  an all-in-one point-of-sale solution to aid merchants manage billing,
             inventory, credit sales, payments, Khata (digital ledger), eStore,
             Customer Relationship Management (CRM) and loyalty Programs (the “Service”
@@ -183,17 +183,17 @@ const PrivacyPolicy = () => {
               By browsing through, accessing or using Our Platform or Services,
 
               you agree to Our collection and use of your personal data in accordance
-              with this Privacy Policy and our Terms of Use available at
+              with this Privacy Policy and our Terms of Use available at {" "}
 
-              <a href="https://doroki.com/Legal/Tos">
-                <span > https://doroki.com/Legal/Tos</span>
+              <a href="https://doroki.com/terms-of-service" style={{ color:"#1515f0",textDecoration:"none"}}>
+                <span >Terms of Service </span>
               </a>
             </span>
             <span style={{ color: "black" }}>.</span> Once you provide consent, you
             may change your mind and withdraw the consent at any time by contacting
             Us at{" "}
             <span  >
-              <a href="mailto:privacy@doroki.com">privacy@doroki.com</a>
+              <a href="mailto:privacy@doroki.com" style={{ color:"#1515f0",textDecoration:"none"}}> privacy@doroki.com</a>
             </span>
             <span  >,</span>
             but please note that consent withdrawal will not affect the lawfulness
@@ -2195,7 +2195,7 @@ const PrivacyPolicy = () => {
             <span style={{ fontFamily: "GilroyRegular", }}>
               <b>Email address:</b>
             </span>{" "}
-            <a href="mailto:privacy@doroki.com">
+            <a href="mailto:privacy@doroki.com" style={{ color:"#1515f0",textDecoration:"none"}}>
               <span style={{ fontFamily: "GilroyRegular" }}>
                 privacy@doroki.com
               </span>
