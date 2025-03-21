@@ -1,21 +1,7 @@
 
 import dynamic from 'next/dynamic';
+import Head from 'next/head';
 import React from 'react';
-
-// const DynamicDesktop = dynamic(() =>
-//   import('@/components/homePage/HomePage').then((mod) => mod.HomePage),
-//   {
-//     loading: () => <p>Loading Desktop View...</p>,
-//   }
-// );
-
-// const DynamicMobile = dynamic(() =>
-//   import('@/components/MobilePages/MobileHomePage').then((mod) => mod.MobileHomePage),
-//   {
-//     loading: () => <p>Loading Mobile View...</p>,
-//   }
-// );
-
 
 const DynamicDesktop = dynamic(() => import('@/components/homePage/HomePage'), {
   loading: () => <p>Loading...</p>,
@@ -27,6 +13,30 @@ const DynamicMobile = dynamic(() => import('@/components/MobilePages/MobileHomeP
 });
 
 const Index = ({ mobileView }) => {
+
+  <Head>
+  <title>Doroki</title>
+  <meta
+    name="description"
+    content="Doroki is an All-In-One Business Super POS App for all businesses to manage Billing, Inventory, Customer Loyalty, and more."
+  />
+  <link rel="canonical" href="https://doroki.com/" />
+  <link rel="alternate" href="https://doroki.com/" hrefLang="en-us" />
+  <meta
+    property="og:title"
+    content="Doroki!"
+  />
+  <meta
+    property="og:description"
+    content="Doroki is an all-in-one business suite designed to manage billing, inventory, invoicing, payments, customer loyalty, and more for various businesses, including retail stores, restaurants, grocery stores, electronics stores, spas, and salons."
+  />
+  <meta
+    property="og:image"
+    content="https://quebuster.s3.ap-south-1.amazonaws.com/paga/pagaassets/Landing+Thumbnail+-+3.png"
+  />
+      
+
+</Head>
   return mobileView ? <DynamicMobile /> : <DynamicDesktop />;
 };
 
