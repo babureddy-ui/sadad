@@ -20,8 +20,8 @@ const Index = ({ mobileView }) => {
           name="description"
           content="Doroki is an All-In-One Business Super POS App for all businesses to manage Billing, Inventory, Customer Loyalty, and more."
         />
-        <link rel="canonical" href="https://qa1.doroki.com/" />
-        <link rel="alternate" href="https://qa1.doroki.com/" hrefLang="en-us" />
+        <link rel="canonical" href="https://doroki.com/" />
+        <link rel="alternate" href="https://doroki.com/" hrefLang="en-us" />
         <meta
           property="og:title"
           content="Doroki!"
