@@ -531,6 +531,8 @@
   width: 6.7rem;
   font-size: 0.8rem;
   font-family: 'GilroyRegular';
+  display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
   transition: background-color 0.0s ease-out, color 0.0s ease-in;
