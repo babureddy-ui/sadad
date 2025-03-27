@@ -193,7 +193,7 @@ const DesktopFooter = () => {
         <div className={styles.poweredby_logo_section} >
           <div className={styles.footer_paga_logo}><Image src='/assets/footer_paga_logo.svg' fill alt='paga'/></div>
           <div className={styles.footer_CenterLine}></div>
-          <div className={styles.footer_qb_logo} ><Image src='/assets/footer_qb_logo.svg' fill alt='qb'/></div>
+          <div className={styles.footer_qb_logo} ><Image src='/assets/footer_new_qb_logo.svg' fill alt='qb'/></div>
         </div> <br />
         <p className={styles.all_rights}>
           © {new Date().getFullYear()} Doroki All rights reserved.</p>
@@ -206,7 +206,7 @@ const DesktopFooter = () => {
             </a>
             <a href="https://www.instagram.com/doroki.commerce/" target="_blank" rel="noopener noreferrer">
               <div className={styles.footerIcon}>
-                <Image src='/assets/Instagram.svg' fill alt="insta" />
+                <Image src='/assets/Instagram-new.svg' fill alt="insta" />
               </div>
             </a>
             <a href="https://x.com/doroki_ng" target="_blank" rel="noopener noreferrer">
