@@ -32,7 +32,7 @@ const Index = ({ mobileView }) => {
         />
         <meta
           property="og:image"
-          content="https://quebuster.s3.ap-south-1.amazonaws.com/paga/pagaassets/Landing+Thumbnail+-+3.png"
+          content="https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/Landing-Thumbnail.png"
         />
       </Head>
       {mobileView ? <DynamicMobile /> : <DynamicDesktop />}
