@@ -692,6 +692,7 @@ margin-top:0.6rem;
   display: flex;
   justify-content: center;
   line-height: 2rem;
+  font-size: 1.3rem;
 }
 .Moneybag {
   position: relative;
@@ -701,7 +702,8 @@ margin-top:0.6rem;
 }
 .bank_account_section_title2 {
   color: #F1A824;
-  font-family: GilroySemiBold;
+  font-family: "GilroySemiBold";
+  font-size: 1.3rem;
 }
 .Loans_image {
   position: relative;
@@ -752,6 +754,7 @@ margin-top:0.6rem;
 .loan_section_title {
   font-family: "GilroySemiBold";
   line-height: 2rem;
+  font-size:1.3rem;
 }
 .loan_section_txt {
   font-family: "GilroyRegular";
@@ -832,6 +835,7 @@ margin-top:0.6rem;
 .eStore_card_title {
   font-family: "GilroySemiBold";
   line-height: 2rem;
+  font-size: 1.2rem;
 }
 .eStore_card_txt {
   font-family: "GilroyRegular";
@@ -852,6 +856,7 @@ margin-top:0.6rem;
 .Reports_card_title {
   font-family: "GilroySemiBold";
   line-height: 2rem;
+  font-size: 1.2rem;
 }
 .Reports_card_txt {
   font-family: "GilroyRegular";
@@ -1261,7 +1266,8 @@ width: 96vw;
 }
 .Versatile_section_title {
   margin: 1rem 0 1rem -1.5rem;
-  font-family: GilroySemiBold;
+  font-family: 'GilroySemiBold';
+  font-size: 1.3rem;
 }
 .Versatile_section_txt {
   font-family: "GilroyRegular";
@@ -1280,6 +1286,7 @@ width: 96vw;
   margin: 1rem 0 1rem 0;
   font-family: "GilroySemiBold";
   line-height: 2.3rem;
+  font-size: 1.4rem;
 }
 .Business_journey_section_txt {
   font-family: "GilroyRegular";
@@ -1380,6 +1387,7 @@ width: 96vw;
   display: flex;
   font-family: "GilroySemiBold";
   line-height: 2rem;
+  font-size: 1.4rem;
 }
 .business_needs_palystoreIcon {
   position: relative;

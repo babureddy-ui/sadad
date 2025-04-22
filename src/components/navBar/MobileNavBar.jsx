@@ -269,9 +269,9 @@ const MobileNavBar = () => {
                   }}
                 >
                   <div style={{display: "flex", position: "relative", fontSize:"1.2rem", alignItems:"center", }}>
-                    <h2 style={{fontFamily:"GilroySemiBold", fontSize:"1.2rem", color:"#2B3B45"}}>
+                    <h4 style={{fontFamily:"GilroySemiBold", fontSize:"1.2rem", color:"#2B3B45"}}>
                       Schedule a free demo
-                    </h2>
+                    </h4>
                     <div style={{height: "1.1rem", width: "1.2rem", position: 'relative', marginLeft:"0.5rem" }}>
                       <Image src='/assets/stars.svg' fill alt="stars" />
                     </div>

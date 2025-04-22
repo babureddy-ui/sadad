@@ -43,7 +43,7 @@ const TransactionSwiper = () => (
                 <div style={{ position: "relative", height: "3.5rem", width: "3.5rem" }}>
                   <Image src={item.icon} fill alt="sweep" />
                 </div>
-                <h2 style={{fontFamily:"GilroySemiBold", fontSize:"1.3rem",lineHeight:"1.9rem", }}>{item.title} <span style={{color:"#0391f0"}}>{item.titleWord}</span> <span>{item.title2}</span></h2>
+                <h4 style={{fontFamily:"GilroySemiBold", fontSize:"1.3rem",lineHeight:"1.9rem", }}>{item.title} <span style={{color:"#0391f0"}}>{item.titleWord}</span> <span>{item.title2}</span></h4>
                 <p style={{fontFamily:"GilroyRegular", color:"#767676",fontSize:"1rem", lineHeight:"1.6rem", marginTop:"-0.5rem"}}>{item.dec}</p> 
                 <div className={styles.bank_img}>
                   <Image src={item.img} fill alt="bank" />

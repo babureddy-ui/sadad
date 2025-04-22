@@ -1,15 +1,13 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import React from 'react';
+const DynamicDesktop = dynamic(() =>
+  import("@/components/homePage/HomePage")
+);
 
-const DynamicDesktop = dynamic(() => import('@/components/homePage/HomePage'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false
-});
-const DynamicMobile = dynamic(() => import('@/components/MobilePages/MobileHomePage'), {
-  loading: () => <p>Loading...</p>,
-  ssr: false
-});
+const DynamicMobile = dynamic(() =>
+  import("@/components/MobilePages/MobileHomePage")
+);
 
 const Index = ({ mobileView }) => {
   return (

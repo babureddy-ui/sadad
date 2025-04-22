@@ -55,7 +55,7 @@ const MobileFooter = () => {
             <Image src="/assets/MobileView/blur.webp" fill alt="invt" />
           </div>
           <div className={styles.subscribe} >
-            <h1 style={{ fontFamily: "GilroyMedium", fontSize: "1.7rem" }}>Subscribe to our <br /> Newsletter</h1> <br />
+            <h4 style={{ fontFamily: "GilroyMedium", fontSize: "1.7rem" }}>Subscribe to our <br /> Newsletter</h4> <br />
             <p style={{ fontFamily: "GilroyRegular", fontSize: "0.85rem", lineHeight: "1.5rem" }}>Doroki centralizes operations with seamless billing, quick invoicing, inventory management and an eStore for online orders.</p>
             <form onSubmit={subscribe} >
               <input

@@ -10,10 +10,12 @@ import CustomiseBy from '@/pages/CustomiseBy';
 import ClientSwiper from '@/pages/ClientSwiper';
 import { NavigationBar } from '../navBar/NavigationBar';
 import animationData from '../../../public/assets/Animation.json';
-import Lottie from 'react-lottie';
+// import Lottie from 'react-lottie';
 import states, { Busineeses } from "../../services/states";
 import axios from "axios";
 import DesktopFooter from '../footerComponents/DesktopFooter';
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 
 
@@ -354,7 +356,7 @@ const HomePage = () => {
               </div>
               <div className={styles.thanksForm_content}>
                 <div className={styles.thanksForm_title}>
-                  <h1>Thanks!</h1>
+                  <h3>Thanks!</h3>
                   <div style={{ height: "2rem", width: "2rem", position: 'relative', right: "-0.5rem", }}>
                     <Image src='/assets/stars.svg' fill alt="stars" />
                   </div>
@@ -399,7 +401,7 @@ const HomePage = () => {
         <div style={{ margin: '10rem 0 ' }}>
           <div>
             <div className={styles.marquee_container} >
-              <h1 className={styles.marquee_title}>Trusted by top Businesses</h1>
+              <h2 className={styles.marquee_title}>Trusted by top Businesses</h2>
               <p className={styles.marquee_txt}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
             </div>
           </div>
@@ -430,7 +432,7 @@ const HomePage = () => {
                   <div className={styles.lone_icon}>
                     <Image src="/assets/Loans1.svg" fill alt="loans" />
                   </div>
-                  <h1 className={styles.billing_card_title} >Seamlessly manage  <span style={{ color: "#0091F0" }}> Billing</span> operations with precision</h1>
+                  <h3 className={styles.billing_card_title}>Seamlessly manage  <span style={{ color: "#0091F0" }}> Billing</span> operations with precision</h3>
                   <p className={styles.billing_card_txt}>
                     Seamlessly send money with Doroki, ensuring secure transactions and
                     instant transfers for your convenience and peace of mind.
@@ -449,7 +451,7 @@ const HomePage = () => {
                   <div className={styles.Invt_icon} >
                     <Image src="/assets/Invt.svg" fill alt="invt" />
                   </div>
-                  <h1 className={styles.Invt_card_title}> Track and manage <span style={{ color: "#0091F0" }}> Inventory </span>  with ease</h1>
+                  <h3 className={styles.Invt_card_title}> Track and manage <span style={{ color: "#0091F0" }}> Inventory </span>  with ease</h3>
                   <p className={styles.Invt_card_txt}>
                     Efficient inventory management helps you track, organize and optimize stock levels, ensuring smoother business operations.
                   </p>
@@ -476,9 +478,10 @@ const HomePage = () => {
                   </div>
 
                   <div className={styles.topImage3}>
-
                     <Image src="/assets/eStore_Top_img1.webp" fill alt="estore" />
-                    <Lottie options={{ animationData }} height={70} width={70} style={{ zIndex: 1000, top: "1rem", position: "relative" }} />
+                    <Lottie options={{ animationData }} height={70} width={70}
+                      style={{ zIndex: 1000, top: "1rem", position: "relative" }}
+                    />
                   </div>
                   <div className={styles.otherImage3}>
                     <Image src="/assets/eStore-img.svg" fill alt="estore" />
@@ -542,9 +545,9 @@ const HomePage = () => {
               <div className={styles.bank_container_logo} >
                 <Image src="/assets/sweep.svg" fill alt="sweep" />
               </div>
-              <h1 className={styles.bank_container_title}>
+              <h4 className={styles.bank_container_title}>
                 Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
-              </h1>
+              </h4>
               {/* <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your designated account.</p> */}
               <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your
                 designated account, ensuring smooth cash flow and
@@ -558,9 +561,9 @@ const HomePage = () => {
               <div className={styles.bank_container_logo}>
                 <Image src="/assets/money.svg" fill alt="money" />
               </div>
-              <h1 className={styles.bank_container_title}>
+              <h4 className={styles.bank_container_title}>
                 Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
-              </h1>
+              </h4>
               <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
                 <Image src="/assets/sendMoney.svg" fill alt="send money" />
@@ -577,7 +580,7 @@ const HomePage = () => {
           <div className={styles.loan_section} >
             <div className={styles.loan_section_icon}><Image src='/assets/Loans.svg' fill alt="loans" /></div>
             <div style={{ fontSize: "1rem", }}>
-              <h1 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h1> <br />
+              <h4 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h4> <br />
               <p className={styles.loan_section_txt}>Scale your business with affordable, transparent loans provided<br /> by trusted banking partners, hassle-free and reliable</p>
             </div>
             <a href="https://play.google.com/store/apps/" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
@@ -592,7 +595,7 @@ const HomePage = () => {
         <div>
           <div className={styles.versatile_section}>
             <div className={styles.versatile_section_leftContent}>
-              <h1 className={styles.versatile_section_title} >Efficient, <span style={{ color: "#0391f0" }}>Versatile</span> <br />Reliable</h1>
+              <h4 className={styles.versatile_section_title} >Efficient, <span style={{ color: "#0391f0" }}>Versatile</span> <br />Reliable</h4>
               <p className={styles.versatile_section_txt}>Multi-functional solution tailored uniquely for your <br />business. Manage all your Orders, Inventory & <br /> Transactions at one place.</p>
             </div>
             <div className={styles.versatile_img}><Image src="/assets/versatile.webp" fill alt="versatile" /></div>
@@ -612,7 +615,7 @@ const HomePage = () => {
 
               <div className={styles.business_journey_Container} >
                 <div className={styles.business_journey_textContainer} >
-                  <h1 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h1>
+                  <h4 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h4>
                   <p className={styles.business_journey_txt}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
                 </div>
                 <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
@@ -629,7 +632,7 @@ const HomePage = () => {
 
 
           <div className={styles.business_dilemmas_section}>
-            <h1 className={styles.business_dilemmas_titile}  >Many business dilemmas, <br />yet only <span style={{ color: "#0091F0" }}>One Solution</span> reigns supreme</h1>
+            <h4 className={styles.business_dilemmas_titile}  >Many business dilemmas, <br />yet only <span style={{ color: "#0091F0" }}>One Solution</span> reigns supreme</h4>
             <div className={styles.business_dilemmas_ImgMessage} ><Image src='/assets/message.svg' fill alt="message" /></div>
           </div>
 
@@ -641,7 +644,7 @@ const HomePage = () => {
               <div className={styles.animation_star2}>
                 <Image src='/assets/animations_stars2.svg' fill alt="Star 2" />
               </div>
-              <div className={styles.headSec}><h1 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>POS 10Q</h1></div>
+              <div className={styles.headSec}><h4 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>POS 10Q</h4></div>
               <div className={styles.content_sec}>
                 <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", marginTop: "-2rem" }}>Good for both out-door and in-store use cases, integrated with MSR, EMV chip & pin, NFC card readers, dedicated 2D barcode scanning engine, 4G/WiFi Bluetooth connectivities, enable clients  to choose whatever payment option.</p>
                 <div className={styles.dev_img1}><Image src='/assets/pos1.webp' fill alt="POS" /></div>
@@ -654,7 +657,7 @@ const HomePage = () => {
               <div className={styles.animation_star2}>
                 <Image src='/assets/animations_stars2.svg' fill alt="Star 2" />
               </div>
-              <div className={styles.headSec}><h1 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>MF 960</h1></div>
+              <div className={styles.headSec}><h4 style={{ fontFamily: "GilroySemibold", fontSize: "2rem" }}>MF 960</h4></div>
               <div className={styles.content_sec}>
                 <p style={{ fontFamily: "GilroyRegular", lineHeight: "1.7rem", marginTop: "-2.5rem" }}>Equips with Linux or Android system based on your choice. lt’s a <br /> win-win solution not only improving overall business performance <br /> but also reducing overall application cost</p>
                 <div className={styles.dev_img2}><Image src='/assets/mf1.webp' fill alt="mf" /></div>
@@ -668,7 +671,7 @@ const HomePage = () => {
           <div className={styles.clientsrave_conatiner} >
 
             <div className={styles.clientsrave_txt_conatiner} >
-              <h1 className={styles.clientsrave_title}>Clients rave - <span style={{ backgroundColor: "#f2931d", padding: "0.3rem 0.8rem" }}>Doroki</span>   <br />exceeds expectations!</h1>
+              <h4 className={styles.clientsrave_title}>Clients rave - <span style={{ backgroundColor: "#f2931d", padding: "0.3rem 0.8rem" }}>Doroki</span>   <br />exceeds expectations!</h4>
               <p className={styles.clientsrave_txt} > &quot;Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations.&quot;</p>
             </div>
 
@@ -685,7 +688,7 @@ const HomePage = () => {
 
         <div style={{ margin: "10rem 0 8rem 0 " }}>
           {/* <div className={styles.clients_section}>
-            <h1 className={styles.clients_section_title}>Our Client’s kind words</h1>
+            <h4 className={styles.clients_section_title}>Our Client’s kind words</h4>
             <div className={styles.clients_img_stars} >
               <Image src="/assets/stars.svg" alt="Stars" fill />
             </div>
@@ -713,7 +716,7 @@ const HomePage = () => {
         <div className={styles.business_needs}>
 
           <div className={styles.business_needs_content_section}  >
-            <div className={styles.business_needs_title} ><h1>Intuitive and Easy to use App for your Business needs</h1>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
+            <div className={styles.business_needs_title} ><h4>Intuitive and Easy to use App for your Business needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
             <p className={styles.business_needs_txt} >Experience fast, secure, and hassle-free billing with <br /> <span style={{ fontFamily: "GilroySemiBold" }}>Doroki</span>—your ultimate all-in-one business suite platform</p>
             <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
@@ -762,7 +765,7 @@ const HomePage = () => {
 
           <div className={styles.demo_form}>
             <div className={styles.demo_form_title_section} >
-              <h1 className={styles.demo_form_title} style={{ fontFamily: "GilroySemiBold", fontSize: "1.9rem" }}>Schedule a free demo</h1>
+              <h4 className={styles.demo_form_title} style={{ fontFamily: "GilroySemiBold", fontSize: "1.9rem" }}>Schedule a free demo</h4>
 
               <div className={styles.demo_form_img_stars}>
                 <Image src='/assets/stars.svg' fill alt="invt" />

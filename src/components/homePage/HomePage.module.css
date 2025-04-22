@@ -123,6 +123,7 @@
 .Invt_card_title {
   font-family: GilroySemiBold;
   line-height: 2.6rem;
+  font-size: 2rem;
 }
         
 .billing_card_txt,
@@ -278,6 +279,7 @@
   margin: 2rem 0 1.5rem 0;
   font-family: GilroySemiBold;
   line-height: 2.6rem;
+  font-size: 2rem;
 }
 .bank_container_txt {
   font-family: 'GilroyRegular';
@@ -310,8 +312,9 @@
     margin: 3rem 0;
   }
   .loan_section_title {
-    font-family: GilroySemiBold;
+    font-family: 'GilroySemiBold';
     line-height: 2.6rem;
+    font-size: 2rem;
   }
   .loan_section_txt {
     font-family: GilroyRegular;
@@ -1123,9 +1126,10 @@ margin-top: 4.3rem;
   }
   .business_needs_title {
     display: flex;
-    font-family: GilroySemiBold;
+    font-family: 'GilroySemiBold';
     margin-top: 1rem;
     line-height: 2.5rem;
+    font-size: 2rem;
   }
   .business_needs_stars {
     height: 3rem;
