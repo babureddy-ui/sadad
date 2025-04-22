@@ -182,7 +182,7 @@ const toggleAboutUs = () => {
             onClick={ContactForm}
             
             />
-            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={() => (window.location.href="https://qa.doroki.com/")}/>
+            <BlackButton text="Login" style={{ width: "9rem", height: "2.5rem", fontSize: "0.8rem" }} onClick={() => (window.location.href="https://admin.doroki.com/")}/>
 
 
             {/* <div style={{position:"relative"}}>
