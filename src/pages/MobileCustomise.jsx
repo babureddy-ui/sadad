@@ -188,7 +188,7 @@ const MobileCustomise = () => {
         
         <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"39rem" , marginTop:"0.6rem"}}>
           <div className={styles.customise_title}>
-            <h2 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem", margin:"0 0 0 0.5rem"  }}>
+            <h4 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem", margin:"0 0 0 0.5rem"  }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -202,7 +202,7 @@ const MobileCustomise = () => {
               </span>
               <br />
               with streamlined technology
-            </h2>
+            </h4>
              
           </div>
 

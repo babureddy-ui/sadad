@@ -11,10 +11,12 @@ import TransactionSwiper from '@/pages/TransactionSwiper';
 import MobileQuestions from '@/pages/MobileQuestions';
 import MobileClientSwiper from '@/pages/MobileClientSwiper';
 import animationData from '../../../public/assets/Animation.json';
-import Lottie from 'react-lottie';
+// import Lottie from 'react-lottie';
 import states, { Busineeses } from '@/services/states';
 import axios from "axios";
 import MobileFooter from '../footerComponents/MobileFooter';
+import dynamic from 'next/dynamic';
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 
 const MobileHomePage = () => {
@@ -402,7 +404,7 @@ const MobileHomePage = () => {
         <div style={{margin:'5rem 0 '}}>
         <div>
             <div className={styles.marqueeComponent_section} > 
-          <h1 className={styles.marqueeComponent_title} >Trusted by top Businesses</h1>
+          <h4 className={styles.marqueeComponent_title} >Trusted by top Businesses</h4>
           <p className={styles.marqueeComponent_txt}> <span style={{fontFamily:"GilroyBold"}}>Doroki</span>  is trusted by countless businesses, offering seamless, reliable solutions  that drive <br />growth across multiple industries</p>
           </div>
           </div>
@@ -431,7 +433,7 @@ const MobileHomePage = () => {
             <div  className={styles.features_card_icon}>
               <Image src="/assets/Loans1.svg" fill alt="loans" />
             </div>
-            <h2  className={styles.Loan_card_title} >Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h2>
+            <h4  className={styles.Loan_card_title} >Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h4>
             <p className={styles.Loan_card_txt} >
             Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.
             </p>
@@ -451,7 +453,7 @@ const MobileHomePage = () => {
             <div className={styles.features_card_icon} >
               <Image src="/assets/Invt.svg" fill alt="invt" />
             </div>
-            <h2 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem",fontSize:"1.4rem"}}> Track and manage <span style={{color:"#0091F0"}}> Inventory </span>with ease</h2>
+            <h4 style={{fontFamily:"GilroySemiBold", lineHeight:"2rem",fontSize:"1.4rem"}}> Track and manage <span style={{color:"#0091F0"}}> Inventory </span>with ease</h4>
             <p style={{fontFamily:"GilroyRegular", lineHeight:"1.7rem" , marginTop:"-0.5rem"}}>
             Efficient inventory management helps you track, organize and optimize stock levels, ensuring smoother business operations.
             </p>
@@ -478,7 +480,7 @@ const MobileHomePage = () => {
               <div className={styles.card_icon} >
                 <Image src="/assets/eStore.svg" fill alt="invt" />
               </div>
-              <h2 className={styles.eStore_card_title}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h2>
+              <h4 className={styles.eStore_card_title}> Take your business online, with our <span style={{color:"#0091F0"}}> eStore  </span> feature</h4>
               <p className={styles.eStore_card_txt} >Take your business online effortlessly, expanding customer reach and boosting sales through a seamless digital platform </p>
           </div>
 
@@ -499,7 +501,7 @@ const MobileHomePage = () => {
                 <div  className={styles.Reports_card_icon}>
                   <Image src="/assets/Reports.svg" fill alt="reports"/>
                 </div>
-                <h2 className={styles.Reports_card_title}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h2>
+                <h4 className={styles.Reports_card_title}> Gain actionable insights through detailed<span style={{color:"#0091F0"}}> Reports </span> </h4>
                 <p className={styles.Reports_card_txt}>Transform data into actionable insights with comprehensive reports, empowering informed decisions for business success and growth</p>
             </div>
             <div className={styles.otherImage4}>
@@ -514,7 +516,7 @@ const MobileHomePage = () => {
                 <div className={styles.Reports_card_icon}>
                   <Image src="/assets/Crm_icon.svg" fill alt="crm" />
                 </div>
-                <h2 className={styles.Reports_card_title}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h2>
+                <h4 className={styles.Reports_card_title}> Drive engagement and loyalty with <span style={{color:"#0091F0"}}> CRM  </span></h4>
                 <p className={styles.Reports_card_txt}> Build stronger customer connections with personalized CRM, driving loyalty and repeat business through meaningful engagement </p>
             </div>
             <div className={styles.topImage5}>
@@ -546,8 +548,8 @@ const MobileHomePage = () => {
         
           <div style={{margin:"3rem 0rem"}}>
             <div  className={styles.bank_account_section}  >
-            <div className={styles.bank_account_section_title} > <h2>Dedicated </h2><div className={styles.Moneybag} ><Image src="/assets/MobileView/Moneybag.svg" fill alt='Moneybag'/></div> <h2 className={styles.bank_account_section_title2}>Bank Account</h2></div>
-            <h2 className={styles.bank_account_section_title}>for your transaction business </h2> 
+            <div className={styles.bank_account_section_title} > <h4>Dedicated </h4><div className={styles.Moneybag} ><Image src="/assets/MobileView/Moneybag.svg" fill alt='Moneybag'/></div> <h4 className={styles.bank_account_section_title2}>Bank Account</h4></div>
+            <h4 className={styles.bank_account_section_title}>for your transaction business </h4> 
               </div>
             <div ><TransactionSwiper/></div>
           </div>
@@ -560,7 +562,7 @@ const MobileHomePage = () => {
          
          <div className={styles.Loans_image} ><Image src='/assets/Loans.svg' fill alt="loans" /></div>
          
-          <h2 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h2>  
+          <h4 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h4>  
           <p className={styles.loan_section_txt} >Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
      
          <a href="https://play.google.com/store/apps/" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
@@ -574,7 +576,7 @@ const MobileHomePage = () => {
         <div style={{margin:"1rem 1.8rem"}}>
 
         <div className={styles.Versatile_section}  >
-            <h2 className={styles.Versatile_section_title} >Efficient, <span style={{color:"#0391f0"}}>Versatile</span> Reliable</h2>
+            <h4 className={styles.Versatile_section_title} >Efficient, <span style={{color:"#0391f0"}}>Versatile</span> Reliable</h4>
             <p  className={styles.Versatile_section_txt}>Multi-functional solution tailored uniquely for <br /> your business. Manage all your Orders, Inventory <br /> & Transactions at one place.</p>
         </div>
         <div className={styles.versatile_img}><Image src="/assets/MobileView/versatile1.webp" fill alt="versatile" /></div>
@@ -584,7 +586,7 @@ const MobileHomePage = () => {
         <div> 
         <div style={{margin:"1rem 1.8rem",position: "relative"}}>
            <div className={styles.Business_journey_section} >
-              <h2  className={styles.Business_journey_section_title}>Start your Business journey <br /> effortlessly with <span className={styles.Doroki_word}>Doroki</span> </h2> 
+              <h4  className={styles.Business_journey_section_title}>Start your Business journey <br /> effortlessly with <span className={styles.Doroki_word}>Doroki</span> </h4> 
               <p className={styles.Business_journey_section_txt}>Doroki streamlines business by effortlessly handling sales, inventory, customer data, and reconciliation seamlessly</p> 
             </div>
             <div> 
@@ -605,7 +607,7 @@ const MobileHomePage = () => {
 
         <div style={{margin:"0rem 1.8rem"}}>
         <div className={styles.OneSolution_section}>
-          <h2 className={styles.OneSolution_section_title} >Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span>  <br />reigns supreme</h2>
+          <h4 className={styles.OneSolution_section_title} >Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span>  <br />reigns supreme</h4>
           <div className={styles.OneSolution_message_img}><Image src='/assets/message.svg' fill alt="message"/></div>
           </div>
            
@@ -654,7 +656,7 @@ const MobileHomePage = () => {
           <div style={{margin:'1rem 1.8rem' }}> 
             <div className={styles.business_needs}>
           <div className={styles.business_needs_txtSection} >
-            <div className={styles.business_needs_title}><h2>Intuitive and Easy <br />to use Application for <br /><span style={{color:'#F8B53C'}}>All Business</span>  needs</h2>  
+            <div className={styles.business_needs_title}><h4>Intuitive and Easy <br />to use Application for <br /><span style={{color:'#F8B53C'}}>All Business</span>  needs</h4>  
             </div>
             <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
