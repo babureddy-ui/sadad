@@ -342,7 +342,7 @@ const HomePage = () => {
           </div>
           <div className={styles.hero_image}>
             <div style={{ width: "100%", height: "100vh", }} >
-              <Image src="/assets/HeroImage.webp" fill alt="hero" />
+              <Image src="/assets/Page_HeroImage.webp" fill alt="hero" />
             </div>
           </div>
         </div>
@@ -461,7 +461,7 @@ const HomePage = () => {
                   <Image src="/assets/Inventory_Top_img1.webp" fill alt="invt" />
                 </div>
                 <div className={styles.otherImage}>
-                  <Image src="/assets/Inventory_img.webp" fill alt="invt" />
+                  <Image src="/assets/Doroki_Inventory_img.webp" fill alt="invt" />
                 </div>
               </div>
             </div>
@@ -566,7 +566,7 @@ const HomePage = () => {
               </h4>
               <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
-                <Image src="/assets/sendMoney.svg" fill alt="send money" />
+                <Image src="/assets/Paga_sendMoney.svg" fill alt="send money" />
               </div>
             </div>
 
@@ -583,10 +583,10 @@ const HomePage = () => {
               <h4 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h4> <br />
               <p className={styles.loan_section_txt}>Scale your business with affordable, transparent loans provided<br /> by trusted banking partners, hassle-free and reliable</p>
             </div>
-            <a href="https://play.google.com/store/apps/" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.Loan_img}>
-            <div className={styles.loan_section_img}> <Image src="/assets/Loan_img1.webp" fill alt="loan" /> </div>
+            <div className={styles.loan_section_img}> <Image src="/assets/Paga_Loan_img.webp" fill alt="loan" /> </div>
           </div>
         </div> <br />
 
@@ -598,7 +598,7 @@ const HomePage = () => {
               <h4 className={styles.versatile_section_title} >Efficient, <span style={{ color: "#0391f0" }}>Versatile</span> <br />Reliable</h4>
               <p className={styles.versatile_section_txt}>Multi-functional solution tailored uniquely for your <br />business. Manage all your Orders, Inventory & <br /> Transactions at one place.</p>
             </div>
-            <div className={styles.versatile_img}><Image src="/assets/versatile.webp" fill alt="versatile" /></div>
+            <div className={styles.versatile_img}><Image src="/assets/Doroki_versatile.webp" fill alt="versatile" /></div>
 
           </div>
           <div className={styles.TransactionMockp}>
@@ -618,7 +618,7 @@ const HomePage = () => {
                   <h4 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h4>
                   <p className={styles.business_journey_txt}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
                 </div>
-                <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+                <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
               </div>
             </div>
             <div style={{ width: "50%", height: "45rem" }}>
@@ -704,7 +704,7 @@ const HomePage = () => {
 
         <div className={styles.faq_section}>
           <div className={styles.queries_img}>
-            <Image src="/assets/queries_img2.webp" fill alt="queries" />
+            <Image src="/assets/Doroki_queries_img.webp" fill alt="queries" />
           </div>
           <div >
             <div className={styles.Queries_arrow} ><Image src='/assets/Queries_arrow.webp' fill alt='arrow' /></div>
@@ -719,7 +719,7 @@ const HomePage = () => {
             <div className={styles.business_needs_title} ><h4>Intuitive and Easy to use App for your Business needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
             <p className={styles.business_needs_txt} >Experience fast, secure, and hassle-free billing with <br /> <span style={{ fontFamily: "GilroySemiBold" }}>Doroki</span>—your ultimate all-in-one business suite platform</p>
-            <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
         </div>
@@ -757,8 +757,8 @@ const HomePage = () => {
 
 
         <div className={styles.formSection}>
-          <div style={{ position: "relative", width: "50rem", height: "45rem" }}>
-            <Image src='/assets/Footer_img.webp' fill alt="invt" />
+          <div className={styles.Paga_Footer_img}  >
+            <Image src='/assets/Paga_Footer_img1.webp' fill alt="invt" />
           </div>
 
 

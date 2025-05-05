@@ -1658,8 +1658,14 @@ margin-top: 4.3rem;
 
 .queries_img {
   position: relative;
-  width: 29rem;
-  height: 46rem;
+  width: 30rem;
+  height: 44rem;
+}
+
+.Paga_Footer_img {
+  position: relative;
+  width: 50rem;
+  height: 48rem;
 }
 .Questions_sec {
   margin: -0.5rem 2rem;

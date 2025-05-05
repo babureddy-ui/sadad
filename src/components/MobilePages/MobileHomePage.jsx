@@ -304,7 +304,7 @@ const MobileHomePage = () => {
      <div><MobileNavBar/></div><br />
      <div className={styles.mobileView}>
         <div>
-            <div className={styles.heroimg}><Image src="/assets/MobileView/heroImg-mobile1.webp" fill alt='heroImg-mobile1'/></div>
+            <div className={styles.heroimg}><Image src="/assets/MobileView/Doroki_heroImg-mobile.webp" fill alt='heroImg-mobile1'/></div>
 
             <div style={{margin:' 1.3rem 1.8rem',}}>
                 <div style={{display:"flex"}}> 
@@ -463,7 +463,7 @@ const MobileHomePage = () => {
               <Image src="/assets/MobileView/Inventory_Top_img.webp" fill alt="invt" />
             </div>
             <div className={styles.otherImage}>
-              <Image src="/assets/MobileView/Inventory_img.webp" fill alt="invt" />
+              <Image src="/assets/MobileView/paga_Inventory_img.webp" fill alt="invt" />
             </div>
           </div>
       </div>
@@ -565,9 +565,9 @@ const MobileHomePage = () => {
           <h4 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h4>  
           <p className={styles.loan_section_txt} >Scale your business with affordable, transparent loans provided by trusted banking partners, hassle-free and reliable</p>
      
-         <a href="https://play.google.com/store/apps/" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+         <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
          
-         <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Affordableloans1.webp" fill alt="loan" /> </div>
+         <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Paga_Affordableloans.webp" fill alt="loan" /> </div>
         </div>
         </div>
 
@@ -579,7 +579,7 @@ const MobileHomePage = () => {
             <h4 className={styles.Versatile_section_title} >Efficient, <span style={{color:"#0391f0"}}>Versatile</span> Reliable</h4>
             <p  className={styles.Versatile_section_txt}>Multi-functional solution tailored uniquely for <br /> your business. Manage all your Orders, Inventory <br /> & Transactions at one place.</p>
         </div>
-        <div className={styles.versatile_img}><Image src="/assets/MobileView/versatile1.webp" fill alt="versatile" /></div>
+        <div className={styles.versatile_img}><Image src="/assets/MobileView/paga_versatile.webp" fill alt="versatile" /></div>
         </div>
 
 
@@ -646,7 +646,7 @@ const MobileHomePage = () => {
               <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
             </div>
           </div>
-          <div  className={styles.Questions_img}><Image src="/assets/MobileView/faq-img1.webp" fill alt='faq-img1'/></div> <br />
+          <div  className={styles.Questions_img}><Image src="/assets/MobileView/paga-faq-img.webp" fill alt='faq-img1'/></div> <br />
           <div>
           <MobileQuestions FaqTableData={faqs}/>
           </div>
@@ -658,7 +658,7 @@ const MobileHomePage = () => {
           <div className={styles.business_needs_txtSection} >
             <div className={styles.business_needs_title}><h4>Intuitive and Easy <br />to use Application for <br /><span style={{color:'#F8B53C'}}>All Business</span>  needs</h4>  
             </div>
-            <a href="https://play.google.com/store/apps/" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_appImg} ><Image src="/assets/MobileView/app-img1.webp" fill alt="app" /></div>
             </div>
@@ -827,11 +827,11 @@ const MobileHomePage = () => {
             <div>
                  
                  
-            <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill alt='demo'/></div>
+            <div className={styles.footer_img}><Image src="/assets/MobileView/Paga_Footer_Mobile_img.webp" fill alt='demo'/></div>
             </div>
           
 
-<MobileFooter/>
+          <div><MobileFooter/></div>
 
           {/* <div style={{margin:"4rem 1rem 0rem 1rem"}}>
           <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill/></div>

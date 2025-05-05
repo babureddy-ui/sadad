@@ -7,7 +7,7 @@ const MobileCustomise = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/MobileView/Restaurant1.webp",
+        url: "/assets/MobileView/Paga_Restaurant.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const MobileCustomise = () => {
     },
     retail: {
       image: {
-        url: "/assets/MobileView/Retail-img1.webp",
+        url: "/assets/MobileView/Paga_Retail_img.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const MobileCustomise = () => {
     },
     grocery: {
       image: {
-        url: "/assets/MobileView/Grocery1.webp",
+        url: "/assets/MobileView/Paga_Grocery.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const MobileCustomise = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/MobileView/Spa&salon1.webp",
+        url: "/assets/MobileView/paga_Spa&salon.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const MobileCustomise = () => {
     },
     electronics: {
       image: {
-        url: "/assets/MobileView/electronics11.webp",
+        url: "/assets/MobileView/paga_electronics.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
