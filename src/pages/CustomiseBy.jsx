@@ -7,7 +7,7 @@ const CustomiseBy = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/Reastaurant_img1.webp",
+        url: "/assets/Doroki_Reastaurant_img.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const CustomiseBy = () => {
     },
     retail: {
       image: {
-        url: "/assets/Retail-img1.webp",
+        url: "/assets/Doroki_Retail-img.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const CustomiseBy = () => {
     },
     grocery: {
       image: {
-        url: "/assets/Grocery_img1.webp",
+        url: "/assets/Doroki_Grocery_img.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const CustomiseBy = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/SpaSalon_img1.webp",
+        url: "/assets/Doroki_SpaSalon_img.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const CustomiseBy = () => {
     },
     electronics: {
       image: {
-        url: "/assets/Electronics_img1.webp",
+        url: "/assets/Doroki_Electronics_img.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },

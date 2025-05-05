@@ -161,7 +161,7 @@ const toggleAboutUs = () => {
   
 
 
-              <a href="https://play.google.com/store/apps/" target="_blank">  <div className={styles.hover_container}>
+              <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank">  <div className={styles.hover_container}>
                 {/* <Image
                   src="/assets/NavigationBar/Playstore.svg"
                   alt="Playstore"
