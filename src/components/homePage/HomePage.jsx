@@ -553,7 +553,7 @@ const HomePage = () => {
                 designated account, ensuring smooth cash flow and
                 financial convenience.</p>
               <div className={styles.bank_img}>
-                <Image src="/assets/bank.svg" fill alt="bank" />
+                <Image src="/assets/paga_bank.webp" fill alt="bank" />
               </div>
             </div>
 
@@ -566,7 +566,7 @@ const HomePage = () => {
               </h4>
               <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
-                <Image src="/assets/Paga_sendMoney.svg" fill alt="send money" />
+                <Image src="/assets/Paga_sendMoney_img.webp" fill alt="send money" />
               </div>
             </div>
 

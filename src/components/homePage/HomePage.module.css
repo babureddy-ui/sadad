@@ -1658,8 +1658,9 @@ margin-top: 4.3rem;
 
 .queries_img {
   position: relative;
-  width: 30rem;
+  width: 32rem;
   height: 44rem;
+  margin-left: -4.3rem;
 }
 
 .Paga_Footer_img {
