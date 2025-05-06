@@ -22,7 +22,7 @@
    
   
 }
- 
+
 .dropdownMenu{
   position: absolute;
   display: flex;
@@ -548,15 +548,30 @@
   animation: fadeIn 5s ease-in;
 }
 
+.In {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+
+.Out {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+
 .imageIn {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 
 .imageOut {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
+
 
  
 
@@ -1303,11 +1318,7 @@ margin-top: 4.3rem;
     border: none;
     
   }
-  .In {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
+   
   .input_divs {
     padding: 0.4rem 0.4rem 0.4rem 0.9rem ;
     border-radius: 0.5rem;
@@ -1709,12 +1720,6 @@ margin-top: 4.3rem;
 .box_container:not(.animating) {
   transform: translateY(0);
   opacity: 1;
-}
-
-.Out {
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .swiper-pagination {

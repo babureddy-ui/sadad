@@ -149,11 +149,10 @@ const CustomiseBy = () => {
   const handleCategoryChange = (category) => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
-     
       setTimeout(() => {
-        setSelectedCategory(category);
-        setIsAnimating(false);  
-      }, 700);  
+        setIsAnimating(false); 
+        setSelectedCategory(category); 
+      }, 600);  
     }
   };
 
