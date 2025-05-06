@@ -151,7 +151,7 @@ const MobileCustomise = () => {
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false);  
-      }, 700);  
+      }, 600);  
     }
   };
 

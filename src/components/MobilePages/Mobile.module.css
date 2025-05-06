@@ -62,6 +62,7 @@
    
   }
 
+ 
   .menuItemWrapper {
     position: relative;
   }
@@ -325,17 +326,34 @@
     bottom: 0rem;
     overflow: hidden;
   }
+  .In {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+  }
+  
+  .Out {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease;
+  }
   
   .imageIn {
     opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    transform: scale(1);
+    transition: all 0.5s ease;
   }
   
   .imageOut {
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transform: scale(1);
+    transition: all 0.5s ease;
   }
   
+  .animatingIndustry {
+    /* Your animation styles for the content boxes */
+    transition: all 0.5s ease;
+  }
   
   .customise_title {
     width: 23rem;
@@ -430,17 +448,6 @@
     margin: 1rem 1rem;
   }
 
-  .Out {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-
-  .In {
-    opacity: 1;
-    transform: translateY(0);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
 
   /* ---------------------features------------------ */
 
