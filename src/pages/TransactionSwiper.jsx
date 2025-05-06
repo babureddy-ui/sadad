@@ -13,7 +13,7 @@ const BankTransactionSwiper=[
       titleWord:"Auto Sweep",
       title2:"for seamless daily funds transfer",
       dec:"Transferring funds seamlessly into your designated account, ensuring smooth operations and greater control over your business finances effortlessly",
-      img:"/assets/bank.svg"
+      img:"/assets/paga_bank.webp"
     },
     {
       icon:"/assets/money.svg",
@@ -21,7 +21,7 @@ const BankTransactionSwiper=[
       titleWord:"Send Money",
       title2:"through our secure POS",
       dec:"Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
-      img:"/assets/paga_sendMoney.svg"
+      img:"/assets/Paga_sendMoney_img.webp"
     },
   ]
 
