@@ -484,7 +484,7 @@ const HomePage = () => {
                     />
                   </div>
                   <div className={styles.otherImage3}>
-                    <Image src="/assets/eStore-img.svg" fill alt="estore" />
+                    <Image src="/assets/eStore-img.webp" fill alt="estore" />
                   </div>
                 </div>
               </div>
@@ -500,7 +500,7 @@ const HomePage = () => {
 
 
                   <div className={styles.otherImage4}>
-                    <Image src="/assets/Reports-img.svg" fill alt="reports" />
+                    <Image src="/assets/Reports-img.webp" fill alt="reports" />
                   </div>
                 </div>
               </div>
@@ -519,7 +519,7 @@ const HomePage = () => {
                   </div>
 
                   <div className={styles.otherImage3}>
-                    <Image src="/assets/crm_img.svg" fill alt="crm" />
+                    <Image src="/assets/crm_img1.webp" fill alt="crm" />
                   </div>
                 </div>
               </div>

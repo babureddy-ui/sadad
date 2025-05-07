@@ -1583,9 +1583,9 @@ margin-top: 4.3rem;
 
 .otherImage3 {
   position: absolute;  
-  width: 18rem;
-  height: 18rem;
-  top: calc(100% - 16.8rem);  
+  width: 19rem;
+  height: 16rem;
+  top: calc(100% - 16rem);  
   left: 15%;
   
 }
@@ -1621,9 +1621,9 @@ margin-top: 4.3rem;
 
 .otherImage4 {
   position: absolute;  
-  width: 18rem;
-  height: 18rem;
-  top: calc(100% - 16.8rem);  
+  width: 19rem;
+  height: 16rem;
+  top: calc(100% - 16rem);  
   left: 15%;
   z-index: 0;
 }

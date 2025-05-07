@@ -628,9 +628,9 @@ margin-top:0.6rem;
 .otherImage3, .otherImage4, .otherImage5 {
   position: absolute;
   width: 13rem;
-  height: 14rem;
+  height: 11.5rem;
   
-  top: calc(100% - 12.7rem);
+  top: calc(100% - 11.5rem);
   left: 18%;
   z-index: 0;
 }
