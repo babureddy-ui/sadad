@@ -151,7 +151,7 @@ const MobileCustomise = () => {
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false);  
-      }, 300);  
+      }, 500);  
     }
   };
 
@@ -182,7 +182,7 @@ const MobileCustomise = () => {
         })
       );
   
-      console.log("All images preloaded");
+      // console.log("All images preloaded");
     };
   
     preloadImages();
@@ -203,7 +203,7 @@ const MobileCustomise = () => {
                     flexShrink: 0,  
                     }}
                     key={category}
-                    disabled={!isLoaded}
+                    // disabled={!isLoaded}
                     onClick={() =>{
                       handleButtonBackgroundChange(category)
                        handleCategoryChange(category)}}

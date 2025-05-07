@@ -152,7 +152,7 @@ const CustomiseBy = () => {
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false); 
-      }, 300);  
+      },500);  
     }
   };
 
@@ -184,7 +184,7 @@ const CustomiseBy = () => {
         })
       );
   
-      console.log("All images preloaded");
+      // console.log("All images preloaded");
     };
   
     preloadImages();
