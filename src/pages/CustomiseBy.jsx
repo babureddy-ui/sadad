@@ -1,6 +1,6 @@
 import { BlueButton } from '@/components/Buttons/Button';
-import Image from 'next/image';
-import React, { useState } from 'react';
+import NextImage from 'next/image';
+import React, { useEffect, useState } from 'react';
 import styles from '../components/homePage/HomePage.module.css'
 
 const CustomiseBy = () => {
@@ -150,17 +150,46 @@ const CustomiseBy = () => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
       setTimeout(() => {
+        setSelectedCategory(category);
         setIsAnimating(false); 
-        setSelectedCategory(category); 
-      }, 600);  
+      }, 300);  
     }
   };
+
 
   const handleButtonBackgroundChange = (category) => {
     setButtonCategory(category);
   };
 
   const currentCategory = categories[selectedCategory];
+  useEffect(() => {
+    const preloadImages = async () => {
+      const imageUrls = [];
+  
+      Object.values(categories).forEach((category) => {
+        imageUrls.push(category.image.url);
+        category.content.forEach((item) => {
+          imageUrls.push(item.icon);
+        });
+      });
+  
+      await Promise.all(
+        imageUrls.map((url) => {
+          return new Promise((resolve, reject) => {
+            const img = new window.Image();
+            img.src = url;
+            img.onload = resolve;
+            img.onerror = reject;
+          });
+        })
+      );
+  
+      console.log("All images preloaded");
+    };
+  
+    preloadImages();
+  }, []);
+  
 
   return (
     <div>
@@ -229,7 +258,7 @@ const CustomiseBy = () => {
           </div>
 
           <div className={styles.Customise_img}>
-            <Image 
+            <NextImage
               src={currentCategory.image.url} 
               alt={currentCategory.image.title} 
               fill
@@ -265,7 +294,7 @@ const CustomiseBy = () => {
                 borderRadius: '1rem',
                 margin: "0 0 1rem 0"
               }}
-            > <Image src={item.icon} fill alt='icon'/></div>
+            > <NextImage src={item.icon} fill alt='icon'/></div>
             <p style={{ fontFamily: "GilroyMedium" , fontSize:"1.1rem", lineHeight:"1.7rem", color:"#283740", fontSize:"1rem",letterSpacing:"0px",}}>{item.txt}</p>
           </div>
         ))}

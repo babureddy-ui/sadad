@@ -1,7 +1,7 @@
 import { BlueButton } from '@/components/Buttons/Button';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import styles from '../components/MobilePages/Mobile.module.css'
+import NextImage from 'next/image';
+import React, { useState, useEffect } from 'react';
+import styles from '../components/MobilePages/Mobile.module.css';
 
 const MobileCustomise = () => {
   const categories = {
@@ -141,17 +141,17 @@ const MobileCustomise = () => {
       ],
     },
   };
-
   const [selectedCategory, setSelectedCategory] = useState('restaurant');
   const [isAnimating, setIsAnimating] = useState(false);
   const [buttonCategory, setButtonCategory] = useState('restaurant');
+  const [isLoaded, setIsLoaded] = useState(false);
   const handleCategoryChange = (category) => {
     if (category !== selectedCategory) {
       setIsAnimating(true);  
       setTimeout(() => {
         setSelectedCategory(category);
         setIsAnimating(false);  
-      }, 600);  
+      }, 300);  
     }
   };
 
@@ -160,6 +160,34 @@ const MobileCustomise = () => {
   };
 
   const currentCategory = categories[selectedCategory];
+  useEffect(() => {
+    const preloadImages = async () => {
+      const imageUrls = [];
+  
+      Object.values(categories).forEach((category) => {
+        imageUrls.push(category.image.url);
+        category.content.forEach((item) => {
+          imageUrls.push(item.icon);
+        });
+      });
+  
+      await Promise.all(
+        imageUrls.map((url) => {
+          return new Promise((resolve, reject) => {
+            const img = new window.Image();
+            img.src = url;
+            img.onload = resolve;
+            img.onerror = reject;
+          });
+        })
+      );
+  
+      console.log("All images preloaded");
+    };
+  
+    preloadImages();
+  }, []);
+  
 
   return (
     <div>
@@ -175,6 +203,7 @@ const MobileCustomise = () => {
                     flexShrink: 0,  
                     }}
                     key={category}
+                    disabled={!isLoaded}
                     onClick={() =>{
                       handleButtonBackgroundChange(category)
                        handleCategoryChange(category)}}
@@ -207,10 +236,11 @@ const MobileCustomise = () => {
           </div>
 
           <div className={styles.customise_img}>
-          <Image
+          <NextImage
             src={currentCategory.image.url}
             alt={currentCategory.image.title}
             fill
+            loading="eager"
             className={isAnimating ? styles.imageOut : styles.imageIn}
           />
         </div>
@@ -266,7 +296,7 @@ const MobileCustomise = () => {
           marginBottom: "1rem",
           position:"relative"
         }}
-      > <Image  src={item.icon} fill alt='icon'/></div>
+      > <NextImage  src={item.icon} fill alt='icon'/></div>
       <p 
         style={{ 
           fontFamily: "GilroyMedium", 
@@ -290,5 +320,3 @@ const MobileCustomise = () => {
 };
 
 export default MobileCustomise;
-
- 
