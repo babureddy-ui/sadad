@@ -241,7 +241,10 @@ const toggleAboutUs = () => {
         >
         <div className={styles.contact_form}>
           <button className={styles.close_button } onClick={() => setContact(false)} >&times; </button>
-          <div style={{position:'relative', height:"42rem", width:"35rem"}}> <Image src='/assets/contactForm_img.webp' fill alt="contact img" /> </div>
+          <div style={{position:'relative', height:"42rem", width:"35rem"}}>
+             <Image src='/assets/contactForm_img1.webp' fill alt="contact img" />
+             {/* <Image src="/assets/MobileView/Rectangle_gradient.webp" fill alt="Demo Image" /> */}
+              </div>
           <div style={{padding: '2rem', display: 'flex', flexDirection: 'column', width: '29rem', padding:"1rem 2.5rem 1rem 1rem"}}>
           <div style={{display: "flex", position: "relative", fontSize:"1.2rem", alignItems:"center", margin:"0.5rem 0"}}>
           <h1 style={{fontFamily:"GilroySemiBold"}}>Schedule a free demo</h1>
