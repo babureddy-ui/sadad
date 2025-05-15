@@ -225,12 +225,13 @@ const MobileNavBar = () => {
             >
               &times;
             </button>
-          <div style={{ position: 'relative', width: "100vw", height: "50vh",}}>
-              <Image src="/assets/MobileView/freeDemo_img.webp" fill alt="Demo Image" />
+          <div style={{ position: 'relative', width: "100vw", height: "56vh",}}>
+              <Image src="/assets/MobileView/freeDemo_img1.webp" fill alt="Demo Image" />
+              <Image src="/assets/MobileView/Rectangle_gradient.webp" fill alt="Demo Image" />
               <div style={{
                 position: 'absolute',
                 width: "100vw",
-                top: '80%',
+                top: '70%',
                 left: '40%',
                 transform: 'translate(-40%, -80%)',
                 textAlign: 'center',
@@ -256,7 +257,7 @@ const MobileNavBar = () => {
 
             <div 
                 style={{  
-                  display: 'flex', flexDirection: 'column',backgroundColor:"white", padding:"1.5rem", marginTop:"-4.5rem", borderTopRightRadius:"1.5rem",borderTopLeftRadius:"1.5rem", zIndex:0
+                  display: 'flex', flexDirection: 'column',backgroundColor:"white", padding:"1.5rem", marginTop:"-8rem", borderTopRightRadius:"1.5rem",borderTopLeftRadius:"1.5rem", zIndex:0
                 }}
               >
                 <div 

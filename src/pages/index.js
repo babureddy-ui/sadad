@@ -70,6 +70,11 @@ const Index = ({ mobileView }) => {
           property="og:image"
           content="https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/Landing-Thumbnail.png"
         />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Doroki!" />
+        <meta name="twitter:description" content="Doroki is an all-in-one business suite designed to manage billing, inventory, invoicing, payments, customer loyalty, and more." />
+        <meta name="twitter:image" content="https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/Landing-Thumbnail.png" />
+        <meta name="twitter:url" content="https://doroki.com/" />
       </Head>
       {mobileView ? <DynamicMobile /> : <DynamicDesktop />}
     </>
