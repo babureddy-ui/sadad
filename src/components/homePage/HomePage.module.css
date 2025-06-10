@@ -98,7 +98,7 @@
   width: 2.8rem;
   position: relative;
   top: 8.5rem;
-  right: 24%;
+  right: 48%;
 }
 .features_first_section {
   display: flex;
@@ -927,12 +927,12 @@ margin-top: 4.3rem;
   
   .bank_img {
     position: relative;
-    height: 23rem;
+    height: 20rem;
     width: 30rem;
     top: 2rem;
     left: 0.4rem;
     border-radius: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
  
 
@@ -1099,12 +1099,12 @@ margin-top: 4.3rem;
 
   .money_img {
     position: relative;
-    height: 23rem;
+    height: 20rem;
     width: 30rem;
     top: 2rem;
     left: 0.4rem;
     border-radius: 1.7rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
   
   
