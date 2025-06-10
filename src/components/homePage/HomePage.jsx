@@ -148,22 +148,22 @@ const HomePage = () => {
   const BusinessTypes = [
     {
       icon: "/assets/business.svg",
-      title: "Business Solution",
-      text: "Platform that simplifies and streamlines your business goals",
+      title: "All-In-One Business Suite",
+      text: "Our platform streamlines your business operations end-to-end",
       width: "10rem",
       height: "7rem"
     },
     {
       icon: "/assets/versatile.svg",
       title: "Versatile Payment Options",
-      text: "Get payment solutions such as bank transfers, USSD, and mobile payments",
+      text: "Accept payments via bank transfers, USSD, and mobile payments",
       width: "10rem",
       height: "7rem"
     },
     {
       icon: "/assets/designed.svg",
       title: "Designed for SMEs",
-      text: "Doroki provides a powerful suite of tools at a competitive price",
+      text: "Doroki offers a robust suite of tools at a competitive price.",
       width: "10rem",
       height: "7rem"
     },
@@ -311,7 +311,7 @@ const HomePage = () => {
                       <span className={styles.word} style={{ color: "#8E44AD" }}>Spa & Salon</span>
                       <span className={styles.word} style={{ color: "#CF1A1A" }}>Electronics</span>
                     </div><br />
-                    business forward <br /> easily with Doroki
+                    business forward <br /> with Doroki
                   </h1>
 
                   <div className={styles.heroSection_img_stars}>
@@ -320,7 +320,7 @@ const HomePage = () => {
                 </div>
 
                 <p className={styles.p_heroText}>
-                  Multi-functional solution tailored uniquely for your business. <br /> Manage all your Orders, Inventory & Transactions at one place.
+                An all-in-one business suite designed for your unique business <br /> needs. Manage orders, inventory, and transactions all in one place.
                 </p> <br />
                 <form onSubmit={subscribe}>
                   <div className={styles.inputSection}>
@@ -535,7 +535,7 @@ const HomePage = () => {
 
         <div style={{ margin: "4rem 7rem 4rem 7.5rem" }}>
           <div className={styles.bank_transaction_section} >
-            <p className={styles.bank_transaction_heder_txt}>Dedicated <b>Bank Account</b> for your transaction business</p>
+            <p className={styles.bank_transaction_heder_txt}>A Dedicated <b>Bank Account</b> for Your Business Transactions</p>
             <div className={styles.bank_transaction_img_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div>
           </div>
 
@@ -546,7 +546,7 @@ const HomePage = () => {
                 <Image src="/assets/sweep.svg" fill alt="sweep" />
               </div>
               <h4 className={styles.bank_container_title}>
-                Effortless <span style={{ color: "#0391f0" }}>Auto Sweep</span> for <br /> seamless daily funds transfer
+                 <span style={{ color: "#0391f0" }}>Auto Sweep</span> for smooth <br /> daily fund transfer
               </h4>
               {/* <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your designated account.</p> */}
               <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your
@@ -562,7 +562,7 @@ const HomePage = () => {
                 <Image src="/assets/money.svg" fill alt="money" />
               </div>
               <h4 className={styles.bank_container_title}>
-                Seamlessly <span style={{ color: "#0391f0" }}>Send Money</span> <br /> through our secure POS
+               <span style={{ color: "#0391f0" }}>Send Money</span>   Securely <br /> with Doroki
               </h4>
               <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
@@ -581,7 +581,7 @@ const HomePage = () => {
             <div className={styles.loan_section_icon}><Image src='/assets/Loans.svg' fill alt="loans" /></div>
             <div style={{ fontSize: "1rem", }}>
               <h4 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h4> <br />
-              <p className={styles.loan_section_txt}>Scale your business with affordable, transparent loans provided<br /> by trusted banking partners, hassle-free and reliable</p>
+              <p className={styles.loan_section_txt}>Scale your business with transparent, reliable loans from our trusted banking partners — easy and straightforward</p>
             </div>
             <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
@@ -616,7 +616,7 @@ const HomePage = () => {
               <div className={styles.business_journey_Container} >
                 <div className={styles.business_journey_textContainer} >
                   <h4 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h4>
-                  <p className={styles.business_journey_txt}>Doroki empowers business with effortless management, seamlessly handling sales, inventory, and customer data, ensuring a smoother end of day reconciliation.</p> <br />
+                  <p className={styles.business_journey_txt}>Doroki enables businesses manage their <br /> entire operations, from sales and inventory <br /> to customer data, ensuring a smoother <br /> end-of-day reconciliation process</p> <br />
                 </div>
                 <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
               </div>
@@ -704,7 +704,7 @@ const HomePage = () => {
 
         <div className={styles.faq_section}>
           <div className={styles.queries_img}>
-            <Image src="/assets/Doroki_queries_img.webp" fill alt="queries" />
+            <Image src="/assets/faqImage.webp" fill alt="queries" />
           </div>
           <div >
             <div className={styles.Queries_arrow} ><Image src='/assets/Queries_arrow.webp' fill alt='arrow' /></div>
@@ -716,9 +716,9 @@ const HomePage = () => {
         <div className={styles.business_needs}>
 
           <div className={styles.business_needs_content_section}  >
-            <div className={styles.business_needs_title} ><h4>Intuitive and Easy to use App for your Business needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
+            <div className={styles.business_needs_title} ><h4>Intuitive and Easy-to-Use App for Your Business Needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
 
-            <p className={styles.business_needs_txt} >Experience fast, secure, and hassle-free billing with <br /> <span style={{ fontFamily: "GilroySemiBold" }}>Doroki</span>—your ultimate all-in-one business suite platform</p>
+            <p className={styles.business_needs_txt} >Enjoy Simplified billing with our POS system and efficient payment processing — no hassle </p>
             <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
@@ -728,7 +728,7 @@ const HomePage = () => {
 
         <div className={styles.business_needs2}>
           <div className={styles.bt_ele}>
-            <h4 className={styles.business_text}>Efficiently manage your stock levels with our application</h4>
+            <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable solution</h4>
             <div className={styles.bt_img} >
               <Image src="/assets/bt_img11.webp" fill alt="bt" />
             </div>
@@ -772,7 +772,7 @@ const HomePage = () => {
               </div>
             </div>
             <br />
-            <p className={styles.demo_form_txt} >Discover how Doroki transforms your business—schedule a demo today and experience effortless management first hand</p> <br />
+            <p className={styles.demo_form_txt} >Discover how Doroki transforms your business—schedule a demo today and experience effortless management firsthand</p> <br />
             <form onSubmit={freeDemoSubscribe}>
               <fieldset className={styles.input_divs}>
                 <input

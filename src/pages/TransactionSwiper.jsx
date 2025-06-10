@@ -9,17 +9,17 @@ import styles from '../components/MobilePages/Mobile.module.css';
 const BankTransactionSwiper=[
     {
       icon:"/assets/sweep.svg",
-      title:"Effortlessly ",
+      // title:"Effortlessly ",
       titleWord:"Auto Sweep",
-      title2:"for seamless daily funds transfer",
+      title2:"for smooth daily fund transfer",
       dec:"Transferring funds seamlessly into your designated account, ensuring smooth operations and greater control over your business finances effortlessly",
       img:"/assets/paga_bank.webp"
     },
     {
       icon:"/assets/money.svg",
-      title:"Seamlessly ",
+      // title:"Seamlessly ",
       titleWord:"Send Money",
-      title2:"through our secure POS",
+      title2:"Securely with Doroki",
       dec:"Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
       img:"/assets/Paga_sendMoney_img.webp"
     },
