@@ -1,26 +1,50 @@
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const DynamicDesktop = dynamic(() => import("@/components/homePage/HomePage"));
 const DynamicMobile = dynamic(() => import("@/components/MobilePages/MobileHomePage"));
 
-const Index = ({ mobileView }) => {
-  const pageTitle = "Business Account | Drive Your Business Forward Easily with Doroki";
-  const pageDescription = "Doroki provides everything you need to grow your business and operate anytime, anywhere—without the hefty admin in one place.";
-  const pageUrl = "https://doroki.com/";
-  const imageUrl = "https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/Landing-Thumbnail.png";
+const Index = ({ initialMobileView }) => {
+  const [isMobile, setIsMobile] = useState(initialMobileView);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+    
+    const checkIfMobile = () => {
+      const mobile = window.innerWidth <= 539;
+      setIsMobile(mobile);
+      
+      // Store view preference as cookie for future server-side rendering
+      document.cookie = `prefers-view=${mobile ? 'mobile' : 'desktop'}; path=/; max-age=86400`;
+    };
+
+    checkIfMobile();
+    
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+
+  const pageTitle = "Your All-In-One Business Suite | Trusted by Top Businesses.";
+  const pageDescription = "Doroki gives you everything you need to manage your business operations, anytime, anywhere, all from one powerful platform.";
+  const pageUrl = "https://doroki.com";
+  const imageUrl = "https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/OG+Image_updated.png";
 
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=device-width"></meta>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="canonical" href={pageUrl} />
         <link rel="alternate" href={pageUrl} hrefLang="en-us" />
+
         
-        {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={pageTitle} />
@@ -29,13 +53,14 @@ const Index = ({ mobileView }) => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Doroki - Your All-In-One Business Suite" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:site_name" content="Doroki" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@doroki_ng" />  
-        <meta name="twitter:creator" content="@doroki_ng" />  
+        <meta name="twitter:site" content="@doroki_ng" />
+        <meta name="twitter:creator" content="@doroki_ng" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={imageUrl} />
@@ -79,9 +104,43 @@ const Index = ({ mobileView }) => {
             Monie point, GTB Squad, Sage, Squad, Shopify, Fiuu, 
             Stripe, WorldFirst, World First" />
       </Head>
-      {mobileView ? <DynamicMobile /> : <DynamicDesktop />}
+      {/* Only render components when client-side hydration is complete to prevent mismatches */}
+      {mounted ? (
+        isMobile ? <DynamicMobile /> : <DynamicDesktop />
+      ) : (
+        <div style={{ minHeight: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <p>Loading...</p>
+        </div>
+      )}
     </>
   );
 };
+
+// Server-side detection of mobile device
+export async function getServerSideProps(context) {
+  const cookies = context.req.headers.cookie || '';
+  const cookieMatch = cookies.match(/prefers-view=(mobile|desktop)/i);
+  
+  // Get viewport width from client hints if available
+  const viewportWidth = context.req.headers['viewport-width'] || 
+                      context.req.headers['sec-ch-viewport-width'] || 
+                      context.req.headers['width'] || null;
+  
+
+  let isMobile = false;
+  
+  if (cookieMatch && cookieMatch[1].toLowerCase() === 'mobile') {
+    isMobile = true;
+  } 
+  else if (viewportWidth !== null) {
+    isMobile = parseInt(viewportWidth) <= 600;
+  }
+  
+  return {
+    props: {
+      initialMobileView: isMobile,
+    },
+  };
+}
 
 export default Index;

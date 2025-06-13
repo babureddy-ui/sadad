@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
   const [planSelected, setPlanSelected] = useState("");
 
   const setWindowDimensions = () => {
-    setMobileView(window.innerWidth <= 600 ? 1 : 0);
+    window.innerWidth > 539 ? setMobileView(0) : setMobileView(1);
   };
 
   useEffect(() => {
