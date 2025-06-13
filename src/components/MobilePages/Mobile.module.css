@@ -26,12 +26,12 @@
   .stars {
     height: 2rem;
     width: 2.3rem;
-    position: relative;
+    position: absolute;
     top:6rem;
-    right: 5.9rem;
+    left:-53%;
   }
-  
-  
+   
+   
   .line {
     height: 3px;
     width: 100%;
@@ -1596,12 +1596,12 @@ width: 96vw;
   margin: 0 1rem 0 0.6rem;
 }
 
-@media only screen and (min-width: 350px) and (max-width: 380px) {
+@media only screen and (min-width: 350px) and (max-width: 395px) {
   .box {
     width: 12rem;
     height: 3.5rem;
     font-size: 2rem;
-    font-family: "GilroySemiBold";
+    font-family: "GilroySemiBold"; 
     overflow: hidden;
     position: relative;
     display: inline-block;
@@ -1619,9 +1619,9 @@ width: 96vw;
   .stars {
     height: 2rem;
     width: 2rem;
-    position: relative;
-    top: 5.5rem;
-     right: 37%;
+    position: absolute;
+    top: 5.9rem;
+     left: 40%;
   }
   .Customise_GetInTouch_Btn {
     width: 12rem;
@@ -1715,13 +1715,13 @@ width: 96vw;
 }
 
 
-@media only screen and (min-width: 410px) and (max-width: 420px) {
+@media only screen and (min-width: 410px) and (max-width: 430px) {
   .stars {
     height: 2rem;
     width: 2rem;
-    position: relative;
+    position: absolute;
     top: 6rem;
-    right: 8rem !important;
+     left: 42%;
   }
   .customise_img {
      
@@ -1738,6 +1738,17 @@ width: 96vw;
   .animation_star2 {
     bottom: 4rem;
     left: 68%;
+  }
+}
+@media only screen and (min-width: 340px) and (max-width: 350px) {
+  .stars {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 0rem;
+     right: 0%;
+     
+     
   }
 }
 .error{

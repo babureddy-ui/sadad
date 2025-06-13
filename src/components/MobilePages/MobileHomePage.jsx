@@ -306,7 +306,7 @@ const MobileHomePage = () => {
         <div>
             <div className={styles.heroimg}><Image src="/assets/MobileView/Doroki_heroImg-mobile.webp" fill alt='heroImg-mobile1'/></div>
 
-            <div style={{margin:' 1.3rem 1.8rem',}}>
+            <div style={{margin:' 1.3rem 1.8rem',position:"relative"}}>
                 <div style={{display:"flex"}}> 
                 <h1 className={styles.headline}>
               Drive your 
