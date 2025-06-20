@@ -152,7 +152,7 @@ const handleMenuItemClick = (e, sectionId) => {
             <a href="#features_doroki"  onClick={(e) => handleMenuItemClick(e, 'features_doroki')} className={styles.menuItem}>Key Features</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#Other_Features" onClick={(e) => handleMenuItemClick} className={styles.menuItem}>Other Features</a>
+            <a href="#Other_Features" onClick={(e) => handleMenuItemClick(e, 'Other_Features')} className={styles.menuItem}>Other Features</a>
           </div>
           <div className={styles.menuItemWrapper}>
             <a href="#Banking_Services" onClick={(e)=> handleMenuItemClick(e, 'Banking_Services') } className={styles.menuItem}>Banking Services</a>
