@@ -314,7 +314,7 @@ const MobileHomePage = () => {
               <span className={styles.word} style={{color: "#FF6347"}}>Restaurant</span>
               <span className={styles.word} style={{color: "#0074D9"}}>Retail</span>
               <span className={styles.word} style={{color: "#4CAF50"}}>Grocery</span>
-              <span className={styles.word} style={{color: "#8E44AD"}}>Spa & Salon</span>
+              <span className={styles.word} style={{color: "#8E44AD", whiteSpace: "nowrap"}}>Spa & Salon</span>
               <span className={styles.word} style={{color: "#CF1A1A"}}>Electronics</span>
                 
               </div> <br />
@@ -487,7 +487,7 @@ const MobileHomePage = () => {
           <div className={styles.topImage3}>
            
           <Image src="/assets/eStore_Top_img1.webp" fill alt="estore" />
-          <Lottie options={{ animationData }} height={60} width={70} style={{zIndex:1000, top:"1rem", position:"relative"}} />
+          <Lottie options={{ animationData }} height={'calc(30px + 2vw)'} width={'calc(50px + 2vw)'} style={{zIndex:1000, top:"calc(0.5rem + 1vw)", position:"relative"}} />
         </div>
           <div className={styles.otherImage3}>
             <Image src="/assets/eStore-img.webp" fill alt="estore" />

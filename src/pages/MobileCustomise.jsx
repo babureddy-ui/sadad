@@ -197,6 +197,7 @@ const MobileCustomise = () => {
                 {Object.keys(categories).map((category) => (
                 <button className={styles.customise_btns}
                     style={{ 
+                      fontSize:"0.8rem",
                     backgroundColor: buttonCategory === category ? 'white' : '#30434D',
                     color: buttonCategory === category ? '#223037' : 'white',
                     fontFamily: buttonCategory === category ? 'GilroySemiBold' : 'GilroyRegular',
@@ -215,9 +216,9 @@ const MobileCustomise = () => {
             </div>
 
         
-        <div style={{  display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '80%' ,flexDirection:"column",position:"absolute", height:"39rem" , marginTop:"0.6rem"}}>
+        <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', width: '100%', flexDirection: "column", position: "relative", marginTop: "0.6rem", padding: "0 1rem", boxSizing: "border-box" }}>
           <div className={styles.customise_title}>
-            <h4 style={{ fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize:"1.4rem", margin:"0 0 0 0.5rem"  }}>
+            <h4 style={{position: "relative",fontFamily: "GilroySemiBold", lineHeight: "1.5em", fontSize: "calc(1rem + 1vw)", margin:"0 0 0 0.5rem", }}>
               Manage your{' '}
               <span
                 className={isAnimating ? styles.Out : styles.In}
@@ -291,7 +292,7 @@ const MobileCustomise = () => {
         style={{
           width: '3.4rem',
           height: '3.4rem',
-          backgroundColor: item.color,
+          // backgroundColor: item.color,
           borderRadius: '1rem',
           marginBottom: "1rem",
           position:"relative"

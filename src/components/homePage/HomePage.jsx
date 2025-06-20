@@ -308,7 +308,7 @@ const HomePage = () => {
                       <span className={styles.word} style={{ color: "#FF6347" }}>Restaurant</span>
                       <span className={styles.word} style={{ color: "#0074D9" }}>Retail</span>
                       <span className={styles.word} style={{ color: "#4CAF50" }}>Grocery</span>
-                      <span className={styles.word} style={{ color: "#8E44AD" }}>Spa & Salon</span>
+                      <span className={styles.word} style={{ color: "#8E44AD", whiteSpace: "nowrap" }}>Spa & Salon</span>
                       <span className={styles.word} style={{ color: "#CF1A1A" }}>Electronics</span>
                     </div><br />
                     business forward <br /> with Doroki
