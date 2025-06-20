@@ -319,12 +319,16 @@
   /* --------------customise--------------- */
   .customise_img {
     position: absolute;
-    width: 86.6vw;
+    width: 100%;
     height: 25rem;
     top: 11.2rem;
-    left: 0rem;
+    left: 0;
+    right: 0;
     bottom: 0rem;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .In {
     opacity: 1;
@@ -356,12 +360,16 @@
   }
   
   .customise_title {
-    width: 23rem;
+    width: 100%;
+    max-width: 23rem;
     margin-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 0;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
   }
   .customise_section {
     height: 36.8rem;
+   
     background-color: #30434D;
     color: #ffff;
     border-radius: 1.3rem;
@@ -372,9 +380,11 @@
   .button_container {
     position: absolute;
     left: 0;
+    right: 0;
     z-index: 1;
-    width: 86.6%;
-    margin: 1.7rem 1.8rem;
+    width: auto;
+    margin: 1.7rem auto;
+    padding: 0 1.8rem;
     overflow-x: hidden;
   }
   .customise_btns {
@@ -778,10 +788,14 @@ margin-top:0.6rem;
 
 .Loan_img{
   position:relative;
-   height:19rem;
-    width:22.5rem;
-    margin: 0rem 0 0 -1.6rem;
-
+  height:19rem;
+  width: 100%;
+  max-width: 22.5rem;
+  margin: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .features_card_icon {
   position: relative;
@@ -1236,22 +1250,28 @@ width: 96vw;
 
 .footerIcon {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: calc(1.8rem + 1vw);
+  height: calc(1.8rem + 1vw);
+  min-width: 2rem;
+  min-height: 2rem;
 }
 .footerIcon:hover {
-  width: 3.1rem;
-  height: 3.1rem;
+  width: calc(2rem + 1vw);
+  height: calc(2rem + 1vw);
+  transition: all 0.2s ease;
 }
 .footer_Icon{
   position: relative;
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-top: "0.5rem";
+  margin-top: -0.1rem;
+  width: calc(2.2rem + 1vw);
+  height: calc(2.2rem + 1vw);
+  min-width: 2rem;
+  min-height: 2rem;
 }
 .footer_Icon:hover{
-  width: 3.6rem;
-  height: 3.6rem;
+  width: calc(2.5rem + 1vw);
+  height: calc(2.5rem + 1vw);
+  transition: all 0.2s ease;
 }
 .h2_text{
   font-family: GilroySemiBold;
@@ -1494,9 +1514,17 @@ width: 96vw;
 }
 .footer_conatctIcon {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: nowrap;
+  gap: calc(0.5rem + 4vw);
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow-x: auto;
+  padding: 1rem;
+
 }
 .Conditions {
   display: flex;
@@ -1635,10 +1663,14 @@ width: 96vw;
   }
   
 .Loan_img{
-    height:22rem; 
-    left: 10%;
     height:21rem;
-     
+    width: 100%;
+    max-width: 22.5rem;
+    margin: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .headSec {
   top: -1.5rem;
@@ -1672,16 +1704,24 @@ width: 96vw;
   
   .customise_img {
     position: absolute;
-    width: 93.5vw;
+    width: 100%;
+    max-width: 93.5vw;
     height: 31.3rem;
     top: 10rem;
     left: 0rem;
     bottom: 0rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .customise_title {
-    width: 23rem;
+    width: 100%;
+    max-width: 23rem;
     margin-top: 4rem;
-    margin-left: 0rem;
+    margin-left: 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
   /* .customise_section {
     height: 42rem;

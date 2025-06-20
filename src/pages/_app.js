@@ -1,10 +1,3 @@
-// import '@/styles/globals.css'
-
-// export default function App({ Component, pageProps }) {
-//   return <Component {...pageProps} />
-// }
-
-
 import { BuisnessTypeContext } from '@/services/BuisnessTypeContext';
 import '@/styles/globals.css';
 import { useRouter } from 'next/router';
@@ -16,7 +9,7 @@ export default function App({ Component, pageProps }) {
   const [planSelected, setPlanSelected] = useState("");
 
   const setWindowDimensions = () => {
-    window.innerWidth > 539 ? setMobileView(0) : setMobileView(1);
+    window.innerWidth < 540 ? setMobileView(0) : setMobileView(1);
   };
 
   useEffect(() => {

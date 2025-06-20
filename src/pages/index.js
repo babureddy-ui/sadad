@@ -5,34 +5,32 @@ import React, { useEffect, useState } from 'react';
 const DynamicDesktop = dynamic(() => import("@/components/homePage/HomePage"));
 const DynamicMobile = dynamic(() => import("@/components/MobilePages/MobileHomePage"));
 
-const Index = ({ initialMobileView }) => {
-  const [isMobile, setIsMobile] = useState(initialMobileView);
-  const [mounted, setMounted] = useState(false);
+const Index = () => {
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 540;
+    }
+    return false;
+  });
+  const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    
-    const checkIfMobile = () => {
-      const mobile = window.innerWidth <= 539;
-      setIsMobile(mobile);
-      
-      // Store view preference as cookie for future server-side rendering
-      document.cookie = `prefers-view=${mobile ? 'mobile' : 'desktop'}; path=/; max-age=86400`;
-    };
+    setHasMounted(true);
+  }, []);
 
-    checkIfMobile();
-    
-    window.addEventListener('resize', checkIfMobile);
-
-    return () => {
-      window.removeEventListener('resize', checkIfMobile);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 540);
     };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   const pageTitle = "Your All-In-One Business Suite | Trusted by Top Businesses.";
   const pageDescription = "Doroki gives you everything you need to manage your business operations, anytime, anywhere, all from one powerful platform.";
   const pageUrl = "https://doroki.com";
   const imageUrl = "https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/OG+Image_updated.png";
+ 
 
   return (
     <>
@@ -44,12 +42,11 @@ const Index = ({ initialMobileView }) => {
         <link rel="canonical" href={pageUrl} />
         <link rel="alternate" href={pageUrl} hrefLang="en-us" />
 
-        
         <meta property="og:type" content="website" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
-        <meta property="og:image" content={imageUrl} />
+        <meta name="image" property="og:image" content={imageUrl} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
@@ -104,11 +101,15 @@ const Index = ({ initialMobileView }) => {
             Monie point, GTB Squad, Sage, Squad, Shopify, Fiuu, 
             Stripe, WorldFirst, World First" />
       </Head>
-      {/* Only render components when client-side hydration is complete to prevent mismatches */}
-      {mounted ? (
-        isMobile ? <DynamicMobile /> : <DynamicDesktop />
+      <div style={{ display: 'none' }} aria-hidden="true">
+        <h1>Your All-In-One Business Suite | Trusted by Top Businesses</h1>
+        <h2>Take your business online, with our  eStore  feature</h2>
+        <h3>Seamlessly manage Billing operations with precision</h3>
+      </div>
+      {hasMounted ? (
+        isMobile ? <DynamicMobile/> : <DynamicDesktop/>
       ) : (
-        <div style={{ minHeight: '80vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily:"GilroyMedium" }}>
           <p>Loading...</p>
         </div>
       )}
@@ -116,31 +117,5 @@ const Index = ({ initialMobileView }) => {
   );
 };
 
-// Server-side detection of mobile device
-export async function getServerSideProps(context) {
-  const cookies = context.req.headers.cookie || '';
-  const cookieMatch = cookies.match(/prefers-view=(mobile|desktop)/i);
-  
-  // Get viewport width from client hints if available
-  const viewportWidth = context.req.headers['viewport-width'] || 
-                      context.req.headers['sec-ch-viewport-width'] || 
-                      context.req.headers['width'] || null;
-  
-
-  let isMobile = false;
-  
-  if (cookieMatch && cookieMatch[1].toLowerCase() === 'mobile') {
-    isMobile = true;
-  } 
-  else if (viewportWidth !== null) {
-    isMobile = parseInt(viewportWidth) <= 600;
-  }
-  
-  return {
-    props: {
-      initialMobileView: isMobile,
-    },
-  };
-}
 
 export default Index;
