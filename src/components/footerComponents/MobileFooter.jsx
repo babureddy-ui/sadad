@@ -76,15 +76,15 @@ const MobileFooter = () => {
 
 
             <div className={styles.footer_conatctIcon}>
-              <div className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
+             <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target="_blank"> <div className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div></a>
               <a href="https://www.instagram.com/doroki.commerce/" target="_blank" rel="noopener noreferrer">
                 <div className={styles.footerIcon}><Image src='/assets/Instagram-new.svg' fill alt="insta" /></div>
               </a>
               <a href="https://x.com/doroki_ng" target="_blank" rel="noopener noreferrer">
                 <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
               </a>
-              <div className={styles.footer_Icon} style={{ marginBottom: "-0.4rem" }}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div>
-              <a href="https://studio.youtube.com/channel/UCOnHFX08tNXPp3l2WeHlnLw?c=UCOnHFX08tNXPp3l2WeHlnLw" target="_blank" >
+             <a href="https://www.linkedin.com/company/doroki/" target="_blank"> <div className={styles.footer_Icon} style={{ marginBottom: "-0.4rem" }}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div></a>
+              <a href="https://www.youtube.com/@Doroki-hq" target="_blank" >
             <div className={styles.footerIcon}><Image src='/assets/youTube.svg' fill alt="linkedin" /></div>
             </a>
             </div>
