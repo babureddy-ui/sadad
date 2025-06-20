@@ -381,6 +381,7 @@ const MobileHomePage = () => {
       )}
 
       {/* ------------- business types------------ */}
+      <section id="Trusted_Businesses">
         <div>
         <div className={styles.business_types}>
         {BusinessTypes.map((ele, index) => (
@@ -400,6 +401,7 @@ const MobileHomePage = () => {
         ))}
       </div>
         </div>
+        </section>
 
         <div style={{margin:'5rem 0 '}}>
         <div>
@@ -412,11 +414,13 @@ const MobileHomePage = () => {
                 <MarqueeComponentMobilePage ClientsArr={ClientsArr1}  speed={100}  direction="left"/>
             </div>
         </div>
+        <selection id="Industries_offer">
         <div style={{margin:'-1rem 0'}}>
           <MobileCustomise/>
         </div>
+        </selection>
   
-
+         <selection id="features_doroki">
         <div style={{margin:"1rem 1.8rem"}}>
 
         <div  className={styles.features}>
@@ -469,7 +473,6 @@ const MobileHomePage = () => {
       </div>
 
         </div>
-
 
       <div> 
         <div className={styles.Online_section}>
@@ -530,9 +533,11 @@ const MobileHomePage = () => {
        </div>
 
         </div>
+        </selection>
+
 
         {/* -------------------------------MobileHiddenPowers---------------- */}
-        
+         <selection id="Other_Features">
        <div style={{margin:'4rem 1rem'}}>
 
        <div  className={styles.features1}>
@@ -544,8 +549,9 @@ const MobileHomePage = () => {
         </div>
         
         <div><MobileHiddenPowers/></div>
+        </selection>
         
-        
+           <selection id="Banking_Services"> 
           <div style={{margin:"3rem 0rem"}}>
             <div  className={styles.bank_account_section}  >
             <div className={styles.bank_account_section_title} > <h4>Dedicated </h4><div className={styles.Moneybag} ><Image src="/assets/MobileView/Moneybag.svg" fill alt='Moneybag'/></div> <h4 className={styles.bank_account_section_title2}>Bank Account</h4></div>
@@ -553,9 +559,10 @@ const MobileHomePage = () => {
               </div>
             <div ><TransactionSwiper/></div>
           </div>
+          </selection>
 
 
-
+      <selection id="Devices">
         <div style={{margin:"1rem 1.8rem", }}>
 
         <div className={styles.loan_section}>
@@ -570,6 +577,7 @@ const MobileHomePage = () => {
          <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Paga_Affordableloans.webp" fill alt="loan" /> </div>
         </div>
         </div>
+        </selection>
 
 
 
@@ -638,7 +646,7 @@ const MobileHomePage = () => {
       <MobileClientSwiper/>
       </div> */}
 
-     
+     <selection id="FAQs"> 
      <div style={{margin:"1rem 1.8rem",position:"relative",}}>
           <div  className={styles.features} >
             <p className={styles.feature_title}>Frequently Asked Questions</p>
@@ -652,6 +660,7 @@ const MobileHomePage = () => {
           </div>
 
         </div>
+        </selection>
          
           <div style={{margin:'1rem 1.8rem' }}> 
             <div className={styles.business_needs}>
@@ -830,8 +839,8 @@ const MobileHomePage = () => {
             <div className={styles.footer_img}><Image src="/assets/MobileView/Paga_Footer_Mobile_img.webp" fill alt='demo'/></div>
             </div>
           
-
-          <div><MobileFooter/></div>
+  
+          <selection id="Subscribe_Newsletter"> <div><MobileFooter/></div></selection>
 
           {/* <div style={{margin:"4rem 1rem 0rem 1rem"}}>
           <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill/></div>

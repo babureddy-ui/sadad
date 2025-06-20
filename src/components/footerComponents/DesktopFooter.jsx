@@ -201,7 +201,7 @@ const DesktopFooter = () => {
 
         <div style={{display:"flex", gap:'1.5rem', width:"20rem" , alignItems:'center', position:'absolute',right:'5%', bottom:"8%" }}>
 
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target="_blank" rel="noopener noreferrer">
             <div  className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
             </a>
             <a href="https://www.instagram.com/doroki.commerce/" target="_blank" rel="noopener noreferrer">
@@ -212,10 +212,10 @@ const DesktopFooter = () => {
             <a href="https://x.com/doroki_ng" target="_blank" rel="noopener noreferrer">
             <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
             </a>
-            <a href="" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/doroki/" target="_blank" rel="noopener noreferrer">
             <div className={styles.footer_Icon}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div>
             </a>
-            <a href="https://studio.youtube.com/channel/UCOnHFX08tNXPp3l2WeHlnLw?c=UCOnHFX08tNXPp3l2WeHlnLw" target="_blank" >
+            <a href="https://www.youtube.com/@Doroki-hq" target="_blank" >
             <div className={styles.footerIcon}><Image src='/assets/youTube.svg' fill alt="linkedin" /></div>
             </a>
           </div>

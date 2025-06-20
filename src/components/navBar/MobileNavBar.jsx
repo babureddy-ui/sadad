@@ -33,7 +33,15 @@ const MobileNavBar = () => {
   const [state, setState] = useState("IDLE");
   const [validate, setValidate] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
-   
+
+const handleMenuItemClick = (e, sectionId) => {
+  e.preventDefault();  
+  setIsMenuOpen(false);
+  const section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+};
   
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -135,31 +143,31 @@ const MobileNavBar = () => {
       {isMenuOpen && (
         <div className={styles.menu}>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Trusted by Businesses</a>
+            <a href="#Trusted_Businesses"   onClick={(e) => handleMenuItemClick(e, 'Trusted_Businesses')} className={styles.menuItem}>Trusted by Businesses</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Industries we offer</a>
+            <a href="#Industries_offer" onClick={(e) => handleMenuItemClick(e, 'Industries_offer')} className={styles.menuItem}>Industries we offer</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Key Features</a>
+            <a href="#features_doroki"  onClick={(e) => handleMenuItemClick(e, 'features_doroki')} className={styles.menuItem}>Key Features</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Other Features</a>
+            <a href="#Other_Features" onClick={(e) => handleMenuItemClick(e, 'Other_Features')} className={styles.menuItem}>Other Features</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Banking Services</a>
+            <a href="#Banking_Services" onClick={(e)=> handleMenuItemClick(e, 'Banking_Services') } className={styles.menuItem}>Banking Services</a>
           </div>
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>Devices</a>
+            <a href="#Devices" onClick={(e)=> handleMenuItemClick(e,"Devices")} className={styles.menuItem}>Devices</a>
           </div>
-          <div className={styles.menuItemWrapper}>
+          {/* <div className={styles.menuItemWrapper}>
             <a href="#" className={styles.menuItem}>Testimonials</a>
-          </div>
+          </div> */}
           <div className={styles.menuItemWrapper}>
-            <a href="#" className={styles.menuItem}>FAQs</a>
+            <a href="#FAQs" onClick={(e)=>handleMenuItemClick(e,'FAQs')} className={styles.menuItem}>FAQs</a>
           </div>
           
-            <a href="#" className={styles.menuItem}>Subscribe to Newsletter</a>
+            <a href="#Subscribe_Newsletter" onClick={(e)=> handleMenuItemClick(e, 'Subscribe_Newsletter')} className={styles.menuItem}>Subscribe to Newsletter</a>
           
             <div style={{display:"flex", flexDirection:"column", gap:"0.8rem", margin:"4rem 0 0 0 "}}> 
             <BlueButton text="Get Free Demo" style={{ height: "3.4rem", width:"100%",fontSize:"1.1rem" }}  onClick={setGetFreeDemo} />
