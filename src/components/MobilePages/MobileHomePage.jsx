@@ -562,7 +562,6 @@ const MobileHomePage = () => {
           </selection>
 
 
-      <selection id="Devices">
         <div style={{margin:"1rem 1.8rem", }}>
 
         <div className={styles.loan_section}>
@@ -577,7 +576,6 @@ const MobileHomePage = () => {
          <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Paga_Affordableloans.webp" fill alt="loan" /> </div>
         </div>
         </div>
-        </selection>
 
 
 
@@ -611,8 +609,7 @@ const MobileHomePage = () => {
         
         </div>
         
-
-
+<selection id="Devices"> 
         <div style={{margin:"0rem 1.8rem"}}>
         <div className={styles.OneSolution_section}>
           <h4 className={styles.OneSolution_section_title} >Many business dilemmas, <br />yet only <span style={{color:"#0091F0"}}>One Solution</span>  <br />reigns supreme</h4>
@@ -623,6 +620,8 @@ const MobileHomePage = () => {
         <div>
           <OneSolution/>
           </div>
+          </selection>
+
 
 
         {/* <div className={styles.Clients_rave_section}> 
