@@ -8,11 +8,11 @@ import DesktopFooter from '@/components/footerComponents/DesktopFooter'
 const termsofservice = ({ mobileView }) => {
   return (
     <div>
-      <div>{mobileView ? <MobileNavBar /> : <NavigationBar />}</div>
-      <div style={mobileView ? { fontFamily: "GilroyRegular", padding: "6rem 1rem", lineHeight: "1.5rem", marginTop: 'rem' } : { fontFamily: "GilroyRegular", padding: "6rem 6rem", lineHeight: "2rem", wordSpacing: "0.1rem" }}>
+      <div>{mobileView === 0? <MobileNavBar /> : <NavigationBar />}</div>
+      <div style={mobileView === 0 ? { fontFamily: "GilroyRegular", padding: "6rem 1rem", lineHeight: "1.5rem", marginTop: 'rem' } : { fontFamily: "GilroyRegular", padding: "6rem 6rem", lineHeight: "2rem", wordSpacing: "0.1rem" }}>
       <TermsOfService/>
       </div>
-      <div>{mobileView ? <MobileFooter /> : <DesktopFooter />}</div>
+      <div>{mobileView === 0? <MobileFooter /> : <DesktopFooter />}</div>
     </div>
   )
 }
