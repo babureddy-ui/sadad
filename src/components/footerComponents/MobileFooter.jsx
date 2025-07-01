@@ -97,11 +97,12 @@ const MobileFooter = () => {
                 </a>
 
                 <p className={styles.footerContent}>Call : 02013444300</p>
-                <a href="https://x.com/doroki_ng" target="_blank" rel="noopener noreferrer">
-                  <p className={styles.footerContent}>X : @doroki_ng</p>
-                </a>
-                <p className={styles.footerContent}>Facebook : @mypaga</p>
-                <p className={styles.footerContent}>WhatsApp : 08099227242</p>
+                <a href="https://x.com/_dorokibypaga" target="_blank" rel="noopener noreferrer"> 
+                  <p className={styles.footerContent}>X : @_dorokibypaga</p>
+                  </a>
+                 <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target='_blank'><p className={styles.footerContent}>Facebook : @Doroki-by-Paga</p> </a>
+
+                <a href="https://wa.me/2348099227242" target='_blank' rel="noopener noreferrer">  <p className={styles.footerContent}>WhatsApp : 08099227242</p></a>
                 <p className={styles.footerContent}>SMS : 09090027242</p>
                 <p className={styles.footerContent}>Address : 176 Herbert <br />
                   Macaulay Wy, Yaba, Lagos</p>
