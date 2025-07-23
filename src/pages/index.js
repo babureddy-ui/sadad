@@ -30,11 +30,37 @@ const Index = () => {
   const pageDescription = "Doroki gives you everything you need to manage your business operations, anytime, anywhere, all from one powerful platform.";
   const pageUrl = "https://doroki.com";
   const imageUrl = "https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/OG+Image_updated.png";
- 
+
 
   return (
     <>
       <Head>
+        {/* Google Tag Manager */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NH8RDHHC');`
+          }}
+        />
+        {/* End Google Tag Manager */}
+
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XG9TL1NRE"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9XG9TL1NRE');
+            `
+          }}
+        />
+        {/* End Google Analytics */}
+
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{pageTitle}</title>
@@ -101,15 +127,27 @@ const Index = () => {
             Monie point, GTB Squad, Sage, Squad, Shopify, Fiuu, 
             Stripe, WorldFirst, World First" />
       </Head>
+
+      {/* Google Tag Manager (noscript) */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-NH8RDHHC"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        />
+      </noscript>
+      {/* End Google Tag Manager (noscript) */}
+
       <div style={{ display: 'none' }} aria-hidden="true">
         <h1>Your All-In-One Business Suite | Trusted by Top Businesses</h1>
         <h2>Take your business online, with our  eStore  feature</h2>
         <h3>Seamlessly manage Billing operations with precision</h3>
       </div>
       {hasMounted ? (
-        isMobile ? <DynamicMobile/> : <DynamicDesktop/>
+        isMobile ? <DynamicMobile /> : <DynamicDesktop />
       ) : (
-        <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily:"GilroyMedium" }}>
+        <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', fontFamily: "GilroyMedium" }}>
           <p>Loading...</p>
         </div>
       )}
@@ -119,3 +157,4 @@ const Index = () => {
 
 
 export default Index;
+
