@@ -105,17 +105,17 @@ const DesktopFooter = () => {
         </div>
          
        <div className={styles.footer_navigations}>
-        <div>
+       <div>
           <p className={styles.footerContent_titile}>Contact</p>
           <a href="mailto:support@doroki.com">
             <p className={styles.footerContent}>Email : support@doroki.com</p>
           </a>
 
           <p className={styles.footerContent}>Call : 02013444300</p>
-          <a href="https://x.com/_dorokibypaga" target="" rel="noopener noreferrer"> 
+          <a href="https://x.com/_dorokibypaga" target="_blank" rel="noopener noreferrer"> 
           <p className={styles.footerContent}>X : @_dorokibypaga</p>
           </a>
-          <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/"><p className={styles.footerContent}>Facebook : @Doroki-by-Paga</p> </a>
+          <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target='_blank'><p className={styles.footerContent}>Facebook : @Doroki-by-Paga</p> </a>
            <a href="https://wa.me/2348099227242" target='_blank' rel="noopener noreferrer">  <p className={styles.footerContent}>WhatsApp : 08099227242</p></a>
           <p className={styles.footerContent}>SMS : 09090027242</p>
           <p className={styles.footerContent}>Address : 176 Herbert <br />
