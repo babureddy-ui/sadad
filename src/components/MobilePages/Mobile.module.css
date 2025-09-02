@@ -36,7 +36,7 @@
   .line {
     height: 3px;
     width: 100%;
-    background-color: #000;
+    background-color: #8E1B3E;
     border-radius: 2px;
   }
   
@@ -182,7 +182,7 @@
   .heroimg{
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 34rem;
     /* margin-top: -0.6rem; */
 
   }
@@ -371,7 +371,7 @@
   .customise_section {
     height: 36.8rem;
    
-    background-color: #30434D;
+    background-color: #8E1B3E;
     color: #ffff;
     border-radius: 1.3rem;
     margin: 1rem 1.8rem;
@@ -757,18 +757,16 @@ margin-top:0.6rem;
 }
 
 .loan_section {
-   
+  position: relative;
   height: 42.7rem;
   display: flex;
- 
+  overflow: hidden !important;
   flex-direction: column;
-  background-color: #F7F4ED;
+  background-color: #FFC82F;
   /* justify-content: space-between; */
   padding: 3rem 3rem 0 2rem;
   border-radius: 1.5rem;
   gap: 0.5rem;
-  
-
 }
 .loan_section_title {
   font-family: "GilroySemiBold";
@@ -789,15 +787,18 @@ margin-top:0.6rem;
 }
 
 .Loan_img{
-  position:relative;
-  height:19rem;
-  width: 100%;
-  max-width: 22.5rem;
-  margin: 0;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+   position: absolute;
+    height: 18rem;
+    width: 90%;
+    /* max-width: 18rem; */
+    margin: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 .features_card_icon {
   position: relative;
@@ -1015,7 +1016,7 @@ margin-top:0.6rem;
 
 .business_needs {
   overflow: hidden;
-  background-color: #2B3C45;
+  background-color: #8E1B3E;
   color: #ffff;
   height: 28rem;
   padding: 1rem 0 0 0 ;
@@ -1036,8 +1037,8 @@ height: 20rem;
 }
 
 .bt_ele {
-  background-color: #0091F0;
-background: linear-gradient(to bottom right, #0091F0 10%, #00538A 130%);
+  background-color: #FFC82F;
+/* background: linear-gradient(to bottom right, #0091F0 10%, #00538A 130%); */
   position: relative;
   z-index: 0;
   height: 11rem;
@@ -1046,7 +1047,8 @@ background: linear-gradient(to bottom right, #0091F0 10%, #00538A 130%);
 
 
 .bt_ele2 {
-background: linear-gradient(to bottom right, #5AC098 10%, #2A5A47 130%);
+/* background: linear-gradient(to bottom right, #5AC098 10%, #2A5A47 130%); */
+background-color: #8E1B3E;
 position: relative;
 z-index: 0;
 height: 11rem;
@@ -1056,7 +1058,8 @@ width: 96vw;
 
 .bt_ele3 {
   
- background: linear-gradient(to bottom right, #F7AA62 10%, #ec780b 100%);
+ /* background: linear-gradient(to bottom right, #F7AA62 10%, #ec780b 100%); */
+ background-color: #8E1B3E;
   position: relative;
   border-bottom-left-radius: 1.4rem;
   z-index: 0;
@@ -1067,7 +1070,8 @@ width: 96vw;
 
 .bt_ele4 {
   
- background: linear-gradient(to bottom right, #FF6A6A 10%, #994040 130%);
+ /* background: linear-gradient(to bottom right, #FF6A6A 10%, #994040 130%); */
+ background-color: #FFC82F;
   
   position: relative;
   z-index: 0;
@@ -1206,14 +1210,14 @@ width: 96vw;
 
 .Questions_img{
   position:relative;
-   height:19rem;
+   height:30rem;
     width:87vw;
 }
 .footer_img { 
   position: relative;
-  width: 97%;
+  width: 93%;
   height: 27rem;
-  margin: 1rem 0.5rem ;
+  margin: 1rem 0.5rem 3rem 0.5rem;
   z-index:0;
 }
 
@@ -1468,7 +1472,7 @@ width: 96vw;
   padding: -2rem 0rem 5rem 0.5rem;
   display: flex;
   flex-direction: column;
-  margin: 10rem 1.8rem 0 1.5rem;
+  margin: 6rem 1.8rem 0 1.5rem;
   width: 89vw;
 }
 .form_text_Section {
@@ -1640,12 +1644,6 @@ width: 96vw;
     padding-bottom: -5px;
   }
    
-
-  .heroimg{
-    position: relative;
-    width: 100%;
-    height: 60vh;
-  }
   .stars {
     height: 2rem;
     width: 2rem;
@@ -1665,10 +1663,14 @@ width: 96vw;
   }
   
 .Loan_img{
-    height:21rem;
-    width: 100%;
-    max-width: 22.5rem;
+    position: absolute;
+    height: 18rem;
+    width: 90%;
+    /* max-width: 18rem; */
     margin: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex; 
     justify-content: center;
     align-items: center;
@@ -1694,9 +1696,9 @@ width: 96vw;
   bottom: 4rem;
   left: 68%;
 }
-.Questions_img{
+/* .Questions_img{
    height:25rem;
-}
+} */
 .versatile_img {
   width: 88vw;
   height: 35rem;
@@ -1704,11 +1706,11 @@ width: 96vw;
 }
 
   
-  .customise_img {
+  /* .customise_img {
     position: absolute;
     width: 100%;
     max-width: 93.5vw;
-    height: 31.3rem;
+    height: 30rem;
     top: 10rem;
     left: 0rem;
     bottom: 0rem;
@@ -1716,7 +1718,7 @@ width: 96vw;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .customise_title {
     width: 100%;
     max-width: 23rem;
@@ -1749,9 +1751,9 @@ width: 96vw;
   overflow-x: hidden;
 } */
 
-.footer_img { 
+/* .footer_img { 
   height: 28.3rem;
-}
+} */
     
   
 }
@@ -1765,12 +1767,12 @@ width: 96vw;
     top: 6rem;
      left: 42%;
   }
-  .customise_img {
+  /* .customise_img {
      
     width: 87.5vw;
      
      
-  }
+  } */
   /* .dev_img1 {
     top: 57%;
     left: 12%;

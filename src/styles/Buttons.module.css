@@ -1,5 +1,5 @@
 .contact_custom_button {
-  background-color: #0091F0;
+  background-color: #8E1B3E;
   color: #fff;
   outline: none;
   border: none;
@@ -12,7 +12,7 @@
   z-index: 1;  
 }
 
-.contact_custom_button::before {
+/* .contact_custom_button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -23,7 +23,7 @@
   transition: left 0.3s ease;
   z-index: -1;
     
-}
+} */
 
 .contact_custom_button:hover::before {
   left: 0;  
@@ -37,10 +37,10 @@
 
 
 .login_button {
-  background-color: #2B3B45;  
-  color: #fff;
+  background-color: transparent;  
+  color: #8E1B3E;
   outline: none;
-  border: none;
+  border: #8E1B3E 1px solid;
   border-radius: 0.5rem;
   font-size: 1.1rem;
   font-family:GilroyMedium;
@@ -50,7 +50,7 @@
   transition: color 0.3s ease;  
 }
 
-.login_button::before {
+/* .login_button::before {
   content: '';
   position: absolute;
   top: 0;
@@ -60,16 +60,16 @@
   background-color: #0F2531;  
   transition: left 0.3s ease;  
   z-index: -1;  
-}
+} */
 
 .login_button:hover::before {
   left: 0;  
 }
 
-.login_button:hover {
+/* .login_button:hover {
   cursor: pointer;
   color: #fff;  
-}
+} */
 
 
   .mainMarqueeTagHomePage {

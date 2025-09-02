@@ -56,7 +56,7 @@ const MobileFooter = () => {
           </div>
           <div className={styles.subscribe} >
             <h4 style={{ fontFamily: "GilroyMedium", fontSize: "1.7rem" }}>Subscribe to our <br /> Newsletter</h4> <br />
-            <p style={{ fontFamily: "GilroyRegular", fontSize: "0.85rem", lineHeight: "1.5rem" }}>Doroki centralizes operations with seamless billing, quick invoicing, inventory management and an eStore for online orders.</p>
+            <p style={{ fontFamily: "GilroyRegular", fontSize: "0.85rem", lineHeight: "1.5rem" }}>Sadad centralizes operations with seamless billing, quick invoicing, inventory management and an eStore for online orders.</p>
             <form onSubmit={subscribe} >
               <input
                 className={styles.subscribe_input}
@@ -76,15 +76,15 @@ const MobileFooter = () => {
 
 
             <div className={styles.footer_conatctIcon}>
-             <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target="_blank"> <div className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div></a>
-              <a href="https://www.instagram.com/dorokibypaga" target="_blank" rel="noopener noreferrer">
+             <a href="" target="_blank"> <div className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div className={styles.footerIcon}><Image src='/assets/Instagram-new.svg' fill alt="insta" /></div>
               </a>
-              <a href="https://x.com/_dorokibypaga" target="_blank" rel="noopener noreferrer">
+              <a href="" target="_blank" rel="noopener noreferrer">
                 <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
               </a>
-             <a href="https://www.linkedin.com/company/doroki/" target="_blank"> <div className={styles.footer_Icon} style={{ marginBottom: "-0.4rem" }}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div></a>
-              <a href="https://www.youtube.com/@Doroki-hq" target="_blank" >
+             <a href="" target="_blank"> <div className={styles.footer_Icon} style={{ marginBottom: "-0.4rem" }}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div></a>
+              <a href="" target="_blank" >
             <div className={styles.footerIcon}><Image src='/assets/youTube.svg' fill alt="youTube" /></div>
             </a>
             </div>
@@ -92,63 +92,59 @@ const MobileFooter = () => {
             <div className={styles.footer_navigations}  >
               <div>
                 <p className={styles.footerContent_titile}>Contact</p>
-                <a href="mailto:support@doroki.com">
-                  <p className={styles.footerContent}>Email : support@doroki.com</p>
+                <a href="">
+                  <p className={styles.footerContent}>Email : support@sadad.com</p>
                 </a>
 
-                <p className={styles.footerContent}>Call : 02013444300</p>
-                <a href="https://x.com/_dorokibypaga" target="_blank" rel="noopener noreferrer"> 
-                  <p className={styles.footerContent}>X : @_dorokibypaga</p>
+                <p className={styles.footerContent}>Call : 1234567890</p>
+                <a href="" target="_blank" rel="noopener noreferrer"> 
+                  <p className={styles.footerContent}>X : x.com</p>
                   </a>
-                 <a href="https://web.facebook.com/people/Doroki-by-Paga/61576983554167/" target='_blank'><p className={styles.footerContent}>Facebook : @Doroki-by-Paga</p> </a>
+                 <a href="" target='_blank'><p className={styles.footerContent}>Facebook : facebook.com</p> </a>
 
-                <a href="https://wa.me/2348099227242" target='_blank' rel="noopener noreferrer">  <p className={styles.footerContent}>WhatsApp : 08099227242</p></a>
+                <a href="" target='_blank' rel="noopener noreferrer">  <p className={styles.footerContent}>WhatsApp : 1234567890</p></a>
                 <p className={styles.footerContent}>SMS : 09090027242</p>
                 <p className={styles.footerContent}>Address : 176 Herbert <br />
                   Macaulay Wy, Yaba, Lagos</p>
               </div>
-              <div style={{ display: 'flex', gap: '4rem', margin: "2rem 0" }}>
-                {/* <div style={{ width: "7rem" }}>
+              <div style={{ display: 'flex', gap: '4rem', margin: "2rem 0", flexWrap:"wrap" }}>
+                <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>About</p>
                   <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.footerContent}>Company</p></a>
                   <a href="https://www.wearepaga.com/"> <p className={styles.footerContent}>Careers</p></a>
                   <a href="https://paga.frontify.com/auth?referer=%2F"> <p className={styles.footerContent}>Media Kit</p></a>
-                </div> */}
+                </div>
                 <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>Products</p>
-                  <a href="https://www.mypaga.com/home/" target='_blank'><p className={styles.footerContent}>Personal</p></a>
-                  {/* <p className={styles.footerContent}>Agent</p> */}
-                  {/* <p className={styles.footerContent}>Business</p> */}
-                  <a href="https://developer.paga.com/?_gl=1*1kxbc0i*_gcl_au*MjgxMTk5NDg1LjE3NDA0Njk2ODQ." target='_blank'><p className={styles.footerContent}>Developer</p></a>
+                  <a href="" target='_blank'><p className={styles.footerContent}>Personal</p></a>
+                  <p className={styles.footerContent}>Agent</p>
+                  <p className={styles.footerContent}>Business</p>
+                  <a href="" target='_blank'><p className={styles.footerContent}>Developer</p></a>
                 </div>
-                <div style={{ width: "7rem" }}>
-                  <p className={styles.footerContent_titile}>Support</p>
-                  {/* <a href="https://mypaga.freshdesk.com/support/home" target='_blank'>  <p className={styles.footerContent}>FAQ</p></a> */}
-                  <a href="https://mypaga.freshdesk.com/a/solutions/categories/35000131870/folders/35000246072?portalId=35000023706&view=all" target='_blank'>  <p className={styles.footerContent}>FAQ</p></a>
-                  <a href='https://api.whatsapp.com/send/?phone=%2B2348099227242&text&type=phone_number&app_absent=0' target='_blank'>  <p className={styles.footerContent}>Help Desk</p></a>
-                  {/* <p className={styles.footerContent}>Find an Agent</p> */}
-                </div>
+                 
               </div>
 
               <div style={{ display: 'flex', gap: '4rem', margin: "1rem 0" }}>
                 <div style={{ width: "7rem" }}>
                   <p className={styles.footerContent_titile}>Links</p>
-                  {/* <a href="https://donate.ng/"  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a> */}
-                  {/* <p className={styles.footerContent}>Paga Blog</p> */}
-                  {/* <p className={styles.footerContent}>Pricing</p> */}
-                  {/* <p className={styles.footerContent}>Remittances</p> */}
-                  <Link href="/terms-of-service">
+                  <a href=""  target='_blank'><p className={styles.footerContent}>Donate.ng</p></a>
+                  <p className={styles.footerContent}>Paga Blog</p>
+                  <p className={styles.footerContent}>Pricing</p>
+                  <p className={styles.footerContent}>Remittances</p>
+                  <Link href="">
                     <p className={styles.footerContent}>Terms of Service</p>
                   </Link>
-                  {/* <p className={styles.footerContent}>Security</p> */}
+                  <p className={styles.footerContent}>Security</p>
                 </div>
-                {/* <div style={{ width: "7rem" }}>
-                  <p className={styles.footerContent_titile}>Products</p>
-                  <a href="https://www.mypaga.com/home/" target='_blank'><p className={styles.footerContent}>Personal</p></a> */}
-                  {/* <p className={styles.footerContent}>Agent</p> */}
-                  {/* <p className={styles.footerContent}>Business</p> */}
-                  {/* <a href="https://developer.paga.com/?_gl=1*1kxbc0i*_gcl_au*MjgxMTk5NDg1LjE3NDA0Njk2ODQ." target='_blank'><p className={styles.footerContent}>Developer</p></a> */}
-                {/* </div> */}
+                <div style={{ width: "7rem" }}>
+                  <p className={styles.footerContent_titile}>Support</p>
+                  <a href="" target='_blank'>  <p className={styles.footerContent}>FAQ</p></a>
+                  <a href="" target='_blank'>  <p className={styles.footerContent}>FAQ</p></a>
+                  <a href='' target='_blank'>  <p className={styles.footerContent}>Help Desk</p></a>
+                  <p className={styles.footerContent}>Find an Agent</p>
+                </div>
+                 
+               
               </div>
             </div>
             {/* <div  className={styles.Conditions}>
@@ -167,7 +163,7 @@ const MobileFooter = () => {
                   </div>
                   <div className={styles.phoneContact}>
                     <div className={styles.phoneIcon}><Image src='/assets/mail.svg' fill alt="invt" /></div>
-                    <p>support@doroki.com</p>
+                    <p>support@sadad.com</p>
                   </div>
                   </div> */}
 
@@ -175,13 +171,13 @@ const MobileFooter = () => {
               <p className={styles.poweredby}>Powered by</p>
 
               <div className={styles.poweredby_logo_section} >
-                <div className={styles.footer_paga_logo}><Image src='/assets/footer_paga_logo.svg' fill alt='paga logo' /></div>
-                <div className={styles.footer_CenterLine}></div>
+                {/* <div className={styles.footer_paga_logo}><Image src='/assets/footer_paga_logo.svg' fill alt='paga logo' /></div>
+                <div className={styles.footer_CenterLine}></div> */}
                 <div className={styles.footer_qb_logo} ><Image src='/assets/footer_new_qb_logo.svg' fill alt='qb_logo' /></div>
               </div> <br />
 
             </div>
-            <p className={styles.all_rights}>© {new Date().getFullYear()} Doroki All rights reserved.</p>
+            <p className={styles.all_rights}>© {new Date().getFullYear()} Sadad All rights reserved.</p>
 
           </div>
         </div>

@@ -134,8 +134,8 @@ const handleMenuItemClick = (e, sectionId) => {
       >
     
         <Image
-          src="/assets/NavigationBar/Doroki-logo1.svg"
-          alt="Doroki logo"
+          src="/assets/NavigationBar/sadad-logo.svg"
+          alt="Sadad logo"
           fill
         />
       </div></Link>
@@ -172,7 +172,7 @@ const handleMenuItemClick = (e, sectionId) => {
             <div style={{display:"flex", flexDirection:"column", gap:"0.8rem", margin:"4rem 0 0 0 "}}> 
             <BlueButton text="Get Free Demo" style={{ height: "3.4rem", width:"100%",fontSize:"1.1rem" }}  onClick={setGetFreeDemo} />
           
-            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={() => (window.location.href="https://admin.doroki.com/")}/>
+            <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={() => (window.location.href="")}/>
             {/* <BlackButton text="Login" style={{ height: "3.4rem", width:"100%", fontSize:"1.1rem"}} onClick={()=>setComingSoon(true)}/> */}
             </div>
           
@@ -196,7 +196,7 @@ const handleMenuItemClick = (e, sectionId) => {
                 <div style={{position:'relative', width:"15rem", height:"10rem", margin:"1rem 0 0 0.5rem"}}> <Image  src='/assets/coming_soon.webp' fill alt='coming soon'/></div>
                  <div style={{ display:"grid",gap:"1rem", marginTop:"1rem"}}> 
                 <h2 style={{fontFamily:"GilroyBold",lineHeight:"2rem"}}>Dashboard launching soon <br />stay tuned!</h2>
-                <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Doroki dashboard, arriving to transform your business soon!</p>
+                <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Sadad dashboard, arriving to transform your business soon!</p>
                 </div>
       
                 <BlackButton text='Coming Soon' style={{height:"3.4rem",   margin:"2rem 0 0 0" ,width:"100%"}}  onClick={()=>setComingSoon(false)}/>
@@ -255,7 +255,7 @@ const handleMenuItemClick = (e, sectionId) => {
                   margin: " 0 2rem ",
                   fontFamily:"GilroyMedium"
                 }}>
-                  Transform your business with Doroki—schedule <br />
+                  Transform your business with Sadad—schedule <br />
                   a demo for effortless management today!
                 </p>
               </div>

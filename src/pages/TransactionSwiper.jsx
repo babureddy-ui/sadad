@@ -19,8 +19,8 @@ const BankTransactionSwiper=[
       icon:"/assets/money.svg",
       // title:"Seamlessly ",
       titleWord:"Send Money",
-      title2:"Securely with Doroki",
-      dec:"Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
+      title2:"Securely with Sadad",
+      dec:"Seamlessly send money with Sadad, ensuring secure transactions and instant transfers for your convenience and peace of mind.",
       img:"/assets/Paga_sendMoney_img.webp"
     },
   ]

@@ -23,6 +23,7 @@
   
 }
 
+
 .dropdownMenu{
   position: absolute;
   display: flex;
@@ -292,11 +293,11 @@
   height: 4rem;
 }
 .loan_section_container {
-    margin: 15rem 7rem -3rem 7.5rem;
+    margin: 5rem 7rem -3rem 7.5rem;
     height: 28rem;
     /* overflow: hidden; */
     display: flex;
-    background-color: #F7F4ED;
+    background-color: #FFC82F;
     justify-content: space-between;
     padding: 1rem 3rem 0 4rem;
     /* gap:rem; */
@@ -325,6 +326,15 @@
     position: relative;
     height: 100%;
     width: 100%;
+    right: -2rem;
+    top: -0.5rem;
+  }
+  .Effortless_transactions {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    right: 0rem;
+    top: 3rem;
   }
   .loan_section_playstore {
     position: relative;
@@ -1123,8 +1133,8 @@ margin-top: 4.3rem;
     /* margin: 10rem 0; */
     display: flex;
     padding: 2rem 1rem 0 4rem;
-    margin:4rem 7rem 0 7.5rem;
-    background-color: #2B3C45;
+    margin:7rem 7rem 0 7.5rem;
+    background-color: #8E1B3E;
     color: #ffff;
     height: 23rem;
     justify-content: space-between;
@@ -1173,10 +1183,10 @@ margin-top: 4.3rem;
   .business_needs2{
     display: flex;
     /* flex-wrap: wrap; */
-    margin: 1rem 7rem 5rem 7.5rem;
+    margin: 1rem 7rem 0rem 7.5rem;
     /* height: 20rem; */
   position: relative;
-  height: 23rem;
+  height: 100%;
      
 
   }
@@ -1258,8 +1268,8 @@ margin-top: 4.3rem;
      
   }
   .bt_ele {
-    background-color: #0091F0;
-  background: linear-gradient(to bottom right, #0091F0 10%, #00538A 130%);
+    background-color: #FFC82F;
+  /* background: linear-gradient(to bottom right, #0091F0 10%, #00538A 130%); */
   /* box-shadow: inset -10px 0px 20px rgba(0, 0, 0, 0.3);   */
     position: relative;
     z-index: 0;
@@ -1270,7 +1280,8 @@ margin-top: 4.3rem;
 
 
 .bt_ele2 {
-  background: linear-gradient(to bottom right, #5AC098 10%, #2A5A47 130%);
+  background-color: #8E1B3E;
+  /* background: linear-gradient(to bottom right, #5AC098 10%, #2A5A47 130%); */
   position: relative;
   z-index: 0;
   height: 18rem;
@@ -1279,16 +1290,19 @@ margin-top: 4.3rem;
 
   
   .bt_ele3 {
+    background-color: #FFC82F;
   
-   background: linear-gradient(to bottom right, #F7AA62 10%, #ec780b 100%);
+   /* background: linear-gradient(to bottom right, #F7AA62 10%, #ec780b 100%); */
     position: relative;
     z-index: 0;
     height: 18rem;
     width: 43%;
   }
   
+
   .bt_ele4 {
-   background: linear-gradient(to bottom right, #FF6A6A 10%, #994040 130%);
+    background-color: #8E1B3E;
+   /* background: linear-gradient(to bottom right, #FF6A6A 10%, #994040 130%); */
   
     position: relative;
     z-index: 0;
@@ -1485,6 +1499,11 @@ margin-top: 4.3rem;
     height: 28rem;
     width: 42rem;
   }
+  .loan_section_img_container {
+    position: relative;
+    height: 30rem;
+    width: 38rem;
+  }
   
  .card {
   position: relative; 
@@ -1675,8 +1694,36 @@ margin-top: 4.3rem;
 
 .Paga_Footer_img {
   position: relative;
+  background-color: #8E1B3E;
   width: 50rem;
-  height: 48rem;
+  height: 42rem;
+  margin: 0rem 0rem 3rem 0rem;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+}
+
+
+.gradientImg{
+  position: absolute;
+  width: 57%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  
+}
+.centerLogo{
+  position: absolute;
+  width: 20rem;
+  height: 15rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 .Questions_sec {
   margin: -0.5rem 2rem;

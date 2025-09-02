@@ -8,12 +8,10 @@ import SwiperComponent from '@/pages/SwiperComponent';
 import FrequentQuestions from '@/pages/Questions';
 import CustomiseBy from '@/pages/CustomiseBy';
 import ClientSwiper from '@/pages/ClientSwiper';
-import { NavigationBar } from '../navBar/NavigationBar';
 import animationData from '../../../public/assets/Animation.json';
 // import Lottie from 'react-lottie';
 import states, { Busineeses } from "../../services/states";
 import axios from "axios";
-import DesktopFooter from '../footerComponents/DesktopFooter';
 import dynamic from 'next/dynamic';
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
@@ -163,7 +161,7 @@ const HomePage = () => {
     {
       icon: "/assets/designed.svg",
       title: "Designed for SMEs",
-      text: "Doroki offers a robust suite of tools at a competitive price.",
+      text: "Sadad offers a robust suite of tools at a competitive price.",
       width: "10rem",
       height: "7rem"
     },
@@ -203,32 +201,32 @@ const HomePage = () => {
     {
       para: (
         <span style={{ width: "90%" }}>
-          What is Doroki?
+          What is Sadad?
         </span>
       ),
-      des: "Doroki is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Doroki helps businesses digitize their operations and streamline their payment solutions.",
+      des: "Sadad is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Sadad helps businesses digitize their operations and streamline their payment solutions.",
       id: 1,
       activeIndex: 1,
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          How does Doroki help my business?
+          How does Sadad help my business?
         </span>
       ),
-      des: "Doroki is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Doroki will also offers value-added services like business loans and multiple location support—all at an affordable price.",
+      des: "Sadad is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Sadad will also offers value-added services like business loans and multiple location support—all at an affordable price.",
       id: 2,
 
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          What features does Doroki offer?
+          What features does Sadad offer?
 
         </span>
       ),
       des: <div>
-        Doroki includes features like:
+        Sadad includes features like:
         <ul>
           <li>Inventory Management</li>
           <li>Product Catalog</li>
@@ -247,17 +245,17 @@ const HomePage = () => {
     {
       para: (
         <span style={{ width: "90%" }}>
-          How do I get started with Doroki?
+          How do I get started with Sadad?
         </span>
       ),
-      des: "Getting started with Doroki is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
+      des: "Getting started with Sadad is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
       id: 4,
       
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-         How Doroki place itself as a All-In-One business suite ?
+         How Sadad place itself as a All-In-One business suite ?
         </span>
       ),
       des: "Our All-In-One business suite manages SKU-level catalogs, inventory,billing, multiple payment methods, bulk uploads, role permissions, promotions, reports, cloud backup, multi-location operations, and loyalty/membership programs.",
@@ -267,20 +265,20 @@ const HomePage = () => {
     {
       para: (
         <span style={{ width: "90%" }}>
-         How many industries are covered by Doroki?
+         How many industries are covered by Sadad?
         </span>
       ),
-      des: "Doroki is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
+      des: "Sadad is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
       id: 6,
 
     },
     {
       para: (
         <span style={{ width: "90%" }}>
-          Does Doroki supports versatile payment options?
+          Does Sadad supports versatile payment options?
         </span>
       ),
-      des: "Doroki is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, paga, scan-to-pay, bank USSD and more",
+      des: "Sadad is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, sadad, scan-to-pay, bank USSD and more",
       id: 7,
 
     },
@@ -291,7 +289,6 @@ const HomePage = () => {
 
   return (
     <>
-      <div><NavigationBar /></div>
       <div className={styles.pagaLanding}>
         <div className={styles.Top_heroSection}>
           <div style={{ width: "50%", height: "50rem", position: "relative" }}>
@@ -305,13 +302,13 @@ const HomePage = () => {
                   <h1 className={styles.headline}>
                     Drive your
                     <div className={styles.box}>
-                      <span className={styles.word} style={{ color: "#FF6347" }}>Restaurant</span>
+                      <span className={styles.word} style={{ color: "#F8B53C" }}>Restaurant</span>
                       <span className={styles.word} style={{ color: "#0074D9" }}>Retail</span>
                       <span className={styles.word} style={{ color: "#4CAF50" }}>Grocery</span>
                       <span className={styles.word} style={{ color: "#8E44AD", whiteSpace: "nowrap" }}>Spa & Salon</span>
                       <span className={styles.word} style={{ color: "#CF1A1A" }}>Electronics</span>
                     </div><br />
-                    business forward <br /> with Doroki
+                    business forward <br /> with Sadad
                   </h1>
 
                   <div className={styles.heroSection_img_stars}>
@@ -333,7 +330,7 @@ const HomePage = () => {
                       placeholder="Enter phone number/email"
                       value={subscribeEmail}
                     />
-                    <BlackButton text="Contact Me" style={{ padding: "1rem  1.8rem", width: "10rem", height: "3rem", fontSize: "0.9rem", fontFamily: "GilroyMedium" }} />
+                    <BlueButton text="Contact Me" style={{ padding: "1rem  1.8rem", width: "10rem", height: "3rem", fontSize: "0.9rem", fontFamily: "GilroyMedium" }} />
                   </div>
                 </form>
                 {subscribeErrorMessage && <p className={styles.error}>{subscribeErrorMessage}</p>}
@@ -342,7 +339,7 @@ const HomePage = () => {
           </div>
           <div className={styles.hero_image}>
             <div style={{ width: "100%", height: "100vh", }} >
-              <Image src="/assets/Page_HeroImage.webp" fill alt="hero" />
+              <Image src="/assets/sadad_HeroImag.webp" fill alt="sadad_HeroImag" />
             </div>
           </div>
         </div>
@@ -402,7 +399,7 @@ const HomePage = () => {
           <div>
             <div className={styles.marquee_container} >
               <h2 className={styles.marquee_title}>Trusted by top Businesses</h2>
-              <p className={styles.marquee_txt}> Doroki is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
+              <p className={styles.marquee_txt}> Sadad is trusted by countless businesses, offering seamless, reliable solutions <br /> that drive growth across multiple industries</p>
             </div>
           </div>
           <div className={styles.marquee_section}>
@@ -434,16 +431,16 @@ const HomePage = () => {
                   </div>
                   <h3 className={styles.billing_card_title}>Seamlessly manage  <span style={{ color: "#0091F0" }}> Billing</span> operations with precision</h3>
                   <p className={styles.billing_card_txt}>
-                    Seamlessly send money with Doroki, ensuring secure transactions and
+                    Seamlessly send money with Sadad, ensuring secure transactions and
                     instant transfers for your convenience and peace of mind.
                   </p>
                 </div>
 
                 <div className={styles.topImage}>
-                  <Image src="/assets/billing_Top_img1.webp" fill alt="billing" />
+                  <Image src="/assets/billing_Top_img.svg" fill alt="billing" />
                 </div>
                 <div className={styles.otherImage}>
-                  <Image src="/assets/billing.webp" fill alt="billing" />
+                  <Image src="/assets/billing_sadad.webp" fill alt="billing" />
                 </div>
               </div>
               <div className={styles.card2}>
@@ -458,7 +455,7 @@ const HomePage = () => {
                 </div>
 
                 <div className={styles.topImage2}>
-                  <Image src="/assets/Inventory_Top_img1.webp" fill alt="invt" />
+                  <Image src="/assets/Inventory_Top_img.svg" fill alt="invt" />
                 </div>
                 <div className={styles.otherImage}>
                   <Image src="/assets/Doroki_Inventory_img.webp" fill alt="invt" />
@@ -478,13 +475,13 @@ const HomePage = () => {
                   </div>
 
                   <div className={styles.topImage3}>
-                    <Image src="/assets/eStore_Top_img1.webp" fill alt="estore" />
-                    <Lottie options={{ animationData }} height={70} width={70}
+                    <Image src="/assets/order_notification.svg" fill alt="estore" />
+                    {/* <Lottie options={{ animationData }} height={70} width={70}
                       style={{ zIndex: 1000, top: "1rem", position: "relative" }}
-                    />
+                    /> */}
                   </div>
                   <div className={styles.otherImage3}>
-                    <Image src="/assets/eStore-img.webp" fill alt="estore" />
+                    <Image src="/assets/billing_sadad.webp" fill alt="estore" />
                   </div>
                 </div>
               </div>
@@ -519,7 +516,7 @@ const HomePage = () => {
                   </div>
 
                   <div className={styles.otherImage3}>
-                    <Image src="/assets/crm_img1.webp" fill alt="crm" />
+                    <Image src="/assets/crm_img_sadad.webp" fill alt="crm" />
                   </div>
                 </div>
               </div>
@@ -533,7 +530,7 @@ const HomePage = () => {
           <HiddenPowers />
         </div>
 
-        <div style={{ margin: "4rem 7rem 4rem 7.5rem" }}>
+        {/* <div style={{ margin: "4rem 7rem 4rem 7.5rem" }}>
           <div className={styles.bank_transaction_section} >
             <p className={styles.bank_transaction_heder_txt}>A Dedicated <b>Bank Account</b> for Your Business Transactions</p>
             <div className={styles.bank_transaction_img_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div>
@@ -548,8 +545,7 @@ const HomePage = () => {
               <h4 className={styles.bank_container_title}>
                  <span style={{ color: "#0391f0" }}>Auto Sweep</span> for smooth <br /> daily fund transfer
               </h4>
-              {/* <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your designated account.</p> */}
-              <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your
+               <p className={styles.bank_container_txt} >Daily auto-sweep transfers funds effortlessly into your
                 designated account, ensuring smooth cash flow and
                 financial convenience.</p>
               <div className={styles.bank_img}>
@@ -562,9 +558,9 @@ const HomePage = () => {
                 <Image src="/assets/money.svg" fill alt="money" />
               </div>
               <h4 className={styles.bank_container_title}>
-               <span style={{ color: "#0391f0" }}>Send Money</span>   Securely <br /> with Doroki
+               <span style={{ color: "#0391f0" }}>Send Money</span>   Securely <br /> with Sadad
               </h4>
-              <p className={styles.bank_container_txt} >Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
+              <p className={styles.bank_container_txt} >Seamlessly send money with Sadad, ensuring secure transactions and instant transfers for your convenience and peace of mind.</p>
               <div className={styles.money_img}>
                 <Image src="/assets/Paga_sendMoney_img.webp" fill alt="send money" />
               </div>
@@ -572,27 +568,71 @@ const HomePage = () => {
 
           </div>
 
-        </div>
+        </div> */}
 
 
 
         <div className={styles.loan_section_container}>
           <div className={styles.loan_section} >
-            <div className={styles.loan_section_icon}><Image src='/assets/Loans.svg' fill alt="loans" /></div>
+            <div className={styles.loan_section_icon}><Image src='/assets/Loans_icon.svg' fill alt="loans" /></div>
             <div style={{ fontSize: "1rem", }}>
-              <h4 className={styles.loan_section_title}> Get <span style={{ color: "#0091F0" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h4> <br />
+              <h4 className={styles.loan_section_title}> Get <span style={{ color: "#8E1B3E" }}> Affordable Loans</span>  for your <br />business from our partner  banks</h4> <br />
               <p className={styles.loan_section_txt}>Scale your business with transparent, reliable loans from our trusted banking partners — easy and straightforward</p>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="" target="_blank">  <div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
           <div className={styles.Loan_img}>
-            <div className={styles.loan_section_img}> <Image src="/assets/Paga_Loan_img.webp" fill alt="loan" /> </div>
+            <div className={styles.loan_section_img}> <Image src="/assets/Loan_img_sadad.webp" fill alt="loan" /> </div>
           </div>
         </div> <br />
 
 
 
-        <div>
+         <div className={styles.business_needs}>
+
+          <div className={styles.business_needs_content_section}  >
+            <div className={styles.business_needs_title} ><h4>Intuitive and Easy-to-Use App for Your Business Needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
+
+            <p className={styles.business_needs_txt} >Enjoy Simplified billing with our POS system and efficient payment processing — no hassle </p>
+            <a href="" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+          </div>
+          <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img-sadad.webp" fill alt="app" /></div>
+        </div>
+
+
+
+        <div className={styles.business_needs2}>
+          <div className={styles.bt_ele}>
+            <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable solution</h4>
+            <div className={styles.bt_img} >
+              <Image src="/assets/bt_img11.webp" fill alt="bt" />
+            </div>
+          </div>
+          <div className={styles.bt_ele2}>
+            <h4 className={styles.business_text}>Unlock powerful busines insights through detailed reports</h4>
+            <div className={styles.bt_img} >
+              <Image src="/assets/bt_img12.webp" fill alt="invt" />
+            </div>
+          </div>
+          <div className={styles.bt_ele3}>
+            <div className={styles.business_needs_commingsoon} > <p>Coming Soon</p></div>
+            <h4 className={styles.business_text_online}>Transform your business go online and reach new customers.</h4>
+            <div className={styles.bt_img} >
+              <Image src="/assets/bt_img13.webp" fill alt="invt" />
+            </div>
+          </div >
+          <div className={styles.bt_ele4} >
+            <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
+            <div className={styles.bt_img_loyalty} >
+              <Image src="/assets/bt_img14.webp" fill alt="invt" />
+            </div>
+          </div>
+        </div>
+
+
+
+
+        {/* <div>
           <div className={styles.versatile_section}>
             <div className={styles.versatile_section_leftContent}>
               <h4 className={styles.versatile_section_title} >Efficient, <span style={{ color: "#0391f0" }}>Versatile</span> <br />Reliable</h4>
@@ -604,10 +644,10 @@ const HomePage = () => {
           <div className={styles.TransactionMockp}>
             <Image src="/assets/TransactionMockp33.webp" fill alt="dashboard" />
           </div>
-        </div>
+        </div> */}
 
 
-        <div className={styles.business_journey_section} >
+        {/* <div className={styles.business_journey_section} >
 
           <div style={{ display: "flex", height: "45rem" }}>
             <div className={styles.business_journey} >
@@ -615,20 +655,20 @@ const HomePage = () => {
 
               <div className={styles.business_journey_Container} >
                 <div className={styles.business_journey_textContainer} >
-                  <h4 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Doroki</span> </h4>
-                  <p className={styles.business_journey_txt}>Doroki enables businesses manage their <br /> entire operations, from sales and inventory <br /> to customer data, ensuring a smoother <br /> end-of-day reconciliation process</p> <br />
+                  <h4 className={styles.business_journey_title} >Start your Business journey effortlessly with <span style={{ backgroundColor: "#f2931d", padding: "0.2rem 0.8rem 0.1rem 0.8rem" }}>Sadad</span> </h4>
+                  <p className={styles.business_journey_txt}>Sadad enables businesses manage their <br /> entire operations, from sales and inventory <br /> to customer data, ensuring a smoother <br /> end-of-day reconciliation process</p> <br />
                 </div>
-                <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+                <a href="" target="_blank"> <div className={styles.business_journey_playstore}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
               </div>
             </div>
             <div style={{ width: "50%", height: "45rem" }}>
               <SwiperComponent />
             </div>
           </div>
-        </div>
+        </div> */}
 
 
-        <div style={{ margin: "0rem 6.5rem 7rem 7.5rem", }}>
+        {/* <div style={{ margin: "0rem 6.5rem 7rem 7.5rem", }}>
 
 
           <div className={styles.business_dilemmas_section}>
@@ -665,46 +705,14 @@ const HomePage = () => {
             </div>
           </div>
 
-        </div>
-
-        {/* <div className={styles.clientsrave_section} >
-          <div className={styles.clientsrave_conatiner} >
-
-            <div className={styles.clientsrave_txt_conatiner} >
-              <h4 className={styles.clientsrave_title}>Clients rave - <span style={{ backgroundColor: "#f2931d", padding: "0.3rem 0.8rem" }}>Doroki</span>   <br />exceeds expectations!</h4>
-              <p className={styles.clientsrave_txt} > &quot;Clients consistently praise Doroki for its unmatched <br /> reliability, seamless integration, and ease of use,<br /> enhancing business operations.&quot;</p>
-            </div>
-
-
-            <div className={styles.clientsrave_video_conatiner} >
-              <div className={styles.clientsrave_video_Img} ><Image src="/assets/video-img2.webp" fill alt="video" /></div>
-            </div>
-            <div className={styles.clientsrave_Doroki_Blurred}><Image src="/assets/Doroki-Blurred.webp" fill alt="doroki" /></div>
-
-          </div>
         </div> */}
 
+       
 
 
-        <div style={{ margin: "10rem 0 8rem 0 " }}>
-          {/* <div className={styles.clients_section}>
-            <h4 className={styles.clients_section_title}>Our Client’s kind words</h4>
-            <div className={styles.clients_img_stars} >
-              <Image src="/assets/stars.svg" alt="Stars" fill />
-            </div>
-          </div>
-          <div >
-            <div className={styles.valued_option_arrow} ><Image src='/assets/valued_option_arrow.webp' fill alt='arrow' /></div>
-
-            <ClientSwiper />
-          </div> */}
-        </div>
-
-
-
-        <div className={styles.faq_section}>
+        <div className={styles.faq_section} style={{marginTop:"10rem"}}>
           <div className={styles.queries_img}>
-            <Image src="/assets/faqImage.webp" fill alt="queries" />
+            <Image src="/assets/faqImage_sadad.webp" fill alt="queries" />
           </div>
           <div >
             <div className={styles.Queries_arrow} ><Image src='/assets/Queries_arrow.webp' fill alt='arrow' /></div>
@@ -713,52 +721,33 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className={styles.business_needs}>
 
-          <div className={styles.business_needs_content_section}  >
-            <div className={styles.business_needs_title} ><h4>Intuitive and Easy-to-Use App for Your Business Needs</h4>  <div className={styles.business_needs_stars} ><Image src='/assets/stars.svg' fill alt="stars" /></div></div>
-
-            <p className={styles.business_needs_txt} >Enjoy Simplified billing with our POS system and efficient payment processing — no hassle </p>
-            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_needs_img_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
-          </div>
-          <div className={styles.business_needs_app_img}  ><Image src="/assets/app-img2.webp" fill alt="app" /></div>
-        </div>
-
-
-
-        <div className={styles.business_needs2}>
-          <div className={styles.bt_ele}>
-            <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable solution</h4>
-            <div className={styles.bt_img} >
-              <Image src="/assets/bt_img11.webp" fill alt="bt" />
+         <div className={styles.loan_section_container} style={{margin:"5rem 8rem", backgroundColor:"#8E1B3E"}}>
+          <div className={styles.loan_section} >
+            <div className={styles.loan_section_icon}><Image src='/assets/effortless_icon.svg' fill alt="loans" /></div>
+            <div style={{ fontSize: "1rem", }}>
+              <h4 className={styles.loan_section_title} style={{color:"#FFC82F"}}>Effortless transactions with POS features</h4> <br />
+              <p className={styles.loan_section_txt} style={{color:"white"}}>Our solutions are perfect for retail stores, restaurants, hospitals, travel agencies, and more.</p>
             </div>
-          </div>
-          <div className={styles.bt_ele2}>
-            <h4 className={styles.business_text}>Unlock powerful busines insights through detailed reports</h4>
-            <div className={styles.bt_img} >
-              <Image src="/assets/bt_img12.webp" fill alt="invt" />
-            </div>
-          </div>
-          <div className={styles.bt_ele3}>
-            <div className={styles.business_needs_commingsoon} > <p>Coming Soon</p></div>
-            <h4 className={styles.business_text_online}>Transform your business go online and reach new customers.</h4>
-            <div className={styles.bt_img} >
-              <Image src="/assets/bt_img13.webp" fill alt="invt" />
-            </div>
-          </div >
-          <div className={styles.bt_ele4} >
-            <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
-            <div className={styles.bt_img_loyalty} >
-              <Image src="/assets/bt_img14.webp" fill alt="invt" />
-            </div>
-          </div>
-        </div>
+              <BlueButton text="Contact Me" style={{ padding: "1rem  1.8rem", width: "10rem", height: "3rem", fontSize: "0.9rem", fontFamily: "GilroyMedium", backgroundColor:"#FFC82F", color:"black" }} />
 
+          </div>
+          <div className={styles.loan_section_img_container}>
+            <div className={styles.Effortless_transactions}> <Image src="/assets/Effortless_transactions.webp" fill alt="loan" /> </div>
+          </div>
+        </div> <br />
+
+
+        
 
 
         <div className={styles.formSection}>
-          <div className={styles.Paga_Footer_img}  >
-            <Image src='/assets/Paga_Footer_img1.webp' fill alt="invt" />
+          <div className={styles.Paga_Footer_img}   >
+            <div className={styles.gradientImg}><Image src='/assets/gradientImg.svg' fill alt="invt" /></div>
+            <div className={styles.centerLogo}><Image src='/assets/ColorLess_Logo.svg' fill alt="invt" /></div>
+
+
+
           </div>
 
 
@@ -772,7 +761,7 @@ const HomePage = () => {
               </div>
             </div>
             <br />
-            <p className={styles.demo_form_txt} >Discover how Doroki transforms your business—schedule a demo today and experience effortless management firsthand</p> <br />
+            <p className={styles.demo_form_txt} >Discover how Sadad transforms your business—schedule a demo today and experience effortless management firsthand</p> <br />
             <form onSubmit={freeDemoSubscribe}>
               <fieldset className={styles.input_divs}>
                 <input
@@ -881,7 +870,7 @@ const HomePage = () => {
                 <legend className={styles.legend}>City</legend>
               </fieldset>
 
-              <BlackButton
+              <BlueButton
                 text="Kickstart your success"
                 style={{ width: "100%", padding: "1rem", height: "3.8rem", zIndex: 0, margin: "0.5rem 0 0 0" }}
               />
@@ -890,7 +879,6 @@ const HomePage = () => {
 
           </div>
         </div>
-        <div><DesktopFooter /></div>
       </div>
 
     </>
