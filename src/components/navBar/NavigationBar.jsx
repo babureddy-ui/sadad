@@ -129,7 +129,7 @@ const toggleAboutUs = () => {
           <div className={styles.nav_bar}>
             {/* <div>  */}
             <div style={{ height: "2.6rem", width: "11.16rem", position: "relative", margin:"0rem 5rem 0 2rem", cursor:"pointer" }}>
-         <Link href="/"> <Image  src="/assets/NavigationBar/Doroki-logo1.svg"  alt="Doroki logo" fill /> </Link>
+         <Link href="/"> <Image  src="/assets/NavigationBar/sadad-logo.svg"  alt="sadad logo" fill /> </Link>
         </div>
         <div style={{display:"flex", width:"75%",justifyContent:'space-between' ,   padding:"0rem 2rem"}}>
           <div style={{display:'flex', width:"23rem", justifyContent:"space-between",alignItems:"center", paddingTop:"-1rem ",fontSize:"0.9rem",   }}>
@@ -144,14 +144,14 @@ const toggleAboutUs = () => {
                   <div className={styles.dropdownMenu} ref={dropdownRef}>
                     <div>
                       <p className={styles.comapnt_title}>About Us</p>
-                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>About Paga Group</p></a>
-                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>Leaders</p></a>
-                      <a href="https://www.mypaga.com/paga-web/company.paga"><p className={styles.comapnt_item}>Meet our Board</p></a>
+                      <a href=""><p className={styles.comapnt_item}>About Sadad Group</p></a>
+                      <a href=""><p className={styles.comapnt_item}>Leaders</p></a>
+                      <a href=""><p className={styles.comapnt_item}>Meet our Board</p></a>
                     </div>
                     <div>
                       <p className={styles.comapnt_title}>Resources</p>
-                      <a href="https://www.wearepaga.com/"><p className={styles.comapnt_item}>Careers</p> </a>
-                      <a href="https://paga.frontify.com/auth?referer=%2F"><p className={styles.comapnt_item}>Media Kit</p></a>
+                      <a href=""><p className={styles.comapnt_item}>Careers</p> </a>
+                      <a href=""><p className={styles.comapnt_item}>Media Kit</p></a>
                       <p className={styles.comapnt_item}>Blog</p>
                       <Link href="/terms-of-service"><p className={styles.comapnt_item}>Terms of Service</p></Link>
                     </div>
@@ -161,7 +161,7 @@ const toggleAboutUs = () => {
   
 
 
-              <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank">  <div className={styles.hover_container}>
+              <a href="" target="_blank">  <div className={styles.hover_container}>
                 {/* <Image
                   src="/assets/NavigationBar/Playstore.svg"
                   alt="Playstore"
@@ -212,7 +212,7 @@ const toggleAboutUs = () => {
           <div style={{position:'relative', width:"20rem", height:"13rem", margin:"2rem 0 1rem 0"}}> <Image  src='/assets/coming_soon.webp' fill alt='coming soon'/></div>
           <div style={{ display:"grid",gap:"1rem"}}> 
           <h2 style={{fontFamily:"GilroyBold", lineHeight:"2.1rem"}}>Dashboard launching soon <br />stay tuned!</h2>
-          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Doroki dashboard, arriving to transform your business soon!</p>
+          <p style={{fontFamily:"GilroyRegular", lineHeight:"1.5rem"}}>Seamlessly track, analyze and manage your business on Sadad dashboard, arriving to transform your business soon!</p>
           </div>
 
           <BlackButton text='Excitement awaits—coming soon!' style={{height:"3rem", padding:"1rem", margin:"2rem 0 0 0" ,width:"100%"}}  onClick={()=>setComingSoon(false)}/>
@@ -253,7 +253,7 @@ const toggleAboutUs = () => {
           </div>
           </div>
            
-          <p style={{fontFamily:"GilroyRegular", color:"#767676", fontSize:"0.9rem",lineHeight:"1.4rem"}}>Discover how Doroki transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
+          <p style={{fontFamily:"GilroyRegular", color:"#767676", fontSize:"0.9rem",lineHeight:"1.4rem"}}>Discover how Sadad transforms your business—schedule a demotoday and experience effortless management firsthand</p> <br />
           <form onSubmit={freeDemoSubscribe}>
               <fieldset className={styles.input_divs}>
                 <input

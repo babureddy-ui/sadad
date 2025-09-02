@@ -1,7 +1,3 @@
-import DesktopFooter from '@/components/footerComponents/DesktopFooter'
-import MobileFooter from '@/components/footerComponents/MobileFooter'
-import MobileNavBar from '@/components/navBar/MobileNavBar'
-import { NavigationBar } from '@/components/navBar/NavigationBar'
 import React from 'react'
 import styles from './TermsOfService.module.css'
 import Link from 'next/link'

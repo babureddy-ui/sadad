@@ -5,7 +5,7 @@ function getRequestParams(formData) {
   const LIST_ID = process.env.MAILCHIMP_LIST_ID;
   const DATACENTER = API_KEY.split("-")[1];
 
-  const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
+  // const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;
 
   const data = {
     email_address: formData.email,

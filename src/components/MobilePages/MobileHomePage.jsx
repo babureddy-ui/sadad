@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import MobileNavBar from '../navBar/MobileNavBar'
 import styles from './Mobile.module.css';
 import Image from 'next/image';
 import { BlackButton, BlueButton, DropDownInput, MarqueeComponentMobilePage } from '../Buttons/Button';
@@ -14,7 +13,6 @@ import animationData from '../../../public/assets/Animation.json';
 // import Lottie from 'react-lottie';
 import states, { Busineeses } from '@/services/states';
 import axios from "axios";
-import MobileFooter from '../footerComponents/MobileFooter';
 import dynamic from 'next/dynamic';
 const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
@@ -142,58 +140,58 @@ const MobileHomePage = () => {
         }
       };
     const BusinessTypes = [
-      {
-        icon: "/assets/business.svg",
-        title: "All-In-One Business Suite",
-        text: "Our platform streamlines your business operations end-to-end",
-        width:"8rem",
-        height:"5rem"
-      },
-      {
-        icon: "/assets/versatile.svg",
-        title: "Versatile Payment Options",
-        text: "Accept payments via bank transfers, USSD, and mobile payments",
-        width:"9rem",
-        height:"5rem"
-      },
-      {
-        icon: "/assets/designed.svg",
-        title: "Designed for SMEs",
-        text: "Doroki offers a robust suite of tools at a competitive price.",
-        width:"8rem",
-        height:"5rem"
-      },
-    ];
+    {
+      icon: "/assets/business.svg",
+      title: "All-In-One Business Suite",
+      text: "Our platform streamlines your business operations end-to-end",
+      width: "10rem",
+      height: "7rem"
+    },
+    {
+      icon: "/assets/versatile.svg",
+      title: "Versatile Payment Options",
+      text: "Accept payments via bank transfers, USSD, and mobile payments",
+      width: "10rem",
+      height: "7rem"
+    },
+    {
+      icon: "/assets/designed.svg",
+      title: "Designed for SMEs",
+      text: "Sadad offers a robust suite of tools at a competitive price.",
+      width: "10rem",
+      height: "7rem"
+    },
+  ];
     const faqs = [
       {
         para: (
           <span style={{ width: "90%" }}>
-            What is Doroki?
+            What is Sadad?
           </span>
         ),
-        des: "Doroki is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Doroki helps businesses digitize their operations and streamline their payment solutions.",
+        des: "Sadad is an all-in-one business suite designed to simplify operations for small and medium-sized businesses (SMEs). It provides inventory management, CRM, digital payment processing, promotions, and much more—all in one affordable platform. Sadad helps businesses digitize their operations and streamline their payment solutions.",
         id: 1,
         activeIndex: 1,
       },
       {
         para: (
           <span style={{ width: "90%" }}>
-            How does Doroki help my business?
+            How does Sadad help my business?
           </span>
         ),
-        des: "Doroki is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Doroki will also offers value-added services like business loans and multiple location support—all at an affordable price.",
+        des: "Sadad is a cost-effective, all-in-one solution designed specifically for SMEs. It combines traditional POS functionalities with advanced features like inventory management, CRM, and seamless payment integration. Sadad will also offers value-added services like business loans and multiple location support—all at an affordable price.",
         id: 2,
         
       },
       {
         para: (
           <span style={{ width: "90%" }}>
-            What features does Doroki offer?
+            What features does Sadad offer?
   
           </span>
         ),
         des: <div>
-        Doroki includes features like:
+                Sadad includes features like:
         <ul>
           <li>Inventory Management</li>
           <li>Product Catalog</li>
@@ -212,17 +210,17 @@ const MobileHomePage = () => {
       {
         para: (
           <span style={{ width: "90%" }}>
-           How do I get started with Doroki?
+           How do I get started with Sadad?
           </span>
         ),
-        des: "Getting started with Doroki is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
+        des: "Getting started with Sadad is easy! Simply download our app and sign up to create your account. Once you're registered, you'll be able to set up your business profile, add products to your catalog, and start accepting payments—all from one seamless platform. If you need assistance, you can access our support materials, FAQs, and contact customer service directly for any help you may need along the way.",
         id: 4,
         
       },
       {
         para: (
           <span style={{ width: "90%" }}>
-           How Doroki place itself as a All-In-One business suite ?
+           How Sadad place itself as a All-In-One business suite ?
           </span>
         ),
         des: "Our All-In-One business suite manages SKU-level catalogs, inventory,billing, multiple payment methods, bulk uploads, role permissions, promotions, reports, cloud backup, multi-location operations, and loyalty/membership programs.",
@@ -232,20 +230,20 @@ const MobileHomePage = () => {
       {
         para: (
           <span style={{ width: "90%" }}>
-           How many industries are covered by Doroki?
+           How many industries are covered by Sadad?
           </span>
         ),
-        des: "Doroki is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
+        des: "Sadad is tailored to meet the unique needs of various sectors, including general retail, restaurants, grocery, spa & salon, and more.",
         id: 6,
         
       },
       {
         para: (
           <span style={{ width: "90%" }}>
-           Does Doroki supports versatile payment options?
+           Does Sadad supports versatile payment options?
           </span>
         ),
-        des: "Doroki is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, paga, scan-to-pay, bank USSD and more",
+        des: "Sadad is a  All-In-One business suite ensuring quick, secure transactions with a range of digital payment options—including charge card, bank transfer, sadad, scan-to-pay, bank USSD and more",
         id: 7,
         
       },
@@ -301,24 +299,23 @@ const MobileHomePage = () => {
     ];
   return (
     <>
-     <div><MobileNavBar/></div><br />
      <div className={styles.mobileView}>
         <div>
-            <div className={styles.heroimg}><Image src="/assets/MobileView/Doroki_heroImg-mobile.webp" fill alt='heroImg-mobile1'/></div>
+            <div className={styles.heroimg}><Image src="/assets/MobileView/Sadad-heroImg-mobile.webp" fill alt='heroImg-mobile1'/></div>
 
             <div style={{margin:' 1.3rem 1.8rem',position:"relative"}}>
                 <div style={{display:"flex"}}> 
                 <h1 className={styles.headline}>
               Drive your 
               <div className={styles.box}>
-              <span className={styles.word} style={{color: "#FF6347"}}>Restaurant</span>
+              <span className={styles.word} style={{color: "#F8B53C"}}>Restaurant</span>
               <span className={styles.word} style={{color: "#0074D9"}}>Retail</span>
               <span className={styles.word} style={{color: "#4CAF50"}}>Grocery</span>
               <span className={styles.word} style={{color: "#8E44AD", whiteSpace: "nowrap"}}>Spa & Salon</span>
               <span className={styles.word} style={{color: "#CF1A1A"}}>Electronics</span>
                 
               </div> <br />
-              business forward <br/> with Doroki
+              business forward <br/> with Sadad
             </h1>
             <div className={styles.stars}> <Image src='/assets/stars.svg' fill alt="stars" /></div>
             </div>
@@ -334,7 +331,7 @@ const MobileHomePage = () => {
                   placeholder="Enter phone number/email"
                   value={subscribeEmail}
                 />
-                <BlackButton text="Contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem' ,width:"100%", marginTop:"1rem"}} />
+                <BlueButton text="Contact me" style={{padding:"1.2rem 0 ", height:"auto", fontSize: '1rem' ,width:"100%", marginTop:"1rem"}} />
 
                 </form>
                 {subscribeErrorMessage && <p className={styles.error}>{subscribeErrorMessage}</p>}
@@ -407,7 +404,7 @@ const MobileHomePage = () => {
         <div>
             <div className={styles.marqueeComponent_section} > 
           <h4 className={styles.marqueeComponent_title} >Trusted by top Businesses</h4>
-          <p className={styles.marqueeComponent_txt}> <span style={{fontFamily:"GilroyBold"}}>Doroki</span>  is trusted by countless businesses, offering seamless, reliable solutions  that drive <br />growth across multiple industries</p>
+          <p className={styles.marqueeComponent_txt}> <span style={{fontFamily:"GilroyBold"}}>Sadad</span>  is trusted by countless businesses, offering seamless, reliable solutions  that drive <br />growth across multiple industries</p>
           </div>
           </div>
           <div className={styles.marquee_section}>
@@ -420,7 +417,7 @@ const MobileHomePage = () => {
         </div>
         </selection>
   
-         <selection id="features_doroki">
+         <selection id="features_sadad">
         <div style={{margin:"1rem 1.8rem"}}>
 
         <div  className={styles.features}>
@@ -439,15 +436,15 @@ const MobileHomePage = () => {
             </div>
             <h4  className={styles.Loan_card_title} >Seamlessly manage  <span style={{color:"#0091F0"}}> Billing</span> operations with precision</h4>
             <p className={styles.Loan_card_txt} >
-            Seamlessly send money with Doroki, ensuring secure transactions and instant transfers for your convenience and peace of mind.
+            Seamlessly send money with Sadad, ensuring secure transactions and instant transfers for your convenience and peace of mind.
             </p>
             </div>
 
             <div className={styles.topImage}>
-              <Image src="/assets/MobileView/billing_Top_img.webp" fill alt="billing" />
+              <Image src="/assets/billing_Top_img.svg" fill alt="billing" />
             </div>
             <div className={styles.otherImage}>
-              <Image src="/assets/MobileView/billing.webp" fill alt="billing" />
+             <Image src="/assets/billing_sadad.webp" fill alt="billing" />
             </div>
           </div>
 
@@ -464,7 +461,7 @@ const MobileHomePage = () => {
             </div>
 
             <div className={styles.topImage2}>
-              <Image src="/assets/MobileView/Inventory_Top_img.webp" fill alt="invt" />
+              <Image src="/assets/Inventory_Top_img.svg" fill alt="invt" />
             </div>
             <div className={styles.otherImage}>
               <Image src="/assets/MobileView/paga_Inventory_img.webp" fill alt="invt" />
@@ -489,11 +486,11 @@ const MobileHomePage = () => {
 
           <div className={styles.topImage3}>
            
-          <Image src="/assets/eStore_Top_img1.webp" fill alt="estore" />
-          <Lottie options={{ animationData }} height={'calc(30px + 2vw)'} width={'calc(50px + 2vw)'} style={{zIndex:1000, top:"calc(0.5rem + 1vw)", position:"relative"}} />
+          <Image src="/assets/order_notification.svg" fill alt="estore" />
+          {/* <Lottie options={{ animationData }} height={'calc(30px + 2vw)'} width={'calc(50px + 2vw)'} style={{zIndex:1000, top:"calc(0.5rem + 1vw)", position:"relative"}} /> */}
         </div>
           <div className={styles.otherImage3}>
-            <Image src="/assets/eStore-img.webp" fill alt="estore" />
+           <Image src="/assets/billing_sadad.webp" fill alt="estore" />  
           </div>
           </div>
         </div>
@@ -526,7 +523,7 @@ const MobileHomePage = () => {
               <Image src="/assets/MobileView/crm_Top_img.webp" fill alt="crm" />
             </div>
             <div className={styles.otherImage3}>
-              <Image src="/assets/crm_img1.webp" fill alt="crm" />
+              <Image src="/assets/crm_img_sadad.webp" fill alt="crm" />
             </div>
           </div>
         </div>
@@ -541,7 +538,7 @@ const MobileHomePage = () => {
        <div style={{margin:'4rem 1rem'}}>
 
        <div  className={styles.features1}>
-          <p className={styles.feature_title}>Doroki’s Hidden Powers</p>
+          <p className={styles.feature_title}>Sadad’s Hidden Powers</p>
           <div className={styles.feature_stars_icon}>
             <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
           </div>
@@ -551,7 +548,7 @@ const MobileHomePage = () => {
         <div><MobileHiddenPowers/></div>
         </selection>
         
-           <selection id="Banking_Services"> 
+           {/* <selection id="Banking_Services"> 
           <div style={{margin:"3rem 0rem"}}>
             <div  className={styles.bank_account_section}  >
             <div className={styles.bank_account_section_title} > <h4>Dedicated </h4><div className={styles.Moneybag} ><Image src="/assets/MobileView/Moneybag.svg" fill alt='Moneybag'/></div> <h4 className={styles.bank_account_section_title2}>Bank Account</h4></div>
@@ -559,26 +556,26 @@ const MobileHomePage = () => {
               </div>
             <div ><TransactionSwiper/></div>
           </div>
-          </selection>
+          </selection> */}
 
 
-        <div style={{margin:"1rem 1.8rem", }}>
+        <div style={{margin:"1rem 1.8rem",position:'relative' }}>
 
         <div className={styles.loan_section}>
-         
-         <div className={styles.Loans_image} ><Image src='/assets/Loans.svg' fill alt="loans" /></div>
-         
-          <h4 className={styles.loan_section_title} > Get <span style={{color:"#0091F0"}}> Affordable Loans</span>  for your business from our partner banks</h4>  
+
+         <div className={styles.Loans_image} ><Image src='/assets/Loans_icon.svg' fill alt="loans" /></div>
+
+          <h4 className={styles.loan_section_title} > Get <span style={{color:"#8E1B3E"}}> Affordable Loans</span>  for your business from our partner banks</h4>
           <p className={styles.loan_section_txt} >Scale your business with transparent, reliable loans from our trusted banking partners — easy and straightforward</p>
      
-         <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+         <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.Sadad’s&hl=en" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
          
-         <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Paga_Affordableloans.webp" fill alt="loan" /> </div>
+         <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Affordableloans_sadad.webp" fill alt="loan" /> </div>
         </div>
         </div>
 
 
-
+{/* 
         <div style={{margin:"1rem 1.8rem"}}>
 
         <div className={styles.Versatile_section}  >
@@ -586,14 +583,14 @@ const MobileHomePage = () => {
             <p  className={styles.Versatile_section_txt}>Multi-functional solution tailored uniquely for <br /> your business. Manage all your Orders, Inventory <br /> & Transactions at one place.</p>
         </div>
         <div className={styles.versatile_img}><Image src="/assets/MobileView/paga_versatile.webp" fill alt="versatile" /></div>
-        </div>
+        </div> */}
 
 
-        <div> 
+        {/* <div> 
         <div style={{margin:"1rem 1.8rem",position: "relative"}}>
            <div className={styles.Business_journey_section} >
-              <h4  className={styles.Business_journey_section_title}>Start your Business journey <br /> effortlessly with <span className={styles.Doroki_word}>Doroki</span> </h4> 
-              <p className={styles.Business_journey_section_txt}>Doroki enables businesses manage their entire operations, from sales and inventory to customer data, ensuring a smoother <br /> end-of-day reconciliation process</p> 
+              <h4  className={styles.Business_journey_section_title}>Start your Business journey <br /> effortlessly with <span className={styles.Doroki_word}>Sadad</span> </h4> 
+              <p className={styles.Business_journey_section_txt}>Sadad enables businesses manage their entire operations, from sales and inventory to customer data, ensuring a smoother <br /> end-of-day reconciliation process</p> 
             </div>
             <div> 
              
@@ -607,8 +604,8 @@ const MobileHomePage = () => {
               </div>
         </div>
         
-        </div>
-        
+        </div> */}
+{/*         
 <selection id="Devices"> 
         <div style={{margin:"0rem 1.8rem"}}>
         <div className={styles.OneSolution_section}>
@@ -620,7 +617,7 @@ const MobileHomePage = () => {
         <div>
           <OneSolution/>
           </div>
-          </selection>
+          </selection> */}
 
 
 
@@ -628,7 +625,7 @@ const MobileHomePage = () => {
       <div className={styles.Clients_rave_txtSection}>
          
         <div className={styles.Clients_rave_txt} >
-          <h2 className={styles.Clients_rave_title}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.2rem 0.5rem"}}>Doroki</span>   <br />exceeds expectations!</h2>
+          <h2 className={styles.Clients_rave_title}>Clients rave - <span style={{backgroundColor:"#f2931d", padding:"0.2rem 0.5rem"}}>Sadad</span>   <br />exceeds expectations!</h2>
         </div>
         
 
@@ -646,36 +643,56 @@ const MobileHomePage = () => {
       </div> */}
 
      <selection id="FAQs"> 
-     <div style={{margin:"1rem 1.8rem",position:"relative",}}>
+     <div style={{margin:"3rem 1.8rem",position:"relative",}}>
           <div  className={styles.features} >
             <p className={styles.feature_title}>Frequently Asked Questions</p>
             <div  className={styles.feature_stars_icon}>
               <Image  src="/assets/stars.svg"   alt="Star icon"   fill  />
             </div>
           </div>
-          <div  className={styles.Questions_img}><Image src="/assets/MobileView/paga-faq-imgMobile.webp" fill alt='faq-img1'/></div> <br />
+          <div  className={styles.Questions_img}><Image src="/assets/MobileView/faq-imgMobile.webp" fill alt='faq-img1'/></div> <br />
           <div>
           <MobileQuestions FaqTableData={faqs}/>
           </div>
 
         </div>
         </selection>
+
+
+
+
+        <div style={{margin:"1rem 1.8rem",position:'relative', }}>
+
+        <div className={styles.loan_section}style={{backgroundColor:"#8E1B3E", color:"white" }} >
+
+         <div className={styles.Loans_image} ><Image src='/assets/effortless_icon.svg' fill alt="loans" /></div>
+
+          <h4 className={styles.loan_section_title} > Effortless transactions with POS features</h4>
+          <p className={styles.loan_section_txt} style={{color:"#FFFFFF"}}>Scale your business with transparent, reliable loans from our trusted banking partners — easy and straightforward</p>
+     
+         {/* <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"><div className={styles.loan_section_playstore} ><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a> */}
+          <BlueButton text="Contact Me" style={{ padding: "1rem  1.8rem", width: "10rem", height: "3rem", fontSize: "0.9rem", fontFamily: "GilroyMedium", backgroundColor:"#FFC82F", color:"black", marginTop: "1rem" }} />
+         
+         
+         <div  className={styles.Loan_img}> <Image src="/assets/MobileView/Effortless_transactions_mobile.webp" fill alt="loan" /> </div>
+        </div>
+        </div>
          
           <div style={{margin:'1rem 1.8rem' }}> 
             <div className={styles.business_needs}>
           <div className={styles.business_needs_txtSection} >
              <div className={styles.business_needs_title}><h4>Intuitive and  <br />Easy-to-Use  App for <br /> <span style={{color:'#F8B53C'}}>Your Business </span> Needs</h4>  
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.dpdtech.application.mpos.doroki&hl=en" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
+            <a href="" target="_blank"> <div className={styles.business_needs_palystoreIcon}><Image src="/assets/playstore.svg" fill alt="playstore" /></div></a>
           </div>
-          <div className={styles.business_needs_appImg} ><Image src="/assets/MobileView/app-img1.webp" fill alt="app" /></div>
+          <div className={styles.business_needs_appImg} ><Image src="/assets/app-img-sadad.webp" fill alt="app" /></div>
             </div>
 
             
             <div className={styles.business_needs2}>
               <div style={{display:"flex" , margin:"0.5rem 0"}}> 
               <div className={styles.bt_ele}>
-              <h4 className={styles.business_text}>Efficiently manage your stock levels with our reliable solution</h4>
+              <h4 className={styles.business_text} style={{color:"black"}}>Efficiently manage your stock levels with our reliable solution</h4>
               <div className={styles.bt_img1}  >
                   <Image src="/assets/MobileView/bt_img1.webp" layout="fill" objectFit="cover" alt="bt" />
               </div>
@@ -696,7 +713,7 @@ const MobileHomePage = () => {
               </div>
               </div >
               <div className={styles.bt_ele4} >
-                <h4 className={styles.business_text}>Manage customers effectively, improving loyalty</h4>
+                <h4 className={styles.business_text} style={{color:"black"}}>Manage customers effectively, improving loyalty</h4>
                 <div  className={styles.bt_img4} >
                 <Image src="/assets/MobileView/bt_img4.webp" layout="fill" objectFit="cover" alt="invt" />
               </div>
@@ -705,6 +722,8 @@ const MobileHomePage = () => {
               </div>
 
           </div>
+
+          
           
           <div  className={styles.formSection}  >
           <div className={styles.form_text_Section}>
@@ -716,7 +735,7 @@ const MobileHomePage = () => {
         </div>
 
           <br />
-              <p  className={styles.form_txt}>Discover how Doroki transforms your business—schedule a demo today and experience effortless management firsthand</p> <br />
+              <p  className={styles.form_txt}>Discover how Sadad transforms your business—schedule a demo today and experience effortless management firsthand</p> <br />
               <form onSubmit={freeDemoSubscribe}>
               <fieldset className={styles.input_divs}>
                 <input
@@ -824,7 +843,7 @@ const MobileHomePage = () => {
                 <legend className={styles.legend}>City</legend>
               </fieldset>
 
-              <BlackButton
+              <BlueButton
                 text="Kickstart your success"
                 style={{ width: "100%", padding: "1rem", height: "4rem", zIndex: 0, marginTop:"0.4rem" }}
               />
@@ -835,12 +854,9 @@ const MobileHomePage = () => {
             <div>
                  
                  
-            <div className={styles.footer_img}><Image src="/assets/MobileView/Paga_Footer_Mobile_img.webp" fill alt='demo'/></div>
+            <div className={styles.footer_img}><Image src="/assets/MobileView/Footer_Mobile_img.webp" fill alt='demo'/></div>
             </div>
           
-  
-          <selection id="Subscribe_Newsletter"> <div><MobileFooter/></div></selection>
-
           {/* <div style={{margin:"4rem 1rem 0rem 1rem"}}>
           <div className={styles.footer_img}><Image src="/assets/MobileView/demo_img12.webp" fill/></div>
        <div className={styles.subscriptionSection}> 
@@ -849,7 +865,7 @@ const MobileHomePage = () => {
           </div>
             <div className={styles.subscribe} >
               <h1 style={{fontFamily:"GilroyMedium", fontSize:"1.7rem"}}>Subscribe to our <br /> Newsletter</h1> <br />
-              <p style={{fontFamily:"GilroyRegular", fontSize:"0.85rem", lineHeight:"1.5rem"}}>Doroki centralizes operations with seamless billing, quick invoicing, inventory management and an eStore for online orders.</p> 
+              <p style={{fontFamily:"GilroyRegular", fontSize:"0.85rem", lineHeight:"1.5rem"}}>Sadad centralizes operations with seamless billing, quick invoicing, inventory management and an eStore for online orders.</p> 
               <form onSubmit={subscribe} > 
               <input
                 className={styles.subscribe_input}
@@ -869,10 +885,10 @@ const MobileHomePage = () => {
 
             <div className={styles.footer_conatctIcon}>
               <div  className={styles.footerIcon}><Image src='/assets/facebook.svg' fill alt="fb" /></div>
-              <a href="https://www.instagram.com/doroki.commerce/" target="" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sadad.commerce/" target="" rel="noopener noreferrer">
               <div className={styles.footerIcon}><Image src='/assets/Instagram.svg' fill alt="insta" /></div>
               </a>
-              <a href="https://x.com/doroki_ng" target="" rel="noopener noreferrer">
+              <a href="https://x.com/sadad_ng" target="" rel="noopener noreferrer">
               <div className={styles.footerIcon}><Image src='/assets/Twitter.svg' fill alt="twitter" /></div>
               </a>
               <div className={styles.footer_Icon} style={{marginBottom:"-0.4rem"}}><Image src='/assets/LinkedIn.svg' fill alt="linkedin" /></div>
@@ -894,10 +910,10 @@ const MobileHomePage = () => {
             </div>
             <div className={styles.phoneContact}>
               <div className={styles.phoneIcon}><Image src='/assets/mail.svg' fill alt="invt" /></div>
-              <p>support@doroki.com</p>
+              <p>support@sadad.com</p>
             </div>
             </div>
-            <p className={styles.all_rights}>© {new Date().getFullYear()} Doroki All rights reserved.</p>
+            <p className={styles.all_rights}>© {new Date().getFullYear()} Sadad All rights reserved.</p>
         
            </div>
           </div>

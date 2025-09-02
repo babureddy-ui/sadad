@@ -7,7 +7,7 @@ const CustomiseBy = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/Doroki_Reastaurant_img1.webp",
+        url: "/assets/Reastaurant_img_sadad.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const CustomiseBy = () => {
     },
     retail: {
       image: {
-        url: "/assets/Doroki_Retail-img1.webp",
+        url: "/assets/Retail-img_sadad.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const CustomiseBy = () => {
     },
     grocery: {
       image: {
-        url: "/assets/Doroki_Grocery_img1.webp",
+        url: "/assets/Grocery_img_sadad.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const CustomiseBy = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/Doroki_SpaSalon_img1.webp",
+        url: "/assets/SpaSalon_img_sadad.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const CustomiseBy = () => {
     },
     electronics: {
       image: {
-        url: "/assets/Doroki_Electronics_img1.webp",
+        url: "/assets/Electronics_img_sadad.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
@@ -197,7 +197,7 @@ const CustomiseBy = () => {
         style={{
           height: "28.8rem",
           // height:"30rem",
-          backgroundColor: "#223037",
+          backgroundColor: "#8E1B3E",
           color: "#ffff",
           display: 'flex',
            
@@ -215,7 +215,7 @@ const CustomiseBy = () => {
           <button className={styles.customise_btns}
             style={{ 
               fontSize: "0.8rem",
-              backgroundColor: buttonCategory === category ? "white" : "#223037",
+              backgroundColor: buttonCategory === category ? "white" : "transparent",
               color: buttonCategory === category ? "#223037" : "white",
               fontFamily: buttonCategory === category ? "GilroySemiBold" : "GilroyRegular",
               transition: "background-color 200ms ease",   

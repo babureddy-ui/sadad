@@ -40,7 +40,7 @@ const MobileHiddenPowers = () => {
       hoverCol: "#c55652",
     },
     {
-      icon: "/assets/offline.svg",
+      icon: "/assets/icon4.svg",
       color: "#F1FDF7",
       title: "Offline Mode",
       text: "Operate seamlessly offline, ensuring smooth transactions and efficient management without internet connectivity.",

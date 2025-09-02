@@ -29,7 +29,7 @@ const HiddenPowers = () => {
       hoverTextCol: "#FEF1B3",
     },
     {
-      icon: "/assets/offline.svg",
+      icon: "/assets/icon4.svg",
       tagColor: "#02875c",
       title: "Offline Mode",
       text: "Operate seamlessly offline, ensuring smooth transactions and efficient management without internet connectivity.",
@@ -73,7 +73,7 @@ const HiddenPowers = () => {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <p className={styles.headerText}>Doroki’s hidden powers</p>
+        <p className={styles.headerText}>Sadad’s hidden powers</p>
         <div className={styles.starIcon} style={{marginLeft:"0.5rem"}}>
           <Image src="/assets/stars.svg" alt="Stars" fill />
         </div>

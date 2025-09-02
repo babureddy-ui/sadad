@@ -7,7 +7,7 @@ const MobileCustomise = () => {
   const categories = {
     restaurant: {
       image: {
-        url: "/assets/MobileView/Paga_Restaurant1.webp",
+        url: "/assets/MobileView/sadad_estaurant.webp",
         title: "Restaurant",
         titleColor: "#FF6347",
       },
@@ -34,7 +34,7 @@ const MobileCustomise = () => {
     },
     retail: {
       image: {
-        url: "/assets/MobileView/Paga_Retail_img1.webp",
+        url: "/assets/MobileView/Retail_img.webp",
         title: "Retail",
         titleColor: "#1E92F7",
       },
@@ -61,7 +61,7 @@ const MobileCustomise = () => {
     },
     grocery: {
       image: {
-        url: "/assets/MobileView/Paga_Grocery1.webp",
+        url: "/assets/MobileView/sadad_Grocery_img.webp",
         title: "Grocery",
         titleColor: "#6ACD6E",
       },
@@ -88,7 +88,7 @@ const MobileCustomise = () => {
     },
     spaSalon: {
       image: {
-        url: "/assets/MobileView/paga_Spa&salon1.webp",
+        url: "/assets/MobileView/Spa&salon_img.webp",
         title: "Spa & Salon",
         titleColor: "#CA80E9",
       },
@@ -115,7 +115,7 @@ const MobileCustomise = () => {
     },
     electronics: {
       image: {
-        url: "/assets/MobileView/paga_electronics1.webp",
+        url: "/assets/MobileView/sadad_electronics.webp",
         title: "Electronics",
         titleColor: "#FF5656",
       },
@@ -198,7 +198,7 @@ const MobileCustomise = () => {
                 <button className={styles.customise_btns}
                     style={{ 
                       fontSize:"0.8rem",
-                    backgroundColor: buttonCategory === category ? 'white' : '#30434D',
+                    backgroundColor: buttonCategory === category ? 'white' : '#8E1B3E',
                     color: buttonCategory === category ? '#223037' : 'white',
                     fontFamily: buttonCategory === category ? 'GilroySemiBold' : 'GilroyRegular',
                     flexShrink: 0,  

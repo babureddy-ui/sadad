@@ -27,39 +27,15 @@ const Index = () => {
   }, []);
 
   const pageTitle = "Your All-In-One Business Suite | Trusted by Top Businesses.";
-  const pageDescription = "Doroki gives you everything you need to manage your business operations, anytime, anywhere, all from one powerful platform.";
-  const pageUrl = "https://doroki.com";
-  const imageUrl = "https://quebuster.s3.ap-south-1.amazonaws.com/website/assets/OG+Image_updated.png";
+  const pageDescription = "Sadad gives you everything you need to manage your business operations, anytime, anywhere, all from one powerful platform.";
+  const pageUrl = "https://sadad.com";
+  const imageUrl = "";
 
 
   return (
     <>
       <Head>
-        {/* Google Tag Manager */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NH8RDHHC');`
-          }}
-        />
-        {/* End Google Tag Manager */}
-
-        {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XG9TL1NRE"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-9XG9TL1NRE');
-            `
-          }}
-        />
-        {/* End Google Analytics */}
+     
 
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -76,20 +52,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:alt" content="Doroki - Your All-In-One Business Suite" />
+        <meta property="og:image:alt" content="Sadad - Your All-In-One Business Suite" />
         <meta property="og:locale" content="en_US" />
-        <meta property="og:site_name" content="Doroki" />
+        <meta property="og:site_name" content="Sadad" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@doroki_ng" />
-        <meta name="twitter:creator" content="@doroki_ng" />
+        <meta name="twitter:site" content="@sadad_ng" />
+        <meta name="twitter:creator" content="@sadad_ng" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content={imageUrl} />
         <meta name="twitter:url" content={pageUrl} />
 
-        <meta name="keywords" content=" Doroki, Paga, statement of account, financial institutions, 
+        <meta name="keywords" content=" Sadad, Sadad, statement of account, financial institutions, 
             merchant business, WorldFirst business account, Business account, 
             automated payment processing, digital payment gateway, 
             mobile payment solutions for business owners, 
@@ -128,16 +104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             Stripe, WorldFirst, World First" />
       </Head>
 
-      {/* Google Tag Manager (noscript) */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-NH8RDHHC"
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        />
-      </noscript>
-      {/* End Google Tag Manager (noscript) */}
+  
 
       <div style={{ display: 'none' }} aria-hidden="true">
         <h1>Your All-In-One Business Suite | Trusted by Top Businesses</h1>
